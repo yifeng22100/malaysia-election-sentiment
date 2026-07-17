@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Malaysia State Elections — Sentiment Tracker</title>
+<meta name="description" content="Live sentiment tracker for Malaysia's rolling 2025–2028 state election cycle — Sabah, Johor, Negeri Sembilan and beyond — through to GE16.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+<div class="main">
+
+  <header class="masthead">
+    <div class="masthead-top">
+      <div class="site-nav">
+        <span class="site-title">MY Elections Sentiment</span>
+        <a class="nav-link current" href="index.html">Overview</a>
+        <a class="nav-link" href="johor.html">Johor</a>
+        <a class="nav-link" href="negeri-sembilan.html">Negeri Sembilan</a>
+      </div>
+      <span class="live-chip"><span class="live-dot"></span>Developing — refreshed daily</span>
+    </div>
+    <span class="eyebrow">Sentiment Tracker — All States</span>
+    <h1 class="title">Malaysia's rolling election cycle</h1>
+    <p class="dek">Between Sabah's vote in November 2025 and the next general election due by early 2028, every Malaysian state assembly dissolves and votes on its own clock. This page tracks public, party and market sentiment as each one comes up — state by state, through to GE16.</p>
+    <div class="masthead-meta">
+      <span>States decided: <strong>2</strong> of 13</span>
+      <span>Next to vote: <strong>Negeri Sembilan, 1 Aug 2026</strong></span>
+      <span>Last refreshed: <strong id="refreshed-date">17 Jul 2026</strong></span>
+    </div>
+  </header>
+
+  <section id="status" aria-label="Where things stand">
+    <div class="section-label">Where things stand</div>
+    <div class="state-grid">
+
+      <a class="state-card is-link" href="johor.html">
+        <div class="state-card-top">
+          <span class="state-name">Johor</span>
+          <span class="status-badge status-done">Done</span>
+        </div>
+        <div class="state-note"><strong>BN landslide</strong>, 48/56 seats · 11 Jul 2026 · Onn Hafiz Ghazi (BN) continues as MB</div>
+      </a>
+
+      <a class="state-card is-link" href="negeri-sembilan.html">
+        <div class="state-card-top">
+          <span class="state-name">Negeri Sembilan</span>
+          <span class="status-badge status-live">Campaigning</span>
+        </div>
+        <div class="state-note">Nomination <strong>18 Jul</strong>, polls <strong>1 Aug 2026</strong> · 3-way BN–PH–PN fight, no clear favourite</div>
+      </a>
+
+      <div class="state-card">
+        <div class="state-card-top">
+          <span class="state-name">Sabah</span>
+          <span class="status-badge status-done">Done</span>
+        </div>
+        <div class="state-note">Hung assembly, 30 Nov 2025 · GRS 29 seats, largest bloc · Hajiji Noor (GRS) sworn in for 2nd term</div>
+      </div>
+
+      <div class="state-card">
+        <div class="state-card-top">
+          <span class="state-name">Melaka</span>
+          <span class="status-badge status-soon">Anticipated</span>
+        </div>
+        <div class="state-note">CM Ab Rauf Yusoh (BN) says he'll decide timing after watching Johor and N9 · deadline 27 Dec 2026</div>
+      </div>
+
+      <div class="state-card">
+        <div class="state-card-top">
+          <span class="state-name">Sarawak</span>
+          <span class="status-badge status-soon">Anticipated</span>
+        </div>
+        <div class="state-note">Governed by GPS under Premier Abang Johari · automatic dissolution 14 Feb 2027</div>
+      </div>
+
+      <div class="state-card">
+        <div class="state-card-top">
+          <span class="state-name">Perak</span>
+          <span class="status-badge status-later">Not due</span>
+        </div>
+        <div class="state-note">BN's Saarani Mohamad is MB · term runs to Dec 2027</div>
+      </div>
+
+      <div class="state-card">
+        <div class="state-card-top">
+          <span class="state-name">Pahang</span>
+          <span class="status-badge status-later">Not due</span>
+        </div>
+        <div class="state-note">BN's Wan Rosdy Wan Ismail is MB · term runs to Dec 2027</div>
+      </div>
+
+      <div class="state-card">
+        <div class="state-card-top">
+          <span class="state-name">Perlis</span>
+          <span class="status-badge status-later">Not due</span>
+        </div>
+        <div class="state-note">PN-Bersatu's Abu Bakar Hamzah is MB · term runs to Dec 2027</div>
+      </div>
+
+      <div class="state-card">
+        <div class="state-card-top">
+          <span class="state-name">Selangor</span>
+          <span class="status-badge status-later">Not due</span>
+        </div>
+        <div class="state-note">PH-PKR's Amirudin Shari is MB · term runs to Sep 2028</div>
+      </div>
+
+      <div class="state-card">
+        <div class="state-card-top">
+          <span class="state-name">Penang</span>
+          <span class="status-badge status-later">Not due</span>
+        </div>
+        <div class="state-note">PH-DAP's Chow Kon Yeow is CM · term runs to Aug 2028</div>
+      </div>
+
+      <div class="state-card">
+        <div class="state-card-top">
+          <span class="state-name">Kedah</span>
+          <span class="status-badge status-later">Not due</span>
+        </div>
+        <div class="state-note">PN-PAS's Muhammad Sanusi Md Nor is MB · term runs to Sep 2028</div>
+      </div>
+
+      <div class="state-card">
+        <div class="state-card-top">
+          <span class="state-name">Kelantan</span>
+          <span class="status-badge status-later">Not due</span>
+        </div>
+        <div class="state-note">PN-PAS's Mohd Nassuruddin Daud is MB · term runs to Sep 2028</div>
+      </div>
+
+      <div class="state-card">
+        <div class="state-card-top">
+          <span class="state-name">Terengganu</span>
+          <span class="status-badge status-later">Not due</span>
+        </div>
+        <div class="state-note">PN-PAS's Ahmad Samsuri Mokhtar is MB · term runs to Sep 2028</div>
+      </div>
+
+      <div class="state-card">
+        <div class="state-card-top">
+          <span class="state-name">Federal (GE16)</span>
+          <span class="status-badge status-later">Not due</span>
+        </div>
+        <div class="state-note">Anwar Ibrahim's PH-led unity government · Dewan Rakyat dissolution due by Dec 2027, poll by Feb 2028</div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="signal-log" aria-label="Cross-state signal log">
+    <div class="section-label">Cross-state signal log — newest first</div>
+    <div class="log">
+
+      <div class="log-entry">
+        <div class="log-date">17 Jul</div>
+        <div>
+          <span class="log-state">NEGERI SEMBILAN</span>
+          <span class="log-tag tag-campaign">Nomination eve</span>
+          <p class="log-headline">Campaign officially opens tomorrow as PN completes its candidate lineup</p>
+          <p class="log-body">Nomination day is 18 July. PN's 11-seat slate is set — PAS, Gerakan, MIPP and debutant party Wawasan — while Bersatu breaks ranks to contest separately under its own logo.</p>
+          <p class="log-source">Borneo Post · Malaysiakini · <a href="negeri-sembilan.html">full tracker →</a></p>
+        </div>
+      </div>
+
+      <div class="log-entry">
+        <div class="log-date">17 Jul</div>
+        <div>
+          <span class="log-state">JOHOR</span>
+          <span class="log-tag tag-result">Government</span>
+          <p class="log-headline">State government formation completes with Exco swearing-in</p>
+          <p class="log-body">Onn Hafiz's new Executive Council took the oath six days after the election, closing out the transition with no visible friction inside BN.</p>
+          <p class="log-source">Kosmo · Berita RTM · <a href="johor.html">full tracker →</a></p>
+        </div>
+      </div>
+
+      <div class="log-entry">
+        <div class="log-date">16 Jul</div>
+        <div>
+          <span class="log-state">NEGERI SEMBILAN</span>
+          <span class="log-tag tag-reax">Strategy</span>
+          <p class="log-headline">BN signals a different playbook than the one that won Johor</p>
+          <p class="log-body">BN figures are publicly framing N9 as a tighter, structurally different contest — an implicit admission that Johor's Malay-vote consolidation, enabled by PN sitting out seats, may not repeat here.</p>
+          <p class="log-source">The Rakyat Post · <a href="negeri-sembilan.html">full tracker →</a></p>
+        </div>
+      </div>
+
+      <div class="log-entry">
+        <div class="log-date">14–16 Jul</div>
+        <div>
+          <span class="log-state">JOHOR &amp; NEGERI SEMBILAN</span>
+          <span class="log-tag tag-reax">Party reaction</span>
+          <p class="log-headline">DAP pledges a "positive" campaign as it pivots off Johor's losses</p>
+          <p class="log-body">With its Johor seat count down from 10 to 6, DAP's central leadership has told its N9 machinery to avoid the combative framing critics blamed for part of Johor's swing.</p>
+          <p class="log-source">New Straits Times · Malaysiakini · <a href="johor.html">Johor</a> / <a href="negeri-sembilan.html">N9 tracker →</a></p>
+        </div>
+      </div>
+
+      <div class="log-entry">
+        <div class="log-date">14 Jul</div>
+        <div>
+          <span class="log-state">JOHOR</span>
+          <span class="log-tag tag-market">Markets</span>
+          <p class="log-headline">Ringgit and Bursa read the landslide as policy continuity, not risk</p>
+          <p class="log-body">OCBC and The Star both describe a muted market reaction to BN's bigger-than-forecast mandate — reinforcing rather than unsettling the state's investment agenda.</p>
+          <p class="log-source">The Star · FXStreet / OCBC · <a href="johor.html">full tracker →</a></p>
+        </div>
+      </div>
+
+      <div class="log-entry">
+        <div class="log-date">29 Jun</div>
+        <div>
+          <span class="log-state">NEGERI SEMBILAN</span>
+          <span class="log-tag tag-social">Analysis</span>
+          <p class="log-headline">"One election, two crises, three coalitions"</p>
+          <p class="log-body">A constitutional succession dispute over the Yang di-Pertuan Besar is running in parallel with the campaign — commentary increasingly treats both as connected stress tests on the state.</p>
+          <p class="log-source">Malay Mail · East Asia Forum · <a href="negeri-sembilan.html">full tracker →</a></p>
+        </div>
+      </div>
+
+      <div class="log-entry">
+        <div class="log-date">11 Jul</div>
+        <div>
+          <span class="log-state">JOHOR</span>
+          <span class="log-tag tag-result">Result</span>
+          <p class="log-headline">BN wins 48 of 56 seats — its best Johor result since 2008</p>
+          <p class="log-body">BN 59.7% vote share to PH's 32.6%. The margin, not the winner, is what's driving the national conversation about GE16 timing.</p>
+          <p class="log-source">New Straits Times · Bernama · <a href="johor.html">full tracker →</a></p>
+        </div>
+      </div>
+
+      <div class="log-entry">
+        <div class="log-date">30 Nov 2025</div>
+        <div>
+          <span class="log-state">SABAH</span>
+          <span class="log-tag tag-result">Result</span>
+          <p class="log-headline">Hung assembly: GRS leads a fragmented field, Hajiji returns as CM</p>
+          <p class="log-body">GRS took 29 of 73 seats, ahead of Warisan (25) and BN (6), with the balance split across five smaller parties and independents. No coalition reached a majority outright; Hajiji Noor was sworn in for a second term after post-election coalition talks.</p>
+          <p class="log-source">Malay Mail · Borneo Post</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="implications" aria-label="National implications">
+    <div class="section-label">What it means for GE16</div>
+    <p class="lede">Two states in, the pattern reads less like a national mood swing and more like a warning about coalition math.</p>
+    <div class="prose">
+      <p>Johor's landslide flattered BN more than it hurt Pakatan Harapan on its own terms — the decisive move was PN voters consolidating behind BN rather than splitting toward PH, after PN chose to sit out a third of the seats. That's a Johor-specific dynamic, not obviously portable: Negeri Sembilan has no such vacuum, PN is contesting a real slate there, and BN and PH are competing as rivals rather than the allied ticket that governed the state since 2023.</p>
+      <p>What does carry over is pressure inside the federal unity government. A 48-seat Johor supermajority strengthens UMNO's hand within BN and, by extension, its leverage over Anwar's coalition. A second consecutive landslide in Negeri Sembilan — a state PH has governed since 2023 — would harden the narrative of a genuine national swing and intensify speculation about an early GE16; a PH hold would blunt it and buy the unity government room before the 2027–2028 dissolution deadline. Analysts increasingly describe Johor and Negeri Sembilan together as a two-part test of Anwar's Madani government, with Melaka and Sarawak's still-undated elections as the next data points after that.</p>
+    </div>
+  </section>
+
+  <section id="whats-next" aria-label="What's next">
+    <div class="section-label">What we're watching next</div>
+    <div class="next">
+      <div class="next-date">1 Aug 2026</div>
+      <p class="prose" style="margin:0;">Negeri Sembilan polling day. Nomination day is 18 July, early voting 28 July. After that, attention shifts to Melaka — Chief Minister Ab Rauf Yusoh has signalled he'll set a date once he's seen how Johor and Negeri Sembilan land — and to Sarawak, whose assembly must dissolve by 14 February 2027.</p>
+    </div>
+  </section>
+
+  <footer id="sources">
+    <div class="section-label" style="margin-bottom:10px;">Sources referenced on this page</div>
+    <ul class="sources">
+      <li><a href="https://en.wikipedia.org/wiki/Heads_of_state_governments_of_Malaysia" target="_blank" rel="noopener">Wikipedia — heads of state governments of Malaysia</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Next_Malaysian_general_election" target="_blank" rel="noopener">Wikipedia — next Malaysian general election</a></li>
+      <li><a href="https://says.com/my/news/when-is-next-election-here-are-deadlines-every-state-federal-poll-malaysia" target="_blank" rel="noopener">SAYS — election deadlines for every state and federal poll</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Next_Sarawak_state_election" target="_blank" rel="noopener">Wikipedia — next Sarawak state election</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Next_Malacca_state_election" target="_blank" rel="noopener">Wikipedia — next Malacca state election</a></li>
+      <li><a href="https://www.thestar.com.my/news/nation/2026/06/06/melaka-cm-hints-state-election-may-be-held-after-johor-negri-sembilan-polls" target="_blank" rel="noopener">Malay Mail — Melaka CM hints at post-Johor/N9 timing</a></li>
+      <li><a href="https://www.malaymail.com/news/malaysia/2025/11/30/sabah-election-results-grs-ahead-with-27-seats-kingmakers-could-decide-next-government/200164" target="_blank" rel="noopener">Malay Mail — Sabah election results</a></li>
+      <li><a href="https://eastasiaforum.org/2026/06/29/johor-and-negeri-sembilan-state-elections-are-double-trouble-for-anwar/" target="_blank" rel="noopener">East Asia Forum — double trouble for Anwar</a></li>
+      <li><a href="https://eastasiaforum.org/2026/02/08/malaysia-enters-election-mode-in-2026/" target="_blank" rel="noopener">East Asia Forum — Malaysia enters election mode in 2026</a></li>
+      <li>See the <a href="johor.html">Johor</a> and <a href="negeri-sembilan.html">Negeri Sembilan</a> pages for full per-state source lists.</li>
+    </ul>
+    <p>Compiled from public news coverage, published polling and official election-commission announcements. Not affiliated with the Election Commission of Malaysia, any political coalition, or any state government referenced above. Figures are as officially reported at time of writing and may be revised.</p>
+    <div class="cadence"><span class="live-dot" style="animation:none;"></span>This edition refreshes daily as the election cycle develops.</div>
+  </footer>
+
+</div>
+
+<aside class="toc" aria-label="On this page">
+  <div class="toc-label">On this page</div>
+  <a href="#status">Where things stand</a>
+  <a href="#signal-log">Signal log</a>
+  <a href="#implications">GE16 implications</a>
+  <a href="#whats-next">What's next</a>
+  <a href="#sources">Sources</a>
+</aside>
+
+</div>
+
+<script src="toc.js"></script>
+</body>
+</html>
