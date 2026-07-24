@@ -8,20 +8,45 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<header class="site-header">
+  <div class="header-utility">
+    <div class="header-utility-inner">
+      <nav class="lang-switch" aria-label="Language">
+        <a href="#" data-set-lang="en">EN</a>
+        <a href="#" data-set-lang="ms">BM</a>
+        <a href="#" data-set-lang="zh">中文</a>
+        <a href="#" data-set-lang="ta">தமிழ்</a>
+      </nav>
+      <div class="theme-switch" role="group" aria-label="Theme">
+        <button data-set-theme="light">Light</button>
+        <button data-set-theme="auto">Auto</button>
+        <button data-set-theme="dark">Dark</button>
+      </div>
+    </div>
+  </div>
+  <div class="header-main-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">MY</span>
+      <span class="brand-word">Elections Sentiment<small>Malaysia state election tracker</small></span>
+    </a>
+    <nav class="site-nav-main">
+      <a href="index.html" data-i18n="nav_overview">Overview</a>
+      <a href="johor.html" data-i18n="nav_johor">Johor</a>
+      <a href="negeri-sembilan.html" data-i18n="nav_n9" class="current">Negeri Sembilan</a>
+      <a href="parties.html" data-i18n="nav_parties">Parties</a>
+      <a href="about.html" data-i18n="nav_about">About</a>
+    </nav>
+  </div>
+</header>
+
 <div class="wrap">
 <div class="main">
 
   <header class="masthead">
-    <div class="masthead-top">
-      <div class="site-nav">
-        <span class="site-title">MY Elections Sentiment</span>
-        <a class="nav-link" href="index.html">Overview</a>
-        <a class="nav-link" href="johor.html">Johor</a>
-        <a class="nav-link current" href="negeri-sembilan.html">Negeri Sembilan</a>
-      </div>
-      <span class="live-chip"><span class="live-dot"></span>Campaigning — refreshed daily</span>
+    <div style="display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap;">
+      <span class="eyebrow">Pre-Election Sentiment Tracker</span>
+      <span class="live-chip"><span class="live-dot"></span><span data-i18n="live_campaigning">Campaigning — refreshed daily</span></span>
     </div>
-    <span class="eyebrow">Pre-Election Sentiment Tracker</span>
     <h1 class="title">Negeri Sembilan: the tighter test</h1>
     <p class="dek">Fresh off Johor's landslide, BN and PH turn to a race analysts already call less predictable — closer marginal seats, a three-way fight, and a royal succession crisis running in parallel with the campaign.</p>
     <div class="masthead-meta">
@@ -31,6 +56,8 @@
       <span>Last refreshed: <strong id="refreshed-date">23 Jul 2026</strong></span>
     </div>
   </header>
+
+  <div class="lang-note-banner" data-lang-note><span class="lang-note-label"></span></div>
 
   <section id="campaign" aria-label="Campaign topline">
     <div class="section-label">The campaign</div>
@@ -64,6 +91,15 @@
   <section id="mood" aria-label="Sentiment summary">
     <div class="section-label">Reading the mood</div>
     <p class="lede">Where Johor felt decided in advance, Negeri Sembilan is the one nobody wants to forecast.</p>
+
+    <div class="mood-meter">
+      <div class="mood-meter-value">Genuinely uncertain</div>
+      <div class="mood-meter-note">Sentiment read: no published polling, tighter marginal seats than Johor, and a large undecided youth bloc — this one is open.</div>
+      <div class="mood-meter-scale">
+        <div class="mood-meter-fill" style="width:32%; background:var(--status-soon);"></div>
+      </div>
+      <div class="mood-meter-labels"><span>Uncertain</span><span>Decisive</span></div>
+    </div>
     <div class="prose">
       <p>No public opinion poll has been published for this race — a contrast with Johor, where Ilham Centre and Vodus Research both put numbers on BN's lead weeks out. What analysts agree on instead is structural: Negeri Sembilan has more genuinely marginal seats than Johor, support is more evenly split across Malay-majority and mixed constituencies, and small vote swings can flip outcomes. The Star's seat-by-seat model describes it as pointing to "a more unpredictable state election."</p>
       <p>Two things make this race harder to read than Johor. First, the coalition math has changed: BN and PH fought Johor as rivals but ran together in the 2023 Negeri Sembilan election under the unity-government banner — this time they're contesting against each other directly, alongside PN, so there's no recent precedent for how their combined 2023 vote actually splits when forced to compete. Second, roughly a third of the electorate is under 30, and by some estimates close to half of those younger voters remain undecided — a bigger swing bloc than Johor had.</p>
@@ -324,6 +360,42 @@
 
 </div>
 
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div class="footer-col">
+      <div class="footer-brand"><span class="brand-mark" style="width:26px;height:26px;font-size:11px;">MY</span><strong>Elections Sentiment</strong></div>
+      <p class="footer-tagline" data-i18n="footer_tagline">An independent, unofficial tracker of public, party and market sentiment across Malaysia's rolling state election cycle.</p>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_sections_title">Sections</h4>
+      <a href="index.html" data-i18n="nav_overview">Overview</a>
+      <a href="johor.html" data-i18n="nav_johor">Johor</a>
+      <a href="negeri-sembilan.html" data-i18n="nav_n9">Negeri Sembilan</a>
+      <a href="parties.html" data-i18n="nav_parties">Parties</a>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_about_title">About this site</h4>
+      <a href="about.html" data-i18n="nav_about">About</a>
+      <a href="about.html#methodology" data-i18n="footer_methodology">Methodology &amp; sources</a>
+      <a href="https://github.com/yifeng22100/malaysia-election-sentiment" target="_blank" rel="noopener" data-i18n="footer_github">View source on GitHub</a>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_language_title">Language</h4>
+      <nav class="lang-switch" aria-label="Language" style="flex-direction:column; align-items:flex-start; gap:9px;">
+        <a href="#" data-set-lang="en">English</a>
+        <a href="#" data-set-lang="ms">Bahasa Malaysia</a>
+        <a href="#" data-set-lang="zh">中文</a>
+        <a href="#" data-set-lang="ta">தமிழ்</a>
+      </nav>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span data-i18n="footer_disclaimer">Not affiliated with the Election Commission of Malaysia, any political party or coalition, or any government body. Compiled from public news coverage. Logos are used for identification purposes only and remain the property of their respective parties.</span>
+    <span data-i18n="footer_updated">Auto-updated daily</span>
+  </div>
+</footer>
+
+<script src="i18n.js"></script>
 <script src="toc.js"></script>
 </body>
 </html>

@@ -1,0 +1,636 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Political Parties of Malaysia — Malaysia State Elections Sentiment Tracker</title>
+<meta name="description" content="Profiles of Malaysia's political parties — current and historical — covering founding, milestones, key figures, messaging, and public perception.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-utility">
+    <div class="header-utility-inner">
+      <nav class="lang-switch" aria-label="Language">
+        <a href="#" data-set-lang="en">EN</a>
+        <a href="#" data-set-lang="ms">BM</a>
+        <a href="#" data-set-lang="zh">中文</a>
+        <a href="#" data-set-lang="ta">தமிழ்</a>
+      </nav>
+      <div class="theme-switch" role="group" aria-label="Theme">
+        <button data-set-theme="light">Light</button>
+        <button data-set-theme="auto">Auto</button>
+        <button data-set-theme="dark">Dark</button>
+      </div>
+    </div>
+  </div>
+  <div class="header-main-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">MY</span>
+      <span class="brand-word">Elections Sentiment<small>Malaysia state election tracker</small></span>
+    </a>
+    <nav class="site-nav-main">
+      <a href="index.html" data-i18n="nav_overview">Overview</a>
+      <a href="johor.html" data-i18n="nav_johor">Johor</a>
+      <a href="negeri-sembilan.html" data-i18n="nav_n9">Negeri Sembilan</a>
+      <a href="parties.html" data-i18n="nav_parties" class="current">Parties</a>
+      <a href="about.html" data-i18n="nav_about">About</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+<div class="main">
+
+  <header class="masthead">
+    <span class="eyebrow" data-i18n="parties_eyebrow">Reference</span>
+    <h1 class="title">Political parties of Malaysia</h1>
+    <p class="dek">Twenty-one parties — current coalition members and the historical ones that shaped the system before them — covering founding, milestones, key figures, campaign messaging, and how each is discussed in public. See the <a href="about.html#methodology">methodology note</a> for sourcing and neutrality standards.</p>
+    <div class="masthead-meta">
+      <span>21 parties profiled</span>
+      <span>7 categories</span>
+      <span>Static reference — not part of the daily auto-update</span>
+    </div>
+  </header>
+
+  <div class="lang-note-banner" data-lang-note><span class="lang-note-label"></span></div>
+
+  <section id="jump" aria-label="Jump to party">
+    <div class="section-label" data-i18n="parties_jump">Jump to a party</div>
+    <div class="party-category-tabs">
+      <a href="#cat-bn" class="active" data-i18n="tab_bn">Barisan Nasional</a>
+      <a href="#cat-pn" data-i18n="tab_pn">Perikatan Nasional</a>
+      <a href="#cat-ph" data-i18n="tab_ph">Pakatan Harapan</a>
+      <a href="#cat-sarawak" data-i18n="tab_sarawak">Sarawak</a>
+      <a href="#cat-sabah" data-i18n="tab_sabah">Sabah</a>
+      <a href="#cat-other" data-i18n="tab_other">Other current</a>
+      <a href="#cat-historical" data-i18n="tab_historical">Historical &amp; dismissed</a>
+    </div>
+    <div class="party-grid">
+      <a class="party-jump-card" href="#umno"><img class="party-jump-logo" src="assets/parties/umno.svg" alt=""><span><span class="party-jump-name">UMNO</span><br><span class="party-jump-abbr">BN</span></span></a>
+      <a class="party-jump-card" href="#mca"><img class="party-jump-logo" src="assets/parties/mca.svg" alt=""><span><span class="party-jump-name">MCA</span><br><span class="party-jump-abbr">BN</span></span></a>
+      <a class="party-jump-card" href="#mic"><img class="party-jump-logo" src="assets/parties/mic.svg" alt=""><span><span class="party-jump-name">MIC</span><br><span class="party-jump-abbr">BN</span></span></a>
+      <a class="party-jump-card" href="#pas"><img class="party-jump-logo" src="assets/parties/pas.svg" alt=""><span><span class="party-jump-name">PAS</span><br><span class="party-jump-abbr">PN</span></span></a>
+      <a class="party-jump-card" href="#bersatu"><img class="party-jump-logo" src="assets/parties/bersatu.svg" alt=""><span><span class="party-jump-name">Bersatu</span><br><span class="party-jump-abbr">PN</span></span></a>
+      <a class="party-jump-card" href="#gerakan"><img class="party-jump-logo" src="assets/parties/gerakan.svg" alt=""><span><span class="party-jump-name">Gerakan</span><br><span class="party-jump-abbr">PN</span></span></a>
+      <a class="party-jump-card" href="#wawasan"><img class="party-jump-logo" src="assets/parties/wawasan.png" alt=""><span><span class="party-jump-name">Wawasan</span><br><span class="party-jump-abbr">PN</span></span></a>
+      <a class="party-jump-card" href="#pkr"><img class="party-jump-logo" src="assets/parties/pkr.svg" alt=""><span><span class="party-jump-name">PKR</span><br><span class="party-jump-abbr">PH</span></span></a>
+      <a class="party-jump-card" href="#dap"><img class="party-jump-logo" src="assets/parties/dap.svg" alt=""><span><span class="party-jump-name">DAP</span><br><span class="party-jump-abbr">PH</span></span></a>
+      <a class="party-jump-card" href="#amanah"><img class="party-jump-logo" src="assets/parties/amanah.svg" alt=""><span><span class="party-jump-name">Amanah</span><br><span class="party-jump-abbr">PH</span></span></a>
+      <a class="party-jump-card" href="#pbb"><img class="party-jump-logo" src="assets/parties/pbb.svg" alt=""><span><span class="party-jump-name">PBB</span><br><span class="party-jump-abbr">GPS</span></span></a>
+      <a class="party-jump-card" href="#pbs"><img class="party-jump-logo" src="assets/parties/pbs.png" alt=""><span><span class="party-jump-name">PBS</span><br><span class="party-jump-abbr">GRS</span></span></a>
+      <a class="party-jump-card" href="#warisan"><img class="party-jump-logo" src="assets/parties/warisan.png" alt=""><span><span class="party-jump-name">Warisan</span><br><span class="party-jump-abbr">Sabah</span></span></a>
+      <a class="party-jump-card" href="#muda"><img class="party-jump-logo" src="assets/parties/muda.svg" alt=""><span><span class="party-jump-name">MUDA</span><br><span class="party-jump-abbr">Independent</span></span></a>
+      <a class="party-jump-card" href="#berjasa"><img class="party-jump-logo" src="assets/parties/berjasa.svg" alt=""><span><span class="party-jump-name">Berjasa</span><br><span class="party-jump-abbr">PN-allied</span></span></a>
+      <a class="party-jump-card" href="#ppp"><img class="party-jump-logo" src="assets/parties/ppp.png" alt=""><span><span class="party-jump-name">PPP</span><br><span class="party-jump-abbr">Minor</span></span></a>
+      <a class="party-jump-card" href="#alliance"><img class="party-jump-logo" src="assets/parties/alliance.svg" alt=""><span><span class="party-jump-name">Alliance</span><br><span class="party-jump-abbr">1952–74</span></span></a>
+      <a class="party-jump-card" href="#negara"><span class="party-jump-logo placeholder">PN</span><span><span class="party-jump-name">Parti Negara</span><br><span class="party-jump-abbr">1954–62</span></span></a>
+      <a class="party-jump-card" href="#semangat46"><img class="party-jump-logo" src="assets/parties/semangat46.svg" alt=""><span><span class="party-jump-name">Semangat 46</span><br><span class="party-jump-abbr">1989–96</span></span></a>
+      <a class="party-jump-card" href="#usno"><span class="party-jump-logo placeholder">US</span><span><span class="party-jump-name">USNO</span><br><span class="party-jump-abbr">1961–94</span></span></a>
+      <a class="party-jump-card" href="#cpm"><img class="party-jump-logo" src="assets/parties/cpm.svg" alt=""><span><span class="party-jump-name">CPM</span><br><span class="party-jump-abbr">1930–89</span></span></a>
+    </div>
+  </section>
+
+  <section id="cat-bn" aria-label="Barisan Nasional parties">
+    <div class="section-label">Barisan Nasional (BN) — National Front</div>
+
+    <article class="party-entry" id="umno">
+      <div class="party-entry-head">
+        <img class="party-entry-logo" src="assets/parties/umno.svg" alt="UMNO logo">
+        <div>
+          <div class="party-entry-title">United Malays National Organisation<span class="status-badge status-done party-status-badge">Governing</span></div>
+          <div class="party-entry-sub">UMNO · Pertubuhan Kebangsaan Melayu Bersatu</div>
+        </div>
+      </div>
+      <div class="party-field-grid">
+        <div><div class="party-field-label" data-i18n="field_founded">Founded</div><div class="party-field-value">1946</div></div>
+        <div><div class="party-field-label" data-i18n="field_coalition">Coalition</div><div class="party-field-value">Barisan Nasional</div></div>
+        <div><div class="party-field-label" data-i18n="field_ideology">Ideology</div><div class="party-field-value">Malay nationalism, national conservatism</div></div>
+        <div><div class="party-field-label" data-i18n="field_keyfigure">Key figure</div><div class="party-field-value">Ahmad Zahid Hamidi (president)</div></div>
+      </div>
+      <div class="party-section-h" data-i18n="h_history">History &amp; milestones</div>
+      <p>Founded in 1946 by Onn Jaafar to oppose the British-proposed Malayan Union, which would have diluted Malay political privileges. UMNO anchored the Alliance (1952) and later Barisan Nasional (1974), and was the dominant party in every federal government from independence in 1957 until its historic defeat at GE14 in 2018 — at the time one of the longest unbroken ruling-party runs in the democratic world. It returned to federal power within the unity government formed after the deadlocked GE15 (2022), and its Johor result in July 2026 — a 48-of-56-seat landslide, its best showing since 2008 — was read nationally as a sign of the party's continued organisational strength within BN.</p>
+      <div class="party-section-h" data-i18n="h_messaging">Messaging themes</div>
+      <p>Historically centred on Malay unity and safeguarding bumiputera economic and political privileges ("ketuanan Melayu"); more recently paired with a stability and continuity message, and — post-1MDB — an emphasis on economic development delivery over ideology.</p>
+      <div class="party-section-h" data-i18n="h_perception">Public perception</div>
+      <p>Supporters frame UMNO as the indispensable guardian of Malay and Islamic interests and the party best able to deliver stable government. Critics point to the 1MDB scandal and former president Najib Razak's corruption conviction as evidence of entrenched patronage politics, and the 2018 loss is widely read as a public verdict on that era — a reputation the party has spent the years since trying to move past.</p>
+    </article>
+
+    <article class="party-entry" id="mca">
+      <div class="party-entry-head">
+        <img class="party-entry-logo" src="assets/parties/mca.svg" alt="MCA logo">
+        <div>
+          <div class="party-entry-title">Malaysian Chinese Association<span class="status-badge status-later party-status-badge">Minor coalition partner</span></div>
+          <div class="party-entry-sub">MCA</div>
+        </div>
+      </div>
+      <div class="party-field-grid">
+        <div><div class="party-field-label" data-i18n="field_founded">Founded</div><div class="party-field-value">1949</div></div>
+        <div><div class="party-field-label" data-i18n="field_coalition">Coalition</div><div class="party-field-value">Barisan Nasional</div></div>
+        <div><div class="party-field-label" data-i18n="field_ideology">Ideology</div><div class="party-field-value">Chinese community representation, multiracialism</div></div>
+        <div><div class="party-field-label" data-i18n="field_keyfigure">Key figure</div><div class="party-field-value">Wee Ka Siong (president)</div></div>
+      </div>
+      <div class="party-section-h" data-i18n="h_history">History &amp; milestones</div>
+      <p>Founded in 1949 as the Chinese-community pillar of the Alliance, alongside UMNO and later MIC. For decades MCA was the primary vehicle for ethnic Chinese participation in government, holding senior cabinet posts continuously. Its support collapsed from GE13 (2013) onward as Chinese voters shifted decisively to DAP; by GE14 (2018) and GE15 (2022) it held only a handful of seats.</p>
+      <div class="party-section-h" data-i18n="h_messaging">Messaging themes</div>
+      <p>Moderate multiracialism and business-friendly economic management, framed as working constructively within the BN framework rather than in opposition to it.</p>
+      <div class="party-section-h" data-i18n="h_perception">Public perception</div>
+      <p>Widely discussed as a "spent force" whose community has moved on — commentary frequently uses MCA as shorthand for BN's broader loss of non-Malay support, even as the party retains a token seat at the coalition table.</p>
+    </article>
+
+    <article class="party-entry" id="mic">
+      <div class="party-entry-head">
+        <img class="party-entry-logo" src="assets/parties/mic.svg" alt="MIC logo">
+        <div>
+          <div class="party-entry-title">Malaysian Indian Congress<span class="status-badge status-later party-status-badge">Minor coalition partner</span></div>
+          <div class="party-entry-sub">MIC</div>
+        </div>
+      </div>
+      <div class="party-field-grid">
+        <div><div class="party-field-label" data-i18n="field_founded">Founded</div><div class="party-field-value">1946</div></div>
+        <div><div class="party-field-label" data-i18n="field_coalition">Coalition</div><div class="party-field-value">Barisan Nasional</div></div>
+        <div><div class="party-field-label" data-i18n="field_ideology">Ideology</div><div class="party-field-value">Indian community representation</div></div>
+        <div><div class="party-field-label" data-i18n="field_keyfigure">Key figure</div><div class="party-field-value">Vigneswaran Sanasee (president)</div></div>
+      </div>
+      <div class="party-section-h" data-i18n="h_history">History &amp; milestones</div>
+      <p>The oldest of BN's three founding communal parties, MIC represented Malaysian Indian interests within the Alliance/BN framework from 1946 onward. Long dominated by S. Samy Vellu, who led the party for over three decades (1979–2010) through a period marked by both influence and repeated controversy. The 2007 HINDRAF protests over Indian community grievances marked a turning point, accelerating a shift of Indian support toward the opposition, particularly DAP.</p>
+      <div class="party-section-h" data-i18n="h_messaging">Messaging themes</div>
+      <p>Protection of Indian community interests — education, land, temple relocations, economic upliftment — pursued through BN's coalition bargaining rather than confrontation.</p>
+      <div class="party-section-h" data-i18n="h_perception">Public perception</div>
+      <p>Long criticised for failing to arrest working-class Indian Malaysians' economic grievances despite decades in government, and for internal patronage disputes. Notably, the 2026 Johor result — where a majority of Indian voters backed BN — was read by some analysts as a partial recovery signal for the community's relationship with BN, though whether that reflects MIC specifically or BN more broadly is debated.</p>
+    </article>
+  </section>
+
+  <section id="cat-pn" aria-label="Perikatan Nasional parties">
+    <div class="section-label">Perikatan Nasional (PN) — National Alliance</div>
+
+    <article class="party-entry" id="pas">
+      <div class="party-entry-head">
+        <img class="party-entry-logo" src="assets/parties/pas.svg" alt="PAS logo">
+        <div>
+          <div class="party-entry-title">Parti Islam Se-Malaysia<span class="status-badge status-later party-status-badge">Opposition / state governing (Kelantan, Terengganu, Kedah)</span></div>
+          <div class="party-entry-sub">PAS</div>
+        </div>
+      </div>
+      <div class="party-field-grid">
+        <div><div class="party-field-label" data-i18n="field_founded">Founded</div><div class="party-field-value">1951</div></div>
+        <div><div class="party-field-label" data-i18n="field_coalition">Coalition</div><div class="party-field-value">Perikatan Nasional</div></div>
+        <div><div class="party-field-label" data-i18n="field_ideology">Ideology</div><div class="party-field-value">Islamism</div></div>
+        <div><div class="party-field-label" data-i18n="field_keyfigure">Key figure</div><div class="party-field-value">Abdul Hadi Awang (president)</div></div>
+      </div>
+      <div class="party-section-h" data-i18n="h_history">History &amp; milestones</div>
+      <p>Founded in 1951 as an Islamist splinter from UMNO. PAS has alternated between opposition and governing Kelantan (almost continuously since 1990) and Terengganu, and has cycled through alliances with both DAP/PKR (in the Barisan Alternatif and Pakatan Rakyat eras) and, since 2020, BN's rivals in Perikatan Nasional. GE15 (2022) was its strongest federal showing yet, emerging as the single largest party in Parliament by seat count.</p>
+      <div class="party-section-h" data-i18n="h_messaging">Messaging themes</div>
+      <p>Islamic governance and hudud law advocacy, moral and religious framing of public life, and — particularly in recent contests — an anti-corruption contrast with UMNO's scandals.</p>
+      <div class="party-section-h" data-i18n="h_perception">Public perception</div>
+      <p>Commands a deep, loyal base in rural Malay-Muslim constituencies, especially the east coast, where supporters credit it with integrity and religious authenticity. Critics, including many urban and non-Muslim Malaysians, view its Islamist platform as exclusionary; its rapid rise since 2022 is one of the most-discussed shifts in recent Malaysian politics.</p>
+    </article>
+
+    <article class="party-entry" id="bersatu">
+      <div class="party-entry-head">
+        <img class="party-entry-logo" src="assets/parties/bersatu.svg" alt="Bersatu logo">
+        <div>
+          <div class="party-entry-title">Parti Pribumi Bersatu Malaysia<span class="status-badge status-soon party-status-badge">In flux (2026 split)</span></div>
+          <div class="party-entry-sub">Bersatu</div>
+        </div>
+      </div>
+      <div class="party-field-grid">
+        <div><div class="party-field-label" data-i18n="field_founded">Founded</div><div class="party-field-value">2016</div></div>
+        <div><div class="party-field-label" data-i18n="field_coalition">Coalition</div><div class="party-field-value">Perikatan Nasional</div></div>
+        <div><div class="party-field-label" data-i18n="field_ideology">Ideology</div><div class="party-field-value">Malay nationalism</div></div>
+        <div><div class="party-field-label" data-i18n="field_keyfigure">Key figure</div><div class="party-field-value">Muhyiddin Yassin (president)</div></div>
+      </div>
+      <div class="party-section-h" data-i18n="h_history">History &amp; milestones</div>
+      <p>Founded in 2016 by Mahathir Mohamad and Muhyiddin Yassin as a Malay-nationalist vehicle to challenge Najib Razak's UMNO. As part of Pakatan Harapan it helped end BN's six-decade federal rule at GE14 (2018) — with Mahathir returning as prime minister. Bersatu then triggered the February 2020 "Sheraton Move" that collapsed the PH government, joining BN's rivals instead; Muhyiddin served as prime minister from 2020–2021. In February 2026 the party suffered a major internal purge — secretary-general Hamzah Zainudin and roughly 19 MPs were sacked or suspended — with the ejected faction going on to found Parti Wawasan Negara, leaving Bersatu contesting the 2026 Negeri Sembilan election independently of its usual BN-facing seat pact.</p>
+      <div class="party-section-h" data-i18n="h_messaging">Messaging themes</div>
+      <p>Malay nationalism positioned as "cleaner" and more principled than UMNO, paired with a technocratic governance pitch drawn from the Mahathir era.</p>
+      <div class="party-section-h" data-i18n="h_perception">Public perception</div>
+      <p>The Sheraton Move cemented a lasting association with "party-hopping" and opportunism in public discourse — commentators frequently cite Bersatu when discussing Malaysia's anti-hopping law debates. Supporters counter that its Malay-nationalist, technocratic brand remains distinct from UMNO's patronage politics. The 2026 purge has reopened questions about the party's internal cohesion and long-term direction.</p>
+    </article>
+
+    <article class="party-entry" id="gerakan">
+      <div class="party-entry-head">
+        <img class="party-entry-logo" src="assets/parties/gerakan.svg" alt="Gerakan logo">
+        <div>
+          <div class="party-entry-title">Parti Gerakan Rakyat Malaysia<span class="status-badge status-later party-status-badge">Minor coalition partner</span></div>
+          <div class="party-entry-sub">Gerakan</div>
+        </div>
+      </div>
+      <div class="party-field-grid">
+        <div><div class="party-field-label" data-i18n="field_founded">Founded</div><div class="party-field-value">1968</div></div>
+        <div><div class="party-field-label" data-i18n="field_coalition">Coalition</div><div class="party-field-value">Perikatan Nasional</div></div>
+        <div><div class="party-field-label" data-i18n="field_ideology">Ideology</div><div class="party-field-value">Centrism, multiracialism</div></div>
+        <div><div class="party-field-label" data-i18n="field_keyfigure">Key figure</div><div class="party-field-value">Dominic Lau (president)</div></div>
+      </div>
+      <div class="party-section-h" data-i18n="h_history">History &amp; milestones</div>
+      <p>Founded in 1968 as a multiracial reformist opposition party, Gerakan won power in Penang that same era and joined the reconstituted Barisan Nasional in 1973 following the racial unrest of 13 May 1969. It governed Penang almost continuously for four decades until losing the state to Pakatan Harapan's predecessor coalition in 2008. It has since realigned from BN into Perikatan Nasional.</p>
+      <div class="party-section-h" data-i18n="h_messaging">Messaging themes</div>
+      <p>Originally a multiracial, socialist-leaning reform pitch; today positioned more generically as a moderate, development-focused coalition partner.</p>
+      <div class="party-section-h" data-i18n="h_perception">Public perception</div>
+      <p>Widely regarded as a shadow of its once-dominant Penang-era self, with limited independent electoral pull — its relevance today is discussed mainly in terms of coalition seat allocation rather than its own base.</p>
+    </article>
+
+    <article class="party-entry" id="wawasan">
+      <div class="party-entry-head">
+        <img class="party-entry-logo" src="assets/parties/wawasan.png" alt="Wawasan logo">
+        <div>
+          <div class="party-entry-title">Parti Wawasan Negara<span class="status-badge status-live party-status-badge">New — electoral debut 2026</span></div>
+          <div class="party-entry-sub">Wawasan</div>
+        </div>
+      </div>
+      <div class="party-field-grid">
+        <div><div class="party-field-label" data-i18n="field_registered">Registered</div><div class="party-field-value">2026</div></div>
+        <div><div class="party-field-label" data-i18n="field_coalition">Coalition</div><div class="party-field-value">Perikatan Nasional</div></div>
+        <div><div class="party-field-label" data-i18n="field_ideology">Ideology</div><div class="party-field-value">Malay nationalism</div></div>
+        <div><div class="party-field-label" data-i18n="field_keyfigure">Key figure</div><div class="party-field-value">Hamzah Zainudin</div></div>
+      </div>
+      <div class="party-section-h" data-i18n="h_history">History &amp; milestones</div>
+      <p>Formed directly out of Bersatu's February 2026 internal purge, in which secretary-general Hamzah Zainudin and roughly 19 MPs and supporters were sacked or suspended. The ejected faction founded Wawasan as a new PN component, fielding four candidates in the August 2026 Negeri Sembilan election — its first electoral test.</p>
+      <div class="party-section-h" data-i18n="h_messaging">Messaging themes</div>
+      <p>Positions itself as the continuation of Bersatu's original Malay-nationalist, Mahathir-era platform, framing the 2026 split as a matter of principle rather than opportunism.</p>
+      <div class="party-section-h" data-i18n="h_perception">Public perception</div>
+      <p>Too new for an established public reputation; current coverage frames it primarily as a vehicle for purged Bersatu loyalists and a test of whether Hamzah's faction retains any independent electoral pull.</p>
+    </article>
+  </section>
+
+  <section id="cat-ph" aria-label="Pakatan Harapan parties">
+    <div class="section-label">Pakatan Harapan (PH) — Alliance of Hope</div>
+
+    <article class="party-entry" id="pkr">
+      <div class="party-entry-head">
+        <img class="party-entry-logo" src="assets/parties/pkr.svg" alt="PKR logo">
+        <div>
+          <div class="party-entry-title">Parti Keadilan Rakyat<span class="status-badge status-done party-status-badge">Governing (federal)</span></div>
+          <div class="party-entry-sub">PKR</div>
+        </div>
+      </div>
+      <div class="party-field-grid">
+        <div><div class="party-field-label" data-i18n="field_founded">Founded</div><div class="party-field-value">1999</div></div>
+        <div><div class="party-field-label" data-i18n="field_coalition">Coalition</div><div class="party-field-value">Pakatan Harapan</div></div>
+        <div><div class="party-field-label" data-i18n="field_ideology">Ideology</div><div class="party-field-value">Social liberalism, reformism</div></div>
+        <div><div class="party-field-label" data-i18n="field_keyfigure">Key figure</div><div class="party-field-value">Anwar Ibrahim (president, Prime Minister)</div></div>
+      </div>
+      <div class="party-section-h" data-i18n="h_history">History &amp; milestones</div>
+      <p>Founded in 1999 as Parti Keadilan Nasional, born from the Reformasi protest movement that followed Anwar Ibrahim's dismissal as deputy prime minister and subsequent imprisonment. It merged with Parti Rakyat Malaysia in 2003 to form PKR. After three attempts, PH's 2018 election win brought PKR into government, though Anwar's own path to the premiership was repeatedly delayed by internal PH politics and the 2020 Sheraton Move; he was finally sworn in as prime minister in November 2022.</p>
+      <div class="party-section-h" data-i18n="h_messaging">Messaging themes</div>
+      <p>Reform ("Reformasi"), anti-corruption, and a multiracial "Malaysia for all Malaysians" platform, closely tied to Anwar's personal narrative of political persecution and vindication.</p>
+      <div class="party-section-h" data-i18n="h_perception">Public perception</div>
+      <p>Seen by supporters as the reformist backbone of PH and the vehicle that finally delivered Anwar to power after two decades. Critics describe it as heavily personality-driven, pointing to past internal ruptures — including Azmin Ali's 2020 defection, which helped trigger the Sheraton Move — as evidence of fragility beneath the reform branding.</p>
+    </article>
+
+    <article class="party-entry" id="dap">
+      <div class="party-entry-head">
+        <img class="party-entry-logo" src="assets/parties/dap.svg" alt="DAP logo">
+        <div>
+          <div class="party-entry-title">Democratic Action Party<span class="status-badge status-done party-status-badge">Governing (federal &amp; Penang)</span></div>
+          <div class="party-entry-sub">DAP</div>
+        </div>
+      </div>
+      <div class="party-field-grid">
+        <div><div class="party-field-label" data-i18n="field_founded">Founded</div><div class="party-field-value">1966</div></div>
+        <div><div class="party-field-label" data-i18n="field_coalition">Coalition</div><div class="party-field-value">Pakatan Harapan</div></div>
+        <div><div class="party-field-label" data-i18n="field_ideology">Ideology</div><div class="party-field-value">Social democracy, secularism</div></div>
+        <div><div class="party-field-label" data-i18n="field_keyfigure">Key figure</div><div class="party-field-value">Anthony Loke (secretary-general)</div></div>
+      </div>
+      <div class="party-section-h" data-i18n="h_history">History &amp; milestones</div>
+      <p>Founded in 1966, historically Malaysia's most prominent non-Malay-majority opposition party under longtime leader Lim Kit Siang, spending decades in opposition before becoming a core Pakatan Harapan partner and, since 2018, a federal governing party and Penang's ruling force. Its 2026 Johor result — seats down from 10 to 6 — was one of the election's more closely watched storylines, prompting an internal shift toward a less combative campaign tone ahead of Negeri Sembilan.</p>
+      <div class="party-section-h" data-i18n="h_messaging">Messaging themes</div>
+      <p>Secular, non-racial "Malaysian Malaysia" governance, anti-corruption, and institutional reform.</p>
+      <div class="party-section-h" data-i18n="h_perception">Public perception</div>
+      <p>Malaysia's strongest non-Malay-majority party by support base, praised by supporters for consistency on clean-government issues over decades in opposition. Malay-nationalist opponents have long labelled it "Chinese chauvinist," a characterisation DAP disputes given its multiracial platform and candidate slates; the party's urban base has also raised "efficiency crisis" concerns after Johor, given how concentrated its remaining support has become.</p>
+    </article>
+
+    <article class="party-entry" id="amanah">
+      <div class="party-entry-head">
+        <img class="party-entry-logo" src="assets/parties/amanah.svg" alt="Amanah logo">
+        <div>
+          <div class="party-entry-title">Parti Amanah Negara<span class="status-badge status-done party-status-badge">Governing (federal)</span></div>
+          <div class="party-entry-sub">Amanah</div>
+        </div>
+      </div>
+      <div class="party-field-grid">
+        <div><div class="party-field-label" data-i18n="field_founded">Founded</div><div class="party-field-value">2015</div></div>
+        <div><div class="party-field-label" data-i18n="field_coalition">Coalition</div><div class="party-field-value">Pakatan Harapan</div></div>
+        <div><div class="party-field-label" data-i18n="field_ideology">Ideology</div><div class="party-field-value">Islamic modernism, progressivism</div></div>
+        <div><div class="party-field-label" data-i18n="field_keyfigure">Key figure</div><div class="party-field-value">Mohamad Sabu (president)</div></div>
+      </div>
+      <div class="party-section-h" data-i18n="h_history">History &amp; milestones</div>
+      <p>Founded in 2015 by progressive PAS figures, including Mohamad Sabu, after PAS's conservative leadership consolidated control and marginalised the party's reform-minded "Erdogan faction." Amanah joined the newly forming Pakatan Harapan as its Islamic-modernist counterweight to PAS, and has been a federal governing partner since 2018.</p>
+      <div class="party-section-h" data-i18n="h_messaging">Messaging themes</div>
+      <p>A progressive, pluralist reading of Islam compatible with multiracial democracy — explicitly positioned against PAS's more conservative interpretation.</p>
+      <div class="party-section-h" data-i18n="h_perception">Public perception</div>
+      <p>Valued within PH for lending Malay-Muslim religious credibility to a coalition otherwise seen as secular-leaning, though its independent electoral base remains considerably smaller than PAS's.</p>
+    </article>
+  </section>
+
+  <section id="cat-sarawak" aria-label="Sarawak parties">
+    <div class="section-label">Sarawak</div>
+
+    <article class="party-entry" id="pbb">
+      <div class="party-entry-head">
+        <img class="party-entry-logo" src="assets/parties/pbb.svg" alt="PBB logo">
+        <div>
+          <div class="party-entry-title">Parti Pesaka Bumiputera Bersatu<span class="status-badge status-done party-status-badge">Governing (Sarawak)</span></div>
+          <div class="party-entry-sub">PBB · dominant party in Gabungan Parti Sarawak (GPS)</div>
+        </div>
+      </div>
+      <div class="party-field-grid">
+        <div><div class="party-field-label" data-i18n="field_founded">Founded</div><div class="party-field-value">1973</div></div>
+        <div><div class="party-field-label" data-i18n="field_coalition">Coalition</div><div class="party-field-value">Gabungan Parti Sarawak</div></div>
+        <div><div class="party-field-label" data-i18n="field_ideology">Ideology</div><div class="party-field-value">Sarawak regionalism, Bumiputera Sarawak interests</div></div>
+        <div><div class="party-field-label" data-i18n="field_keyfigure">Key figure</div><div class="party-field-value">Abang Abdul Rahman Johari (Premier)</div></div>
+      </div>
+      <div class="party-section-h" data-i18n="h_history">History &amp; milestones</div>
+      <p>Founded in 1973, PBB has been the backbone of Sarawak's state government ever since, spanning the long tenure of Abdul Taib Mahmud (chief minister 1981–2014) and, since 2018, the state's break from Barisan Nasional to lead its own regional coalition, Gabungan Parti Sarawak, under Premier Abang Johari.</p>
+      <div class="party-section-h" data-i18n="h_messaging">Messaging themes</div>
+      <p>Defence of Sarawak's autonomy and entitlements under the Malaysia Agreement 1963 (MA63), development delivery, and stability — deliberately distanced from Peninsular Malaysia's racial and religious political fault lines.</p>
+      <div class="party-section-h" data-i18n="h_perception">Public perception</div>
+      <p>Broadly popular within Sarawak for delivering infrastructure and successfully extracting greater autonomy and resource rights from the federal government, though critics point to entrenched, patronage-heavy dominance over four decades in power.</p>
+    </article>
+  </section>
+
+  <section id="cat-sabah" aria-label="Sabah parties">
+    <div class="section-label">Sabah</div>
+
+    <article class="party-entry" id="pbs">
+      <div class="party-entry-head">
+        <img class="party-entry-logo" src="assets/parties/pbs.png" alt="PBS logo">
+        <div>
+          <div class="party-entry-title">Parti Bersatu Sabah<span class="status-badge status-done party-status-badge">Governing coalition member (Sabah)</span></div>
+          <div class="party-entry-sub">PBS · Gabungan Rakyat Sabah (GRS)</div>
+        </div>
+      </div>
+      <div class="party-field-grid">
+        <div><div class="party-field-label" data-i18n="field_founded">Founded</div><div class="party-field-value">1985</div></div>
+        <div><div class="party-field-label" data-i18n="field_coalition">Coalition</div><div class="party-field-value">Gabungan Rakyat Sabah</div></div>
+        <div><div class="party-field-label" data-i18n="field_ideology">Ideology</div><div class="party-field-value">Sabah nationalism, Kadazan-Dusun community interests</div></div>
+        <div><div class="party-field-label" data-i18n="field_keyfigure">Key figure</div><div class="party-field-value">Joseph Pairin Kitingan (founder)</div></div>
+      </div>
+      <div class="party-section-h" data-i18n="h_history">History &amp; milestones</div>
+      <p>Founded in 1985 by Joseph Pairin Kitingan, PBS became the first Sabah-based party to win state power, ending decades of peninsular-party dominance in the state. It moved in and out of the federal coalition several times over subsequent decades — most dramatically defecting back into Barisan Nasional in 1994 shortly after narrowly winning a state election outright. It is now part of the Gabungan Rakyat Sabah coalition governing the state.</p>
+      <div class="party-section-h" data-i18n="h_messaging">Messaging themes</div>
+      <p>Sabah political identity and Kadazan-Dusun-Murut community representation, framed around protecting the state's interests within the federation.</p>
+      <div class="party-section-h" data-i18n="h_perception">Public perception</div>
+      <p>Regarded as the historic pioneer of independent Sabah political identity, though its influence has been eclipsed in recent years by newer Sabah-based vehicles such as Warisan and STAR.</p>
+    </article>
+
+    <article class="party-entry" id="warisan">
+      <div class="party-entry-head">
+        <img class="party-entry-logo" src="assets/parties/warisan.png" alt="Warisan logo">
+        <div>
+          <div class="party-entry-title">Parti Warisan<span class="status-badge status-later party-status-badge">Opposition (Sabah &amp; federal)</span></div>
+          <div class="party-entry-sub">Warisan</div>
+        </div>
+      </div>
+      <div class="party-field-grid">
+        <div><div class="party-field-label" data-i18n="field_founded">Founded</div><div class="party-field-value">2016</div></div>
+        <div><div class="party-field-label" data-i18n="field_coalition">Coalition</div><div class="party-field-value">Independent / Sabah-based</div></div>
+        <div><div class="party-field-label" data-i18n="field_ideology">Ideology</div><div class="party-field-value">Sabah nationalism, regional autonomy</div></div>
+        <div><div class="party-field-label" data-i18n="field_keyfigure">Key figure</div><div class="party-field-value">Shafie Apdal (president)</div></div>
+      </div>
+      <div class="party-section-h" data-i18n="h_history">History &amp; milestones</div>
+      <p>Founded in October 2016 by Shafie Apdal — a former UMNO minister who had earlier moved from USNO to UMNO in 1995 — together with Darell Leiking. Warisan won Sabah's state government in 2018 but lost power in 2020 amid a wave of defections, becoming a leading opposition voice both in Sabah and federally since.</p>
+      <div class="party-section-h" data-i18n="h_messaging">Messaging themes</div>
+      <p>"Sabah for Sabahans" — asserting the state's rights under MA63 and pushing back against what it frames as peninsular political domination.</p>
+      <div class="party-section-h" data-i18n="h_perception">Public perception</div>
+      <p>Seen as the most credible vehicle for Sabah nationalist sentiment currently outside government, with Shafie Apdal remaining an influential figure in federal opposition politics despite the party's 2020 setback.</p>
+    </article>
+  </section>
+
+  <section id="cat-other" aria-label="Other current parties">
+    <div class="section-label">Other current parties</div>
+
+    <article class="party-entry" id="muda">
+      <div class="party-entry-head">
+        <img class="party-entry-logo" src="assets/parties/muda.svg" alt="MUDA logo">
+        <div>
+          <div class="party-entry-title">Malaysian United Democratic Alliance<span class="status-badge status-later party-status-badge">Independent, minor</span></div>
+          <div class="party-entry-sub">MUDA</div>
+        </div>
+      </div>
+      <div class="party-field-grid">
+        <div><div class="party-field-label" data-i18n="field_founded">Founded</div><div class="party-field-value">2019</div></div>
+        <div><div class="party-field-label" data-i18n="field_coalition">Coalition</div><div class="party-field-value">Independent / unaligned</div></div>
+        <div><div class="party-field-label" data-i18n="field_ideology">Ideology</div><div class="party-field-value">Social democracy, youth representation</div></div>
+        <div><div class="party-field-label" data-i18n="field_keyfigure">Key figure</div><div class="party-field-value">Syed Saddiq (founder)</div></div>
+      </div>
+      <div class="party-section-h" data-i18n="h_history">History &amp; milestones</div>
+      <p>Founded by Syed Saddiq — formerly Bersatu's youth chief and, at the time, Malaysia's youngest-ever federal minister — after he left Bersatu. MUDA positions itself outside the BN/PH/PN coalition structure and has contested state and federal seats independently, appealing explicitly to younger and first-time voters.</p>
+      <div class="party-section-h" data-i18n="h_messaging">Messaging themes</div>
+      <p>Generational change, anti-establishment reform, and clean politics untethered from the major coalitions' racial and religious framing.</p>
+      <div class="party-section-h" data-i18n="h_perception">Public perception</div>
+      <p>Popular with young, urban, and politically disaffected voters as a genuine alternative to establishment politics, though critics note its seat count remains small relative to its media visibility.</p>
+    </article>
+
+    <article class="party-entry" id="berjasa">
+      <div class="party-entry-head">
+        <img class="party-entry-logo" src="assets/parties/berjasa.svg" alt="Berjasa logo">
+        <div>
+          <div class="party-entry-title">Barisan Jemaah Islamiah Se-Malaysia<span class="status-badge status-later party-status-badge">Minor, PN-allied</span></div>
+          <div class="party-entry-sub">Berjasa</div>
+        </div>
+      </div>
+      <div class="party-field-grid">
+        <div><div class="party-field-label" data-i18n="field_founded">Founded</div><div class="party-field-value">1977</div></div>
+        <div><div class="party-field-label" data-i18n="field_coalition">Coalition</div><div class="party-field-value">PN-allied (non-component)</div></div>
+        <div><div class="party-field-label" data-i18n="field_ideology">Ideology</div><div class="party-field-value">Islamism</div></div>
+      </div>
+      <div class="party-section-h" data-i18n="h_history">History &amp; milestones</div>
+      <p>Founded in 1977 as a PAS splinter allied with UMNO in Kelantan state politics of that era, Berjasa faded into near-dormancy for decades before a modest recent revival as a PN-aligned minor party — fielding seven candidates in the 2026 Negeri Sembilan election.</p>
+      <div class="party-section-h" data-i18n="h_messaging">Messaging themes</div>
+      <p>Islamist positioning similar to PAS's origins, used mainly to extend PN's reach into additional seats rather than as an independent electoral force.</p>
+      <div class="party-section-h" data-i18n="h_perception">Public perception</div>
+      <p>Widely treated as a fringe vehicle rather than a serious independent contender, notable mainly for its historical PAS-splinter origins and its role in recent seat-sharing arrangements.</p>
+    </article>
+
+    <article class="party-entry" id="ppp">
+      <div class="party-entry-head">
+        <img class="party-entry-logo" src="assets/parties/ppp.png" alt="PPP logo">
+        <div>
+          <div class="party-entry-title">People's Progressive Party<span class="status-badge status-later party-status-badge">Minor, attempting revival</span></div>
+          <div class="party-entry-sub">myPPP</div>
+        </div>
+      </div>
+      <div class="party-field-grid">
+        <div><div class="party-field-label" data-i18n="field_founded">Founded</div><div class="party-field-value">1953</div></div>
+        <div><div class="party-field-label" data-i18n="field_reregistered">Re-registered</div><div class="party-field-value">2023</div></div>
+        <div><div class="party-field-label" data-i18n="field_ideology">Ideology</div><div class="party-field-value">Multiracial, community representation</div></div>
+      </div>
+      <div class="party-section-h" data-i18n="h_history">History &amp; milestones</div>
+      <p>Founded in 1953 by the Seenivasagam brothers, PPP was a significant founding-era Alliance component with a strong base in Perak, particularly among Indian and mixed communities. Its influence declined steeply from the 1970s onward, and the party drifted into near-irrelevance for decades before being re-registered in 2023 in an attempt at revival.</p>
+      <div class="party-section-h" data-i18n="h_messaging">Messaging themes</div>
+      <p>Originally a multiracial alternative to the communal party model; contemporary messaging centres on a comeback narrative rather than a distinct new platform.</p>
+      <div class="party-section-h" data-i18n="h_perception">Public perception</div>
+      <p>Frequently cited as a cautionary example of how dramatically a once-significant Malaysian party can fade — its 2023 re-registration has drawn curiosity more than serious expectation of a return to relevance.</p>
+    </article>
+  </section>
+
+  <section id="cat-historical" aria-label="Historical and dismissed parties">
+    <div class="section-label">Historical &amp; dismissed parties</div>
+
+    <article class="party-entry" id="alliance">
+      <div class="party-entry-head">
+        <img class="party-entry-logo" src="assets/parties/alliance.svg" alt="Alliance Party logo">
+        <div>
+          <div class="party-entry-title">Alliance Party<span class="status-badge status-later party-status-badge">Dissolved 1974</span></div>
+          <div class="party-entry-sub">Parti Perikatan · 1952–1974</div>
+        </div>
+      </div>
+      <div class="party-field-grid">
+        <div><div class="party-field-label" data-i18n="field_founded">Founded</div><div class="party-field-value">1952</div></div>
+        <div><div class="party-field-label" data-i18n="field_ended">Ended</div><div class="party-field-value">1974 (restructured into Barisan Nasional)</div></div>
+        <div><div class="party-field-label" data-i18n="field_keyfigure">Key figure</div><div class="party-field-value">Tunku Abdul Rahman</div></div>
+      </div>
+      <div class="party-section-h" data-i18n="h_history">History &amp; milestones</div>
+      <p>Formed in 1952 as an electoral pact between UMNO and MCA for Kuala Lumpur municipal elections, joined by MIC in 1954. The Alliance won every general election from 1955 through 1969 under founding father Tunku Abdul Rahman, delivering independence (Merdeka) in 1957. The racial riots of 13 May 1969, following an election in which the Alliance lost significant ground, exposed the limits of its power-sharing model and led to its restructuring into the broader, multi-party Barisan Nasional by 1973–1974.</p>
+      <div class="party-section-h" data-i18n="h_legacy">Legacy</div>
+      <p>Established the template of communal power-sharing coalition politics that still defines Malaysian government today. Historical assessments credit it with early post-independence stability while noting that it papered over racial and economic grievances that erupted violently in 1969.</p>
+    </article>
+
+    <article class="party-entry" id="negara">
+      <div class="party-entry-head">
+        <span class="party-entry-logo placeholder">PN</span>
+        <div>
+          <div class="party-entry-title">Parti Negara<span class="status-badge status-later party-status-badge">Dissolved c. 1962</span></div>
+          <div class="party-entry-sub">1954–c.1962</div>
+        </div>
+      </div>
+      <div class="party-field-grid">
+        <div><div class="party-field-label" data-i18n="field_founded">Founded</div><div class="party-field-value">1954</div></div>
+        <div><div class="party-field-label" data-i18n="field_ended">Ended</div><div class="party-field-value">c. 1962, faded after electoral defeats</div></div>
+        <div><div class="party-field-label" data-i18n="field_keyfigure">Key figure</div><div class="party-field-value">Dato' Onn Jaafar (founder)</div></div>
+      </div>
+      <div class="party-section-h" data-i18n="h_history">History &amp; milestones</div>
+      <p>Founded in 1954 by Onn Jaafar — the same figure who had founded UMNO in 1946 — after his attempt to open UMNO's membership to non-Malays (via the short-lived Independence of Malaya Party proposal) failed and he left the party he had created. Parti Negara represented a more conservative, explicitly Malay-nationalist alternative but performed poorly against the Alliance in the 1955 and 1959 elections, fading into irrelevance by the early 1960s.</p>
+      <div class="party-section-h" data-i18n="h_legacy">Legacy</div>
+      <p>A minor footnote today, but historically significant for illustrating both the failure of alternatives to the communal-coalition model in early Malayan politics and the complicated legacy of UMNO's own founder, who ended his career on its political margins.</p>
+    </article>
+
+    <article class="party-entry" id="semangat46">
+      <div class="party-entry-head">
+        <img class="party-entry-logo" src="assets/parties/semangat46.svg" alt="Semangat 46 logo">
+        <div>
+          <div class="party-entry-title">Parti Melayu Semangat 46<span class="status-badge status-later party-status-badge">Dissolved 1996</span></div>
+          <div class="party-entry-sub">Semangat 46 · 1989–1996</div>
+        </div>
+      </div>
+      <div class="party-field-grid">
+        <div><div class="party-field-label" data-i18n="field_founded">Founded</div><div class="party-field-value">3 June 1989</div></div>
+        <div><div class="party-field-label" data-i18n="field_ended">Ended</div><div class="party-field-value">8 October 1996 (members rejoined UMNO)</div></div>
+        <div><div class="party-field-label" data-i18n="field_keyfigure">Key figure</div><div class="party-field-value">Tengku Razaleigh Hamzah (founder)</div></div>
+      </div>
+      <div class="party-section-h" data-i18n="h_history">History &amp; milestones</div>
+      <p>Founded by Tengku Razaleigh Hamzah after his "Team B" faction narrowly lost the bitterly contested 1987 UMNO leadership election to Mahathir Mohamad's "Team A" by a slim 41-vote margin. Semangat 46 allied with PAS and DAP in successive opposition coalitions (Gagasan Rakyat and Angkatan Perpaduan Ummah) through the 1990 and 1995 general elections, but failed to unseat Mahathir's UMNO/BN. It dissolved in 1996 when Razaleigh and most members rejoined UMNO.</p>
+      <div class="party-section-h" data-i18n="h_legacy">Legacy</div>
+      <p>The most serious internal UMNO leadership challenge before the 2018 Bersatu-led collapse of BN, and an early preview of the coalition-realignment and "party-hopping" patterns that continue to recur in Malaysian politics.</p>
+    </article>
+
+    <article class="party-entry" id="usno">
+      <div class="party-entry-head">
+        <span class="party-entry-logo placeholder">US</span>
+        <div>
+          <div class="party-entry-title">United Sabah National Organisation<span class="status-badge status-later party-status-badge">Dissolved 1994</span></div>
+          <div class="party-entry-sub">USNO · 1961–1994</div>
+        </div>
+      </div>
+      <div class="party-field-grid">
+        <div><div class="party-field-label" data-i18n="field_founded">Founded</div><div class="party-field-value">1961</div></div>
+        <div><div class="party-field-label" data-i18n="field_ended">Ended</div><div class="party-field-value">1994, merged into UMNO</div></div>
+      </div>
+      <div class="party-section-h" data-i18n="h_history">History &amp; milestones</div>
+      <p>Founded in 1961, USNO was Sabah's dominant political force for roughly three decades as part of the Alliance/BN, through the era of Tun Mustapha Harun. It lost Sabah's state government to the newly formed PBS in the pivotal 1985 election, and its remaining structure was absorbed into UMNO in 1994 — marking UMNO's first direct organisational entry into Sabah politics.</p>
+      <div class="party-section-h" data-i18n="h_legacy">Legacy</div>
+      <p>Its dissolution closed the era of Sabah-only party dominance in the state and opened a new, more contentious chapter of peninsular-party involvement in Sabah politics that shapes coalition dynamics there to this day.</p>
+    </article>
+
+    <article class="party-entry" id="cpm">
+      <div class="party-entry-head">
+        <img class="party-entry-logo" src="assets/parties/cpm.svg" alt="Communist Party of Malaya flag">
+        <div>
+          <div class="party-entry-title">Communist Party of Malaya<span class="status-badge status-later party-status-badge">Banned; insurgency ended 1989</span></div>
+          <div class="party-entry-sub">CPM · 1930–1989</div>
+        </div>
+      </div>
+      <div class="party-field-grid">
+        <div><div class="party-field-label" data-i18n="field_founded">Founded</div><div class="party-field-value">1930</div></div>
+        <div><div class="party-field-label" data-i18n="field_ended">Ended</div><div class="party-field-value">1989 Hat Yai Peace Accord</div></div>
+        <div><div class="party-field-label" data-i18n="field_keyfigure">Key figure</div><div class="party-field-value">Chin Peng (leader)</div></div>
+      </div>
+      <div class="party-section-h" data-i18n="h_history">History &amp; milestones</div>
+      <p>Founded in 1930, the CPM led anti-Japanese resistance during the WWII occupation, then launched an armed insurgency against British colonial rule — the Malayan Emergency (1948–1960) — and continued a smaller guerrilla campaign against the independent Malaysian state until the 1989 Hat Yai Peace Accord formally ended hostilities. It was banned and illegal throughout its insurgent period.</p>
+      <div class="party-section-h" data-i18n="h_legacy">Legacy</div>
+      <p>The Emergency shaped Malaysia's internal security laws, its ethnic Chinese–Malay political dynamics, and arguably accelerated the timeline to independence in 1957 as colonial and local leaders sought to undercut the insurgency's appeal. It is referenced today purely as history, not as a contesting political entity.</p>
+    </article>
+  </section>
+
+  <footer id="sources">
+    <div class="section-label" style="margin-bottom:10px;">Sources</div>
+    <ul class="sources">
+      <li><a href="https://en.wikipedia.org/wiki/List_of_political_parties_in_Malaysia" target="_blank" rel="noopener">Wikipedia — list of political parties in Malaysia</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/United_Malays_National_Organisation" target="_blank" rel="noopener">Wikipedia — UMNO</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Democratic_Action_Party" target="_blank" rel="noopener">Wikipedia — DAP</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Parti_Keadilan_Rakyat" target="_blank" rel="noopener">Wikipedia — PKR</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Parti_Islam_Se-Malaysia" target="_blank" rel="noopener">Wikipedia — PAS</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Parti_Pribumi_Bersatu_Malaysia" target="_blank" rel="noopener">Wikipedia — Bersatu</a></li>
+      <li><a href="https://fulcrum.sg/perikatan-nasionals-dramatic-denouement-where-to-for-bersatu/" target="_blank" rel="noopener">Fulcrum — Bersatu's 2026 split and Wawasan's founding</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Parti_Warisan" target="_blank" rel="noopener">Wikipedia — Warisan</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Shafie_Apdal" target="_blank" rel="noopener">Wikipedia — Shafie Apdal</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Parti_Melayu_Semangat_46" target="_blank" rel="noopener">Wikipedia — Semangat 46</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Parti_Pesaka_Bumiputera_Bersatu" target="_blank" rel="noopener">Wikipedia — PBB</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Parti_Bersatu_Sabah" target="_blank" rel="noopener">Wikipedia — PBS</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Communist_Party_of_Malaya" target="_blank" rel="noopener">Wikipedia — Communist Party of Malaya</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/People%27s_Progressive_Party_(Malaysia)" target="_blank" rel="noopener">Wikipedia — People's Progressive Party</a></li>
+      <li>Party logos and flags sourced from Wikimedia Commons; see <a href="about.html#methodology">methodology</a> for usage terms.</li>
+    </ul>
+    <p>Compiled from public reference sources for factual, informational purposes. See the <a href="about.html">About page</a> for neutrality standards and the disclaimer on party logo usage.</p>
+  </footer>
+
+</div>
+</div>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div class="footer-col">
+      <div class="footer-brand"><span class="brand-mark" style="width:26px;height:26px;font-size:11px;">MY</span><strong>Elections Sentiment</strong></div>
+      <p class="footer-tagline" data-i18n="footer_tagline">An independent, unofficial tracker of public, party and market sentiment across Malaysia's rolling state election cycle.</p>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_sections_title">Sections</h4>
+      <a href="index.html" data-i18n="nav_overview">Overview</a>
+      <a href="johor.html" data-i18n="nav_johor">Johor</a>
+      <a href="negeri-sembilan.html" data-i18n="nav_n9">Negeri Sembilan</a>
+      <a href="parties.html" data-i18n="nav_parties">Parties</a>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_about_title">About this site</h4>
+      <a href="about.html" data-i18n="nav_about">About</a>
+      <a href="about.html#methodology" data-i18n="footer_methodology">Methodology &amp; sources</a>
+      <a href="https://github.com/yifeng22100/malaysia-election-sentiment" target="_blank" rel="noopener" data-i18n="footer_github">View source on GitHub</a>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_language_title">Language</h4>
+      <nav class="lang-switch" aria-label="Language" style="flex-direction:column; align-items:flex-start; gap:9px;">
+        <a href="#" data-set-lang="en">English</a>
+        <a href="#" data-set-lang="ms">Bahasa Malaysia</a>
+        <a href="#" data-set-lang="zh">中文</a>
+        <a href="#" data-set-lang="ta">தமிழ்</a>
+      </nav>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span data-i18n="footer_disclaimer">Not affiliated with the Election Commission of Malaysia, any political party or coalition, or any government body. Compiled from public news coverage. Logos are used for identification purposes only and remain the property of their respective parties.</span>
+    <span data-i18n="footer_updated">Auto-updated daily</span>
+  </div>
+</footer>
+
+<script src="i18n.js"></script>
+<script>
+  document.querySelectorAll('.party-category-tabs a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      document.querySelectorAll('.party-category-tabs a').forEach(function (x) { x.classList.remove('active'); });
+      a.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>

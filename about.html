@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About — Malaysia State Elections Sentiment Tracker</title>
+<meta name="description" content="What this tracker is, how it's compiled and updated, and its scope and limits.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-utility">
+    <div class="header-utility-inner">
+      <nav class="lang-switch" aria-label="Language">
+        <a href="#" data-set-lang="en">EN</a>
+        <a href="#" data-set-lang="ms">BM</a>
+        <a href="#" data-set-lang="zh">中文</a>
+        <a href="#" data-set-lang="ta">தமிழ்</a>
+      </nav>
+      <div class="theme-switch" role="group" aria-label="Theme">
+        <button data-set-theme="light">Light</button>
+        <button data-set-theme="auto">Auto</button>
+        <button data-set-theme="dark">Dark</button>
+      </div>
+    </div>
+  </div>
+  <div class="header-main-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">MY</span>
+      <span class="brand-word">Elections Sentiment<small>Malaysia state election tracker</small></span>
+    </a>
+    <nav class="site-nav-main">
+      <a href="index.html" data-i18n="nav_overview">Overview</a>
+      <a href="johor.html" data-i18n="nav_johor">Johor</a>
+      <a href="negeri-sembilan.html" data-i18n="nav_n9">Negeri Sembilan</a>
+      <a href="parties.html" data-i18n="nav_parties">Parties</a>
+      <a href="about.html" data-i18n="nav_about" class="current">About</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+<div class="main">
+
+  <header class="masthead">
+    <span class="eyebrow" data-lang="en">About</span>
+    <span class="eyebrow" data-lang="ms">Tentang</span>
+    <span class="eyebrow" data-lang="zh">关于</span>
+    <span class="eyebrow" data-lang="ta">எங்களைப் பற்றி</span>
+
+    <h1 class="title" data-lang="en">About this tracker</h1>
+    <h1 class="title" data-lang="ms">Tentang penjejak ini</h1>
+    <h1 class="title" data-lang="zh">关于本追踪平台</h1>
+    <h1 class="title" data-lang="ta">இந்த கண்காணிப்பு தளத்தைப் பற்றி</h1>
+
+    <p class="dek" data-lang="en">A plain-language explanation of what this site does, how it's compiled, and — just as importantly — what it isn't.</p>
+    <p class="dek" data-lang="ms">Penjelasan mudah tentang apa yang laman ini lakukan, bagaimana ia disusun, dan — sama pentingnya — apa yang ia bukan.</p>
+    <p class="dek" data-lang="zh">用简单的语言说明本网站的功能、内容如何整理，以及——同样重要的——它不是什么。</p>
+    <p class="dek" data-lang="ta">இந்த தளம் என்ன செய்கிறது, அது எவ்வாறு தொகுக்கப்படுகிறது, மேலும் — அதேயளவு முக்கியமாக — அது என்ன இல்லை என்பதற்கான எளிய விளக்கம்.</p>
+  </header>
+
+  <section aria-label="At a glance">
+    <div class="about-grid">
+      <div class="stat-tile">
+        <div class="stat-tile-value">3</div>
+        <div class="stat-tile-label" data-lang="en">Elections tracked</div>
+        <div class="stat-tile-label" data-lang="ms" style="display:none;">Pilihan raya dijejaki</div>
+        <div class="stat-tile-label" data-lang="zh" style="display:none;">追踪选举数</div>
+        <div class="stat-tile-label" data-lang="ta" style="display:none;">கண்காணிக்கப்பட்ட தேர்தல்கள்</div>
+      </div>
+      <div class="stat-tile">
+        <div class="stat-tile-value">20+</div>
+        <div class="stat-tile-label" data-lang="en">Parties profiled</div>
+        <div class="stat-tile-label" data-lang="ms" style="display:none;">Parti diprofilkan</div>
+        <div class="stat-tile-label" data-lang="zh" style="display:none;">政党档案数</div>
+        <div class="stat-tile-label" data-lang="ta" style="display:none;">சுயவிவரம் அளிக்கப்பட்ட கட்சிகள்</div>
+      </div>
+      <div class="stat-tile">
+        <div class="stat-tile-value">1×</div>
+        <div class="stat-tile-label" data-lang="en">Automatic refresh, daily</div>
+        <div class="stat-tile-label" data-lang="ms" style="display:none;">Kemas kini automatik, setiap hari</div>
+        <div class="stat-tile-label" data-lang="zh" style="display:none;">每日自动更新一次</div>
+        <div class="stat-tile-label" data-lang="ta" style="display:none;">தினமும் ஒரு முறை தானியங்கு புதுப்பிப்பு</div>
+      </div>
+      <div class="stat-tile">
+        <div class="stat-tile-value">4</div>
+        <div class="stat-tile-label" data-lang="en">Interface languages</div>
+        <div class="stat-tile-label" data-lang="ms" style="display:none;">Bahasa antara muka</div>
+        <div class="stat-tile-label" data-lang="zh" style="display:none;">界面语言数</div>
+        <div class="stat-tile-label" data-lang="ta" style="display:none;">இடைமுக மொழிகள்</div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-label="What this is">
+    <div class="section-label" data-lang="en">What this is</div>
+    <div class="section-label" data-lang="ms" style="display:none;">Apa ini</div>
+    <div class="section-label" data-lang="zh" style="display:none;">这是什么</div>
+    <div class="section-label" data-lang="ta" style="display:none;">இது என்ன</div>
+
+    <div class="about-card">
+      <div data-lang="en">
+        <p>Malaysia doesn't hold its state elections all at once — each state's legislative assembly runs on its own five-year clock, so between late 2025 and early 2028 the country moves through a rolling sequence of state polls, with the next general election (GE16) somewhere at the end of it. This site follows that sequence one state at a time: what happened, what it means, and how people, parties and markets are reacting.</p>
+        <p>It started as a single-state tracker for the 2026 Johor election and expanded from there as the cycle continued into Negeri Sembilan and beyond.</p>
+      </div>
+      <div data-lang="ms" style="display:none;">
+        <p>Malaysia tidak mengadakan pilihan raya negeri serentak — setiap dewan undangan negeri beroperasi mengikut jangka masa lima tahun tersendiri, jadi antara akhir 2025 dan awal 2028, negara ini melalui satu siri pilihan raya negeri secara bergilir, dengan pilihan raya umum seterusnya (PRU16) di penghujungnya. Laman ini mengikuti turutan itu satu negeri pada satu masa: apa yang berlaku, apa maknanya, dan bagaimana rakyat, parti dan pasaran bertindak balas.</p>
+        <p>Ia bermula sebagai penjejak satu negeri untuk pilihan raya Johor 2026 dan berkembang dari situ apabila kitaran ini berlanjutan ke Negeri Sembilan dan seterusnya.</p>
+      </div>
+      <div data-lang="zh" style="display:none;">
+        <p>马来西亚并非同时举行各州选举——每个州议会都按照自己五年一届的周期运作，因此在2025年末至2028年初之间，全国将经历一连串滚动式的州选举，而下一届全国大选（GE16）则在这一周期的末端举行。本网站按顺序逐州追踪：发生了什么、这意味着什么，以及民众、政党与市场如何反应。</p>
+        <p>本站最初是为2026年柔佛选举而设的单州追踪平台，随着周期延续至森美兰及其后各州，规模逐步扩大。</p>
+      </div>
+      <div data-lang="ta" style="display:none;">
+        <p>மலேசியா தனது மாநில தேர்தல்களை ஒரே நேரத்தில் நடத்துவதில்லை — ஒவ்வொரு மாநில சட்டமன்றமும் அதன் சொந்த ஐந்து ஆண்டு காலச்சுழற்சியில் இயங்குகிறது, எனவே 2025 ஆம் ஆண்டு இறுதிக்கும் 2028 ஆம் ஆண்டு தொடக்கத்திற்கும் இடையில், நாடு தொடர்ச்சியான மாநில தேர்தல்கள் வரிசையை கடந்து செல்கிறது, அதன் முடிவில் அடுத்த பொதுத் தேர்தல் (GE16) நடைபெறும். இந்த தளம் அந்த வரிசையை ஒரு நேரத்தில் ஒரு மாநிலமாக பின்தொடர்கிறது: என்ன நடந்தது, அதன் அர்த்தம் என்ன, மேலும் மக்கள், கட்சிகள் மற்றும் சந்தை எவ்வாறு எதிர்வினையாற்றுகின்றன.</p>
+        <p>இது 2026 ஜொகூர் தேர்தலுக்கான ஒரு மாநில கண்காணிப்பாகத் தொடங்கி, சுழற்சி நெகிரி செம்பிலான் மற்றும் அதற்கு அப்பால் தொடர்ந்தவுடன் விரிவடைந்தது.</p>
+      </div>
+    </div>
+  </section>
+
+  <section aria-label="Methodology" id="methodology">
+    <div class="section-label" data-lang="en">How it's compiled</div>
+    <div class="section-label" data-lang="ms" style="display:none;">Bagaimana ia disusun</div>
+    <div class="section-label" data-lang="zh" style="display:none;">内容如何整理</div>
+    <div class="section-label" data-lang="ta" style="display:none;">இது எவ்வாறு தொகுக்கப்படுகிறது</div>
+
+    <div class="about-card">
+      <div data-lang="en">
+        <p>Every entry on this site is synthesised from public news coverage — mainstream outlets, wire services, opinion pieces, and official statements — found through web search. There is no proprietary polling, no paid data feed, and no access to any party's or pollster's internal numbers. Where a specific poll or survey is cited (like Ilham Centre's or Vodus Research's pre-election Johor numbers), that's explicitly attributed to the organisation that published it.</p>
+        <p>"Sentiment" here means a qualitative synthesis of how the story is being covered and discussed in public — not a scientifically weighted opinion poll. Treat it as an informed summary of the public conversation, not a prediction.</p>
+      </div>
+      <div data-lang="ms" style="display:none;">
+        <p>Setiap entri di laman ini disusun daripada liputan berita awam — media arus perdana, agensi berita, artikel pendapat, dan kenyataan rasmi — yang ditemui melalui carian web. Tiada tinjauan proprietari, tiada suapan data berbayar, dan tiada akses kepada data dalaman mana-mana parti atau agensi tinjauan. Apabila tinjauan atau kaji selidik tertentu dipetik (seperti angka pra-pilihan raya Johor daripada Ilham Centre atau Vodus Research), ia dinyatakan secara jelas milik organisasi yang menerbitkannya.</p>
+        <p>"Sentimen" di sini bermaksud sintesis kualitatif tentang bagaimana sesuatu isu diliput dan dibincangkan secara awam — bukan tinjauan pendapat yang diberi wajaran saintifik. Anggap ia sebagai ringkasan termaklum tentang perbualan awam, bukan ramalan.</p>
+      </div>
+      <div data-lang="zh" style="display:none;">
+        <p>本网站的每一则内容都是通过网络搜索，整理自公开新闻报道——主流媒体、通讯社、评论文章及官方声明——综合而成。本站没有专属民调、没有付费数据来源，也无法取得任何政党或民调机构的内部数据。若引用了特定民调或调查（如Ilham Centre或Vodus Research在柔佛选举前发布的数据），会明确注明其来源机构。</p>
+        <p>此处的"情绪"指的是对某一事件在公众层面如何被报道与讨论的定性综合分析，并非经过科学加权的民意调查。请将其视为对公共舆论的知情总结，而非预测。</p>
+      </div>
+      <div data-lang="ta" style="display:none;">
+        <p>இந்த தளத்தில் உள்ள ஒவ்வொரு பதிவும் இணைய தேடல் மூலம் கண்டறியப்பட்ட பொது செய்தி அறிக்கைகள் — முதன்மை ஊடகங்கள், செய்தி நிறுவனங்கள், கருத்துப் பதிவுகள் மற்றும் அதிகாரப்பூர்வ அறிக்கைகள் — ஆகியவற்றிலிருந்து தொகுக்கப்படுகிறது. இதில் தனியுரிம கருத்துக் கணிப்புகள், கட்டண தரவு ஊட்டங்கள் அல்லது எந்தவொரு கட்சி அல்லது கருத்துக் கணிப்பு நிறுவனத்தின் உள் தரவுக்கான அணுகல் இல்லை. ஒரு குறிப்பிட்ட கருத்துக் கணிப்பு மேற்கோள் காட்டப்படும்போது (உதாரணமாக Ilham Centre அல்லது Vodus Research இன் ஜொகூர் தேர்தலுக்கு முந்தைய புள்ளிவிவரங்கள்), அது வெளியிட்ட நிறுவனத்திற்கு தெளிவாக பெயரிடப்படுகிறது.</p>
+        <p>இங்கு "உணர்வு" என்பது பொதுவெளியில் ஒரு விஷயம் எவ்வாறு செய்தியாக்கப்பட்டு விவாதிக்கப்படுகிறது என்பதன் தரமான தொகுப்பைக் குறிக்கிறது — அறிவியல் பூர்வமாக நிறையிடப்பட்ட கருத்துக் கணிப்பு அல்ல. இதை ஒரு கணிப்பாக அல்ல, பொது உரையாடலின் அறிவார்ந்த சுருக்கமாகக் கருதவும்.</p>
+      </div>
+    </div>
+
+    <div class="about-card">
+      <div data-lang="en">
+        <p><strong>Update mechanism:</strong> the Johor, Negeri Sembilan and Overview pages refresh automatically once a day via a scheduled script that searches for new developments, edits the relevant page, and publishes the change. The About and Parties pages are static and updated by hand when something changes.</p>
+      </div>
+      <div data-lang="ms" style="display:none;">
+        <p><strong>Mekanisme kemas kini:</strong> halaman Johor, Negeri Sembilan dan Ikhtisar dikemas kini secara automatik sekali sehari melalui skrip berjadual yang mencari perkembangan baharu, menyunting halaman berkaitan, dan menerbitkan perubahan itu. Halaman Tentang dan Parti-Parti adalah statik dan dikemas kini secara manual apabila terdapat perubahan.</p>
+      </div>
+      <div data-lang="zh" style="display:none;">
+        <p><strong>更新机制：</strong>柔佛、森美兰及总览页面每天透过排程脚本自动更新一次，该脚本会搜寻最新动态、编辑相关页面并发布更新。"关于"与"政党"页面为静态内容，仅在有变动时手动更新。</p>
+      </div>
+      <div data-lang="ta" style="display:none;">
+        <p><strong>புதுப்பிப்பு முறை:</strong> ஜொகூர், நெகிரி செம்பிலான் மற்றும் மேலோட்டப் பக்கங்கள் ஒரு திட்டமிடப்பட்ட ஸ்கிரிப்ட் மூலம் தினமும் ஒரு முறை தானாகவே புதுப்பிக்கப்படுகின்றன — இது புதிய முன்னேற்றங்களைத் தேடி, தொடர்புடைய பக்கத்தைத் திருத்தி, மாற்றத்தை வெளியிடுகிறது. "எங்களைப் பற்றி" மற்றும் "கட்சிகள்" பக்கங்கள் நிலையானவை, மாற்றம் ஏற்படும்போது கைமுறையாக புதுப்பிக்கப்படுகின்றன.</p>
+      </div>
+    </div>
+  </section>
+
+  <section aria-label="Language">
+    <div class="section-label" data-lang="en">Language &amp; translation</div>
+    <div class="section-label" data-lang="ms" style="display:none;">Bahasa &amp; terjemahan</div>
+    <div class="section-label" data-lang="zh" style="display:none;">语言与翻译</div>
+    <div class="section-label" data-lang="ta" style="display:none;">மொழி &amp; மொழிபெயர்ப்பு</div>
+
+    <div class="about-card">
+      <div data-lang="en">
+        <p>The site interface (navigation, footer, labels) and this About page are available in English, Bahasa Malaysia, Chinese and Tamil — a nod to how Malaysiakini publishes across all four. Daily-updated article content (the signal logs on the Johor, Negeri Sembilan and Overview pages) currently stays English-only: translating fast-changing news accurately, every day, across four languages isn't something this project can guarantee the quality of yet. The Parties page structure and category labels are translated; the biographical profiles themselves remain in English for the same reason.</p>
+        <p>Translations were produced with AI assistance rather than by native-speaking editors, particularly for Tamil. If you spot an error, the GitHub repository linked in the footer accepts issues and corrections.</p>
+      </div>
+      <div data-lang="ms" style="display:none;">
+        <p>Antara muka laman (navigasi, footer, label) dan halaman Tentang ini tersedia dalam Bahasa Inggeris, Bahasa Malaysia, Cina dan Tamil — sebagai penghormatan kepada cara Malaysiakini menerbitkan dalam keempat-empat bahasa tersebut. Kandungan artikel yang dikemas kini setiap hari (log isyarat di halaman Johor, Negeri Sembilan dan Ikhtisar) kekal dalam Bahasa Inggeris sahaja buat masa ini: menterjemah berita yang berubah pantas dengan tepat, setiap hari, dalam empat bahasa bukanlah sesuatu yang projek ini boleh jamin kualitinya lagi. Struktur halaman Parti-Parti dan label kategori diterjemah; profil biografi itu sendiri kekal dalam Bahasa Inggeris atas sebab yang sama.</p>
+        <p>Terjemahan dihasilkan dengan bantuan AI dan bukan oleh penyunting penutur asli, terutamanya bagi bahasa Tamil. Jika anda mengesan kesilapan, repositori GitHub yang dipautkan di footer menerima laporan isu dan pembetulan.</p>
+      </div>
+      <div data-lang="zh" style="display:none;">
+        <p>本网站的界面（导航、页脚、标签）以及本"关于"页面提供英文、马来文、中文与淡米尔文四种版本——这也是向Malaysiakini以全四种语言发布内容的做法致意。每日更新的文章内容（柔佛、森美兰及总览页面上的动态记录）目前仅提供英文版本：要在四种语言之间每天准确翻译快速变动的新闻，本项目暂时无法保证其品质。"政党"页面的结构与分类标签已翻译，但人物与政党的详细介绍内容基于同样原因暂维持英文。</p>
+        <p>翻译由人工智能协助完成，而非由母语编辑审校，淡米尔文尤其如此。如发现错误，欢迎透过页脚链接的GitHub仓库提交问题或更正。</p>
+      </div>
+      <div data-lang="ta" style="display:none;">
+        <p>தள இடைமுகம் (வழிசெலுத்தல், அடிக்குறிப்பு, லேபிள்கள்) மற்றும் இந்த "எங்களைப் பற்றி" பக்கம் ஆங்கிலம், மலாய், சீனம் மற்றும் தமிழில் கிடைக்கின்றன — Malaysiakini நான்கு மொழிகளிலும் வெளியிடும் முறையைப் பின்பற்றி. தினமும் புதுப்பிக்கப்படும் கட்டுரை உள்ளடக்கம் (ஜொகூர், நெகிரி செம்பிலான் மற்றும் மேலோட்டப் பக்கங்களில் உள்ள சமிக்ஞை பதிவுகள்) தற்போது ஆங்கிலத்தில் மட்டுமே உள்ளது: வேகமாக மாறும் செய்திகளை நான்கு மொழிகளில் தினமும் துல்லியமாக மொழிபெயர்ப்பதன் தரத்தை இந்த திட்டத்தால் இன்னும் உறுதி செய்ய முடியவில்லை. "கட்சிகள்" பக்கத்தின் அமைப்பு மற்றும் வகைப் பெயர்கள் மொழிபெயர்க்கப்பட்டுள்ளன; அதே காரணத்திற்காக வாழ்க்கை வரலாற்று விவரங்கள் ஆங்கிலத்திலேயே உள்ளன.</p>
+        <p>மொழிபெயர்ப்புகள் தாய்மொழி பேசும் ஆசிரியர்களால் அல்லாமல், குறிப்பாக தமிழுக்கு, AI உதவியுடன் தயாரிக்கப்பட்டன. நீங்கள் ஒரு பிழையைக் கண்டால், அடிக்குறிப்பில் இணைக்கப்பட்டுள்ள GitHub களஞ்சியம் சிக்கல்கள் மற்றும் திருத்தங்களை ஏற்கிறது.</p>
+      </div>
+    </div>
+  </section>
+
+  <section aria-label="Disclaimer">
+    <div class="section-label" data-lang="en">Neutrality &amp; disclaimer</div>
+    <div class="section-label" data-lang="ms" style="display:none;">Neutraliti &amp; penafian</div>
+    <div class="section-label" data-lang="zh" style="display:none;">中立性与免责声明</div>
+    <div class="section-label" data-lang="ta" style="display:none;">நடுநிலைமை &amp; பொறுப்புத் துறப்பு</div>
+
+    <div class="about-card">
+      <div data-lang="en">
+        <p>This is an independent, unofficial, non-commercial project. It is not affiliated with the Election Commission of Malaysia, any political party or coalition, any government body, or any news organisation quoted. Party logos and flags appear for identification purposes only, sourced from Wikimedia Commons, and remain the trademarks of their respective parties — their use here does not imply endorsement by, or affiliation with, this site.</p>
+        <p>Every effort is made to describe each party's history and public perception in neutral, factual terms and to attribute characterisations of "how the public discusses them" to identifiable sources rather than the site's own opinion. If you believe an entry is unbalanced, please raise it via GitHub.</p>
+      </div>
+      <div data-lang="ms" style="display:none;">
+        <p>Ini adalah projek bebas, tidak rasmi dan bukan komersial. Ia tidak berkaitan dengan Suruhanjaya Pilihan Raya Malaysia, mana-mana parti atau gabungan politik, mana-mana badan kerajaan, atau mana-mana organisasi berita yang dipetik. Logo dan bendera parti dipaparkan semata-mata untuk tujuan pengenalan, diperoleh daripada Wikimedia Commons, dan kekal sebagai tanda dagangan parti masing-masing — penggunaannya di sini tidak membawa maksud sokongan oleh, atau kaitan dengan, laman ini.</p>
+        <p>Setiap usaha dibuat untuk menerangkan sejarah dan persepsi awam setiap parti secara neutral dan berasaskan fakta, serta mengaitkan penggambaran "bagaimana orang ramai membincangkan mereka" kepada sumber yang boleh dikenal pasti dan bukan pendapat laman ini sendiri. Jika anda percaya sesuatu entri tidak seimbang, sila laporkan melalui GitHub.</p>
+      </div>
+      <div data-lang="zh" style="display:none;">
+        <p>本项目为独立、非官方、非商业性质的计划，与马来西亚选举委员会、任何政党或联盟、任何政府机构，以及所引用的任何新闻机构均无关联。政党标志与旗帜仅作识别用途，来源为Wikimedia Commons，其商标权归各政党所有——在此使用并不代表本网站的背书或与其存在任何关联。</p>
+        <p>本站力求以中立、基于事实的方式描述各政党的历史与公众观感，并将"公众如何看待该党"的描述归因于可查证的来源，而非本站自身的观点。如您认为某项内容有失公允，欢迎透过GitHub反映。</p>
+      </div>
+      <div data-lang="ta" style="display:none;">
+        <p>இது ஒரு சுயாதீன, அதிகாரப்பூர்வமற்ற, வணிகநோக்கற்ற திட்டமாகும். இது மலேசியா தேர்தல் ஆணையம், எந்தவொரு அரசியல் கட்சி அல்லது கூட்டணி, எந்த அரசாங்க அமைப்பு, அல்லது மேற்கோள் காட்டப்பட்ட எந்த செய்தி நிறுவனத்துடனும் தொடர்பில்லை. கட்சி சின்னங்களும் கொடிகளும் அடையாளம் காணும் நோக்கத்திற்காக மட்டுமே காட்டப்படுகின்றன, Wikimedia Commons இலிருந்து பெறப்பட்டவை, மேலும் அந்தந்த கட்சிகளின் வர்த்தக முத்திரைகளாகவே உள்ளன — இங்கு அவற்றின் பயன்பாடு இந்த தளத்தின் ஆதரவையோ தொடர்பையோ குறிக்காது.</p>
+        <p>ஒவ்வொரு கட்சியின் வரலாறு மற்றும் பொது கருத்தையும் நடுநிலையான, உண்மையான சொற்களில் விவரிக்கவும், "பொதுமக்கள் அவர்களை எவ்வாறு விவாதிக்கின்றனர்" என்பதை தளத்தின் சொந்த கருத்தாக அல்லாமல் அடையாளம் காணக்கூடிய ஆதாரங்களுக்குக் காரணமாகக் கூறவும் அனைத்து முயற்சிகளும் மேற்கொள்ளப்படுகின்றன. ஒரு பதிவு சமநிலையற்றது என நீங்கள் கருதினால், தயவுசெய்து GitHub மூலம் தெரிவிக்கவும்.</p>
+      </div>
+    </div>
+  </section>
+
+  <section aria-label="Credits">
+    <div class="section-label" data-lang="en">Built with</div>
+    <div class="section-label" data-lang="ms" style="display:none;">Dibina dengan</div>
+    <div class="section-label" data-lang="zh" style="display:none;">技术支持</div>
+    <div class="section-label" data-lang="ta" style="display:none;">உருவாக்கப்பட்டது</div>
+
+    <div class="about-card">
+      <div data-lang="en">
+        <p>Built and maintained with Claude (Anthropic), hosted free on GitHub Pages, with the source fully public. Design language draws on Apple's Human Interface Guidelines (system fonts, semantic color, grouped-list layout) with an information architecture inspired by Malaysiakini's multi-language news portal.</p>
+      </div>
+      <div data-lang="ms" style="display:none;">
+        <p>Dibina dan diselenggara menggunakan Claude (Anthropic), dihoskan secara percuma di GitHub Pages, dengan kod sumber sepenuhnya awam. Bahasa reka bentuk berasaskan Garis Panduan Antara Muka Manusia Apple (fon sistem, warna semantik, susun atur senarai berkumpulan) dengan seni bina maklumat yang diilhamkan oleh portal berita pelbagai bahasa Malaysiakini.</p>
+      </div>
+      <div data-lang="zh" style="display:none;">
+        <p>本站由Claude（Anthropic）协助构建与维护，免费托管于GitHub Pages，源代码完全公开。设计语言参考Apple人机界面指南（系统字体、语义化配色、分组列表版式），信息架构则借鉴了Malaysiakini多语言新闻门户的形式。</p>
+      </div>
+      <div data-lang="ta" style="display:none;">
+        <p>Claude (Anthropic) மூலம் உருவாக்கப்பட்டு பராமரிக்கப்படுகிறது, GitHub Pages இல் இலவசமாக ஹோஸ்ட் செய்யப்பட்டுள்ளது, மூலக் குறியீடு முழுவதுமாக பொதுவில் கிடைக்கிறது. வடிவமைப்பு மொழி Apple இன் Human Interface Guidelines (சிஸ்டம் எழுத்துருக்கள், சொற்பொருள் நிறம், தொகுக்கப்பட்ட பட்டியல் தளவமைப்பு) ஆகியவற்றை அடிப்படையாகக் கொண்டது, தகவல் கட்டமைப்பு Malaysiakini இன் பன்மொழி செய்தி போர்ட்டலால் ஈர்க்கப்பட்டது.</p>
+      </div>
+    </div>
+  </section>
+
+  <section aria-label="Glossary">
+    <div class="section-label" data-lang="en">Glossary</div>
+    <div class="section-label" data-lang="ms" style="display:none;">Glosari</div>
+    <div class="section-label" data-lang="zh" style="display:none;">词汇表</div>
+    <div class="section-label" data-lang="ta" style="display:none;">சொற்களஞ்சியம்</div>
+
+    <div data-lang="en">
+      <div class="glossary-grid">
+        <div class="glossary-term"><dt>Menteri Besar / Chief Minister</dt><dd>Head of a state government — "Menteri Besar" in states with a Malay ruler, "Chief Minister" in Penang, Melaka, Sabah and Sarawak.</dd></div>
+        <div class="glossary-term"><dt>DUN</dt><dd>Dewan Undangan Negeri — a state legislative assembly, whose members are elected in state elections.</dd></div>
+        <div class="glossary-term"><dt>Dewan Rakyat</dt><dd>The federal House of Representatives — Parliament's lower house, elected at a general election.</dd></div>
+        <div class="glossary-term"><dt>GE / PRU</dt><dd>General Election (Pilihan Raya Umum) — the nationwide federal election. GE16 is the next one due.</dd></div>
+        <div class="glossary-term"><dt>PRN</dt><dd>Pilihan Raya Negeri — a state election, held on each state's own five-year clock.</dd></div>
+        <div class="glossary-term"><dt>Bumiputera</dt><dd>Literally "sons of the soil" — the constitutional category covering ethnic Malays and indigenous peoples, with associated affirmative-action provisions.</dd></div>
+        <div class="glossary-term"><dt>Sheraton Move</dt><dd>The February 2020 wave of political defections that collapsed the first Pakatan Harapan federal government.</dd></div>
+        <div class="glossary-term"><dt>MA63</dt><dd>Malaysia Agreement 1963 — the founding agreement setting Sabah and Sarawak's terms for joining the Federation, now central to their autonomy demands.</dd></div>
+        <div class="glossary-term"><dt>Party-hopping</dt><dd>Elected representatives switching parties or coalitions after being elected — a recurring source of instability, restricted by a 2022 anti-hopping law.</dd></div>
+        <div class="glossary-term"><dt>Undang</dt><dd>The four traditional territorial chiefs in Negeri Sembilan's Adat Perpatih system, who elect the state's ruler.</dd></div>
+      </div>
+    </div>
+    <div data-lang="ms" style="display:none;">
+      <div class="glossary-grid">
+        <div class="glossary-term"><dt>Menteri Besar / Ketua Menteri</dt><dd>Ketua kerajaan negeri — "Menteri Besar" di negeri beraja Melayu, "Ketua Menteri" di Pulau Pinang, Melaka, Sabah dan Sarawak.</dd></div>
+        <div class="glossary-term"><dt>DUN</dt><dd>Dewan Undangan Negeri — badan perundangan negeri, ahlinya dipilih dalam pilihan raya negeri.</dd></div>
+        <div class="glossary-term"><dt>Dewan Rakyat</dt><dd>Majlis Perwakilan persekutuan — dewan rendah Parlimen, dipilih dalam pilihan raya umum.</dd></div>
+        <div class="glossary-term"><dt>PRU</dt><dd>Pilihan Raya Umum — pilihan raya persekutuan seluruh negara. PRU16 ialah yang seterusnya.</dd></div>
+        <div class="glossary-term"><dt>PRN</dt><dd>Pilihan Raya Negeri — pilihan raya negeri, diadakan mengikut jangka masa lima tahun setiap negeri.</dd></div>
+        <div class="glossary-term"><dt>Bumiputera</dt><dd>Secara literal "anak jati tanah air" — kategori perlembagaan meliputi orang Melayu dan masyarakat peribumi, dengan peruntukan tindakan afirmatif berkaitan.</dd></div>
+        <div class="glossary-term"><dt>Langkah Sheraton</dt><dd>Gelombang lompat parti Februari 2020 yang menjatuhkan kerajaan persekutuan Pakatan Harapan pertama.</dd></div>
+        <div class="glossary-term"><dt>MA63</dt><dd>Perjanjian Malaysia 1963 — perjanjian penubuhan yang menetapkan syarat Sabah dan Sarawak menyertai Persekutuan, kini menjadi teras tuntutan autonomi mereka.</dd></div>
+        <div class="glossary-term"><dt>Lompat parti</dt><dd>Wakil rakyat bertukar parti atau gabungan selepas dipilih — punca ketidakstabilan berulang, dihadkan oleh undang-undang anti-lompat parti 2022.</dd></div>
+        <div class="glossary-term"><dt>Undang</dt><dd>Empat ketua wilayah tradisional dalam sistem Adat Perpatih Negeri Sembilan, yang memilih pemerintah negeri.</dd></div>
+      </div>
+    </div>
+    <div data-lang="zh" style="display:none;">
+      <div class="glossary-grid">
+        <div class="glossary-term"><dt>州务大臣 / 首席部长</dt><dd>州政府首长——在有马来统治者的州属称为"Menteri Besar"，在槟城、马六甲、沙巴和砂拉越则称为"首席部长"。</dd></div>
+        <div class="glossary-term"><dt>州议会（DUN）</dt><dd>Dewan Undangan Negeri，州立法议会，议员在州选举中选出。</dd></div>
+        <div class="glossary-term"><dt>国会下议院</dt><dd>Dewan Rakyat，联邦国会下议院，在大选中选出。</dd></div>
+        <div class="glossary-term"><dt>大选（GE）</dt><dd>Pilihan Raya Umum，全国联邦大选。下一届为第16届大选（GE16）。</dd></div>
+        <div class="glossary-term"><dt>州选（PRN）</dt><dd>Pilihan Raya Negeri，州选举，依各州自身五年一届的周期举行。</dd></div>
+        <div class="glossary-term"><dt>土著（Bumiputera）</dt><dd>字面意为"土地之子"——宪法类别，涵盖马来族群与原住民，附带相关的扶持政策。</dd></div>
+        <div class="glossary-term"><dt>喜来登政变</dt><dd>2026年2月的政治倒戈潮，导致首个希望联盟联邦政府垮台。</dd></div>
+        <div class="glossary-term"><dt>MA63</dt><dd>1963年马来西亚协议——确立沙巴与砂拉越加入联邦条件的建国协议，如今是两州自治诉求的核心依据。</dd></div>
+        <div class="glossary-term"><dt>跳槽（青蛙）</dt><dd>民选议员当选后转换政党或阵营——政局不稳的常见根源，2022年反跳槽法对此设限。</dd></div>
+        <div class="glossary-term"><dt>Undang（酋长）</dt><dd>森美兰"风俗法"（Adat Perpatih）体系下的四位传统领地酋长，负责选出该州统治者。</dd></div>
+      </div>
+    </div>
+    <div data-lang="ta" style="display:none;">
+      <div class="glossary-grid">
+        <div class="glossary-term"><dt>மந்திரி பேசார் / முதலமைச்சர்</dt><dd>மாநில அரசின் தலைவர் — மலாய் மன்னர் உள்ள மாநிலங்களில் "மந்திரி பேசார்", பினாங்கு, மலாக்கா, சபா மற்றும் சரவாக்கில் "முதலமைச்சர்".</dd></div>
+        <div class="glossary-term"><dt>DUN</dt><dd>Dewan Undangan Negeri — மாநில சட்டமன்றம், உறுப்பினர்கள் மாநில தேர்தலில் தேர்ந்தெடுக்கப்படுகிறார்கள்.</dd></div>
+        <div class="glossary-term"><dt>Dewan Rakyat</dt><dd>கூட்டாட்சி பிரதிநிதிகள் சபை — பாராளுமன்றத்தின் கீழவை, பொதுத் தேர்தலில் தேர்ந்தெடுக்கப்படுகிறது.</dd></div>
+        <div class="glossary-term"><dt>GE / PRU</dt><dd>பொதுத் தேர்தல் (Pilihan Raya Umum) — நாடு தழுவிய கூட்டாட்சி தேர்தல். அடுத்தது GE16.</dd></div>
+        <div class="glossary-term"><dt>PRN</dt><dd>Pilihan Raya Negeri — ஒவ்வொரு மாநிலத்தின் சொந்த ஐந்தாண்டு காலச்சுழற்சியில் நடைபெறும் மாநில தேர்தல்.</dd></div>
+        <div class="glossary-term"><dt>Bumiputera</dt><dd>அகராதி அர்த்தத்தில் "மண்ணின் மைந்தர்கள்" — மலாய் இனத்தவர் மற்றும் பூர்வீக மக்களை உள்ளடக்கிய அரசியலமைப்பு வகை, தொடர்புடைய சாதக நடவடிக்கை ஏற்பாடுகளுடன்.</dd></div>
+        <div class="glossary-term"><dt>ஷெரடன் நகர்வு</dt><dd>பிப்ரவரி 2020 அரசியல் கட்சி மாற்றங்களின் அலை, இது முதல் பாகாத்தான் ஹரபான் கூட்டாட்சி அரசாங்கத்தை வீழ்த்தியது.</dd></div>
+        <div class="glossary-term"><dt>MA63</dt><dd>மலேசியா உடன்படிக்கை 1963 — சபா மற்றும் சரவாக் கூட்டமைப்பில் இணைவதற்கான நிபந்தனைகளை நிர்ணயித்த நிறுவன உடன்படிக்கை, இப்போது அவற்றின் தன்னாட்சி கோரிக்கைகளுக்கு மையமானது.</dd></div>
+        <div class="glossary-term"><dt>கட்சி தாவுதல்</dt><dd>தேர்ந்தெடுக்கப்பட்ட பிரதிநிதிகள் தேர்ந்தெடுக்கப்பட்ட பின் கட்சிகள் அல்லது கூட்டணிகளை மாற்றுவது — தொடர்ச்சியான உறுதியற்ற தன்மைக்கான காரணம், 2022 கட்சி-தாவல் தடுப்புச் சட்டத்தால் கட்டுப்படுத்தப்பட்டது.</dd></div>
+        <div class="glossary-term"><dt>Undang</dt><dd>நெகிரி செம்பிலானின் Adat Perpatih முறையில் உள்ள நான்கு பாரம்பரிய பிராந்திய தலைவர்கள், மாநில ஆட்சியாளரைத் தேர்ந்தெடுக்கிறார்கள்.</dd></div>
+      </div>
+    </div>
+  </section>
+
+</div>
+</div>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div class="footer-col">
+      <div class="footer-brand"><span class="brand-mark" style="width:26px;height:26px;font-size:11px;">MY</span><strong>Elections Sentiment</strong></div>
+      <p class="footer-tagline" data-i18n="footer_tagline">An independent, unofficial tracker of public, party and market sentiment across Malaysia's rolling state election cycle.</p>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_sections_title">Sections</h4>
+      <a href="index.html" data-i18n="nav_overview">Overview</a>
+      <a href="johor.html" data-i18n="nav_johor">Johor</a>
+      <a href="negeri-sembilan.html" data-i18n="nav_n9">Negeri Sembilan</a>
+      <a href="parties.html" data-i18n="nav_parties">Parties</a>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_about_title">About this site</h4>
+      <a href="about.html" data-i18n="nav_about">About</a>
+      <a href="about.html#methodology" data-i18n="footer_methodology">Methodology &amp; sources</a>
+      <a href="https://github.com/yifeng22100/malaysia-election-sentiment" target="_blank" rel="noopener" data-i18n="footer_github">View source on GitHub</a>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_language_title">Language</h4>
+      <nav class="lang-switch" aria-label="Language" style="flex-direction:column; align-items:flex-start; gap:9px;">
+        <a href="#" data-set-lang="en">English</a>
+        <a href="#" data-set-lang="ms">Bahasa Malaysia</a>
+        <a href="#" data-set-lang="zh">中文</a>
+        <a href="#" data-set-lang="ta">தமிழ்</a>
+      </nav>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span data-i18n="footer_disclaimer">Not affiliated with the Election Commission of Malaysia, any political party or coalition, or any government body. Compiled from public news coverage. Logos are used for identification purposes only and remain the property of their respective parties.</span>
+    <span data-i18n="footer_updated">Auto-updated daily</span>
+  </div>
+</footer>
+
+<script src="i18n.js"></script>
+</body>
+</html>
