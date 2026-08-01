@@ -44,78 +44,102 @@
 
   <header class="masthead">
     <div style="display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap;">
-      <span class="eyebrow">Pre-Election Sentiment Tracker</span>
-      <span class="live-chip"><span class="live-dot"></span><span data-i18n="live_campaigning">Campaigning — refreshed daily</span></span>
+      <span class="eyebrow">Post-Election Sentiment Tracker</span>
+      <span class="live-chip"><span class="live-dot"></span><span data-i18n="live_developing">Developing — refreshed daily</span></span>
     </div>
-    <h1 class="title">Negeri Sembilan: the tighter test</h1>
-    <p class="dek">Fresh off Johor's landslide, BN and PH turn to a race analysts already call less predictable — closer marginal seats, a three-way fight, and a royal succession crisis running in parallel with the campaign.</p>
+    <h1 class="title">Negeri Sembilan: the pact holds, PH's leaders fall</h1>
+    <p class="dek">The BN–PN non-compete pact delivered exactly what the late polling suggested — a combined majority — but the scale of it, and who lost their own seat, is the real story: DAP secretary-general Anthony Loke and sitting Menteri Besar Aminuddin Harun were both defeated.</p>
     <div class="masthead-meta">
-      <span>Dissolved: <strong>4 Jun 2026</strong></span>
-      <span>Nomination day: <strong>18 Jul 2026</strong></span>
-      <span>Polling day: <strong>1 Aug 2026</strong></span>
+      <span>Election day: <strong>1 Aug 2026</strong></span>
       <span>Last refreshed: <strong id="refreshed-date">1 Aug 2026</strong></span>
+      <span>36 seats, 16th Negeri Sembilan State Assembly</span>
     </div>
   </header>
 
   <div class="lang-note-banner" data-lang-note><span class="lang-note-label"></span></div>
 
-  <section id="campaign" aria-label="Campaign topline">
-    <div class="section-label">The campaign</div>
+  <section id="result" aria-label="Topline result">
+    <div class="section-label">The result</div>
 
     <div class="topline">
       <div class="topline-cell">
-        <div class="topline-party"><span class="status-badge status-live" style="padding:2px 7px;">Today</span></div>
-        <div class="topline-seats">1 Aug<span> polling day</span></div>
-        <div class="topline-sub">Polls closed 6pm · results expected from 10pm</div>
+        <div class="topline-party"><span class="swatch" style="background:var(--bn)"></span>BN–PN pact</div>
+        <div class="topline-seats">25<span> / 36 seats</span></div>
+        <div class="topline-sub">BN 18 + PN 7 · two-thirds-plus majority</div>
       </div>
       <div class="topline-cell">
-        <div class="topline-party">Seats contested</div>
-        <div class="topline-seats">36<span> DUN seats</span></div>
-        <div class="topline-sub">16th Negeri Sembilan State Assembly</div>
+        <div class="topline-party"><span class="swatch" style="background:var(--ph)"></span>Pakatan Harapan</div>
+        <div class="topline-seats">11<span> / 36 seats</span></div>
+        <div class="topline-sub">Loses state government after two terms</div>
       </div>
       <div class="topline-cell">
-        <div class="topline-party">Shape of the race</div>
-        <div class="topline-seats">3-way<span> fight</span></div>
-        <div class="topline-sub">BN and PH contest as rivals, not allies, for the first time since 2023</div>
+        <div class="topline-party"><span class="swatch" style="background:var(--oth)"></span>Turnout</div>
+        <div class="topline-seats">~68<span>% statewide</span></div>
+        <div class="topline-sub">65.38% by 4pm, before polls closed at 6pm</div>
       </div>
     </div>
 
-    <div class="seatbar-legend" style="margin-top:4px;">
-      <span><span class="swatch" style="background:var(--ph)"></span>PH contesting all <strong>36</strong></span>
-      <span><span class="swatch" style="background:var(--bn)"></span>BN <strong>25</strong></span>
-      <span><span class="swatch" style="background:var(--oth)"></span>Bersatu (solo) <strong>24</strong></span>
-      <span><span class="swatch" style="background:var(--pn)"></span>PN (+ allies) <strong>11</strong></span>
+    <div class="seatbar">
+      <div style="width:50%; background:var(--bn)"></div>
+      <div style="width:19.4%; background:var(--pn)"></div>
+      <div style="width:30.6%; background:var(--ph)"></div>
+    </div>
+    <div class="seatbar-legend">
+      <span><span class="swatch" style="background:var(--bn)"></span>BN <strong>18</strong></span>
+      <span><span class="swatch" style="background:var(--pn)"></span>PN <strong>7</strong></span>
+      <span><span class="swatch" style="background:var(--ph)"></span>PH <strong>11</strong></span>
+      <span>Bersatu's solo run won 0 of 24 contested</span>
     </div>
   </section>
 
   <section id="mood" aria-label="Sentiment summary">
     <div class="section-label">Reading the mood</div>
-    <p class="lede">Where Johor felt decided in advance, Negeri Sembilan is the one nobody wants to forecast.</p>
+    <p class="lede">The result wasn't the surprise — Ong Kian Ming's seat model had BN-PN at 23–25 a week out. The surprise is that the pact's own top two rivals in PH, Loke and the sitting MB, lost their personal seats.</p>
 
     <div class="mood-meter">
-      <div class="mood-meter-value">Still genuinely uncertain</div>
-      <div class="mood-meter-note">Sentiment read: the campaign's first published poll shows PH ahead on vote share but short of a majority in seats, tighter marginal seats than Johor, and a large undecided youth bloc — this one is still open.</div>
+      <div class="mood-meter-value">Decisive</div>
+      <div class="mood-meter-note">Sentiment read: the BN–PN non-compete pact converted a "genuinely uncertain" pre-election read into a clear, if narrower-than-Johor, mandate — and PH's own leadership losses make it feel more emphatic than the topline seat count alone suggests.</div>
       <div class="mood-meter-scale">
-        <div class="mood-meter-fill" style="width:38%; background:var(--status-soon);"></div>
+        <div class="mood-meter-fill" style="width:78%; background:var(--status-done);"></div>
       </div>
       <div class="mood-meter-labels"><span>Uncertain</span><span>Decisive</span></div>
     </div>
     <div class="prose">
-      <p>The race got its first published poll on 23 July: Vodus Research (fieldwork 9–21 Jul, n=437) put PH's popular-vote share at 42% to BN's 35% and PN's 7%, translating to a seat projection of PH 17, BN 15, PN 2 and two contests too close to call — short of the 19-seat majority line either way. The same survey found BN still holds a Bumiputera-vote edge (41% to PH's 27%) while PH dominates Chinese voters (59%), and Menteri Besar Aminuddin Harun's own favourability sits at a soft 31.7%. Analysts still flag the race as structurally harder to read than Johor: Negeri Sembilan has more genuinely marginal seats, support is more evenly split across Malay-majority and mixed constituencies, and small vote swings can flip outcomes. The Star's seat-by-seat model describes it as pointing to "a more unpredictable state election."</p>
-      <p>Two things make this race harder to read than Johor. First, the coalition math has changed: BN and PH fought Johor as rivals but ran together in the 2023 Negeri Sembilan election under the unity-government banner — this time they're contesting against each other directly, alongside PN, so there's no recent precedent for how their combined 2023 vote actually splits when forced to compete. Second, roughly a third of the electorate is under 30, and by some estimates close to half of those younger voters remain undecided — a bigger swing bloc than Johor had.</p>
+      <p>The 23 July Vodus poll had PH ahead on vote share (42% to BN's 35%) with the seat count too close to call. What actually decided the race was the mechanism analysts had flagged all along: the BN–PN non-compete pact meant the anti-PH vote was never split between two rival Malay-nationalist options the way Johor's PN-sits-out dynamic worked — BN and PN simply divided the state's 36 seats between themselves (25 to BN, 11 to PN) and ran as a single anti-PH front everywhere. BN converted 18 of its 25, PN converted 7 of its 11, for a combined 25-seat, two-thirds-plus majority. Bersatu's decision to break from that pact and contest all 24 of its own seats independently — the strategy born out of February's party purge — returned nothing.</p>
+      <p>The detail driving the "shock" framing in same-night coverage wasn't the seat count but two names: DAP secretary-general Anthony Loke lost Chennah, and Menteri Besar Aminuddin Harun — in office since 2018 — lost Linggi. Losing a sitting Menteri Besar's own seat is rare in Malaysian state politics; losing the federal cabinet minister who runs one of PH's two anchor parties in the same night compounds it. PH's own election director, Selangor Menteri Besar Amirudin Shari, attributed the defeat to rivals' "identity politics" and said the coalition would recalibrate its messaging before GE16. Aminuddin's own concession was more self-critical: "Now Malaysians have to think: do they want racial rhetoric or development? … Maybe my report card is still lacking."</p>
     </div>
     <div class="pull">
-      "This is more of a test for Anwar's PH coalition and his Madani government than Johor was — a loss here would sharpen pressure for an early general election and accelerate the realignment already under way inside the unity government."
-      <cite>— Synthesis of East Asia Forum and Malay Mail pre-election analysis, late Jun–Jul 2026</cite>
+      "A loss here would sharpen pressure for an early general election and accelerate the realignment already under way inside the unity government" — this is exactly the outcome pre-election analysis flagged as the more consequential test of the two, and it has now happened.
+      <cite>— East Asia Forum and Malay Mail pre-election framing, late Jun–Jul 2026, evaluated against the confirmed 1 Aug result</cite>
     </div>
     <div class="prose">
-      <p>Layered on top of the ordinary campaign is a constitutional dispute that has nothing to do with any party's manifesto but is shaping the mood regardless: Negeri Sembilan's four territorial chiefs (Undang), who under the state's Adat Perpatih custom elect the Yang di-Pertuan Besar, have moved to depose the sitting ruler, Tuanku Muhriz, in favour of a rival claimant, Tunku Nadzaruddin. Commentators are treating the succession crisis and the election as two parallel stress tests hitting the state at once — see Malay Mail's framing of "one election, two crises, three coalitions."</p>
+      <p>The Undang succession dispute over the Yang di-Pertuan Besar — Tuanku Muhriz versus the Undang-proclaimed rival claimant Tunku Nadzaruddin — remains unresolved and legally separate from the election outcome; the Court of Appeal stayed a contempt bid tied to the case just two days before polling, with the underlying dispute still pending. It did not appear to meaningfully sway the vote either way, based on coverage so far, but it hands Negeri Sembilan's incoming BN–PN state government an unfinished constitutional question alongside its new legislative majority.</p>
     </div>
   </section>
 
   <section id="signal-log" aria-label="Signal log">
     <div class="section-label">Signal log — newest first</div>
     <div class="log">
+
+      <div class="log-entry">
+        <div class="log-date">1 Aug</div>
+        <div>
+          <span class="log-tag tag-reax">Reaction</span>
+          <p class="log-headline">PH blames "identity politics," Aminuddin concedes with self-criticism</p>
+          <p class="log-body">PH election director Amirudin Shari said rivals' use of identity politics cost the coalition the state and that PH will realign its messaging ahead of GE16. Outgoing Menteri Besar Aminuddin Harun, defeated in his own seat of Linggi, said voters now have to decide "racial rhetoric or development," accepted the result, and said his eight years in office may still have fallen short: "maybe my report card is still lacking."</p>
+          <p class="log-source">Free Malaysia Today</p>
+        </div>
+      </div>
+
+      <div class="log-entry">
+        <div class="log-date">1 Aug</div>
+        <div>
+          <span class="log-tag tag-result">Result</span>
+          <p class="log-headline">BN–PN pact wins 25 of 36 seats; Loke and Aminuddin both lose their seats</p>
+          <p class="log-body">Official BERNAMA tally: BN 18, PN 7 (combined 25), PH 11 — the BN–PN non-compete pact's first electoral test, ending PH's two-term hold on the state. The bigger shock was personal: DAP secretary-general Anthony Loke lost Chennah and sitting Menteri Besar Aminuddin Harun lost Linggi, both to BN-PN candidates. Bersatu's independent 24-seat run, mounted after February's party purge, won zero seats. Results were declared from 8:27pm.</p>
+          <p class="log-source">BERNAMA · Free Malaysia Today · Malay Mail · Malaysiakini</p>
+        </div>
+      </div>
 
       <div class="log-entry">
         <div class="log-date">1 Aug</div>
@@ -440,48 +464,54 @@
     </div>
   </section>
 
-  <section id="scoreboard" aria-label="Coalition lineup">
-    <div class="section-label">Coalition lineup</div>
+  <section id="scoreboard" aria-label="Coalition scoreboard">
+    <div class="section-label">Coalition scoreboard</div>
     <div class="tablewrap">
       <table>
         <thead>
           <tr>
             <th>Coalition</th>
-            <th>Seats contesting</th>
-            <th>Component breakdown</th>
-            <th>2023 result</th>
+            <th>Seats contested</th>
+            <th>Seats won</th>
+            <th>Strike rate</th>
+            <th>Outcome</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td class="party-cell"><span class="swatch" style="background:var(--ph)"></span>Pakatan Harapan</td>
-            <td>36</td>
-            <td>Contesting alone, all seats</td>
-            <td>Governed with BN as allies</td>
-          </tr>
-          <tr>
             <td class="party-cell"><span class="swatch" style="background:var(--bn)"></span>Barisan Nasional</td>
             <td>25</td>
-            <td>16 UMNO · 7 MCA · 2 MIC</td>
-            <td>Governed with PH as allies</td>
+            <td class="delta-up">18</td>
+            <td>72%</td>
+            <td>Governs via BN–PN pact</td>
           </tr>
           <tr>
             <td class="party-cell"><span class="swatch" style="background:var(--pn)"></span>Perikatan Nasional (+ allies)</td>
             <td>11</td>
-            <td>5 PAS · 1 Gerakan · 1 MIPP · 4 Wawasan</td>
-            <td>Opposition</td>
+            <td class="delta-up">7</td>
+            <td>64%</td>
+            <td>Governs via BN–PN pact</td>
+          </tr>
+          <tr>
+            <td class="party-cell"><span class="swatch" style="background:var(--ph)"></span>Pakatan Harapan</td>
+            <td>36</td>
+            <td class="delta-down">11</td>
+            <td>31%</td>
+            <td>Loses state government; MB and DAP sec-gen both defeated</td>
           </tr>
           <tr>
             <td class="party-cell"><span class="swatch" style="background:var(--oth)"></span>Bersatu (independent run)</td>
             <td>24</td>
-            <td>Contesting under own logo, outside the BN–PN pact</td>
-            <td>Part of PN bloc in 2023</td>
+            <td class="delta-down">0</td>
+            <td>0%</td>
+            <td>Post-purge solo strategy returns no seats</td>
           </tr>
           <tr>
             <td class="party-cell"><span class="swatch" style="background:var(--oth)"></span>Others</td>
             <td>7</td>
-            <td>Berjasa 1 · ASLI 1 · PSM 1 · 4 independents</td>
-            <td>—</td>
+            <td>0</td>
+            <td>0%</td>
+            <td>Berjasa, ASLI, PSM, independents — no seats won</td>
           </tr>
         </tbody>
       </table>
@@ -491,8 +521,8 @@
   <section id="whats-next" aria-label="What's next">
     <div class="section-label">What we're watching next</div>
     <div class="next">
-      <div class="next-date">18 Jul 2026</div>
-      <p class="prose" style="margin:0;">Nomination day is tomorrow, opening the official 14-day campaign period. Early voting falls on 28 July, with polling day on 1 August. This page will shift from campaign-tracking to results-and-reaction mode — matching the <a href="johor.html">Johor page's</a> format — as soon as results are declared.</p>
+      <div class="next-date">Watch: Melaka</div>
+      <p class="prose" style="margin:0;">With Johor and Negeri Sembilan both now decided — and both breaking against Pakatan Harapan — attention shifts to Melaka, where Chief Minister Ab Rauf Yusoh has said he'll set a dissolution date after weighing these two results, and to Sarawak's assembly, which must dissolve by 14 February 2027. Two results in a row favouring the BN–PN axis, plus the loss of PH's own state leadership in Negeri Sembilan, will intensify scrutiny of Anwar's unity government ahead of GE16. See the <a href="index.html">Overview page</a> for the full national picture.</p>
     </div>
   </section>
 
@@ -542,19 +572,25 @@
       <li><a href="https://www.freemalaysiatoday.com/category/nation/2026/07/28/early-voter-turnout-in-negeri-sembilan-reaches-91-06-exceeds-ec-target" target="_blank" rel="noopener">Free Malaysia Today — early-voting turnout reaches 91.06%</a></li>
       <li><a href="https://www.thestar.com.my/news/nation/2026/07/31/campaign-comes-to-a-close" target="_blank" rel="noopener">The Star — campaign comes to a close</a></li>
       <li><a href="https://theedgemalaysia.com/node/812916" target="_blank" rel="noopener">The Edge Malaysia — all 401 polling centres open at 8am</a></li>
+      <li><a href="https://prn.bernama.com/n9/keputusan/official/index-en.php" target="_blank" rel="noopener">BERNAMA — official Negeri Sembilan results</a></li>
+      <li><a href="https://www.freemalaysiatoday.com/category/nation/2026/08/01/bn-pn-claims-victory-in-negeri-sembilan-polls" target="_blank" rel="noopener">Free Malaysia Today — BN-PN claims victory</a></li>
+      <li><a href="https://www.malaymail.com/news/malaysia/2026/08/01/negeri-sembilan-polls-close-race-for-the-state-government-begins/229867" target="_blank" rel="noopener">Malay Mail — Loke, Aminuddin fall; PBN claims supermajority</a></li>
+      <li><a href="https://www.malaysiakini.com/news/781157" target="_blank" rel="noopener">Malaysiakini — Loke and Aminuddin defeated</a></li>
+      <li><a href="https://www.freemalaysiatoday.com/category/nation/2026/08/01/live-polling-ends-vote-counting-for-negeri-sembilan-polls-begins" target="_blank" rel="noopener">Free Malaysia Today — PH blames identity politics</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/2026_Negeri_Sembilan_state_election" target="_blank" rel="noopener">Wikipedia — 2026 Negeri Sembilan state election</a></li>
     </ul>
     <p>Compiled from public news coverage and campaign reporting. Not affiliated with the Election Commission of Malaysia, any political coalition, or any royal household referenced above. Figures are as officially reported at time of writing and may be revised.</p>
-    <div class="cadence"><span class="live-dot" style="animation:none;"></span>This edition refreshes daily through polling day, then shifts to results coverage.</div>
+    <div class="cadence"><span class="live-dot" style="animation:none;"></span>This edition refreshes daily as post-election reaction develops.</div>
   </footer>
 
 </div>
 
 <aside class="toc" aria-label="On this page">
   <div class="toc-label">On this page</div>
-  <a href="#campaign">The campaign</a>
+  <a href="#result">The result</a>
   <a href="#mood">Reading the mood</a>
   <a href="#signal-log">Signal log</a>
-  <a href="#scoreboard">Coalition lineup</a>
+  <a href="#scoreboard">Coalition scoreboard</a>
   <a href="#whats-next">What's next</a>
   <a href="#sources">Sources</a>
 </aside>
