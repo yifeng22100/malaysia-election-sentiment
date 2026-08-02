@@ -648,6 +648,52 @@ footer .cadence { display: flex; align-items: center; gap: 8px; margin-top: 18px
 .site-nav-main a.current { color: var(--ink); border-bottom-color: var(--accent); }
 .site-nav-main a:hover { color: var(--ink); text-decoration: none; }
 
+/* ---------- States dropdown (nav) ---------- */
+.nav-dropdown { position: relative; }
+.nav-dropdown-trigger {
+  font-family: var(--font-sans);
+  font-size: 14px; font-weight: 600; color: var(--muted);
+  padding: 4px 0; border: none; background: none; cursor: pointer;
+  border-bottom: 2px solid transparent;
+  display: inline-flex; align-items: center; gap: 4px;
+}
+.nav-dropdown-trigger .caret { font-size: 10px; transition: transform .15s ease; }
+.nav-dropdown.open .nav-dropdown-trigger { color: var(--ink); }
+.nav-dropdown.open .nav-dropdown-trigger .caret { transform: rotate(180deg); }
+.nav-dropdown-trigger:hover { color: var(--ink); }
+.nav-dropdown.has-current .nav-dropdown-trigger { color: var(--ink); border-bottom-color: var(--accent); }
+
+.nav-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 12px);
+  left: 0;
+  min-width: 240px;
+  background: var(--surface);
+  border-radius: var(--radius-md);
+  box-shadow: 0 8px 28px -8px rgba(0, 0, 0, 0.28), 0 0 0 0.5px var(--line);
+  padding: 8px;
+  z-index: 60;
+}
+.nav-dropdown.open .nav-dropdown-menu { display: block; }
+.nav-dropdown-group-label {
+  font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em;
+  color: var(--muted); padding: 8px 10px 4px;
+}
+.nav-dropdown-menu a {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 13.5px; font-weight: 500; color: var(--ink);
+  padding: 7px 10px; border-radius: 8px;
+}
+.nav-dropdown-menu a:hover { background: var(--surface-2); text-decoration: none; }
+.nav-dropdown-menu a.current { font-weight: 700; }
+.nav-dropdown-menu a.current::after { content: ""; }
+.nav-dot { width: 7px; height: 7px; border-radius: 50%; flex: none; }
+.dot-done { background: var(--status-done); }
+.dot-live { background: var(--status-live); }
+.dot-soon { background: var(--status-soon); }
+.dot-later { background: var(--status-later); }
+
 .lang-note-banner {
   display: none;
   background: color-mix(in srgb, var(--accent) 10%, transparent);

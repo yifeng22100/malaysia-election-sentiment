@@ -11,6 +11,12 @@ const I18N_DICT = {
     nav_n9: "Negeri Sembilan",
     nav_parties: "Parties",
     nav_about: "About",
+    nav_states: "States",
+    nav_federal: "Federal (GE16)",
+    grp_decided: "Decided",
+    grp_anticipated: "Anticipated",
+    grp_notdue: "Not yet due",
+    grp_federal: "Federal",
     live_developing: "Developing — refreshed daily",
     live_campaigning: "Campaigning — refreshed daily",
     footer_tagline: "An independent, unofficial tracker of public, party and market sentiment across Malaysia's rolling state election cycle.",
@@ -52,6 +58,12 @@ const I18N_DICT = {
     nav_n9: "Negeri Sembilan",
     nav_parties: "Parti-Parti",
     nav_about: "Tentang",
+    nav_states: "Negeri",
+    nav_federal: "Persekutuan (PRU16)",
+    grp_decided: "Selesai",
+    grp_anticipated: "Dijangka",
+    grp_notdue: "Belum tiba masanya",
+    grp_federal: "Persekutuan",
     live_developing: "Sedang berkembang — dikemaskini setiap hari",
     live_campaigning: "Berkempen — dikemaskini setiap hari",
     footer_tagline: "Penjejak sentimen awam, parti dan pasaran yang bebas dan tidak rasmi sepanjang kitaran pilihan raya negeri Malaysia.",
@@ -93,6 +105,12 @@ const I18N_DICT = {
     nav_n9: "森美兰",
     nav_parties: "政党",
     nav_about: "关于",
+    nav_states: "各州",
+    nav_federal: "联邦（第16届大选）",
+    grp_decided: "已确定",
+    grp_anticipated: "预期中",
+    grp_notdue: "尚未到期",
+    grp_federal: "联邦",
     live_developing: "持续更新 — 每日更新",
     live_campaigning: "竞选中 — 每日更新",
     footer_tagline: "一个独立、非官方的追踪平台，记录马来西亚各州选举周期中的民意、政党与市场情绪。",
@@ -134,6 +152,12 @@ const I18N_DICT = {
     nav_n9: "நெகிரி செம்பிலான்",
     nav_parties: "கட்சிகள்",
     nav_about: "எங்களைப் பற்றி",
+    nav_states: "மாநிலங்கள்",
+    nav_federal: "கூட்டாட்சி (GE16)",
+    grp_decided: "முடிவானவை",
+    grp_anticipated: "எதிர்பார்க்கப்படுபவை",
+    grp_notdue: "இன்னும் நேரம் வரவில்லை",
+    grp_federal: "கூட்டாட்சி",
     live_developing: "வளர்ந்து வருகிறது — தினமும் புதுப்பிக்கப்படுகிறது",
     live_campaigning: "பிரச்சாரம் நடைபெறுகிறது — தினமும் புதுப்பிக்கப்படுகிறது",
     footer_tagline: "மலேசியாவின் தொடர் மாநில தேர்தல் சுழற்சி முழுவதும் பொது, கட்சி மற்றும் சந்தை உணர்வுகளை கண்காணிக்கும் ஒரு சுயாதீன, அதிகாரப்பூர்வமற்ற தளம்.",
@@ -241,6 +265,26 @@ const I18N_DICT = {
       b.addEventListener("click", function () {
         applyTheme(b.getAttribute("data-set-theme"));
       });
+    });
+
+    document.querySelectorAll(".nav-dropdown").forEach(function (dd) {
+      var trigger = dd.querySelector(".nav-dropdown-trigger");
+      if (!trigger) return;
+      if (dd.querySelector(".nav-dropdown-menu a.current")) dd.classList.add("has-current");
+      trigger.addEventListener("click", function (e) {
+        e.stopPropagation();
+        var wasOpen = dd.classList.contains("open");
+        document.querySelectorAll(".nav-dropdown.open").forEach(function (o) { o.classList.remove("open"); });
+        if (!wasOpen) dd.classList.add("open");
+      });
+    });
+    document.addEventListener("click", function () {
+      document.querySelectorAll(".nav-dropdown.open").forEach(function (o) { o.classList.remove("open"); });
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        document.querySelectorAll(".nav-dropdown.open").forEach(function (o) { o.classList.remove("open"); });
+      }
     });
   });
 })();

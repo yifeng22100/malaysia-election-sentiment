@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sarawak — Malaysia State Elections Sentiment Tracker</title>
+<meta name="description" content="Watch page for the anticipated Sarawak state election: GPS's position, the 82-vs-99 seat redelineation question, and the dissolution timeline.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-utility">
+    <div class="header-utility-inner">
+      <nav class="lang-switch" aria-label="Language">
+        <a href="#" data-set-lang="en">EN</a>
+        <a href="#" data-set-lang="ms">BM</a>
+        <a href="#" data-set-lang="zh">中文</a>
+        <a href="#" data-set-lang="ta">தமிழ்</a>
+      </nav>
+      <div class="theme-switch" role="group" aria-label="Theme">
+        <button data-set-theme="light">Light</button>
+        <button data-set-theme="auto">Auto</button>
+        <button data-set-theme="dark">Dark</button>
+      </div>
+    </div>
+  </div>
+  <div class="header-main-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">MY</span>
+      <span class="brand-word">Elections Sentiment<small>Malaysia state election tracker</small></span>
+    </a>
+    <nav class="site-nav-main">
+      <a href="index.html" data-i18n="nav_overview">Overview</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" type="button"><span data-i18n="nav_states">States</span> <span class="caret">▾</span></button>
+        <div class="nav-dropdown-menu">
+          <div class="nav-dropdown-group-label" data-i18n="grp_decided">Decided</div>
+          <a href="johor.html"><span class="nav-dot dot-done"></span>Johor</a>
+          <a href="negeri-sembilan.html"><span class="nav-dot dot-done"></span>Negeri Sembilan</a>
+          <a href="sabah.html"><span class="nav-dot dot-done"></span>Sabah</a>
+          <div class="nav-dropdown-group-label" data-i18n="grp_anticipated">Anticipated</div>
+          <a href="melaka.html"><span class="nav-dot dot-soon"></span>Melaka</a>
+          <a href="sarawak.html" class="current"><span class="nav-dot dot-soon"></span>Sarawak</a>
+          <div class="nav-dropdown-group-label" data-i18n="grp_notdue">Not yet due</div>
+          <a href="selangor.html"><span class="nav-dot dot-later"></span>Selangor</a>
+          <a href="penang.html"><span class="nav-dot dot-later"></span>Penang</a>
+          <a href="perak.html"><span class="nav-dot dot-later"></span>Perak</a>
+          <a href="pahang.html"><span class="nav-dot dot-later"></span>Pahang</a>
+          <a href="kedah.html"><span class="nav-dot dot-later"></span>Kedah</a>
+          <a href="kelantan.html"><span class="nav-dot dot-later"></span>Kelantan</a>
+          <a href="terengganu.html"><span class="nav-dot dot-later"></span>Terengganu</a>
+          <a href="perlis.html"><span class="nav-dot dot-later"></span>Perlis</a>
+          <div class="nav-dropdown-group-label" data-i18n="grp_federal">Federal</div>
+          <a href="federal.html"><span class="nav-dot dot-later"></span>Federal (GE16)</a>
+        </div>
+      </div>
+      <a href="parties.html" data-i18n="nav_parties">Parties</a>
+      <a href="about.html" data-i18n="nav_about">About</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+<div class="main">
+
+  <header class="masthead">
+    <div style="display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap;">
+      <span class="eyebrow">Pre-Election Watch</span>
+      <span class="live-chip"><span class="live-dot"></span><span data-i18n="live_developing">Developing — refreshed daily</span></span>
+    </div>
+    <h1 class="title">Sarawak: the question isn't if, it's how many seats</h1>
+    <p class="dek">GPS's sec-general says polls are "definitely" happening this year, Premier Abang Johari alone controls the timing, and the real open question is procedural: will the assembly's approved expansion from 82 to 99 seats be ready in time, or will Sarawak vote on its old boundaries once more?</p>
+    <div class="masthead-meta">
+      <span>Current government: <strong>GPS, since 2018</strong></span>
+      <span>Automatic dissolution: <strong>14 Feb 2027</strong></span>
+      <span>Last refreshed: <strong id="refreshed-date">2 Aug 2026</strong></span>
+    </div>
+  </header>
+
+  <div class="lang-note-banner" data-lang-note><span class="lang-note-label"></span></div>
+
+  <section id="status" aria-label="Current status">
+    <div class="section-label">Where things stand</div>
+    <div class="topline">
+      <div class="topline-cell">
+        <div class="topline-party">Governing coalition</div>
+        <div class="topline-seats">GPS<span> since 2018</span></div>
+        <div class="topline-sub">Premier Abang Johari Openg (PBB)</div>
+      </div>
+      <div class="topline-cell">
+        <div class="topline-party">Current DUN size</div>
+        <div class="topline-seats">82<span> seats (2021 result)</span></div>
+        <div class="topline-sub">Approved expansion to 99, pending EC/Dewan Rakyat process</div>
+      </div>
+      <div class="topline-cell">
+        <div class="topline-party">Deadline</div>
+        <div class="topline-seats">Apr 2027<span> latest possible poll</span></div>
+        <div class="topline-sub">Assembly must dissolve by 14 Feb 2027</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="mood" aria-label="Sentiment summary">
+    <div class="section-label">Reading the mood</div>
+    <p class="lede">Sarawak's politics run on a different clock from the Peninsula's — insulated from the BN/PH/PN framing, and this time complicated by its own procedural drama.</p>
+    <div class="prose">
+      <p>GPS Secretary-General Fadillah Yusof said in January 2026 that Sarawak's state election is "definitely" happening this year, though the exact date remains entirely at Premier Abang Johari's discretion under the state constitution — the assembly must dissolve by 14 February 2027 at the latest, with a poll due within 60 days after. GPS has publicly urged its own machinery to "go for an A," a confident framing consistent with the coalition's dominant position since it split from federal Barisan Nasional in 2018 to govern Sarawak independently.</p>
+      <p>The distinctive wrinkle this cycle is seats, not swing. The Sarawak assembly has already approved expanding the DUN from 82 to 99 seats, but that expansion needs Dewan Rakyat endorsement and an Election Commission redelineation process to actually take effect — and as of July 2026, Abang Johari himself acknowledged the election may have to proceed on the current 82-seat map if the redelineation isn't finalised in time. Either way, GPS says it expects to hold a strong majority; the real uncertainty is procedural and timeline-driven rather than a genuine contest for power.</p>
+    </div>
+  </section>
+
+  <section id="signal-log" aria-label="Signal log">
+    <div class="section-label">Signal log — newest first</div>
+    <div class="log">
+
+      <div class="log-entry">
+        <div class="log-date">5 Jul</div>
+        <div>
+          <span class="log-tag tag-campaign">Redelineation</span>
+          <p class="log-headline">Abang Johari: election may run on 82 seats if new seats aren't finalised</p>
+          <p class="log-body">The Premier acknowledged that if the Election Commission's redelineation process for the approved 82-to-99 seat expansion cannot be completed before the assembly dissolves, the coming election will proceed on the existing 82-seat map instead.</p>
+          <p class="log-source">Free Malaysia Today</p>
+        </div>
+      </div>
+
+      <div class="log-entry">
+        <div class="log-date">29 Jan</div>
+        <div>
+          <span class="log-tag tag-campaign">Timeline</span>
+          <p class="log-headline">GPS sec-gen: Sarawak polls "definitely" happening this year</p>
+          <p class="log-body">Fadillah Yusof said the state election would definitely take place in 2026, though the precise timing remains solely Premier Abang Johari's call under Sarawak's constitution. GPS urged its machinery to prepare for a strong showing.</p>
+          <p class="log-source">Free Malaysia Today · TVS</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="whats-next" aria-label="What's next">
+    <div class="section-label">What we're watching next</div>
+    <div class="next">
+      <div class="next-date">Watch for: dissolution date</div>
+      <p class="prose" style="margin:0;">With Johor and Negeri Sembilan both decided, Sarawak's timing decision — and whether the 99-seat expansion makes it in time — is one of the two remaining open questions in this election cycle, alongside Melaka. This page will convert to a full campaign tracker once a dissolution date is confirmed.</p>
+    </div>
+  </section>
+
+  <footer id="sources">
+    <div class="section-label" style="margin-bottom:10px;">Sources referenced in this edition</div>
+    <ul class="sources">
+      <li><a href="https://en.wikipedia.org/wiki/Next_Sarawak_state_election" target="_blank" rel="noopener">Wikipedia — next Sarawak state election</a></li>
+      <li><a href="https://www.freemalaysiatoday.com/category/nation/2026/01/29/sarawak-polls-definitely-this-year-says-gps-sec-gen" target="_blank" rel="noopener">Free Malaysia Today — Sarawak polls "definitely" this year</a></li>
+      <li><a href="https://www.freemalaysiatoday.com/category/nation/2026/07/05/sarawak-election-for-82-seats-if-new-seats-not-finalised-says-abang-jo" target="_blank" rel="noopener">Free Malaysia Today — election may run on 82 seats</a></li>
+      <li><a href="https://projeksama.org/2026/03/08/10-faqs-on-sarawak-redelineation/" target="_blank" rel="noopener">Projek SAMA — 10 FAQs on Sarawak redelineation</a></li>
+      <li><a href="https://www.sarawaktribune.com/timing-of-sarawak-election-remains-entirely-at-the-premiers-discretion/" target="_blank" rel="noopener">Sarawak Tribune — timing rests with the Premier</a></li>
+      <li><a href="https://www.freemalaysiatoday.com/category/nation/2026/07/26/sarawak-election-is-an-exam-go-for-an-a-abang-johari-tells-pbb" target="_blank" rel="noopener">Free Malaysia Today — "go for an A," Abang Johari tells PBB</a></li>
+    </ul>
+    <p>Compiled from public news coverage. Not affiliated with the Election Commission of Malaysia, any political coalition, or any government body. Figures are as officially reported at time of writing and may be revised.</p>
+    <div class="cadence"><span class="live-dot" style="animation:none;"></span>This edition refreshes as dissolution/redelineation news develops.</div>
+  </footer>
+
+</div>
+
+<aside class="toc" aria-label="On this page">
+  <div class="toc-label">On this page</div>
+  <a href="#status">Where things stand</a>
+  <a href="#mood">Reading the mood</a>
+  <a href="#signal-log">Signal log</a>
+  <a href="#whats-next">What's next</a>
+  <a href="#sources">Sources</a>
+</aside>
+
+</div>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div class="footer-col">
+      <div class="footer-brand"><span class="brand-mark" style="width:26px;height:26px;font-size:11px;">MY</span><strong>Elections Sentiment</strong></div>
+      <p class="footer-tagline" data-i18n="footer_tagline">An independent, unofficial tracker of public, party and market sentiment across Malaysia's rolling state election cycle.</p>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_sections_title">Sections</h4>
+      <a href="index.html" data-i18n="nav_overview">Overview</a>
+      <a href="johor.html" data-i18n="nav_johor">Johor</a>
+      <a href="negeri-sembilan.html" data-i18n="nav_n9">Negeri Sembilan</a>
+      <a href="parties.html" data-i18n="nav_parties">Parties</a>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_about_title">About this site</h4>
+      <a href="about.html" data-i18n="nav_about">About</a>
+      <a href="about.html#methodology" data-i18n="footer_methodology">Methodology &amp; sources</a>
+      <a href="https://github.com/yifeng22100/malaysia-election-sentiment" target="_blank" rel="noopener" data-i18n="footer_github">View source on GitHub</a>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_language_title">Language</h4>
+      <nav class="lang-switch" aria-label="Language" style="flex-direction:column; align-items:flex-start; gap:9px;">
+        <a href="#" data-set-lang="en">English</a>
+        <a href="#" data-set-lang="ms">Bahasa Malaysia</a>
+        <a href="#" data-set-lang="zh">中文</a>
+        <a href="#" data-set-lang="ta">தமிழ்</a>
+      </nav>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span data-i18n="footer_disclaimer">Not affiliated with the Election Commission of Malaysia, any political party or coalition, or any government body. Compiled from public news coverage. Logos are used for identification purposes only and remain the property of their respective parties.</span>
+    <span data-i18n="footer_updated">Auto-updated daily</span>
+  </div>
+</footer>
+
+<script src="i18n.js"></script>
+<script src="toc.js"></script>
+</body>
+</html>

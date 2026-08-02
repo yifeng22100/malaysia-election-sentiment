@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Federal / GE16 — Malaysia State Elections Sentiment Tracker</title>
+<meta name="description" content="What Malaysia's 2025–2028 state election cycle means for the federal unity government and the timing of GE16.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-utility">
+    <div class="header-utility-inner">
+      <nav class="lang-switch" aria-label="Language">
+        <a href="#" data-set-lang="en">EN</a>
+        <a href="#" data-set-lang="ms">BM</a>
+        <a href="#" data-set-lang="zh">中文</a>
+        <a href="#" data-set-lang="ta">தமிழ்</a>
+      </nav>
+      <div class="theme-switch" role="group" aria-label="Theme">
+        <button data-set-theme="light">Light</button>
+        <button data-set-theme="auto">Auto</button>
+        <button data-set-theme="dark">Dark</button>
+      </div>
+    </div>
+  </div>
+  <div class="header-main-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">MY</span>
+      <span class="brand-word">Elections Sentiment<small>Malaysia state election tracker</small></span>
+    </a>
+    <nav class="site-nav-main">
+      <a href="index.html" data-i18n="nav_overview">Overview</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" type="button"><span data-i18n="nav_states">States</span> <span class="caret">▾</span></button>
+        <div class="nav-dropdown-menu">
+          <div class="nav-dropdown-group-label" data-i18n="grp_decided">Decided</div>
+          <a href="johor.html"><span class="nav-dot dot-done"></span>Johor</a>
+          <a href="negeri-sembilan.html"><span class="nav-dot dot-done"></span>Negeri Sembilan</a>
+          <a href="sabah.html"><span class="nav-dot dot-done"></span>Sabah</a>
+          <div class="nav-dropdown-group-label" data-i18n="grp_anticipated">Anticipated</div>
+          <a href="melaka.html"><span class="nav-dot dot-soon"></span>Melaka</a>
+          <a href="sarawak.html"><span class="nav-dot dot-soon"></span>Sarawak</a>
+          <div class="nav-dropdown-group-label" data-i18n="grp_notdue">Not yet due</div>
+          <a href="selangor.html"><span class="nav-dot dot-later"></span>Selangor</a>
+          <a href="penang.html"><span class="nav-dot dot-later"></span>Penang</a>
+          <a href="perak.html"><span class="nav-dot dot-later"></span>Perak</a>
+          <a href="pahang.html"><span class="nav-dot dot-later"></span>Pahang</a>
+          <a href="kedah.html"><span class="nav-dot dot-later"></span>Kedah</a>
+          <a href="kelantan.html"><span class="nav-dot dot-later"></span>Kelantan</a>
+          <a href="terengganu.html"><span class="nav-dot dot-later"></span>Terengganu</a>
+          <a href="perlis.html"><span class="nav-dot dot-later"></span>Perlis</a>
+          <div class="nav-dropdown-group-label" data-i18n="grp_federal">Federal</div>
+          <a href="federal.html" class="current"><span class="nav-dot dot-later"></span>Federal (GE16)</a>
+        </div>
+      </div>
+      <a href="parties.html" data-i18n="nav_parties">Parties</a>
+      <a href="about.html" data-i18n="nav_about">About</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+<div class="main">
+
+  <header class="masthead">
+    <div style="display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap;">
+      <span class="eyebrow">National Picture</span>
+      <span class="live-chip"><span class="live-dot"></span><span data-i18n="live_developing">Developing — refreshed daily</span></span>
+    </div>
+    <h1 class="title">The road to GE16</h1>
+    <p class="dek">Every state election in this cycle doubles as a proxy read on Anwar Ibrahim's federal unity government. This page tracks what each result adds up to, and when the next general election actually has to happen.</p>
+    <div class="masthead-meta">
+      <span>Governing: <strong>PH-led unity government</strong></span>
+      <span>Dewan Rakyat dissolution due: <strong>19 Dec 2027</strong></span>
+      <span>Last refreshed: <strong id="refreshed-date">2 Aug 2026</strong></span>
+    </div>
+  </header>
+
+  <div class="lang-note-banner" data-lang-note><span class="lang-note-label"></span></div>
+
+  <section id="status" aria-label="Federal status">
+    <div class="section-label">Where things stand</div>
+    <div class="topline">
+      <div class="topline-cell">
+        <div class="topline-party">Prime Minister</div>
+        <div class="topline-seats" style="font-size:22px;">Anwar Ibrahim</div>
+        <div class="topline-sub">PKR president, in office since Nov 2022</div>
+      </div>
+      <div class="topline-cell">
+        <div class="topline-party">Governing coalition</div>
+        <div class="topline-seats" style="font-size:22px;">PH + BN + GPS + GRS</div>
+        <div class="topline-sub">Unity government formed after the deadlocked GE15</div>
+      </div>
+      <div class="topline-cell">
+        <div class="topline-party">Latest possible GE16</div>
+        <div class="topline-seats" style="font-size:22px;">17 Feb 2028</div>
+        <div class="topline-sub">60 days after the 19 Dec 2027 dissolution deadline</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="scorecard" aria-label="State election scorecard">
+    <div class="section-label">The scorecard so far</div>
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr>
+            <th>State</th>
+            <th>Date</th>
+            <th>Result</th>
+            <th>Read for PH / unity govt</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="party-cell"><span class="swatch" style="background:var(--bn)"></span>Sabah</td>
+            <td>30 Nov 2025</td>
+            <td>GRS 29, Warisan 25 (hung, GRS forms govt)</td>
+            <td>Neutral — Sabah runs on its own coalition logic</td>
+          </tr>
+          <tr>
+            <td class="party-cell"><span class="swatch" style="background:var(--bn)"></span>Johor</td>
+            <td>11 Jul 2026</td>
+            <td>BN landslide, 48/56</td>
+            <td class="delta-down">Negative — PN-to-BN Malay consolidation, PH squeezed</td>
+          </tr>
+          <tr>
+            <td class="party-cell"><span class="swatch" style="background:var(--bn)"></span>Negeri Sembilan</td>
+            <td>1 Aug 2026</td>
+            <td>BN–PN pact 25/36, PH 11</td>
+            <td class="delta-down">Negative — PH loses a state it governed, MB and DAP sec-gen both defeated</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="implications" aria-label="Implications">
+    <div class="section-label">What it adds up to</div>
+    <p class="lede">Two decided Peninsular elections, two losses for PH — through different mechanisms, but the same direction.</p>
+    <div class="prose">
+      <p>Johor and Negeri Sembilan broke against PH via genuinely different routes: Johor through PN sitting out a third of the seats and Malay voters consolidating behind BN; Negeri Sembilan through a formal BN–PN non-compete pact that split all 36 seats between the two non-PH blocs and ran them as one anti-PH front. Different mechanisms, same outcome — and Negeri Sembilan carried a heavier personal cost, with PH losing its own state chairman (Menteri Besar Aminuddin Harun) and DAP secretary-general Anthony Loke in the same night.</p>
+      <p>For a federal unity government built on PH, BN, GPS and GRS all sitting in the same cabinet, the state-level story is really a story about UMNO's (and now the BN–PN pact's) internal leverage. A second win validates the non-compete model as repeatable rather than a one-off, which increases pressure on PH to recalibrate before facing voters nationally, and raises the political cost of Anwar's coalition partners drifting further from PH's own positioning. None of this forces an early dissolution — the unity government's parliamentary arithmetic hasn't changed — but it shapes the environment GE16 will eventually be fought in.</p>
+      <p>Sabah sits outside this reading. Its November 2025 hung assembly and GRS-led coalition government reflect Sabah's own multi-party dynamics rather than the Peninsula's BN/PH/PN framing — DAP's total wipeout there says more about Sabah-specific alignment than about federal sentiment.</p>
+    </div>
+  </section>
+
+  <section id="whats-next" aria-label="What's next">
+    <div class="section-label">What we're watching next</div>
+    <div class="next">
+      <div class="next-date">Watch: Melaka &amp; Sarawak</div>
+      <p class="prose" style="margin:0;">Both remaining anticipated states — <a href="melaka.html">Melaka</a> and <a href="sarawak.html">Sarawak</a> — are still undated, but expected to firm up now that Johor and Negeri Sembilan have landed. Neither is likely to change the federal arithmetic directly, but each adds another data point to the pattern this page is tracking. The eight states not yet due don't face elections until 2027–2028 at the earliest, putting them on a similar clock to GE16 itself.</p>
+    </div>
+  </section>
+
+  <footer id="sources">
+    <div class="section-label" style="margin-bottom:10px;">Sources</div>
+    <ul class="sources">
+      <li><a href="https://en.wikipedia.org/wiki/Next_Malaysian_general_election" target="_blank" rel="noopener">Wikipedia — next Malaysian general election</a></li>
+      <li><a href="https://says.com/my/news/when-is-next-election-here-are-deadlines-every-state-federal-poll-malaysia" target="_blank" rel="noopener">SAYS — election deadlines for every state and federal poll</a></li>
+      <li>See <a href="johor.html">Johor</a>, <a href="negeri-sembilan.html">Negeri Sembilan</a> and <a href="sabah.html">Sabah</a> for full per-state source lists.</li>
+    </ul>
+    <p>Compiled from public news coverage and official deadlines. Not affiliated with the Election Commission of Malaysia, any political coalition, or the Government of Malaysia. Figures are as officially reported at time of writing and may be revised.</p>
+    <div class="cadence"><span class="live-dot" style="animation:none;"></span>This edition refreshes as national-level developments occur.</div>
+  </footer>
+
+</div>
+
+<aside class="toc" aria-label="On this page">
+  <div class="toc-label">On this page</div>
+  <a href="#status">Where things stand</a>
+  <a href="#scorecard">Scorecard so far</a>
+  <a href="#implications">What it adds up to</a>
+  <a href="#whats-next">What's next</a>
+  <a href="#sources">Sources</a>
+</aside>
+
+</div>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div class="footer-col">
+      <div class="footer-brand"><span class="brand-mark" style="width:26px;height:26px;font-size:11px;">MY</span><strong>Elections Sentiment</strong></div>
+      <p class="footer-tagline" data-i18n="footer_tagline">An independent, unofficial tracker of public, party and market sentiment across Malaysia's rolling state election cycle.</p>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_sections_title">Sections</h4>
+      <a href="index.html" data-i18n="nav_overview">Overview</a>
+      <a href="johor.html" data-i18n="nav_johor">Johor</a>
+      <a href="negeri-sembilan.html" data-i18n="nav_n9">Negeri Sembilan</a>
+      <a href="parties.html" data-i18n="nav_parties">Parties</a>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_about_title">About this site</h4>
+      <a href="about.html" data-i18n="nav_about">About</a>
+      <a href="about.html#methodology" data-i18n="footer_methodology">Methodology &amp; sources</a>
+      <a href="https://github.com/yifeng22100/malaysia-election-sentiment" target="_blank" rel="noopener" data-i18n="footer_github">View source on GitHub</a>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_language_title">Language</h4>
+      <nav class="lang-switch" aria-label="Language" style="flex-direction:column; align-items:flex-start; gap:9px;">
+        <a href="#" data-set-lang="en">English</a>
+        <a href="#" data-set-lang="ms">Bahasa Malaysia</a>
+        <a href="#" data-set-lang="zh">中文</a>
+        <a href="#" data-set-lang="ta">தமிழ்</a>
+      </nav>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span data-i18n="footer_disclaimer">Not affiliated with the Election Commission of Malaysia, any political party or coalition, or any government body. Compiled from public news coverage. Logos are used for identification purposes only and remain the property of their respective parties.</span>
+    <span data-i18n="footer_updated">Auto-updated daily</span>
+  </div>
+</footer>
+
+<script src="i18n.js"></script>
+<script src="toc.js"></script>
+</body>
+</html>

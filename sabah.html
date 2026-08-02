@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sabah — Malaysia State Elections Sentiment Tracker</title>
+<meta name="description" content="Post-election sentiment tracker for the 2025 Sabah state election: the hung assembly, GRS's coalition, and Warisan's resurgence.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-utility">
+    <div class="header-utility-inner">
+      <nav class="lang-switch" aria-label="Language">
+        <a href="#" data-set-lang="en">EN</a>
+        <a href="#" data-set-lang="ms">BM</a>
+        <a href="#" data-set-lang="zh">中文</a>
+        <a href="#" data-set-lang="ta">தமிழ்</a>
+      </nav>
+      <div class="theme-switch" role="group" aria-label="Theme">
+        <button data-set-theme="light">Light</button>
+        <button data-set-theme="auto">Auto</button>
+        <button data-set-theme="dark">Dark</button>
+      </div>
+    </div>
+  </div>
+  <div class="header-main-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">MY</span>
+      <span class="brand-word">Elections Sentiment<small>Malaysia state election tracker</small></span>
+    </a>
+    <nav class="site-nav-main">
+      <a href="index.html" data-i18n="nav_overview">Overview</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" type="button"><span data-i18n="nav_states">States</span> <span class="caret">▾</span></button>
+        <div class="nav-dropdown-menu">
+          <div class="nav-dropdown-group-label" data-i18n="grp_decided">Decided</div>
+          <a href="johor.html"><span class="nav-dot dot-done"></span>Johor</a>
+          <a href="negeri-sembilan.html"><span class="nav-dot dot-done"></span>Negeri Sembilan</a>
+          <a href="sabah.html" class="current"><span class="nav-dot dot-done"></span>Sabah</a>
+          <div class="nav-dropdown-group-label" data-i18n="grp_anticipated">Anticipated</div>
+          <a href="melaka.html"><span class="nav-dot dot-soon"></span>Melaka</a>
+          <a href="sarawak.html"><span class="nav-dot dot-soon"></span>Sarawak</a>
+          <div class="nav-dropdown-group-label" data-i18n="grp_notdue">Not yet due</div>
+          <a href="selangor.html"><span class="nav-dot dot-later"></span>Selangor</a>
+          <a href="penang.html"><span class="nav-dot dot-later"></span>Penang</a>
+          <a href="perak.html"><span class="nav-dot dot-later"></span>Perak</a>
+          <a href="pahang.html"><span class="nav-dot dot-later"></span>Pahang</a>
+          <a href="kedah.html"><span class="nav-dot dot-later"></span>Kedah</a>
+          <a href="kelantan.html"><span class="nav-dot dot-later"></span>Kelantan</a>
+          <a href="terengganu.html"><span class="nav-dot dot-later"></span>Terengganu</a>
+          <a href="perlis.html"><span class="nav-dot dot-later"></span>Perlis</a>
+          <div class="nav-dropdown-group-label" data-i18n="grp_federal">Federal</div>
+          <a href="federal.html"><span class="nav-dot dot-later"></span>Federal (GE16)</a>
+        </div>
+      </div>
+      <a href="parties.html" data-i18n="nav_parties">Parties</a>
+      <a href="about.html" data-i18n="nav_about">About</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+<div class="main">
+
+  <header class="masthead">
+    <div style="display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap;">
+      <span class="eyebrow">Post-Election Sentiment Tracker</span>
+      <span class="live-chip"><span class="live-dot"></span><span data-i18n="live_developing">Developing — refreshed daily</span></span>
+    </div>
+    <h1 class="title">Sabah: GRS holds on, Warisan roars back</h1>
+    <p class="dek">The state that opened the 2025–2028 election cycle delivered the messiest result of it so far — a hung assembly, a DAP wipeout, and a Warisan comeback — before GRS built a working majority and settled back into government.</p>
+    <div class="masthead-meta">
+      <span>Election day: <strong>29 Nov 2025</strong></span>
+      <span>Last refreshed: <strong id="refreshed-date">2 Aug 2026</strong></span>
+      <span>73 of 79 seats, 17th Sabah State Assembly</span>
+    </div>
+  </header>
+
+  <div class="lang-note-banner" data-lang-note><span class="lang-note-label"></span></div>
+
+  <section id="result" aria-label="Topline result">
+    <div class="section-label">The result</div>
+
+    <div class="topline">
+      <div class="topline-cell">
+        <div class="topline-party"><span class="swatch" style="background:var(--bn)"></span>GRS</div>
+        <div class="topline-seats">29<span> / 73 seats</span></div>
+        <div class="topline-sub">Largest bloc, short of the 37-seat majority alone</div>
+      </div>
+      <div class="topline-cell">
+        <div class="topline-party"><span class="swatch" style="background:var(--ph)"></span>Warisan</div>
+        <div class="topline-seats">25<span> / 73 seats</span></div>
+        <div class="topline-sub">Major resurgence — re-establishes itself as main opposition</div>
+      </div>
+      <div class="topline-cell">
+        <div class="topline-party"><span class="swatch" style="background:var(--oth)"></span>DAP</div>
+        <div class="topline-seats">0<span> seats won</span></div>
+        <div class="topline-sub">Wiped out — the election's other headline result</div>
+      </div>
+    </div>
+
+    <div class="seatbar">
+      <div style="width:39.7%; background:var(--bn)"></div>
+      <div style="width:34.2%; background:var(--ph)"></div>
+      <div style="width:8.2%; background:var(--pn)"></div>
+      <div style="width:17.9%; background:var(--oth)"></div>
+    </div>
+    <div class="seatbar-legend">
+      <span><span class="swatch" style="background:var(--bn)"></span>GRS <strong>29</strong></span>
+      <span><span class="swatch" style="background:var(--ph)"></span>Warisan <strong>25</strong></span>
+      <span><span class="swatch" style="background:var(--pn)"></span>BN <strong>6</strong></span>
+      <span>UPKO 3 · Independents 5 · STAR 2 · PH 1 · PN 1 · KDM 1</span>
+    </div>
+  </section>
+
+  <section id="mood" aria-label="Sentiment summary">
+    <div class="section-label">Reading the mood</div>
+    <p class="lede">Sabah politics ran true to form: fragmented, personality-driven, and settled by coalition arithmetic after polling day rather than on it.</p>
+
+    <div class="mood-meter">
+      <div class="mood-meter-value">Settled, after a messy start</div>
+      <div class="mood-meter-note">Sentiment read: no outright majority on election night, but GRS converted its plurality into a stable, multi-party government within days — this state's political story is now the calmest of the three decided so far.</div>
+      <div class="mood-meter-scale">
+        <div class="mood-meter-fill" style="width:70%; background:var(--status-done);"></div>
+      </div>
+      <div class="mood-meter-labels"><span>Uncertain</span><span>Decisive</span></div>
+    </div>
+    <div class="prose">
+      <p>No coalition reached the 37-seat majority line on 29 November, but GRS's 29 seats gave incumbent Chief Minister Hajiji Noor — who defended his own Sulaman seat — the strongest hand in post-election talks. A cabinet was sworn in on 1 December 2025 built around GRS plus BN (6), UPKO (3), STAR (2) and KDM (1), comfortably past the majority threshold, with Joachim Gunsalam, Masidi Manjun and Ewon Benedick installed as deputy chief ministers. The government has since branded its second term "SMJ 2.0," a continuation of the Hala Tuju Sabah Maju Jaya development agenda from Hajiji's first term.</p>
+      <p>The more talked-about story was the opposition, not the government. Shafie Apdal's Warisan more than doubled its prior showing to 25 seats, re-establishing itself as Sabah's dominant opposition force and Shafie's strongest personal result since losing power in 2020. DAP, by contrast, was wiped out entirely — a stark result given the party's continued relevance in federal government — underlining how disconnected Sabah's political alignments are from the Peninsula's BN/PH/PN framing. Analysts have since described Sabah as increasingly a genuine three-way contest between GRS, Warisan and a diminished BN, rather than an extension of any peninsular coalition's fortunes.</p>
+    </div>
+  </section>
+
+  <section id="signal-log" aria-label="Signal log">
+    <div class="section-label">Signal log — newest first</div>
+    <div class="log">
+
+      <div class="log-entry">
+        <div class="log-date">14 May</div>
+        <div>
+          <span class="log-tag tag-reax">Analysis</span>
+          <p class="log-headline">"Political realignment and governance challenges in Sabah"</p>
+          <p class="log-body">A SEDAR Institute analysis published months after the government's formation assessed GRS's multi-party cabinet as functionally stable but structurally fragile — a coalition of convenience spanning parties with distinct local bases, dependent on continued federal goodwill and oil-royalty negotiations to hold together through the term.</p>
+          <p class="log-source">SEDAR Institute</p>
+        </div>
+      </div>
+
+      <div class="log-entry">
+        <div class="log-date">5 Jan</div>
+        <div>
+          <span class="log-tag tag-result">Governance</span>
+          <p class="log-headline">GRS pledges continuity under "SMJ 2.0" development plan</p>
+          <p class="log-body">Marking the start of its second term, the Hajiji government committed to continuing the Hala Tuju Sabah Maju Jaya development agenda, rebranded SMJ 2.0, as its governing platform — prioritising infrastructure and economic development delivery over any major policy reset.</p>
+          <p class="log-source">Malay Mail · Daily Express Sabah</p>
+        </div>
+      </div>
+
+      <div class="log-entry">
+        <div class="log-date">1 Dec 2025</div>
+        <div>
+          <span class="log-tag tag-result">Government</span>
+          <p class="log-headline">Second Hajiji cabinet sworn in with three deputy chief ministers</p>
+          <p class="log-body">GRS formed government with BN, UPKO, STAR and KDM, comfortably clearing the 37-seat majority line. Joachim Gunsalam (PBS), Masidi Manjun (Gagasan) and Ewon Benedick (UPKO) were named deputy chief ministers, with the cabinet drawing from GRS, Gagasan, PBS, LDP, Sabah UMNO, PBRS, UPKO, STAR, KDM and PKR.</p>
+          <p class="log-source">Wikipedia — Second Hajiji cabinet · The Vibes</p>
+        </div>
+      </div>
+
+      <div class="log-entry">
+        <div class="log-date">30 Nov 2025</div>
+        <div>
+          <span class="log-tag tag-result">Result</span>
+          <p class="log-headline">Hung assembly: GRS 29, Warisan 25, DAP wiped out</p>
+          <p class="log-body">Official count across 73 of 79 seats: GRS 29, Warisan 25, BN 6, UPKO 3, Independents 5, STAR 2, PH 1, PN 1, KDM 1 — no coalition reached the 37-seat majority outright. Hajiji Noor held his Sulaman seat; DAP failed to win any seat, a marked reversal from its previous Sabah presence.</p>
+          <p class="log-source">Malay Mail · Borneo Post · The Malaysian Reserve</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="scoreboard" aria-label="Coalition scoreboard">
+    <div class="section-label">Coalition scoreboard</div>
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Coalition</th>
+            <th>Seats won</th>
+            <th>Role</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="party-cell"><span class="swatch" style="background:var(--bn)"></span>GRS</td>
+            <td>29</td>
+            <td>Governs, with BN/UPKO/STAR/KDM</td>
+          </tr>
+          <tr>
+            <td class="party-cell"><span class="swatch" style="background:var(--ph)"></span>Warisan</td>
+            <td>25</td>
+            <td>Main opposition</td>
+          </tr>
+          <tr>
+            <td class="party-cell"><span class="swatch" style="background:var(--pn)"></span>BN</td>
+            <td>6</td>
+            <td>Governs, in GRS coalition</td>
+          </tr>
+          <tr>
+            <td class="party-cell"><span class="swatch" style="background:var(--oth)"></span>UPKO</td>
+            <td>3</td>
+            <td>Governs, DCM Ewon Benedick</td>
+          </tr>
+          <tr>
+            <td class="party-cell"><span class="swatch" style="background:var(--oth)"></span>Independents</td>
+            <td>5</td>
+            <td>Mixed alignment</td>
+          </tr>
+          <tr>
+            <td class="party-cell"><span class="swatch" style="background:var(--oth)"></span>STAR</td>
+            <td>2</td>
+            <td>Governs, in GRS coalition</td>
+          </tr>
+          <tr>
+            <td class="party-cell"><span class="swatch" style="background:var(--oth)"></span>PH (ex. DAP)</td>
+            <td>1</td>
+            <td>Opposition-aligned</td>
+          </tr>
+          <tr>
+            <td class="party-cell"><span class="swatch" style="background:var(--oth)"></span>PN</td>
+            <td>1</td>
+            <td>Opposition-aligned</td>
+          </tr>
+          <tr>
+            <td class="party-cell"><span class="swatch" style="background:var(--oth)"></span>KDM</td>
+            <td>1</td>
+            <td>Governs, in GRS coalition</td>
+          </tr>
+          <tr>
+            <td class="party-cell"><span class="swatch" style="background:var(--ph)"></span>DAP</td>
+            <td>0</td>
+            <td>Wiped out</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="whats-next" aria-label="What's next">
+    <div class="section-label">What we're watching next</div>
+    <div class="next">
+      <div class="next-date">Ongoing</div>
+      <p class="prose" style="margin:0;">Sabah's government is now the most settled of the states decided so far in this cycle, but the coalition's multi-party structure and dependence on federal goodwill (particularly over oil-royalty negotiations) are the fault lines analysts are watching. See the <a href="index.html">Overview page</a> for how Sabah's hung-assembly outcome compares with Johor's landslide and Negeri Sembilan's pact-driven result.</p>
+    </div>
+  </section>
+
+  <footer id="sources">
+    <div class="section-label" style="margin-bottom:10px;">Sources referenced in this edition</div>
+    <ul class="sources">
+      <li><a href="https://en.wikipedia.org/wiki/2025_Sabah_state_election" target="_blank" rel="noopener">Wikipedia — 2025 Sabah state election</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Results_of_the_2025_Sabah_state_election" target="_blank" rel="noopener">Wikipedia — results of the 2025 Sabah state election</a></li>
+      <li><a href="https://www.scoop.my/news/275790/unofficial-tally-grs-dominates-sabah-election-as-bn-and-warisan-make-gains-dap-defeated/" target="_blank" rel="noopener">Scoop — GRS dominates, DAP defeated</a></li>
+      <li><a href="https://www.theborneopost.com/2025/11/30/live-updates-sabah-decides-2025-grs-emerges-front-runner-in-official-ec-count/" target="_blank" rel="noopener">Borneo Post — Sabah Decides 2025 live updates</a></li>
+      <li><a href="https://themalaysianreserve.com/2025/11/30/full-official-results-of-sabah-state-seats-by-party/" target="_blank" rel="noopener">The Malaysian Reserve — full official results</a></li>
+      <li><a href="https://www.malaymail.com/news/malaysia/2025/11/30/grs-emerges-front-runner-in-sabah-election-with-29-seats-as-poll-ends-without-a-clear-majority/200166" target="_blank" rel="noopener">Malay Mail — GRS front-runner, no clear majority</a></li>
+      <li><a href="https://www.malaymail.com/news/malaysia/2026/01/05/grs-returns-to-power-in-sabah-pledges-continuity-under-smj-20-development-plan/204359" target="_blank" rel="noopener">Malay Mail — GRS pledges continuity under SMJ 2.0</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Second_Hajiji_cabinet" target="_blank" rel="noopener">Wikipedia — Second Hajiji cabinet</a></li>
+      <li><a href="https://www.thevibes.com/articles/news/116362/masidi-joachim-and-ewon-are-sabahs-new-deputy-chief-ministers" target="_blank" rel="noopener">The Vibes — Sabah's new deputy chief ministers</a></li>
+      <li><a href="https://www.isedar.my/2026/05/14/political-realignment-and-governance-challenges-in-sabah/" target="_blank" rel="noopener">SEDAR Institute — political realignment and governance challenges</a></li>
+    </ul>
+    <p>Compiled from public news coverage and official election-commission announcements. Not affiliated with the Election Commission of Malaysia, any political coalition, or any government body. Figures are as officially reported at time of writing and may be revised.</p>
+    <div class="cadence"><span class="live-dot" style="animation:none;"></span>This edition refreshes as post-election developments in Sabah occur.</div>
+  </footer>
+
+</div>
+
+<aside class="toc" aria-label="On this page">
+  <div class="toc-label">On this page</div>
+  <a href="#result">The result</a>
+  <a href="#mood">Reading the mood</a>
+  <a href="#signal-log">Signal log</a>
+  <a href="#scoreboard">Coalition scoreboard</a>
+  <a href="#whats-next">What's next</a>
+  <a href="#sources">Sources</a>
+</aside>
+
+</div>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div class="footer-col">
+      <div class="footer-brand"><span class="brand-mark" style="width:26px;height:26px;font-size:11px;">MY</span><strong>Elections Sentiment</strong></div>
+      <p class="footer-tagline" data-i18n="footer_tagline">An independent, unofficial tracker of public, party and market sentiment across Malaysia's rolling state election cycle.</p>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_sections_title">Sections</h4>
+      <a href="index.html" data-i18n="nav_overview">Overview</a>
+      <a href="johor.html" data-i18n="nav_johor">Johor</a>
+      <a href="negeri-sembilan.html" data-i18n="nav_n9">Negeri Sembilan</a>
+      <a href="parties.html" data-i18n="nav_parties">Parties</a>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_about_title">About this site</h4>
+      <a href="about.html" data-i18n="nav_about">About</a>
+      <a href="about.html#methodology" data-i18n="footer_methodology">Methodology &amp; sources</a>
+      <a href="https://github.com/yifeng22100/malaysia-election-sentiment" target="_blank" rel="noopener" data-i18n="footer_github">View source on GitHub</a>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_language_title">Language</h4>
+      <nav class="lang-switch" aria-label="Language" style="flex-direction:column; align-items:flex-start; gap:9px;">
+        <a href="#" data-set-lang="en">English</a>
+        <a href="#" data-set-lang="ms">Bahasa Malaysia</a>
+        <a href="#" data-set-lang="zh">中文</a>
+        <a href="#" data-set-lang="ta">தமிழ்</a>
+      </nav>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span data-i18n="footer_disclaimer">Not affiliated with the Election Commission of Malaysia, any political party or coalition, or any government body. Compiled from public news coverage. Logos are used for identification purposes only and remain the property of their respective parties.</span>
+    <span data-i18n="footer_updated">Auto-updated daily</span>
+  </div>
+</footer>
+
+<script src="i18n.js"></script>
+<script src="toc.js"></script>
+</body>
+</html>
