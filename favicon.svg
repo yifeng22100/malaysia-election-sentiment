@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-2.43 0 18.8 18.8" role="img" aria-label="Flag of Malaysia">
+<defs><clipPath id="c"><circle cx="6.97" cy="9.4" r="9.4"/></clipPath></defs>
+<g clip-path="url(#c)">
+  <rect x="-20" y="-20" width="70" height="70" fill="#c00"/>
+  <path fill="#fff" d="m0 0h28v14H0z"/>
+  <path stroke="#c00" d="m1 .5h27m0 2H1m0 2h27m0 2H1"/>
+  <path fill="#006" d="m0 0h14v8.5H0z"/>
+  <path stroke="#c00" d="m0 8.5h28m0 2H0m0 2h28"/>
+  <path fill="#fc0" transform="scale(0.0020833333)" d="m4200 720 107 732 414-613-222 706 639-373-506 540 738-59-690 267 690 267-738-59 506 540-639-373 222 706-414-613-107 732-107-732-414 613 222-706-639 373 506-540-738 59 690-267-690-267 738 59-506-540 639 373-222-706 414 613zm-600 30a1280 1280 0 1 0 0 2340 1440 1440 0 1 1 0-2340z"/>
+</g>
+</svg>
