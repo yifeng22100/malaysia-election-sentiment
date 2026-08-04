@@ -1,21 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 462" role="img" aria-label="Flag of Malaysia">
 <defs><clipPath id="c"><circle cx="230" cy="231" r="230"/></clipPath></defs>
 <g clip-path="url(#c)">
-  <rect x="0" y="0.00" width="460" height="33.00" fill="#c00"/>
-  <rect x="0" y="33.00" width="460" height="33.00" fill="#fff"/>
-  <rect x="0" y="66.00" width="460" height="33.00" fill="#c00"/>
-  <rect x="0" y="99.00" width="460" height="33.00" fill="#fff"/>
-  <rect x="0" y="132.00" width="460" height="33.00" fill="#c00"/>
-  <rect x="0" y="165.00" width="460" height="33.00" fill="#fff"/>
-  <rect x="0" y="198.00" width="460" height="33.00" fill="#c00"/>
-  <rect x="0" y="231.00" width="460" height="33.00" fill="#fff"/>
-  <rect x="0" y="264.00" width="460" height="33.00" fill="#c00"/>
-  <rect x="0" y="297.00" width="460" height="33.00" fill="#fff"/>
-  <rect x="0" y="330.00" width="460" height="33.00" fill="#c00"/>
-  <rect x="0" y="363.00" width="460" height="33.00" fill="#fff"/>
-  <rect x="0" y="396.00" width="460" height="33.00" fill="#c00"/>
-  <rect x="0" y="429.00" width="460" height="33.00" fill="#fff"/>
-  <rect x="0" y="0" width="240" height="280" fill="#006"/>
+  <rect x="0" y="0.00" width="460" height="33.50" fill="#c00"/>
+  <rect x="0" y="33.00" width="460" height="33.50" fill="#fff"/>
+  <rect x="0" y="66.00" width="460" height="33.50" fill="#c00"/>
+  <rect x="0" y="99.00" width="460" height="33.50" fill="#fff"/>
+  <rect x="0" y="132.00" width="460" height="33.50" fill="#c00"/>
+  <rect x="0" y="165.00" width="460" height="33.50" fill="#fff"/>
+  <rect x="0" y="198.00" width="460" height="33.50" fill="#c00"/>
+  <rect x="0" y="231.00" width="460" height="33.50" fill="#fff"/>
+  <rect x="0" y="264.00" width="460" height="33.50" fill="#c00"/>
+  <rect x="0" y="297.00" width="460" height="33.50" fill="#fff"/>
+  <rect x="0" y="330.00" width="460" height="33.50" fill="#c00"/>
+  <rect x="0" y="363.00" width="460" height="33.50" fill="#fff"/>
+  <rect x="0" y="396.00" width="460" height="33.50" fill="#c00"/>
+  <rect x="0" y="429.00" width="460" height="33.50" fill="#fff"/>
+  <rect x="0" y="0" width="244" height="284" fill="#006" stroke="#006" stroke-width="2"/>
   <path fill="#fc0" transform="translate(-29.6,76.3) scale(0.0462)" d="m4200 720 107 732 414-613-222 706 639-373-506 540 738-59-690 267 690 267-738-59 506 540-639-373 222 706-414-613-107 732-107-732-414 613 222-706-639 373 506-540-738 59 690-267-690-267 738 59-506-540 639 373-222-706 414 613zm-600 30a1280 1280 0 1 0 0 2340 1440 1440 0 1 1 0-2340z"/>
 </g>
 </svg>
