@@ -10,6 +10,7 @@ const I18N_DICT = {
     nav_johor: "Johor",
     nav_n9: "Negeri Sembilan",
     nav_parties: "Parties",
+    nav_history: "History & EC",
     nav_about: "About",
     nav_states: "States",
     nav_federal: "Federal (GE16)",
@@ -50,13 +51,19 @@ const I18N_DICT = {
     h_history: "History & milestones",
     h_legacy: "Legacy",
     h_messaging: "Messaging themes",
-    h_perception: "Public perception"
+    h_perception: "Public perception",
+    field_established: "Established",
+    field_legalbasis: "Legal basis",
+    field_structure: "Structure",
+    field_chairman: "Current chairman",
+    field_cycle: "Redelineation cycle"
   },
   ms: {
     nav_overview: "Ikhtisar",
     nav_johor: "Johor",
     nav_n9: "Negeri Sembilan",
     nav_parties: "Parti-Parti",
+    nav_history: "Sejarah & SPR",
     nav_about: "Tentang",
     nav_states: "Negeri",
     nav_federal: "Persekutuan (PRU16)",
@@ -97,13 +104,19 @@ const I18N_DICT = {
     h_history: "Sejarah & detik penting",
     h_legacy: "Warisan",
     h_messaging: "Tema mesej",
-    h_perception: "Persepsi awam"
+    h_perception: "Persepsi awam",
+    field_established: "Ditubuhkan",
+    field_legalbasis: "Asas perundangan",
+    field_structure: "Struktur",
+    field_chairman: "Pengerusi semasa",
+    field_cycle: "Kitaran persempadanan semula"
   },
   zh: {
     nav_overview: "总览",
     nav_johor: "柔佛",
     nav_n9: "森美兰",
     nav_parties: "政党",
+    nav_history: "历史与选委会",
     nav_about: "关于",
     nav_states: "各州",
     nav_federal: "联邦（第16届大选）",
@@ -144,13 +157,19 @@ const I18N_DICT = {
     h_history: "历史与重要里程碑",
     h_legacy: "历史影响",
     h_messaging: "宣传主题",
-    h_perception: "公众看法"
+    h_perception: "公众看法",
+    field_established: "成立于",
+    field_legalbasis: "法律依据",
+    field_structure: "组织架构",
+    field_chairman: "现任主席",
+    field_cycle: "重划选区周期"
   },
   ta: {
     nav_overview: "மேலோட்டம்",
     nav_johor: "ஜொகூர்",
     nav_n9: "நெகிரி செம்பிலான்",
     nav_parties: "கட்சிகள்",
+    nav_history: "வரலாறு & SPR",
     nav_about: "எங்களைப் பற்றி",
     nav_states: "மாநிலங்கள்",
     nav_federal: "கூட்டாட்சி (GE16)",
@@ -191,7 +210,12 @@ const I18N_DICT = {
     h_history: "வரலாறு & மைல்கற்கள்",
     h_legacy: "பாரம்பரியம்",
     h_messaging: "செய்தி கருப்பொருள்கள்",
-    h_perception: "பொது கருத்து"
+    h_perception: "பொது கருத்து",
+    field_established: "நிறுவப்பட்டது",
+    field_legalbasis: "சட்ட அடிப்படை",
+    field_structure: "அமைப்பு",
+    field_chairman: "தற்போதைய தலைவர்",
+    field_cycle: "மறுவரையறை சுழற்சி"
   }
 };
 
