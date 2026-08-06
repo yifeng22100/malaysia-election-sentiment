@@ -1,0 +1,204 @@
+{
+ "GE-00": {
+  "layers": [
+   "peninsular_1954"
+  ],
+  "seats": 52,
+  "date": "1955-07-25",
+  "dropped": {},
+  "shaded": 52,
+  "coverage": 1.0,
+  "note": ""
+ },
+ "GE-01": {
+  "layers": [
+   "peninsular_1958"
+  ],
+  "seats": 104,
+  "date": "1959-05-20",
+  "dropped": {},
+  "shaded": 104,
+  "coverage": 1.0,
+  "note": ""
+ },
+ "GE-02": {
+  "layers": [
+   "peninsular_1958"
+  ],
+  "seats": 104,
+  "date": "1964-04-25",
+  "dropped": {},
+  "shaded": 104,
+  "coverage": 1.0,
+  "note": ""
+ },
+ "GE-03": {
+  "layers": [
+   "peninsular_1958",
+   "sabah_1974",
+   "sarawak_1968"
+  ],
+  "seats": 144,
+  "date": "1969-05-10",
+  "dropped": {},
+  "shaded": 139,
+  "coverage": 0.9653,
+  "note": "5 seat(s) unshaded (boundaries not archived)"
+ },
+ "GE-04": {
+  "layers": [
+   "peninsular_1974",
+   "sabah_1974",
+   "sarawak_1968"
+  ],
+  "seats": 154,
+  "date": "1974-08-24",
+  "dropped": {},
+  "shaded": 154,
+  "coverage": 1.0,
+  "note": ""
+ },
+ "GE-05": {
+  "layers": [
+   "peninsular_1974",
+   "sabah_1974",
+   "sarawak_1977"
+  ],
+  "seats": 154,
+  "date": "1978-07-08",
+  "dropped": {},
+  "shaded": 154,
+  "coverage": 1.0,
+  "note": ""
+ },
+ "GE-06": {
+  "layers": [
+   "peninsular_1974",
+   "sabah_1974",
+   "sarawak_1977"
+  ],
+  "seats": 154,
+  "date": "1982-04-22",
+  "dropped": {},
+  "shaded": 154,
+  "coverage": 1.0,
+  "note": ""
+ },
+ "GE-07": {
+  "layers": [
+   "peninsular_1984",
+   "sabah_1984",
+   "sarawak_1977"
+  ],
+  "seats": 177,
+  "date": "1986-08-02",
+  "dropped": {},
+  "shaded": 177,
+  "coverage": 1.0,
+  "note": ""
+ },
+ "GE-08": {
+  "layers": [
+   "peninsular_1984",
+   "sabah_1984",
+   "sarawak_1987"
+  ],
+  "seats": 180,
+  "date": "1990-10-20",
+  "dropped": {},
+  "shaded": 180,
+  "coverage": 1.0,
+  "note": ""
+ },
+ "GE-09": {
+  "layers": [
+   "peninsular_1994",
+   "sabah_1994",
+   "sarawak_1987"
+  ],
+  "seats": 192,
+  "date": "1995-04-24",
+  "dropped": {},
+  "shaded": 192,
+  "coverage": 1.0,
+  "note": ""
+ },
+ "GE-10": {
+  "layers": [
+   "peninsular_1994",
+   "sabah_1994",
+   "sarawak_1996"
+  ],
+  "seats": 193,
+  "date": "1999-11-29",
+  "dropped": {},
+  "shaded": 193,
+  "coverage": 1.0,
+  "note": ""
+ },
+ "GE-11": {
+  "layers": [
+   "peninsular_2003",
+   "sabah_2003",
+   "sarawak_1996"
+  ],
+  "seats": 219,
+  "date": "2004-03-21",
+  "dropped": {},
+  "shaded": 219,
+  "coverage": 1.0,
+  "note": ""
+ },
+ "GE-12": {
+  "layers": [
+   "peninsular_2003",
+   "sabah_2003",
+   "sarawak_2005"
+  ],
+  "seats": 222,
+  "date": "2008-03-08",
+  "dropped": {},
+  "shaded": 222,
+  "coverage": 1.0,
+  "note": ""
+ },
+ "GE-13": {
+  "layers": [
+   "peninsular_2003",
+   "sabah_2003",
+   "sarawak_2005"
+  ],
+  "seats": 222,
+  "date": "2013-05-05",
+  "dropped": {},
+  "shaded": 222,
+  "coverage": 1.0,
+  "note": ""
+ },
+ "GE-14": {
+  "layers": [
+   "peninsular_2018",
+   "sabah_2003",
+   "sarawak_2015"
+  ],
+  "seats": 222,
+  "date": "2018-05-09",
+  "dropped": {},
+  "shaded": 222,
+  "coverage": 1.0,
+  "note": ""
+ },
+ "GE-15": {
+  "layers": [
+   "peninsular_2018",
+   "sabah_2019",
+   "sarawak_2015"
+  ],
+  "seats": 222,
+  "date": "2022-11-19",
+  "dropped": {},
+  "shaded": 222,
+  "coverage": 1.0,
+  "note": ""
+ }
+}

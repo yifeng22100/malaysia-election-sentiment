@@ -15,14 +15,30 @@
     ratio  — optional height/width hint for the panel box
 */
 (function () {
+  // Colours follow coalition lineage, so a run of historical maps reads
+  // coherently: the Alliance→BN thread stays teal, the DAP/PKR-led opposition
+  // thread stays red, and the PAS-led thread stays green.
+  var NODATA = "__nodata";
   var COLORS = {
-    PH: "#FF3B30", PN: "#34C759", BN: "#2AA9BF", GPS: "#5856D6",
-    GRS: "#FF9500", ALONE: "#8E8E93", IND: "#8E8E93"
+    PERIKATAN: "#2AA9BF", BN: "#2AA9BF",                       // governing lineage
+    GR: "#FF3B30", BA: "#FF3B30", PR: "#FF3B30", PH: "#FF3B30", // DAP/PKR-led lineage
+    APU: "#34C759", GS: "#34C759", PN: "#34C759", HAK: "#34C759", // PAS-led lineage
+    SF: "#AF52DE",                                             // Socialist Front
+    GPS: "#5856D6",                                            // Sarawak
+    GRS: "#FF9500", USA: "#FF9500",                            // Sabah
+    ALONE: "#8E8E93", IND: "#8E8E93",
+    __nodata: "#D8D8DE"
   };
   var LABELS = {
-    PH: "Pakatan Harapan", PN: "Perikatan Nasional", BN: "Barisan Nasional",
-    GPS: "Gabungan Parti Sarawak", GRS: "Gabungan Rakyat Sabah",
-    ALONE: "Unaligned / others", IND: "Independent"
+    PERIKATAN: "Alliance", BN: "Barisan Nasional",
+    GR: "Gagasan Rakyat", BA: "Barisan Alternatif",
+    PR: "Pakatan Rakyat", PH: "Pakatan Harapan",
+    APU: "Angkatan Perpaduan Ummah", GS: "Gagasan Sejahtera",
+    PN: "Perikatan Nasional", HAK: "HAK (PAS)",
+    SF: "Socialist Front", GPS: "Gabungan Parti Sarawak",
+    GRS: "Gabungan Rakyat Sabah", USA: "United Sabah Alliance",
+    ALONE: "Unaligned / others", IND: "Independent",
+    __nodata: "Not mapped"
   };
   function colorFor(w) { return COLORS[w] || "#8E8E93"; }
   function labelFor(w) { return LABELS[w] || w || "Unknown"; }
@@ -98,10 +114,10 @@
       var paths = buildPanel(g, W, H, pad);
       var body = paths.map(function (p) {
         var pr = p.f.properties;
-        return '<path d="' + p.d + '" fill="' + colorFor(pr.w) + '" class="emap-seat"'
+        return '<path d="' + p.d + '" fill="' + colorFor(pr.w || NODATA) + '" class="emap-seat"'
           + ' data-c="' + (pr.c || "") + '"'
           + ' data-n="' + (pr.n || "").replace(/"/g, "&quot;") + '"'
-          + ' data-w="' + (pr.w || "") + '"'
+          + ' data-w="' + (pr.w || NODATA) + '"'
           + ' data-p="' + (pr.p || "") + '"'
           + ' data-cand="' + (pr.cand || "").replace(/"/g, "&quot;") + '"'
           + ' data-pct="' + (pr.pct != null ? pr.pct : "") + '"'
@@ -115,7 +131,7 @@
     // legend from the coalitions actually present, ordered by seat count
     var tally = {};
     feats.forEach(function (f) {
-      var w = f.properties.w || "Unknown";
+      var w = f.properties.w || NODATA;
       tally[w] = (tally[w] || 0) + 1;
     });
     var order = Object.keys(tally).sort(function (a, b) { return tally[b] - tally[a]; });
@@ -140,11 +156,9 @@
       var d = path.dataset;
       var html = '<span class="emap-tip-seat">' + (d.c ? d.c + " " : "") + d.n + "</span>";
       if (d.s) html += '<span class="emap-tip-state">' + d.s + "</span>";
-      if (d.w) {
-        html += '<span class="emap-tip-win"><span class="emap-swatch" style="background:'
-          + colorFor(d.w) + '"></span>' + labelFor(d.w)
-          + (d.p && d.p !== d.w ? " · " + d.p : "") + "</span>";
-      }
+      html += '<span class="emap-tip-win"><span class="emap-swatch" style="background:'
+        + colorFor(d.w) + '"></span>' + labelFor(d.w)
+        + (d.p && d.p !== d.w && d.w !== NODATA ? " · " + d.p : "") + "</span>";
       if (d.cand) html += '<span class="emap-tip-cand">' + d.cand
         + (d.pct ? " · " + d.pct + "%" : "") + "</span>";
       tip.innerHTML = html;
@@ -169,36 +183,77 @@
     });
 
     // legend hover dims everything else
+    var allSeats = wrap.querySelectorAll(".emap-seat");
     el.querySelectorAll(".emap-key").forEach(function (btn) {
-      function on() { wrap.setAttribute("data-focus", btn.dataset.key); }
-      function off() { wrap.removeAttribute("data-focus"); }
+      function on() {
+        var k = btn.dataset.key;
+        allSeats.forEach(function (p) {
+          p.classList.toggle("is-dim", p.dataset.w !== k);
+        });
+      }
+      function off() {
+        allSeats.forEach(function (p) { p.classList.remove("is-dim"); });
+      }
       btn.addEventListener("mouseenter", on);
       btn.addEventListener("mouseleave", off);
       btn.addEventListener("focus", on);
       btn.addEventListener("blur", off);
     });
-    wrap.querySelectorAll(".emap-seat").forEach(function (p) {
-      p.setAttribute("data-key", p.dataset.w || "");
+  }
+
+  // ---- fetch cache: shared boundary layers are reused across elections ----
+  var CACHE = {};
+  function getJSON(url) {
+    if (!CACHE[url]) {
+      CACHE[url] = fetch(url).then(function (r) {
+        if (!r.ok) throw new Error("HTTP " + r.status + " for " + url);
+        return r.json();
+      }).catch(function (e) { delete CACHE[url]; throw e; });
+    }
+    return CACHE[url];
+  }
+
+  // Layered mode: boundary layers are keyed by `k`, results are a {k: {...}} map.
+  function load(cfg) {
+    if (cfg.src) return getJSON(cfg.src);
+    return Promise.all([
+      Promise.all((cfg.layers || []).map(getJSON)),
+      cfg.results ? getJSON(cfg.results) : Promise.resolve({})
+    ]).then(function (both) {
+      var layers = both[0], results = both[1];
+      var feats = [];
+      layers.forEach(function (fc) {
+        fc.features.forEach(function (f) {
+          var r = results[f.properties.k];
+          var p = { c: "", n: f.properties.n, s: f.properties.s };
+          if (r) { p.w = r.w; p.p = r.p; p.cand = r.cand; p.pct = r.pct; }
+          feats.push({ type: "Feature", properties: p, geometry: f.geometry });
+        });
+      });
+      return { type: "FeatureCollection", features: feats };
     });
   }
 
-  function init(el) {
-    var cfg;
-    try { cfg = JSON.parse(el.getAttribute("data-electionmap")); }
-    catch (e) { return; }
-    if (!cfg || !cfg.src) return;
+  function mount(el, cfg) {
     el.innerHTML = '<p class="emap-loading">Loading map…</p>';
-    fetch(cfg.src)
-      .then(function (r) {
-        if (!r.ok) throw new Error("HTTP " + r.status);
-        return r.json();
-      })
+    return load(cfg)
       .then(function (geo) { render(el, cfg, geo); })
       .catch(function (err) {
         el.innerHTML = '<p class="emap-loading">Map could not be loaded ('
           + err.message + ").</p>";
       });
   }
+
+  function init(el) {
+    var cfg;
+    try { cfg = JSON.parse(el.getAttribute("data-electionmap")); }
+    catch (e) { return; }
+    if (!cfg || (!cfg.src && !cfg.layers)) return;
+    mount(el, cfg);
+  }
+
+  // Exposed so other scripts (e.g. the history explorer) can swap the map.
+  window.renderElectionMap = mount;
 
   document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll("[data-electionmap]").forEach(init);

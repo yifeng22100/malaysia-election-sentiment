@@ -195,11 +195,12 @@
 
 <script src="i18n.js"></script>
 <script src="toc.js"></script>
+<script src="electionmap.js"></script>
 <script>
 (function () {
   var ELECTIONS = [
     {
-      id: "ge1955", type: "ge", year: "1955", date: "27 Jul 1955",
+      id: "ge1955", ge: "GE-00", type: "ge", year: "1955", date: "27 Jul 1955",
       title: "Malaya's first general election",
       seats: [{ label: "Alliance", n: 51, color: "var(--bn)" }, { label: "Others", n: 1, color: "var(--oth)" }],
       total: 52, votePct: "Alliance won roughly 80% of the vote",
@@ -213,7 +214,7 @@
       source: "SPR Portal — history of the Election Commission", sourceUrl: "https://spr.gov.my/en/sejarah-penubuhan-suruhan-jaya-pilihan-raya-2/"
     },
     {
-      id: "ge1959", type: "ge", year: "1959", date: "1959",
+      id: "ge1959", ge: "GE-01", type: "ge", year: "1959", date: "1959",
       title: "First post-independence election",
       seats: [{ label: "Alliance", n: 74, color: "var(--bn)" }, { label: "Opposition", n: 30, color: "var(--oth)" }],
       total: 104,
@@ -221,7 +222,7 @@
       source: "Wikipedia — 1959 Malayan general election", sourceUrl: "https://en.wikipedia.org/wiki/1959_Malayan_general_election"
     },
     {
-      id: "ge1964", type: "ge", year: "1964", date: "1964",
+      id: "ge1964", ge: "GE-02", type: "ge", year: "1964", date: "1964",
       title: "Alliance sweeps amid Konfrontasi",
       seats: [{ label: "Alliance", n: 89, color: "var(--bn)" }, { label: "Opposition", n: 15, color: "var(--oth)" }],
       total: 104,
@@ -229,15 +230,15 @@
       source: "Wikipedia — 1964 Malaysian general election", sourceUrl: "https://en.wikipedia.org/wiki/1964_Malaysian_general_election"
     },
     {
-      id: "ge1969", type: "ge", year: "1969", date: "10 May 1969",
+      id: "ge1969", ge: "GE-03", type: "ge", year: "1969", date: "10 May 1969",
       title: "Alliance loses its two-thirds — then riots suspend Parliament",
-      seats: [{ label: "Alliance", n: 66, color: "var(--bn)" }, { label: "Opposition", n: 38, color: "var(--oth)" }],
-      total: 104, votePct: "Peninsular Malaysia seats declared before East Malaysia's deferred polls",
-      body: "The Alliance's seat share collapsed from 89 to 66 of 104 Peninsular seats as DAP and Gerakan surged among non-Malay voters, costing it the two-thirds majority needed for constitutional amendments. Racial riots broke out in Kuala Lumpur on 13 May, days after the results. The King declared a state of emergency; Parliament was suspended and the all-powerful National Operations Council ruled by decree until February 1971.",
+      seats: [{ label: "Alliance", n: 90, color: "var(--bn)" }, { label: "Opposition", n: 54, color: "var(--oth)" }],
+      total: 144, votePct: "Across the full 144-seat Dewan Rakyat; East Malaysia's polls were deferred and concluded later",
+      body: "In Peninsular Malaysia the Alliance's seat share collapsed from 89 to 66 of 104 as DAP and Gerakan surged among non-Malay voters — and across the full 144-seat Dewan Rakyat it finished on 90, short of the 96 needed for the two-thirds majority that constitutional amendments require. Racial riots broke out in Kuala Lumpur on 13 May, days after the Peninsular results. The King declared a state of emergency; Parliament was suspended and the all-powerful National Operations Council ruled by decree until February 1971.",
       source: "Wikipedia — 13 May incident", sourceUrl: "https://en.wikipedia.org/wiki/13_May_incident"
     },
     {
-      id: "ge1974", type: "ge", year: "1974", date: "1974",
+      id: "ge1974", ge: "GE-04", type: "ge", year: "1974", date: "1974",
       title: "Barisan Nasional's first election",
       seats: [{ label: "Barisan Nasional", n: 135, color: "var(--bn)" }, { label: "DAP", n: 9, color: "var(--oth)" }, { label: "Others", n: 10, color: "var(--oth)" }],
       total: 154,
@@ -245,7 +246,7 @@
       source: "Wikipedia — 1974 Malaysian general election", sourceUrl: "https://en.wikipedia.org/wiki/1974_Malaysian_general_election"
     },
     {
-      id: "ge1978", type: "ge", year: "1978", date: "1978",
+      id: "ge1978", ge: "GE-05", type: "ge", year: "1978", date: "1978",
       title: "BN under Hussein Onn holds firm",
       seats: [{ label: "Barisan Nasional", n: 130, color: "var(--bn)" }, { label: "Opposition", n: 24, color: "var(--oth)" }],
       total: 154,
@@ -253,7 +254,7 @@
       source: "Wikipedia — 1978 Malaysian general election", sourceUrl: "https://en.wikipedia.org/wiki/1978_Malaysian_general_election"
     },
     {
-      id: "ge1982", type: "ge", year: "1982", date: "1982",
+      id: "ge1982", ge: "GE-06", type: "ge", year: "1982", date: "1982",
       title: "Mahathir's first election as PM",
       seats: [{ label: "Barisan Nasional", n: 132, color: "var(--bn)" }, { label: "DAP", n: 9, color: "var(--oth)" }, { label: "PAS", n: 5, color: "var(--oth)" }, { label: "Others", n: 8, color: "var(--oth)" }],
       total: 154, votePct: "DAP 19.6% of the vote vs PAS 14.5%",
@@ -261,15 +262,15 @@
       source: "Wikipedia — 1982 Malaysian general election", sourceUrl: "https://en.wikipedia.org/wiki/1982_Malaysian_general_election"
     },
     {
-      id: "ge1986", type: "ge", year: "1986", date: "1986",
+      id: "ge1986", ge: "GE-07", type: "ge", year: "1986", date: "1986",
       title: "BN expands its majority again",
-      seats: [{ label: "Barisan Nasional", n: 148, color: "var(--bn)" }, { label: "Opposition", n: 25, color: "var(--oth)" }],
-      total: 173,
+      seats: [{ label: "Barisan Nasional", n: 148, color: "var(--bn)" }, { label: "Opposition", n: 29, color: "var(--oth)" }],
+      total: 177,
       body: "Held against a commodities-driven recession and simmering tension inside UMNO, BN nonetheless extended its majority — a calm before the storm of the party's most serious internal crisis, which broke the following year.",
       source: "Wikipedia — 1986 Malaysian general election", sourceUrl: "https://en.wikipedia.org/wiki/1986_Malaysian_general_election"
     },
     {
-      id: "ge1990", type: "ge", year: "1990", date: "1990",
+      id: "ge1990", ge: "GE-08", type: "ge", year: "1990", date: "1990",
       title: "Semangat 46's Team B challenge",
       seats: [{ label: "Barisan Nasional", n: 127, color: "var(--bn)" }, { label: "Opposition", n: 53, color: "var(--oth)" }],
       total: 180,
@@ -277,7 +278,7 @@
       source: "Wikipedia — 1990 Malaysian general election", sourceUrl: "https://en.wikipedia.org/wiki/1990_Malaysian_general_election"
     },
     {
-      id: "ge1995", type: "ge", year: "1995", date: "1995",
+      id: "ge1995", ge: "GE-09", type: "ge", year: "1995", date: "1995",
       title: "BN's high-water mark",
       seats: [{ label: "Barisan Nasional", n: 162, color: "var(--bn)" }, { label: "Opposition", n: 30, color: "var(--oth)" }],
       total: 192,
@@ -285,7 +286,7 @@
       source: "Wikipedia — 1995 Malaysian general election", sourceUrl: "https://en.wikipedia.org/wiki/1995_Malaysian_general_election"
     },
     {
-      id: "ge1999", type: "ge", year: "1999", date: "29 Nov 1999",
+      id: "ge1999", ge: "GE-10", type: "ge", year: "1999", date: "29 Nov 1999",
       title: "The Reformasi election",
       seats: [{ label: "Barisan Nasional", n: 148, color: "var(--bn)" }, { label: "PAS", n: 27, color: "var(--oth)" }, { label: "DAP", n: 10, color: "var(--oth)" }, { label: "Keadilan", n: 5, color: "var(--oth)" }, { label: "Others", n: 3, color: "var(--oth)" }],
       total: 193,
@@ -293,7 +294,7 @@
       source: "Wikipedia — 1999 Malaysian general election", sourceUrl: "https://en.wikipedia.org/wiki/1999_Malaysian_general_election"
     },
     {
-      id: "ge2004", type: "ge", year: "2004", date: "21 Mar 2004",
+      id: "ge2004", ge: "GE-11", type: "ge", year: "2004", date: "21 Mar 2004",
       title: "Abdullah Badawi's landslide",
       seats: [{ label: "Barisan Nasional", n: 198, color: "var(--bn)" }, { label: "Opposition", n: 21, color: "var(--oth)" }],
       total: 219,
@@ -301,7 +302,7 @@
       source: "Wikipedia — 2004 Malaysian general election", sourceUrl: "https://en.wikipedia.org/wiki/2004_Malaysian_general_election"
     },
     {
-      id: "ge2008", type: "ge", year: "2008", date: "8 Mar 2008",
+      id: "ge2008", ge: "GE-12", type: "ge", year: "2008", date: "8 Mar 2008",
       title: "The “political tsunami”",
       seats: [{ label: "Barisan Nasional", n: 140, color: "var(--bn)" }, { label: "Pakatan Rakyat", n: 82, color: "var(--oth)" }],
       total: 222,
@@ -309,7 +310,7 @@
       source: "Malaysiakini — the day we surfed a tsunami", sourceUrl: "https://www.malaysiakini.com/news/414941"
     },
     {
-      id: "ge2013", type: "ge", year: "2013", date: "5 May 2013",
+      id: "ge2013", ge: "GE-13", type: "ge", year: "2013", date: "5 May 2013",
       title: "BN keeps power despite losing the popular vote",
       seats: [{ label: "Barisan Nasional", n: 133, color: "var(--bn)" }, { label: "Pakatan Rakyat", n: 89, color: "var(--oth)" }],
       total: 222, votePct: "BN 47.4% vs Pakatan Rakyat 50.9% of the vote",
@@ -317,7 +318,7 @@
       source: "Wikipedia — 2013 Malaysian general election", sourceUrl: "https://en.wikipedia.org/wiki/2013_Malaysian_general_election"
     },
     {
-      id: "ge2018", type: "ge", year: "2018", date: "9 May 2018",
+      id: "ge2018", ge: "GE-14", type: "ge", year: "2018", date: "9 May 2018",
       title: "GE14 — the first change of federal government",
       seats: [{ label: "Pakatan Harapan", n: 113, color: "var(--ph)" }, { label: "Barisan Nasional", n: 79, color: "var(--bn)" }, { label: "PAS", n: 18, color: "var(--pn)" }, { label: "Warisan", n: 8, color: "var(--oth)" }, { label: "Others", n: 4, color: "var(--oth)" }],
       total: 222,
@@ -337,7 +338,7 @@
       source: "ConstitutionNet — lowering the voting age", sourceUrl: "https://constitutionnet.org/news/bipartisan-support-constitutional-amendment-lower-voting-age-malaysia-consensus-way-forward"
     },
     {
-      id: "ge2022", type: "ge", year: "2022", date: "19 Nov 2022",
+      id: "ge2022", ge: "GE-15", type: "ge", year: "2022", date: "19 Nov 2022",
       title: "GE15 — Malaysia's first-ever hung parliament",
       seats: [{ label: "Pakatan Harapan", n: 82, color: "var(--ph)" }, { label: "Perikatan Nasional", n: 74, color: "var(--pn)" }, { label: "Barisan Nasional", n: 30, color: "var(--bn)" }, { label: "GPS", n: 23, color: "#5856D6" }, { label: "GRS", n: 6, color: "#FF9500" }, { label: "Others", n: 7, color: "var(--oth)" }],
       total: 222,
@@ -384,6 +385,37 @@
     return '<a href="' + href + '"' + (external ? ' target="_blank" rel="noopener"' : "") + ">" + escapeHtml(e.source) + "</a>";
   }
 
+  var META = null, METAP = null;
+  function mountMap(ge) {
+    var host = document.getElementById("election-map");
+    if (!host || !window.renderElectionMap) return;
+    if (!METAP) METAP = fetch("data/elections.json").then(function (r) { return r.json(); });
+    METAP.then(function (meta) {
+      META = meta;
+      var m = meta[ge];
+      if (!m) { host.innerHTML = ""; return; }
+      // the panel may have been swapped while the manifest loaded
+      if (document.getElementById("election-map") !== host) return;
+      var cap = "Boundaries: ElectionData.MY delimitation datasets (CC0) — "
+        + m.layers.map(function (l) {
+            var p = l.split("_");
+            return p[0].charAt(0).toUpperCase() + p[0].slice(1) + " " + p[1];
+          }).join(", ")
+        + ". Results: ElectionData.MY candidate-level ballots (CC0). Geometry is simplified for display and is not suitable for official use."
+        + (m.shaded < m.seats
+            ? " " + (m.seats - m.shaded) + " of " + m.seats + " seats are not mapped: no boundary set for that region"
+              + " and year survives in the archive, so those constituencies are drawn unshaded"
+              + " and are missing from the map legend's totals."
+            : "");
+      window.renderElectionMap(host, {
+        layers: m.layers.map(function (l) { return "data/geo/" + l + ".json"; }),
+        results: "data/results/" + ge + ".json",
+        split: 105,
+        caption: cap
+      });
+    }).catch(function () { host.innerHTML = ""; });
+  }
+
   function render(index) {
     var e = ELECTIONS[index];
     var html = "";
@@ -394,8 +426,10 @@
       if (e.votePct) html += '<p class="election-detail-votepct">' + escapeHtml(e.votePct) + "</p>";
     }
     html += '<p class="election-detail-body">' + e.body + "</p>";
+    if (e.ge) html += '<div class="election-detail-map" id="election-map"></div>';
     html += '<p class="election-detail-source">' + sourceLink(e) + "</p>";
     detail.innerHTML = html;
+    if (e.ge) mountMap(e.ge);
 
     var nodes = rail.querySelectorAll(".election-node");
     nodes.forEach(function (n, i) { n.classList.toggle("active", i === index); });
