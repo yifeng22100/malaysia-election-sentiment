@@ -58,7 +58,15 @@
         </div>
       </div>
       <a href="parties.html" data-i18n="nav_parties">Parties</a>
-      <a href="history.html" data-i18n="nav_history">History &amp; EC</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" type="button"><span data-i18n="nav_learn">Learn</span> <span class="caret">&#9662;</span></button>
+        <div class="nav-dropdown-menu">
+          <a href="history.html" data-i18n="nav_history">History &amp; EC</a>
+          <a href="process.html" data-i18n="nav_process">How elections work</a>
+          <a href="parliament.html" data-i18n="nav_parliament">Parliament</a>
+          <a href="prime-ministers.html" data-i18n="nav_pms">Prime Ministers</a>
+        </div>
+      </div>
       <a href="about.html" data-i18n="nav_about">About</a>
     </nav>
   </div>
@@ -114,6 +122,10 @@
       <span><span class="swatch" style="background:var(--pn)"></span>PN <strong>7</strong></span>
       <span><span class="swatch" style="background:var(--ph)"></span>PH <strong>11</strong></span>
       <span>Bersatu's solo run won 0 of 24 contested</span>
+    </div>
+    <div class="about-card" style="margin-top:16px;">
+      <div data-hemicycle='{"total":36,"majority":19,"parties":[{"label":"BN","n":18,"color":"#2AA9BF"},{"label":"PN","n":7,"color":"#34C759"},{"label":"PH","n":11,"color":"#FF3B30"}]}'></div>
+      <p style="font-size:13px;line-height:1.6;color:var(--muted);margin:16px 0 0;max-width:64ch;">The 16th Negeri Sembilan State Assembly as elected on 1 August 2026. Neither BN nor PN reached the 19-seat majority alone — their combined 25 seats under the non-compete pact is what forms the government.</p>
     </div>
   </section>
 
@@ -696,5 +708,6 @@
 
 <script src="i18n.js"></script>
 <script src="toc.js"></script>
+<script src="hemicycle.js"></script>
 </body>
 </html>

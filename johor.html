@@ -58,7 +58,15 @@
         </div>
       </div>
       <a href="parties.html" data-i18n="nav_parties">Parties</a>
-      <a href="history.html" data-i18n="nav_history">History &amp; EC</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" type="button"><span data-i18n="nav_learn">Learn</span> <span class="caret">&#9662;</span></button>
+        <div class="nav-dropdown-menu">
+          <a href="history.html" data-i18n="nav_history">History &amp; EC</a>
+          <a href="process.html" data-i18n="nav_process">How elections work</a>
+          <a href="parliament.html" data-i18n="nav_parliament">Parliament</a>
+          <a href="prime-ministers.html" data-i18n="nav_pms">Prime Ministers</a>
+        </div>
+      </div>
       <a href="about.html" data-i18n="nav_about">About</a>
     </nav>
   </div>
@@ -112,6 +120,10 @@
       <span><span class="swatch" style="background:var(--bn)"></span>BN <strong>48</strong></span>
       <span><span class="swatch" style="background:var(--ph)"></span>PH <strong>8</strong></span>
       <span>Two-thirds supermajority retained</span>
+    </div>
+    <div class="about-card" style="margin-top:16px;">
+      <div data-hemicycle='{"total":56,"majority":29,"parties":[{"label":"BN","n":48,"color":"#2AA9BF"},{"label":"PH","n":8,"color":"#FF3B30"}]}'></div>
+      <p style="font-size:13px;line-height:1.6;color:var(--muted);margin:16px 0 0;max-width:64ch;">The 16th Johor State Assembly as elected on 11 July 2026. BN's 48 seats are comfortably past both the 29-seat majority line and the 38 needed for a two-thirds supermajority.</p>
     </div>
   </section>
 
@@ -403,5 +415,6 @@
 
 <script src="i18n.js"></script>
 <script src="toc.js"></script>
+<script src="hemicycle.js"></script>
 </body>
 </html>

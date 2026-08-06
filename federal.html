@@ -58,7 +58,15 @@
         </div>
       </div>
       <a href="parties.html" data-i18n="nav_parties">Parties</a>
-      <a href="history.html" data-i18n="nav_history">History &amp; EC</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" type="button"><span data-i18n="nav_learn">Learn</span> <span class="caret">&#9662;</span></button>
+        <div class="nav-dropdown-menu">
+          <a href="history.html" data-i18n="nav_history">History &amp; EC</a>
+          <a href="process.html" data-i18n="nav_process">How elections work</a>
+          <a href="parliament.html" data-i18n="nav_parliament">Parliament</a>
+          <a href="prime-ministers.html" data-i18n="nav_pms">Prime Ministers</a>
+        </div>
+      </div>
       <a href="about.html" data-i18n="nav_about">About</a>
     </nav>
   </div>
@@ -101,6 +109,15 @@
         <div class="topline-seats" style="font-size:22px;">17 Feb 2028</div>
         <div class="topline-sub">60 days after the 19 Dec 2027 dissolution deadline</div>
       </div>
+    </div>
+  </section>
+
+  <section id="composition" aria-label="Current Dewan Rakyat composition">
+    <div class="section-label">The Dewan Rakyat as GE15 left it</div>
+    <p class="lede">Malaysia's first hung parliament produced a chamber where no bloc could govern alone — which is why the unity government exists at all.</p>
+    <div class="about-card">
+      <div data-hemicycle='{"total":222,"majority":112,"parties":[{"label":"PH","n":82,"color":"#FF3B30"},{"label":"PN","n":74,"color":"#34C759"},{"label":"BN","n":30,"color":"#2AA9BF"},{"label":"GPS","n":23,"color":"#5856D6"},{"label":"GRS","n":6,"color":"#FF9500"},{"label":"Others","n":7,"color":"#8E8E93"}]}'></div>
+      <p style="font-size:13.5px;line-height:1.6;margin:16px 0 0;max-width:66ch;">Final composition of the 15th Parliament following the Padang Serai poll deferred to 7 December 2022. "Others" comprises Warisan 3, independents 2, PBM 1 and KDM 1. The governing unity coalition is built from PH, BN, GPS and GRS — a combination that clears the 112-seat threshold only by spanning parties that contested against each other. Seat counts have shifted since with by-elections and realignments; see the <a href="parliament.html">Parliament page</a> for how the chamber works.</p>
     </div>
   </section>
 
@@ -174,6 +191,7 @@
 <aside class="toc" aria-label="On this page">
   <div class="toc-label">On this page</div>
   <a href="#status">Where things stand</a>
+  <a href="#composition">Dewan Rakyat composition</a>
   <a href="#scorecard">Scorecard so far</a>
   <a href="#implications">What it adds up to</a>
   <a href="#whats-next">What's next</a>
@@ -219,5 +237,6 @@
 
 <script src="i18n.js"></script>
 <script src="toc.js"></script>
+<script src="hemicycle.js"></script>
 </body>
 </html>

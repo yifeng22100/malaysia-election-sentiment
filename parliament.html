@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parliament — Dewan Rakyat & Dewan Negara — Malaysia State Elections Sentiment Tracker</title>
+<meta name="description" content="How Malaysia's two parliamentary chambers work, how a bill becomes law, and the landmark decisions taken since independence.">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-utility">
+    <div class="header-utility-inner">
+      <nav class="lang-switch" aria-label="Language">
+        <a href="#" data-set-lang="en">EN</a>
+        <a href="#" data-set-lang="ms">BM</a>
+        <a href="#" data-set-lang="zh">中文</a>
+        <a href="#" data-set-lang="ta">தமிழ்</a>
+      </nav>
+      <div class="theme-switch" role="group" aria-label="Theme">
+        <button data-set-theme="light">Light</button>
+        <button data-set-theme="auto">Auto</button>
+        <button data-set-theme="dark">Dark</button>
+      </div>
+    </div>
+  </div>
+  <div class="header-main-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13440 6720" role="img" aria-label="Flag of Malaysia"><g transform="scale(480)"><path fill="#fff" d="m0 0h28v14H0z"/><path stroke="#c00" d="m1 .5h27m0 2H1m0 2h27m0 2H1"/><path fill="#006" d="m0 0h14v8.5H0z"/><path stroke="#c00" d="m0 8.5h28m0 2H0m0 2h28"/></g><path fill="#fc0" d="m4200 720 107 732 414-613-222 706 639-373-506 540 738-59-690 267 690 267-738-59 506 540-639-373 222 706-414-613-107 732-107-732-414 613 222-706-639 373 506-540-738 59 690-267-690-267 738 59-506-540 639 373-222-706 414 613zm-600 30a1280 1280 0 1 0 0 2340 1440 1440 0 1 1 0-2340z"/></svg></span>
+      <span class="brand-word">Elections Sentiment<small>Malaysia state election tracker</small></span>
+    </a>
+    <nav class="site-nav-main">
+      <a href="index.html" data-i18n="nav_overview">Overview</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" type="button"><span data-i18n="nav_states">States</span> <span class="caret">▾</span></button>
+        <div class="nav-dropdown-menu">
+          <div class="nav-dropdown-group-label" data-i18n="grp_decided">Decided</div>
+          <a href="johor.html"><span class="nav-dot dot-done"></span>Johor</a>
+          <a href="negeri-sembilan.html"><span class="nav-dot dot-done"></span>Negeri Sembilan</a>
+          <a href="sabah.html"><span class="nav-dot dot-done"></span>Sabah</a>
+          <div class="nav-dropdown-group-label" data-i18n="grp_anticipated">Anticipated</div>
+          <a href="melaka.html"><span class="nav-dot dot-soon"></span>Melaka</a>
+          <a href="sarawak.html"><span class="nav-dot dot-soon"></span>Sarawak</a>
+          <div class="nav-dropdown-group-label" data-i18n="grp_notdue">Not yet due</div>
+          <a href="selangor.html"><span class="nav-dot dot-later"></span>Selangor</a>
+          <a href="penang.html"><span class="nav-dot dot-later"></span>Penang</a>
+          <a href="perak.html"><span class="nav-dot dot-later"></span>Perak</a>
+          <a href="pahang.html"><span class="nav-dot dot-later"></span>Pahang</a>
+          <a href="kedah.html"><span class="nav-dot dot-later"></span>Kedah</a>
+          <a href="kelantan.html"><span class="nav-dot dot-later"></span>Kelantan</a>
+          <a href="terengganu.html"><span class="nav-dot dot-later"></span>Terengganu</a>
+          <a href="perlis.html"><span class="nav-dot dot-later"></span>Perlis</a>
+          <div class="nav-dropdown-group-label" data-i18n="grp_federal">Federal</div>
+          <a href="federal.html"><span class="nav-dot dot-later"></span>Federal (GE16)</a>
+        </div>
+      </div>
+      <a href="parties.html" data-i18n="nav_parties">Parties</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" type="button"><span data-i18n="nav_learn">Learn</span> <span class="caret">&#9662;</span></button>
+        <div class="nav-dropdown-menu">
+          <a href="history.html" data-i18n="nav_history">History &amp; EC</a>
+          <a href="process.html" data-i18n="nav_process">How elections work</a>
+          <a href="parliament.html" data-i18n="nav_parliament" class="current">Parliament</a>
+          <a href="prime-ministers.html" data-i18n="nav_pms">Prime Ministers</a>
+        </div>
+      </div>
+      <a href="about.html" data-i18n="nav_about">About</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+<div class="main">
+
+  <header class="masthead">
+    <span class="eyebrow" data-i18n="parties_eyebrow">Reference</span>
+    <h1 class="title">Parliament: Dewan Rakyat &amp; Dewan Negara</h1>
+    <p class="dek">Malaysia's Parliament has two chambers — one elected, one appointed. Here is who sits in each, how a bill becomes law between them, and the decisions taken in that building that reshaped the country since 1957.</p>
+    <div class="masthead-meta">
+      <span>222 elected MPs · 70 senators</span>
+      <span>Static reference — not part of the daily auto-update</span>
+    </div>
+  </header>
+
+  <section id="chambers" aria-label="The two chambers">
+    <div class="section-label">The two chambers</div>
+    <p class="lede">Parliament consists of the Yang di-Pertuan Agong and two Houses. Only one of them is elected by voters — the other exists to slow things down and to represent the states.</p>
+
+    <div class="chamber-grid">
+
+      <div class="chamber-card">
+        <h3>Dewan Rakyat</h3>
+        <div class="chamber-sub">House of Representatives — the elected lower house</div>
+        <dl>
+          <div class="chamber-stat"><dt>Members</dt><dd>222</dd></div>
+          <div class="chamber-stat"><dt>How chosen</dt><dd>Directly elected</dd></div>
+          <div class="chamber-stat"><dt>Term</dt><dd>Up to 5 years</dd></div>
+          <div class="chamber-stat"><dt>Majority</dt><dd>112 seats</dd></div>
+          <div class="chamber-stat"><dt>Presided by</dt><dd>Speaker</dd></div>
+        </dl>
+        <div style="margin-top:14px;" data-hemicycle='{"total":222,"majority":112,"parties":[{"label":"PH","n":82,"color":"#FF3B30"},{"label":"PN","n":74,"color":"#34C759"},{"label":"BN","n":30,"color":"#2AA9BF"},{"label":"GPS","n":23,"color":"#5856D6"},{"label":"GRS","n":6,"color":"#FF9500"},{"label":"Others","n":7,"color":"#8E8E93"}]}'></div>
+        <p style="font-size:12.5px;color:var(--muted);margin:10px 0 0;">Final composition of the 15th Parliament, including the Padang Serai seat deferred to 7 December 2022. "Others" = Warisan 3, independents 2, PBM 1, KDM 1. Seat counts have since shifted with by-elections and realignments.</p>
+      </div>
+
+      <div class="chamber-card">
+        <h3>Dewan Negara</h3>
+        <div class="chamber-sub">Senate — the appointed upper house</div>
+        <dl>
+          <div class="chamber-stat"><dt>Members</dt><dd>70</dd></div>
+          <div class="chamber-stat"><dt>Elected by state assemblies</dt><dd>26 (2 per state)</dd></div>
+          <div class="chamber-stat"><dt>Appointed by the King</dt><dd>44</dd></div>
+          <div class="chamber-stat"><dt>Term</dt><dd>3 years, max 2 terms</dd></div>
+          <div class="chamber-stat"><dt>Presided by</dt><dd>President of the Senate</dd></div>
+        </dl>
+        <div style="margin-top:14px;" data-hemicycle='{"total":70,"parties":[{"label":"State-elected","n":26,"color":"#2AA9BF"},{"label":"King-appointed","n":44,"color":"#8E8E93"}]}'></div>
+        <p style="font-size:12.5px;color:var(--muted);margin:10px 0 0;">The 44 royal appointments are made on the Prime Minister's advice, and are meant to bring in minority representation and professional expertise.</p>
+      </div>
+
+    </div>
+
+    <div class="about-card">
+      <h3>What the Dewan Rakyat does</h3>
+      <p>The elected chamber is where governments are made and unmade. Every member represents one geographic constituency, drawn by the Election Commission to be as equal in population as practicable — a standard critics argue has been unevenly applied. The chamber's core powers are to legislate, to authorise all government spending and taxation, and to hold the executive to account through questions, debates and select committees.</p>
+      <p>Crucially, it is also the chamber that determines who governs: a Prime Minister holds office only while commanding the confidence of a majority of its members. Money Bills — anything authorising taxation or expenditure — can only originate here, and only a Minister may introduce one.</p>
+    </div>
+
+    <div class="about-card">
+      <h3>What the Dewan Negara does — and what it can't</h3>
+      <p>The Senate is a revising chamber. It reviews bills passed by the Dewan Rakyat, debates them, and can propose amendments or delay them — but it cannot ultimately block them. If the Senate rejects or fails to pass an ordinary bill, the Dewan Rakyat can send it for royal assent after a one-year delay; for a Money Bill, the delay is just one month. It cannot originate Money Bills at all.</p>
+      <p>Its design purpose is twofold: to give the 13 states a direct voice in federal lawmaking through their two elected senators each, and to bring people into Parliament whom the electoral system would not produce — minority-community representatives, and professionals with specialist expertise. Because senators need not be elected, the chamber is also used to bring ministers into the government who did not win, or did not contest, a Dewan Rakyat seat.</p>
+      <p>Reform debate centres on the imbalance: 44 of 70 seats are effectively in the Prime Minister's gift, which critics argue undercuts the chamber's federal purpose and its independence as a check on the lower house.</p>
+    </div>
+  </section>
+
+  <section id="lawmaking" aria-label="How a bill becomes law">
+    <div class="section-label">How a bill becomes law</div>
+
+    <div class="stage-list">
+      <div class="stage-item">
+        <div class="stage-num"></div>
+        <div>
+          <div class="stage-title">First reading — Dewan Rakyat</div>
+          <p class="stage-body">The bill is formally introduced and its title read. There is no debate at this stage; the bill is printed and circulated to members.</p>
+        </div>
+      </div>
+      <div class="stage-item">
+        <div class="stage-num"></div>
+        <div>
+          <div class="stage-title">Second reading</div>
+          <p class="stage-body">The substantive debate on the bill's principle and purpose. This is where a bill is politically won or lost, and where the opposition makes its case against it.</p>
+        </div>
+      </div>
+      <div class="stage-item">
+        <div class="stage-num"></div>
+        <div>
+          <div class="stage-title">Committee stage</div>
+          <p class="stage-body">The bill is examined clause by clause and amendments can be moved and voted on individually.</p>
+        </div>
+      </div>
+      <div class="stage-item">
+        <div class="stage-num"></div>
+        <div>
+          <div class="stage-title">Third reading</div>
+          <p class="stage-body">A final vote on the bill as amended. Ordinary bills need a simple majority; constitutional amendments need a two-thirds majority — which is why losing that threshold has always been such a significant political event.</p>
+        </div>
+      </div>
+      <div class="stage-item">
+        <div class="stage-num"></div>
+        <div>
+          <div class="stage-title">Dewan Negara</div>
+          <p class="stage-body">The bill repeats the process in the Senate. If passed, it proceeds to royal assent; if rejected, the delay rules above apply rather than an outright veto.</p>
+        </div>
+      </div>
+      <div class="stage-item">
+        <div class="stage-num"></div>
+        <div>
+          <div class="stage-title">Royal assent &amp; gazetting</div>
+          <p class="stage-body">The bill goes to the Yang di-Pertuan Agong, who has 30 days to assent. If he does not act within that window, the bill becomes law anyway — an amendment made in 1994 that removed the monarch's ability to block legislation indefinitely. It then takes effect on publication in the Gazette.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="decisions" aria-label="Landmark decisions since independence">
+    <div class="section-label">Landmark decisions since independence</div>
+    <p class="lede">The Constitution has been amended more than 60 times since 1957. These are the parliamentary decisions that most changed how Malaysia is governed — in both directions.</p>
+
+    <div class="log">
+
+      <div class="log-entry">
+        <div class="log-date">1960</div>
+        <div>
+          <span class="log-tag tag-reax">Security</span>
+          <p class="log-headline">Internal Security Act 1960</p>
+          <p class="log-body">Enacted as the Malayan Emergency wound down, the ISA permitted indefinite detention without trial. It outlived the insurgency it was written for by half a century and became the single most contested law in Malaysian politics — used against communists, but later also against opposition politicians, activists and religious figures.</p>
+        </div>
+      </div>
+
+      <div class="log-entry">
+        <div class="log-date">1971</div>
+        <div>
+          <span class="log-tag tag-result">Economy &amp; speech</span>
+          <p class="log-headline">The New Economic Policy, and the post-1969 constitutional amendments</p>
+          <p class="log-body">After Parliament resumed in February 1971 following the 13 May 1969 riots, it enacted the framework that defined modern Malaysia: the NEP, a 20-year affirmative-action programme to eradicate poverty and restructure economic imbalance between ethnic groups, alongside amendments making it seditious to publicly question the "sensitive issues" — citizenship, Malay special position, the national language and the rulers' sovereignty — even in Parliament itself.</p>
+        </div>
+      </div>
+
+      <div class="log-entry">
+        <div class="log-date">1988</div>
+        <div>
+          <span class="log-tag tag-reax">Judiciary</span>
+          <p class="log-headline">Article 121 amended — judicial power subordinated to Parliament</p>
+          <p class="log-body">Amid the fallout from the 1987 UMNO leadership crisis, Article 121 was amended so that the courts held only such jurisdiction as federal law conferred, rather than inherent "judicial power of the Federation." Lord President Salleh Abas and two Supreme Court judges were removed. In 2017 the Federal Court held that the 1988 amendment was unconstitutional, though it stopped short of striking the Act down. It remains the reference point in every debate about judicial independence in Malaysia.</p>
+        </div>
+      </div>
+
+      <div class="log-entry">
+        <div class="log-date">1993</div>
+        <div>
+          <span class="log-tag tag-result">Rulers</span>
+          <p class="log-headline">Rulers' legal immunity removed</p>
+          <p class="log-body">Parliament amended the Constitution to strip the Rulers of blanket immunity from prosecution, creating a Special Court to hear cases involving them. It was a significant assertion of parliamentary authority over the traditional monarchy, passed after a high-profile assault case involving a member of a royal family.</p>
+        </div>
+      </div>
+
+      <div class="log-entry">
+        <div class="log-date">2009</div>
+        <div>
+          <span class="log-tag tag-result">Anti-corruption</span>
+          <p class="log-headline">The Malaysian Anti-Corruption Commission replaces the ACA</p>
+          <p class="log-body">Legislated at the end of Abdullah Badawi's term and operational from 2009, the MACC gave Malaysia's anti-corruption body wider powers and a more institutionalised structure, with oversight panels intended to insulate it from political interference — a structure whose independence has been debated in every administration since.</p>
+        </div>
+      </div>
+
+      <div class="log-entry">
+        <div class="log-date">2012</div>
+        <div>
+          <span class="log-tag tag-result">Security</span>
+          <p class="log-headline">ISA repealed, SOSMA enacted</p>
+          <p class="log-body">Najib Razak's government repealed the Internal Security Act and replaced it with the Security Offences (Special Measures) Act 2012, which abolished indefinite detention without trial but retained a 28-day detention power and special trial procedures. Human-rights organisations characterised it as a narrowing rather than an end of the old regime, and SOSMA's repeal remains a live demand.</p>
+        </div>
+      </div>
+
+      <div class="log-entry">
+        <div class="log-date">2015 → 2018</div>
+        <div>
+          <span class="log-tag tag-market">Taxation</span>
+          <p class="log-headline">GST introduced, then abolished within three years</p>
+          <p class="log-body">A 6% Goods and Services Tax took effect in April 2015, broadening the government's revenue base but proving deeply unpopular amid rising living costs. Abolishing it was a central Pakatan Harapan election promise in 2018 — delivered in September 2018 with a return to the narrower Sales and Service Tax. It remains one of the clearest cases of an election directly reversing a major fiscal policy.</p>
+        </div>
+      </div>
+
+      <div class="log-entry">
+        <div class="log-date">2019 → 2021</div>
+        <div>
+          <span class="log-tag tag-campaign">Franchise</span>
+          <p class="log-headline">Undi18 — voting age lowered to 18, automatic registration introduced</p>
+          <p class="log-body">Passed unanimously in July 2019 — 211 votes to zero in the Dewan Rakyat — the amendment lowered the voting age from 21 and made voter registration automatic. Implementation was delayed for two years until a court order and political pressure forced it through in December 2021, adding an estimated 5.8 million voters. First proposed by Lim Kit Siang in 1971, it took 48 years to become law.</p>
+        </div>
+      </div>
+
+      <div class="log-entry">
+        <div class="log-date">2022</div>
+        <div>
+          <span class="log-tag tag-result">Stability</span>
+          <p class="log-headline">Anti-hopping law — Article 49A</p>
+          <p class="log-body">A direct legislative response to the 2020 Sheraton Move, passed with cross-party support under the Ismail Sabri government's memorandum of understanding with Pakatan Harapan. MPs who leave the party they were elected under now lose their seat. Also first proposed by Lim Kit Siang — in 1978, 44 years earlier.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer id="sources">
+    <div class="section-label" style="margin-bottom:10px;">Sources</div>
+    <ul class="sources">
+      <li><a href="https://www.parlimen.gov.my/index.php?modload=glosari&amp;action=20000&amp;id=16&amp;lang=en" target="_blank" rel="noopener">Parliament of Malaysia — official glossary and chamber information</a></li>
+      <li><a href="https://journalmp.parlimen.gov.my/jurnal/index.php/jmp/article/download/55/26/314" target="_blank" rel="noopener">Journal of the Malaysian Parliament — reforming the Dewan Negara</a></li>
+      <li><a href="https://www.malaysianbar.org.my/constitutional_law_committee/myconstitution_making_the_law.html" target="_blank" rel="noopener">Malaysian Bar / MyConstitution — making the law</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/List_of_amendments_to_the_Constitution_of_Malaysia" target="_blank" rel="noopener">Wikipedia — list of amendments to the Constitution of Malaysia</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/1988_Malaysian_constitutional_crisis" target="_blank" rel="noopener">Wikipedia — 1988 Malaysian constitutional crisis</a></li>
+      <li><a href="https://www.hrw.org/news/2012/06/19/smoke-and-mirrors-malaysias-new-internal-security-act" target="_blank" rel="noopener">Human Rights Watch — on the ISA repeal and SOSMA</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Goods_and_Services_Tax_(Malaysia)" target="_blank" rel="noopener">Wikipedia — Goods and Services Tax (Malaysia)</a></li>
+      <li><a href="https://www.rahmatlim.com/publication/articles/22605/anti-party-hopping-laws-introduced-in-federal-constitution-of-malaysia" target="_blank" rel="noopener">Rahmat Lim &amp; Partners — anti-party-hopping law</a></li>
+      <li>See <a href="process.html">How elections work</a> for how members reach these chambers, and <a href="prime-ministers.html">Prime Ministers</a> for the administrations that drove these decisions.</li>
+    </ul>
+    <p>Compiled from public reference sources for factual, informational purposes. Not affiliated with the Parliament of Malaysia or any government body.</p>
+  </footer>
+
+</div>
+
+<aside class="toc" aria-label="On this page">
+  <div class="toc-label">On this page</div>
+  <a href="#chambers">The two chambers</a>
+  <a href="#lawmaking">How a bill becomes law</a>
+  <a href="#decisions">Landmark decisions</a>
+  <a href="#sources">Sources</a>
+</aside>
+
+</div>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div class="footer-col">
+      <div class="footer-brand"><span class="brand-mark footer-mark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13440 6720" role="img" aria-label="Flag of Malaysia"><g transform="scale(480)"><path fill="#fff" d="m0 0h28v14H0z"/><path stroke="#c00" d="m1 .5h27m0 2H1m0 2h27m0 2H1"/><path fill="#006" d="m0 0h14v8.5H0z"/><path stroke="#c00" d="m0 8.5h28m0 2H0m0 2h28"/></g><path fill="#fc0" d="m4200 720 107 732 414-613-222 706 639-373-506 540 738-59-690 267 690 267-738-59 506 540-639-373 222 706-414-613-107 732-107-732-414 613 222-706-639 373 506-540-738 59 690-267-690-267 738 59-506-540 639 373-222-706 414 613zm-600 30a1280 1280 0 1 0 0 2340 1440 1440 0 1 1 0-2340z"/></svg></span><strong>Elections Sentiment</strong></div>
+      <p class="footer-tagline" data-i18n="footer_tagline">An independent, unofficial tracker of public, party and market sentiment across Malaysia's rolling state election cycle.</p>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_sections_title">Sections</h4>
+      <a href="index.html" data-i18n="nav_overview">Overview</a>
+      <a href="johor.html" data-i18n="nav_johor">Johor</a>
+      <a href="negeri-sembilan.html" data-i18n="nav_n9">Negeri Sembilan</a>
+      <a href="parties.html" data-i18n="nav_parties">Parties</a>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_about_title">About this site</h4>
+      <a href="about.html" data-i18n="nav_about">About</a>
+      <a href="about.html#methodology" data-i18n="footer_methodology">Methodology &amp; sources</a>
+      <a href="https://github.com/yifeng22100/malaysia-election-sentiment" target="_blank" rel="noopener" data-i18n="footer_github">View source on GitHub</a>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_language_title">Language</h4>
+      <nav class="lang-switch" aria-label="Language" style="flex-direction:column; align-items:flex-start; gap:9px;">
+        <a href="#" data-set-lang="en">English</a>
+        <a href="#" data-set-lang="ms">Bahasa Malaysia</a>
+        <a href="#" data-set-lang="zh">中文</a>
+        <a href="#" data-set-lang="ta">தமிழ்</a>
+      </nav>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span data-i18n="footer_disclaimer">Not affiliated with the Election Commission of Malaysia, any political party or coalition, or any government body. Compiled from public news coverage. Logos are used for identification purposes only and remain the property of their respective parties.</span>
+    <span data-i18n="footer_updated">Auto-updated daily</span>
+  </div>
+</footer>
+
+<script src="i18n.js"></script>
+<script src="toc.js"></script>
+<script src="hemicycle.js"></script>
+</body>
+</html>

@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Elections Work — Malaysia State Elections Sentiment Tracker</title>
+<meta name="description" content="What triggers a Malaysian election, the constitutional deadlines that follow, and how the country goes from dissolution to a sworn-in government.">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-utility">
+    <div class="header-utility-inner">
+      <nav class="lang-switch" aria-label="Language">
+        <a href="#" data-set-lang="en">EN</a>
+        <a href="#" data-set-lang="ms">BM</a>
+        <a href="#" data-set-lang="zh">中文</a>
+        <a href="#" data-set-lang="ta">தமிழ்</a>
+      </nav>
+      <div class="theme-switch" role="group" aria-label="Theme">
+        <button data-set-theme="light">Light</button>
+        <button data-set-theme="auto">Auto</button>
+        <button data-set-theme="dark">Dark</button>
+      </div>
+    </div>
+  </div>
+  <div class="header-main-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13440 6720" role="img" aria-label="Flag of Malaysia"><g transform="scale(480)"><path fill="#fff" d="m0 0h28v14H0z"/><path stroke="#c00" d="m1 .5h27m0 2H1m0 2h27m0 2H1"/><path fill="#006" d="m0 0h14v8.5H0z"/><path stroke="#c00" d="m0 8.5h28m0 2H0m0 2h28"/></g><path fill="#fc0" d="m4200 720 107 732 414-613-222 706 639-373-506 540 738-59-690 267 690 267-738-59 506 540-639-373 222 706-414-613-107 732-107-732-414 613 222-706-639 373 506-540-738 59 690-267-690-267 738 59-506-540 639 373-222-706 414 613zm-600 30a1280 1280 0 1 0 0 2340 1440 1440 0 1 1 0-2340z"/></svg></span>
+      <span class="brand-word">Elections Sentiment<small>Malaysia state election tracker</small></span>
+    </a>
+    <nav class="site-nav-main">
+      <a href="index.html" data-i18n="nav_overview">Overview</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" type="button"><span data-i18n="nav_states">States</span> <span class="caret">▾</span></button>
+        <div class="nav-dropdown-menu">
+          <div class="nav-dropdown-group-label" data-i18n="grp_decided">Decided</div>
+          <a href="johor.html"><span class="nav-dot dot-done"></span>Johor</a>
+          <a href="negeri-sembilan.html"><span class="nav-dot dot-done"></span>Negeri Sembilan</a>
+          <a href="sabah.html"><span class="nav-dot dot-done"></span>Sabah</a>
+          <div class="nav-dropdown-group-label" data-i18n="grp_anticipated">Anticipated</div>
+          <a href="melaka.html"><span class="nav-dot dot-soon"></span>Melaka</a>
+          <a href="sarawak.html"><span class="nav-dot dot-soon"></span>Sarawak</a>
+          <div class="nav-dropdown-group-label" data-i18n="grp_notdue">Not yet due</div>
+          <a href="selangor.html"><span class="nav-dot dot-later"></span>Selangor</a>
+          <a href="penang.html"><span class="nav-dot dot-later"></span>Penang</a>
+          <a href="perak.html"><span class="nav-dot dot-later"></span>Perak</a>
+          <a href="pahang.html"><span class="nav-dot dot-later"></span>Pahang</a>
+          <a href="kedah.html"><span class="nav-dot dot-later"></span>Kedah</a>
+          <a href="kelantan.html"><span class="nav-dot dot-later"></span>Kelantan</a>
+          <a href="terengganu.html"><span class="nav-dot dot-later"></span>Terengganu</a>
+          <a href="perlis.html"><span class="nav-dot dot-later"></span>Perlis</a>
+          <div class="nav-dropdown-group-label" data-i18n="grp_federal">Federal</div>
+          <a href="federal.html"><span class="nav-dot dot-later"></span>Federal (GE16)</a>
+        </div>
+      </div>
+      <a href="parties.html" data-i18n="nav_parties">Parties</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" type="button"><span data-i18n="nav_learn">Learn</span> <span class="caret">&#9662;</span></button>
+        <div class="nav-dropdown-menu">
+          <a href="history.html" data-i18n="nav_history">History &amp; EC</a>
+          <a href="process.html" data-i18n="nav_process" class="current">How elections work</a>
+          <a href="parliament.html" data-i18n="nav_parliament">Parliament</a>
+          <a href="prime-ministers.html" data-i18n="nav_pms">Prime Ministers</a>
+        </div>
+      </div>
+      <a href="about.html" data-i18n="nav_about">About</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+<div class="main">
+
+  <header class="masthead">
+    <span class="eyebrow" data-i18n="parties_eyebrow">Reference</span>
+    <h1 class="title">How a Malaysian election actually happens</h1>
+    <p class="dek">What triggers an election, what the constitution requires once one is triggered, and how the country goes from a dissolved assembly to a sworn-in government — with the clock that runs at every stage.</p>
+    <div class="masthead-meta">
+      <span>Federal &amp; state process</span>
+      <span>Static reference — not part of the daily auto-update</span>
+    </div>
+  </header>
+
+  <section id="triggers" aria-label="What triggers an election">
+    <div class="section-label">Part 1 — What triggers an election</div>
+    <p class="lede">Malaysian elections are not on a fixed calendar. They are triggered — and there are five distinct ways that can happen, each with its own rules.</p>
+
+    <div class="trigger-grid">
+
+      <div class="trigger-card">
+        <span class="trigger-ref">Article 55(3)</span>
+        <h4>1. The term simply expires</h4>
+        <p>The Dewan Rakyat and every state assembly automatically dissolve five years from the date they first sat. No one has to do anything — the clock runs out and the body ceases to exist. An election must then follow within the constitutional window.</p>
+        <p>This is the backstop that guarantees a vote at least every five years. In practice it is rare: governments almost always dissolve early on their own terms.</p>
+      </div>
+
+      <div class="trigger-card">
+        <span class="trigger-ref">Article 55(2)</span>
+        <h4>2. The government calls it early</h4>
+        <p>The Prime Minister advises the Yang di-Pertuan Agong to dissolve Parliament before the term expires — usually when the political timing looks favourable. At state level, the Menteri Besar or Chief Minister advises the state's Ruler or Governor.</p>
+        <p>This is a request, not an instruction. The King has genuine discretion to <em>refuse</em> dissolution — a reserve power that matters most when a government's majority is already in doubt.</p>
+      </div>
+
+      <div class="trigger-card">
+        <span class="trigger-ref">Article 54(1)</span>
+        <h4>3. A single seat falls vacant — by-election</h4>
+        <p>If an MP or assemblyman dies, resigns, or is disqualified, that one seat becomes vacant and a by-election is held for it alone. The vacancy must be filled within 60 days of the Election Commission establishing that it exists.</p>
+        <p>Two carve-outs: no by-election is required if the vacancy arises within two years of the term expiring — unless the Speaker notifies the EC that the government's numerical strength is affected, in which case it proceeds.</p>
+      </div>
+
+      <div class="trigger-card">
+        <span class="trigger-ref">Article 49A</span>
+        <h4>4. The anti-hopping law is triggered</h4>
+        <p>Since 5 October 2022, an MP who resigns from or ceases to be a member of the party they were elected under automatically loses their seat, forcing a by-election. The same applies to an independent who later joins a party.</p>
+        <p>The exemptions are significant: an MP <em>expelled</em> by their party keeps the seat, as does one whose party is dissolved or deregistered, and the Speaker is exempt. Critics call these the law's loopholes.</p>
+      </div>
+
+      <div class="trigger-card">
+        <span class="trigger-ref">Election Offences Act 1954</span>
+        <h4>5. A court voids the result</h4>
+        <p>A losing candidate or voter can file an election petition challenging a result — on grounds such as bribery, intimidation, or serious procedural irregularity. If the Election Court nullifies the result, the seat becomes vacant and a fresh election is ordered.</p>
+        <p>Separately, an MP convicted and sentenced to more than one year's jail or fined more than RM2,000 is disqualified, which also creates a vacancy.</p>
+      </div>
+
+      <div class="trigger-card">
+        <span class="trigger-ref">Article 43(4)</span>
+        <h4>Not a trigger: losing a confidence vote</h4>
+        <p>If a Prime Minister loses the confidence of the majority, the constitution gives them two options — resign along with the whole cabinet, or request a dissolution. Only the second leads to an election.</p>
+        <p>This is precisely how the 2020 Sheraton Move produced a new government <em>without</em> a general election: the numbers in Parliament changed, a new PM was appointed, and no one voted.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="timeline" aria-label="From dissolution to government">
+    <div class="section-label">Part 2 — From dissolution to a sworn-in government</div>
+    <p class="lede">Once dissolution happens, the constitution starts a countdown. Here is every stage, in order, with the deadline attached to each.</p>
+
+    <div class="stage-list">
+
+      <div class="stage-item">
+        <div class="stage-num"></div>
+        <div>
+          <div class="stage-clock">Day 0</div>
+          <div class="stage-title">Dissolution</div>
+          <p class="stage-body">The Yang di-Pertuan Agong (federal) or the state Ruler/Governor (state) consents to dissolution. Every seat is vacated at once and there are no more MPs or assemblymen — only a caretaker government that continues day-to-day administration without making major new commitments.</p>
+        </div>
+      </div>
+
+      <div class="stage-item">
+        <div class="stage-num"></div>
+        <div>
+          <div class="stage-clock">Within 60 days of dissolution</div>
+          <div class="stage-title">The Election Commission sets the dates</div>
+          <p class="stage-body">Article 55(4) requires the general election to be held within 60 days of dissolution, and the new Parliament to sit within 120 days. The EC meets and announces three dates: nomination day, early-voting day, and polling day. It also issues a writ of election to the returning officer for each constituency.</p>
+        </div>
+      </div>
+
+      <div class="stage-item">
+        <div class="stage-num"></div>
+        <div>
+          <div class="stage-clock">Nomination day, 9am–10am</div>
+          <div class="stage-title">Nomination</div>
+          <p class="stage-body">Candidates submit nomination papers to the Returning Officer in their constituency, along with a deposit. Papers are scrutinised for eligibility and objections are heard. If only one candidate stands, they are declared elected unopposed. Otherwise the RO announces the final candidate list — and the campaign period legally begins at that moment.</p>
+        </div>
+      </div>
+
+      <div class="stage-item">
+        <div class="stage-num"></div>
+        <div>
+          <div class="stage-clock">Minimum 11 days, typically ~14</div>
+          <div class="stage-title">Campaign period</div>
+          <p class="stage-body">Runs from the RO's announcement on nomination day until 11.59pm on the eve of polling, as defined in the Election Offences Act 1954. Candidates hold ceramah, canvass door to door and put up posters within EC limits. Campaign spending is capped and vote-buying, intimidation and bribery are offences that can void a result.</p>
+        </div>
+      </div>
+
+      <div class="stage-item">
+        <div class="stage-num"></div>
+        <div>
+          <div class="stage-clock">Usually a few days before polling</div>
+          <div class="stage-title">Early &amp; postal voting</div>
+          <p class="stage-body">Police, armed forces personnel and their spouses, plus certain overseas and absent voters, cast their ballots ahead of the main day so that they can be on duty on polling day itself. These ballots are sealed and counted alongside the rest.</p>
+        </div>
+      </div>
+
+      <div class="stage-item">
+        <div class="stage-num"></div>
+        <div>
+          <div class="stage-clock">Polling day, 8am–6pm</div>
+          <div class="stage-title">Voting</div>
+          <p class="stage-body">Registered voters attend their assigned polling centre — usually a school or community hall — have their identity checked against the electoral roll, have a finger marked with indelible ink, and mark a paper ballot in a private booth before dropping it into a sealed box. Voting is not compulsory in Malaysia.</p>
+        </div>
+      </div>
+
+      <div class="stage-item">
+        <div class="stage-num"></div>
+        <div>
+          <div class="stage-clock">From 6pm, same night</div>
+          <div class="stage-title">Counting &amp; declaration</div>
+          <p class="stage-body">Ballots are counted at each polling stream in the presence of candidates' appointed counting agents, then aggregated at the constituency tally centre. The Returning Officer declares the winner for that seat. Close results can trigger a recount; rural constituencies with difficult logistics may not declare until the following day.</p>
+        </div>
+      </div>
+
+      <div class="stage-item">
+        <div class="stage-num"></div>
+        <div>
+          <div class="stage-clock">Within days</div>
+          <div class="stage-title">The EC gazettes the results</div>
+          <p class="stage-body">Results become legally official only on publication in the Government Gazette. This is the point from which the 21-day window to file an election petition challenging a result starts running.</p>
+        </div>
+      </div>
+
+      <div class="stage-item">
+        <div class="stage-num"></div>
+        <div>
+          <div class="stage-clock">Immediately after results are clear</div>
+          <div class="stage-title">Who commands confidence?</div>
+          <p class="stage-body">The constitution does not say "whoever wins the most seats forms the government." It says the Ruler appoints whoever, in their judgment, is <em>likely to command the confidence of the majority</em> of the assembly. Where one coalition has a clear majority this is straightforward. Where no one does — as in GE15's hung parliament — leaders submit statutory declarations of support and the Ruler may interview them before deciding.</p>
+        </div>
+      </div>
+
+      <div class="stage-item">
+        <div class="stage-num"></div>
+        <div>
+          <div class="stage-clock">Days after polling</div>
+          <div class="stage-title">Appointment &amp; swearing-in</div>
+          <p class="stage-body">The Ruler appoints the Prime Minister (federal) or Menteri Besar / Chief Minister (state). At state level, most state constitutions require the MB to be a Malay Muslim member of the assembly and not a naturalised citizen — with Penang, Melaka, Sabah and Sarawak, which have no hereditary Ruler, using the title Chief Minister and different requirements. The appointee takes the oath of office, allegiance and secrecy before the Ruler.</p>
+        </div>
+      </div>
+
+      <div class="stage-item">
+        <div class="stage-num"></div>
+        <div>
+          <div class="stage-clock">Days to weeks after</div>
+          <div class="stage-title">Cabinet or Exco named</div>
+          <p class="stage-body">On the new PM's or MB's advice, the Ruler appoints the federal Cabinet or the state Executive Council from among elected members. State Excos are typically capped — Perak, for example, allows between four and ten members. The Cabinet or Exco is collectively responsible to the legislature that elected it.</p>
+        </div>
+      </div>
+
+      <div class="stage-item">
+        <div class="stage-num"></div>
+        <div>
+          <div class="stage-clock">Within 120 days of dissolution</div>
+          <div class="stage-title">The new legislature sits</div>
+          <p class="stage-body">The assembly must convene within 120 days of the dissolution that preceded it. Members are sworn in, a Speaker is elected, and the cycle formally restarts — with the five-year clock in Article 55(3) beginning again from this first sitting.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="stability" aria-label="How the system maintains stability">
+    <div class="section-label">Part 3 — Why this is designed the way it is</div>
+    <p class="lede">Every mechanism above is legitimate under the Perlembagaan Persekutuan. Together they are meant to make power transfer predictable — even when the politics is not.</p>
+
+    <div class="about-card">
+      <h3>Continuity: there is never a gap in government</h3>
+      <p>When an assembly dissolves, the executive does not. The outgoing government continues as a <em>caretaker</em> — able to run the country day to day, but conventionally restrained from major appointments, large new spending commitments or irreversible policy. There is no moment at which Malaysia has no government, which is precisely the point.</p>
+    </div>
+
+    <div class="about-card">
+      <h3>The Ruler as a neutral referee, not a player</h3>
+      <p>The constitution deliberately places the appointment decision with a head of state who is above party politics. In a clear-majority election the Ruler's role is essentially formal. In a hung result it becomes substantive — as in November 2022, when the King consulted party leaders, examined statutory declarations, and ultimately appointed Anwar Ibrahim at the head of a unity government after five days of deadlock. The reserve power to refuse a dissolution works the same way: it prevents a government that has lost its majority from calling repeat elections until it gets the answer it wants.</p>
+    </div>
+
+    <div class="about-card">
+      <h3>Confidence, not fixed terms</h3>
+      <p>Because a government survives on the confidence of the legislature rather than a fixed mandate, it can fall between elections — as in February 2020 — and be replaced without a public vote. This is often criticised as undemocratic, but it is the same Westminster principle Malaysia inherited: the executive is answerable continuously to the elected chamber, not only once every five years. The anti-hopping law of 2022 was Parliament's attempt to limit the most destabilising version of this, by making individual defection costly.</p>
+    </div>
+
+    <div class="about-card">
+      <h3>Staggered state clocks</h3>
+      <p>Each state assembly runs on its own five-year cycle from its own first sitting, so state elections do not have to coincide with the federal one — which is exactly why this site tracks a rolling 2025–2028 sequence rather than a single election night. States <em>can</em> choose to synchronise by dissolving early to run alongside a general election, and several traditionally do. The practical effect of the staggering is that federal politics faces a near-continuous series of real electoral tests between general elections.</p>
+    </div>
+  </section>
+
+  <footer id="sources">
+    <div class="section-label" style="margin-bottom:10px;">Sources</div>
+    <ul class="sources">
+      <li><a href="https://www.parlimen.gov.my/yda-maklumat-umum.html?uweb=yg&amp;lang=en" target="_blank" rel="noopener">Parliament of Malaysia — general information on dissolution</a></li>
+      <li><a href="https://www.malaysianbar.org.my/legal/general_news/by_elections_and_the_constitution.html" target="_blank" rel="noopener">Malaysian Bar — by-elections and the Constitution (Article 54)</a></li>
+      <li><a href="https://www.rahmatlim.com/publication/articles/22605/anti-party-hopping-laws-introduced-in-federal-constitution-of-malaysia" target="_blank" rel="noopener">Rahmat Lim &amp; Partners — anti-party-hopping law (Article 49A)</a></li>
+      <li><a href="https://fulcrum.sg/loopholes-in-malaysias-anti-defection-law/" target="_blank" rel="noopener">Fulcrum — loopholes in Malaysia's anti-defection law</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Elections_in_Malaysia" target="_blank" rel="noopener">Wikipedia — elections in Malaysia</a></li>
+      <li><a href="https://mcchr.org/2026/07/29/undimsia-guide-for-first-time-voters-how-election-works-in-malaysia/" target="_blank" rel="noopener">MCCHR / UndiMsia! — guide for first-time voters</a></li>
+      <li><a href="https://www.malaysianbar.org.my/cms/upload_files/document/Appointment%20of%20a%20Prime%20Minister%20_%20Emeritus%20Prof.%20Datuk%20Dr%20Shad%20Saleem%20Faruqi.pdf" target="_blank" rel="noopener">Shad Saleem Faruqi — appointment of a Prime Minister</a></li>
+      <li><a href="https://www.commonlii.org/my/legis/const/1957/4.html" target="_blank" rel="noopener">Federal Constitution — Part IV (the Federation)</a></li>
+      <li>See the <a href="history.html">History &amp; EC page</a> for the Election Commission itself, and the <a href="parliament.html">Parliament page</a> for what the elected chambers then do.</li>
+    </ul>
+    <p>Compiled from public reference sources for factual, informational purposes. This is a plain-language explainer, not legal advice. Not affiliated with the Election Commission of Malaysia or any government body.</p>
+  </footer>
+
+</div>
+
+<aside class="toc" aria-label="On this page">
+  <div class="toc-label">On this page</div>
+  <a href="#triggers">What triggers an election</a>
+  <a href="#timeline">Dissolution to government</a>
+  <a href="#stability">Why it's designed this way</a>
+  <a href="#sources">Sources</a>
+</aside>
+
+</div>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div class="footer-col">
+      <div class="footer-brand"><span class="brand-mark footer-mark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13440 6720" role="img" aria-label="Flag of Malaysia"><g transform="scale(480)"><path fill="#fff" d="m0 0h28v14H0z"/><path stroke="#c00" d="m1 .5h27m0 2H1m0 2h27m0 2H1"/><path fill="#006" d="m0 0h14v8.5H0z"/><path stroke="#c00" d="m0 8.5h28m0 2H0m0 2h28"/></g><path fill="#fc0" d="m4200 720 107 732 414-613-222 706 639-373-506 540 738-59-690 267 690 267-738-59 506 540-639-373 222 706-414-613-107 732-107-732-414 613 222-706-639 373 506-540-738 59 690-267-690-267 738 59-506-540 639 373-222-706 414 613zm-600 30a1280 1280 0 1 0 0 2340 1440 1440 0 1 1 0-2340z"/></svg></span><strong>Elections Sentiment</strong></div>
+      <p class="footer-tagline" data-i18n="footer_tagline">An independent, unofficial tracker of public, party and market sentiment across Malaysia's rolling state election cycle.</p>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_sections_title">Sections</h4>
+      <a href="index.html" data-i18n="nav_overview">Overview</a>
+      <a href="johor.html" data-i18n="nav_johor">Johor</a>
+      <a href="negeri-sembilan.html" data-i18n="nav_n9">Negeri Sembilan</a>
+      <a href="parties.html" data-i18n="nav_parties">Parties</a>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_about_title">About this site</h4>
+      <a href="about.html" data-i18n="nav_about">About</a>
+      <a href="about.html#methodology" data-i18n="footer_methodology">Methodology &amp; sources</a>
+      <a href="https://github.com/yifeng22100/malaysia-election-sentiment" target="_blank" rel="noopener" data-i18n="footer_github">View source on GitHub</a>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_language_title">Language</h4>
+      <nav class="lang-switch" aria-label="Language" style="flex-direction:column; align-items:flex-start; gap:9px;">
+        <a href="#" data-set-lang="en">English</a>
+        <a href="#" data-set-lang="ms">Bahasa Malaysia</a>
+        <a href="#" data-set-lang="zh">中文</a>
+        <a href="#" data-set-lang="ta">தமிழ்</a>
+      </nav>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span data-i18n="footer_disclaimer">Not affiliated with the Election Commission of Malaysia, any political party or coalition, or any government body. Compiled from public news coverage. Logos are used for identification purposes only and remain the property of their respective parties.</span>
+    <span data-i18n="footer_updated">Auto-updated daily</span>
+  </div>
+</footer>
+
+<script src="i18n.js"></script>
+<script src="toc.js"></script>
+</body>
+</html>

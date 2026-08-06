@@ -58,7 +58,15 @@
         </div>
       </div>
       <a href="parties.html" data-i18n="nav_parties">Parties</a>
-      <a href="history.html" data-i18n="nav_history" class="current">History &amp; EC</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" type="button"><span data-i18n="nav_learn">Learn</span> <span class="caret">&#9662;</span></button>
+        <div class="nav-dropdown-menu">
+          <a href="history.html" data-i18n="nav_history" class="current">History &amp; EC</a>
+          <a href="process.html" data-i18n="nav_process">How elections work</a>
+          <a href="parliament.html" data-i18n="nav_parliament">Parliament</a>
+          <a href="prime-ministers.html" data-i18n="nav_pms">Prime Ministers</a>
+        </div>
+      </div>
       <a href="about.html" data-i18n="nav_about">About</a>
     </nav>
   </div>
@@ -331,9 +339,9 @@
     {
       id: "ge2022", type: "ge", year: "2022", date: "19 Nov 2022",
       title: "GE15 — Malaysia's first-ever hung parliament",
-      seats: [{ label: "Pakatan Harapan", n: 82, color: "var(--ph)" }, { label: "Perikatan Nasional", n: 73, color: "var(--pn)" }, { label: "Barisan Nasional", n: 30, color: "var(--bn)" }, { label: "Others", n: 37, color: "var(--oth)" }],
+      seats: [{ label: "Pakatan Harapan", n: 82, color: "var(--ph)" }, { label: "Perikatan Nasional", n: 74, color: "var(--pn)" }, { label: "Barisan Nasional", n: 30, color: "var(--bn)" }, { label: "GPS", n: 23, color: "#5856D6" }, { label: "GRS", n: 6, color: "#FF9500" }, { label: "Others", n: 7, color: "var(--oth)" }],
       total: 222,
-      body: "No coalition came close to a majority: PH led with 82 seats, PN surged to 73, and BN suffered the worst result in its history — just 30 of the 178 seats it contested. Five days of uncertainty followed before the King appointed Anwar Ibrahim prime minister at the head of a multi-coalition unity government spanning PH, BN, GPS and GRS.",
+      body: "No coalition came close to a majority: PH led with 82 seats, PN surged to 74, and BN suffered the worst result in its history — just 30 of the 178 seats it contested. Five days of uncertainty followed before the King appointed Anwar Ibrahim prime minister at the head of a multi-coalition unity government spanning PH, BN, GPS and GRS.",
       source: "Wikipedia — 2022 Malaysian general election", sourceUrl: "https://en.wikipedia.org/wiki/2022_Malaysian_general_election"
     },
     {
