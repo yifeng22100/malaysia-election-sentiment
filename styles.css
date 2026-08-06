@@ -848,6 +848,54 @@ footer .cadence { display: flex; align-items: center; gap: 8px; margin-top: 18px
 .hemicycle-chip-label { font-size: 10px; font-weight: 600; letter-spacing: 0.03em; text-transform: uppercase; color: #fff; opacity: 0.92; }
 
 /* =====================================================================
+   Election map (constituency choropleth)
+   ===================================================================== */
+.emap { position: relative; }
+.emap-panels { display: flex; gap: 10px; align-items: stretch; justify-content: center; flex-wrap: wrap; }
+.emap-svg { width: 100%; height: auto; max-height: 460px; min-width: 150px; overflow: visible; }
+.emap-seat { stroke: var(--surface); stroke-width: 0.5; transition: opacity .12s ease; cursor: pointer; }
+.emap-seat:hover { stroke: var(--ink); stroke-width: 1.1; }
+.emap[data-focus] .emap-seat { opacity: 0.16; }
+.emap[data-focus="PH"]  .emap-seat[data-key="PH"],
+.emap[data-focus="PN"]  .emap-seat[data-key="PN"],
+.emap[data-focus="BN"]  .emap-seat[data-key="BN"],
+.emap[data-focus="GPS"] .emap-seat[data-key="GPS"],
+.emap[data-focus="GRS"] .emap-seat[data-key="GRS"],
+.emap[data-focus="ALONE"] .emap-seat[data-key="ALONE"],
+.emap[data-focus="IND"] .emap-seat[data-key="IND"] { opacity: 1; }
+
+.emap-legend { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin-top: 12px; }
+.emap-key {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: var(--surface-2); border: none; border-radius: 999px;
+  padding: 6px 12px; font-family: var(--font-sans); font-size: 12.5px;
+  color: var(--ink); cursor: pointer; line-height: 1;
+}
+.emap-key:hover { background: color-mix(in srgb, var(--accent) 14%, var(--surface-2)); }
+.emap-key strong { font-variant-numeric: tabular-nums; }
+.emap-swatch { width: 10px; height: 10px; border-radius: 3px; flex: none; display: inline-block; }
+
+.emap-tip[hidden] { display: none; }
+.emap-tip {
+  position: absolute; z-index: 5; pointer-events: none;
+  background: var(--ink); color: var(--surface);
+  border-radius: 10px; padding: 9px 12px; max-width: 240px;
+  display: flex; flex-direction: column; gap: 2px;
+  font-size: 12.5px; line-height: 1.35;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.22);
+}
+.emap-tip-seat { font-weight: 700; font-size: 13px; }
+.emap-tip-state, .emap-tip-cand { opacity: 0.7; font-size: 11.5px; }
+.emap-tip-win { display: inline-flex; align-items: center; gap: 6px; margin-top: 2px; }
+.emap-caption { font-size: 12.5px; color: var(--muted); margin: 12px 0 0; line-height: 1.5; }
+.emap-loading { font-size: 13px; color: var(--muted); text-align: center; padding: 40px 0; margin: 0; }
+
+@media (max-width: 640px) {
+  .emap-svg { max-height: 300px; }
+  .emap-panels { gap: 6px; }
+}
+
+/* =====================================================================
    Process page — stages & trigger cards
    ===================================================================== */
 .trigger-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin-bottom: 8px; }
