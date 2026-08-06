@@ -1,0 +1,692 @@
+[
+ {
+  "seat": "P.002 Kangar",
+  "state": "Perlis",
+  "prev_coalition": "BN",
+  "prev_party": "UMNO",
+  "prev_name": "Shaharuddin bin Ismail",
+  "cur_coalition": "PH",
+  "cur_party": "PKR",
+  "cur_name": "Noor Amin bin Ahmad"
+ },
+ {
+  "seat": "P.004 Langkawi",
+  "state": "Kedah",
+  "prev_coalition": "BN",
+  "prev_party": "UMNO",
+  "prev_name": "Nawawi bin Ahmad",
+  "cur_coalition": "PH",
+  "cur_party": "BERSATU",
+  "cur_name": "Mahathir bin Mohamad"
+ },
+ {
+  "seat": "P.005 Jerlun",
+  "state": "Kedah",
+  "prev_coalition": "BN",
+  "prev_party": "UMNO",
+  "prev_name": "Othman bin Aziz",
+  "cur_coalition": "PH",
+  "cur_party": "BERSATU",
+  "cur_name": "Mukhriz bin Mahathir"
+ },
+ {
+  "seat": "P.006 Kubang Pasu",
+  "state": "Kedah",
+  "prev_coalition": "BN",
+  "prev_party": "UMNO",
+  "prev_name": "Mohd Johari bin Baharom",
+  "cur_coalition": "PH",
+  "cur_party": "BERSATU",
+  "cur_name": "Amiruddin bin Hamzah"
+ },
+ {
+  "seat": "P.011 Pendang",
+  "state": "Kedah",
+  "prev_coalition": "BN",
+  "prev_party": "UMNO",
+  "prev_name": "Othman bin Abdul",
+  "cur_coalition": "GS",
+  "cur_party": "PAS",
+  "cur_name": "Awang Solahuddin bin Hashim"
+ },
+ {
+  "seat": "P.012 Jerai",
+  "state": "Kedah",
+  "prev_coalition": "BN",
+  "prev_party": "UMNO",
+  "prev_name": "Jamil Khir bin Baharom",
+  "cur_coalition": "GS",
+  "cur_party": "PAS",
+  "cur_name": "Sabri bin Azit"
+ },
+ {
+  "seat": "P.013 Sik",
+  "state": "Kedah",
+  "prev_coalition": "BN",
+  "prev_party": "UMNO",
+  "prev_name": "Mansor bin Abdul Rahman",
+  "cur_coalition": "GS",
+  "cur_party": "PAS",
+  "cur_name": "Ahmad Tarmizi bin Sulaiman"
+ },
+ {
+  "seat": "P.014 Merbok",
+  "state": "Kedah",
+  "prev_coalition": "BN",
+  "prev_party": "UMNO",
+  "prev_name": "Ismail bin Daut",
+  "cur_coalition": "PH",
+  "cur_party": "PKR",
+  "cur_name": "Nur Azrina binti Surip (Nurin Aina)"
+ },
+ {
+  "seat": "P.018 Kulim-Bandar Baharu",
+  "state": "Kedah",
+  "prev_coalition": "BN",
+  "prev_party": "UMNO",
+  "prev_name": "Abdul Aziz bin Sheikh Fadzir",
+  "cur_coalition": "PH",
+  "cur_party": "PKR",
+  "cur_name": "Saifuddin Nasution bin Ismail"
+ },
+ {
+  "seat": "P.019 Tumpat",
+  "state": "Kelantan",
+  "prev_coalition": "PR",
+  "prev_party": "PAS",
+  "prev_name": "Kamarudin bin Jaffar",
+  "cur_coalition": "GS",
+  "cur_party": "PAS",
+  "cur_name": "Che Abdullah bin Mat Nawi"
+ },
+ {
+  "seat": "P.020 Pengkalan Chepa",
+  "state": "Kelantan",
+  "prev_coalition": "PR",
+  "prev_party": "PAS",
+  "prev_name": "Izani bin Husin",
+  "cur_coalition": "GS",
+  "cur_party": "PAS",
+  "cur_name": "Ahmad Marzuk bin Shaary"
+ },
+ {
+  "seat": "P.021 Kota Bharu",
+  "state": "Kelantan",
+  "prev_coalition": "PR",
+  "prev_party": "PAS",
+  "prev_name": "Takiyuddin bin Hassan",
+  "cur_coalition": "GS",
+  "cur_party": "PAS",
+  "cur_name": "Takiyuddin bin Hassan"
+ },
+ {
+  "seat": "P.022 Pasir Mas",
+  "state": "Kelantan",
+  "prev_coalition": "PR",
+  "prev_party": "PAS",
+  "prev_name": "Nik Mohamad Abduh bin Nik Abdul Aziz",
+  "cur_coalition": "GS",
+  "cur_party": "PAS",
+  "cur_name": "Ahmad Fadhli bin Shaari"
+ },
+ {
+  "seat": "P.023 Rantau Panjang",
+  "state": "Kelantan",
+  "prev_coalition": "PR",
+  "prev_party": "PAS",
+  "prev_name": "Siti Zailah binti Mohd Yusoff (Kak Lah)",
+  "cur_coalition": "GS",
+  "cur_party": "PAS",
+  "cur_name": "Siti Zailah binti Mohd Yusoff (Kak Lah)"
+ },
+ {
+  "seat": "P.024 Kubang Kerian",
+  "state": "Kelantan",
+  "prev_coalition": "PR",
+  "prev_party": "PAS",
+  "prev_name": "Ahmad Baihaki bin Atiqullah",
+  "cur_coalition": "GS",
+  "cur_party": "PAS",
+  "cur_name": "Tuan Ibrahim bin Tuan Man"
+ },
+ {
+  "seat": "P.025 Bachok",
+  "state": "Kelantan",
+  "prev_coalition": "PR",
+  "prev_party": "PAS",
+  "prev_name": "Ahmad Marzuk bin Shaary",
+  "cur_coalition": "GS",
+  "cur_party": "PAS",
+  "cur_name": "Nik Mohamad Abduh bin Nik Abdul Aziz"
+ },
+ {
+  "seat": "P.028 Pasir Puteh",
+  "state": "Kelantan",
+  "prev_coalition": "PR",
+  "prev_party": "PAS",
+  "prev_name": "Nik Mazian bin Nik Mohamad",
+  "cur_coalition": "GS",
+  "cur_party": "PAS",
+  "cur_name": "Nik Muhammad Zawawi bin Salleh"
+ },
+ {
+  "seat": "P.031 Kuala Krai",
+  "state": "Kelantan",
+  "prev_coalition": "PR",
+  "prev_party": "PAS",
+  "prev_name": "Mohd Hatta bin Md. Ramli",
+  "cur_coalition": "GS",
+  "cur_party": "PAS",
+  "cur_name": "Abdul Latiff bin Abdul Rahman"
+ },
+ {
+  "seat": "P.034 Setiu",
+  "state": "Terengganu",
+  "prev_coalition": "BN",
+  "prev_party": "UMNO",
+  "prev_name": "Che Mohamad Zulkifly bin Jusoh",
+  "cur_coalition": "GS",
+  "cur_party": "PAS",
+  "cur_name": "Shaharizukirnain bin Abdul Kadir"
+ },
+ {
+  "seat": "P.035 Kuala Nerus",
+  "state": "Terengganu",
+  "prev_coalition": "PR",
+  "prev_party": "PAS",
+  "prev_name": "Mohd Khairuddin bin Aman Razali",
+  "cur_coalition": "GS",
+  "cur_party": "PAS",
+  "cur_name": "Mohd Khairuddin bin Aman Razali"
+ },
+ {
+  "seat": "P.036 Kuala Terengganu",
+  "state": "Terengganu",
+  "prev_coalition": "PR",
+  "prev_party": "PAS",
+  "prev_name": "Raja Kamarul Bahrin Shah bin Raja Ahmad Baharuddin Ismail Shah",
+  "cur_coalition": "GS",
+  "cur_party": "PAS",
+  "cur_name": "Ahmad Amzad bin Mohamed @ Hashim"
+ },
+ {
+  "seat": "P.037 Marang",
+  "state": "Terengganu",
+  "prev_coalition": "PR",
+  "prev_party": "PAS",
+  "prev_name": "Abdul Hadi bin Awang",
+  "cur_coalition": "GS",
+  "cur_party": "PAS",
+  "cur_name": "Abdul Hadi bin Awang"
+ },
+ {
+  "seat": "P.039 Dungun",
+  "state": "Terengganu",
+  "prev_coalition": "PR",
+  "prev_party": "PAS",
+  "prev_name": "Wan Hassan bin Mohd Ramli",
+  "cur_coalition": "GS",
+  "cur_party": "PAS",
+  "cur_name": "Wan Hassan bin Mohd Ramli"
+ },
+ {
+  "seat": "P.040 Kemaman",
+  "state": "Terengganu",
+  "prev_coalition": "BN",
+  "prev_party": "UMNO",
+  "prev_name": "Ahmad Shabery bin Cheek",
+  "cur_coalition": "GS",
+  "cur_party": "PAS",
+  "cur_name": "Che Alias bin Hamid"
+ },
+ {
+  "seat": "P.053 Balik Pulau",
+  "state": "Pulau Pinang",
+  "prev_coalition": "BN",
+  "prev_party": "UMNO",
+  "prev_name": "Hilmi bin Yahaya",
+  "cur_coalition": "PH",
+  "cur_party": "PKR",
+  "cur_name": "Muhammad Bakhtiar bin Wan Chik"
+ },
+ {
+  "seat": "P.059 Bukit Gantang",
+  "state": "Perak",
+  "prev_coalition": "PR",
+  "prev_party": "PAS",
+  "prev_name": "Idris bin Ahmad",
+  "cur_coalition": "BN",
+  "cur_party": "UMNO",
+  "cur_name": "Syed Abu Hussin bin Hafiz Syed Abdul Fasal"
+ },
+ {
+  "seat": "P.063 Tambun",
+  "state": "Perak",
+  "prev_coalition": "BN",
+  "prev_party": "UMNO",
+  "prev_name": "Ahmad Husni bin Mohamad Hanadzlah",
+  "cur_coalition": "PH",
+  "cur_party": "BERSATU",
+  "cur_name": "Ahmad Faizal bin Azumu (Peja)"
+ },
+ {
+  "seat": "P.077 Tanjong Malim",
+  "state": "Perak",
+  "prev_coalition": "BN",
+  "prev_party": "MCA",
+  "prev_name": "Ong Ka Chuan",
+  "cur_coalition": "PH",
+  "cur_party": "PKR",
+  "cur_name": "Chang Lih Kang"
+ },
+ {
+  "seat": "P.089 Bentong",
+  "state": "Pahang",
+  "prev_coalition": "BN",
+  "prev_party": "MCA",
+  "prev_name": "Liow Tiong Lai",
+  "cur_coalition": "PH",
+  "cur_party": "DAP",
+  "cur_name": "Wong Tack"
+ },
+ {
+  "seat": "P.093 Sungai Besar",
+  "state": "Selangor",
+  "prev_coalition": "BN",
+  "prev_party": "UMNO",
+  "prev_name": "Noriah binti Kasnon",
+  "cur_coalition": "PH",
+  "cur_party": "BERSATU",
+  "cur_name": "Muslimin bin Yahaya"
+ },
+ {
+  "seat": "P.094 Hulu Selangor",
+  "state": "Selangor",
+  "prev_coalition": "BN",
+  "prev_party": "MIC",
+  "prev_name": "Kamalanathan a/l Panchanathan",
+  "cur_coalition": "PH",
+  "cur_party": "PKR",
+  "cur_name": "June Leow Hsiao Hui"
+ },
+ {
+  "seat": "P.096 Kuala Selangor",
+  "state": "Selangor",
+  "prev_coalition": "BN",
+  "prev_party": "UMNO",
+  "prev_name": "Irmohizam bin Ibrahim",
+  "cur_coalition": "PH",
+  "cur_party": "AMANAH",
+  "cur_name": "Dzulkefly bin Ahmad"
+ },
+ {
+  "seat": "P.115 Batu",
+  "state": "W.P. Kuala Lumpur",
+  "prev_coalition": "PR",
+  "prev_party": "PKR",
+  "prev_name": "Chua Tian Chang (Tian Chua)",
+  "cur_coalition": "ALONE",
+  "cur_party": "BEBAS",
+  "cur_name": "Prabakaran a/l Parameswaran"
+ },
+ {
+  "seat": "P.118 Setiawangsa",
+  "state": "W.P. Kuala Lumpur",
+  "prev_coalition": "BN",
+  "prev_party": "UMNO",
+  "prev_name": "Ahmad Fauzi bin Zahari",
+  "cur_coalition": "PH",
+  "cur_party": "PKR",
+  "cur_name": "Nik Nazmi bin Nik Ahmad"
+ },
+ {
+  "seat": "P.119 Titiwangsa",
+  "state": "W.P. Kuala Lumpur",
+  "prev_coalition": "BN",
+  "prev_party": "UMNO",
+  "prev_name": "Johari bin Abdul Ghani",
+  "cur_coalition": "PH",
+  "cur_party": "BERSATU",
+  "cur_name": "Rina binti Mohd Harun"
+ },
+ {
+  "seat": "P.129 Kuala Pilah",
+  "state": "Negeri Sembilan",
+  "prev_coalition": "BN",
+  "prev_party": "UMNO",
+  "prev_name": "Hasan bin Malek",
+  "cur_coalition": "PH",
+  "cur_party": "BERSATU",
+  "cur_name": "Eddin Syazlee bin Shith"
+ },
+ {
+  "seat": "P.133 Tampin",
+  "state": "Negeri Sembilan",
+  "prev_coalition": "BN",
+  "prev_party": "UMNO",
+  "prev_name": "Shaziman bin Abu Mansor",
+  "cur_coalition": "PH",
+  "cur_party": "AMANAH",
+  "cur_name": "Hasan bin Bahrom"
+ },
+ {
+  "seat": "P.135 Alor Gajah",
+  "state": "Melaka",
+  "prev_coalition": "BN",
+  "prev_party": "MCA",
+  "prev_name": "Koh Nai Kwong",
+  "cur_coalition": "PH",
+  "cur_party": "BERSATU",
+  "cur_name": "Mohd Redzuan bin Md Yusof"
+ },
+ {
+  "seat": "P.136 Tangga Batu",
+  "state": "Melaka",
+  "prev_coalition": "BN",
+  "prev_party": "UMNO",
+  "prev_name": "Abu Bakar bin Mohamad Diah",
+  "cur_coalition": "PH",
+  "cur_party": "PKR",
+  "cur_name": "Rusnah binti Aluai"
+ },
+ {
+  "seat": "P.140 Segamat",
+  "state": "Johor",
+  "prev_coalition": "BN",
+  "prev_party": "MIC",
+  "prev_name": "Subramaniam a/l Sathasivam",
+  "cur_coalition": "PH",
+  "cur_party": "PKR",
+  "cur_name": "Edmund Santhara Kumar a/l Ramanaidu"
+ },
+ {
+  "seat": "P.141 Sekijang",
+  "state": "Johor",
+  "prev_coalition": "BN",
+  "prev_party": "UMNO",
+  "prev_name": "Anuar bin Abdul Manap",
+  "cur_coalition": "PH",
+  "cur_party": "PKR",
+  "cur_name": "Natrah binti Ismail"
+ },
+ {
+  "seat": "P.142 Labis",
+  "state": "Johor",
+  "prev_coalition": "BN",
+  "prev_party": "MCA",
+  "prev_name": "Chua Tee Yong",
+  "cur_coalition": "PH",
+  "cur_party": "DAP",
+  "cur_name": "Pang Hok Liong"
+ },
+ {
+  "seat": "P.143 Pagoh",
+  "state": "Johor",
+  "prev_coalition": "BN",
+  "prev_party": "UMNO",
+  "prev_name": "Muhyiddin bin Md Yasin",
+  "cur_coalition": "PH",
+  "cur_party": "BERSATU",
+  "cur_name": "Muhyiddin bin Md Yasin"
+ },
+ {
+  "seat": "P.144 Ledang",
+  "state": "Johor",
+  "prev_coalition": "BN",
+  "prev_party": "UMNO",
+  "prev_name": "Hamim bin Samuri",
+  "cur_coalition": "PH",
+  "cur_party": "PKR",
+  "cur_name": "Syed Ibrahim bin Syed Noh"
+ },
+ {
+  "seat": "P.146 Muar",
+  "state": "Johor",
+  "prev_coalition": "BN",
+  "prev_party": "UMNO",
+  "prev_name": "Razali bin Ibrahim",
+  "cur_coalition": "PH",
+  "cur_party": "BERSATU",
+  "cur_name": "Syed Saddiq bin Syed Abdul Rahman"
+ },
+ {
+  "seat": "P.149 Sri Gading",
+  "state": "Johor",
+  "prev_coalition": "BN",
+  "prev_party": "UMNO",
+  "prev_name": "Ab Aziz bin Kaprawi",
+  "cur_coalition": "PH",
+  "cur_party": "BERSATU",
+  "cur_name": "Shahruddin bin Mohamed Salleh"
+ },
+ {
+  "seat": "P.151 Simpang Renggam",
+  "state": "Johor",
+  "prev_coalition": "BN",
+  "prev_party": "GERAKAN",
+  "prev_name": "Liang Teck Meng",
+  "cur_coalition": "PH",
+  "cur_party": "BERSATU",
+  "cur_name": "Maszlee bin Malik"
+ },
+ {
+  "seat": "P.158 Tebrau",
+  "state": "Johor",
+  "prev_coalition": "BN",
+  "prev_party": "MCA",
+  "prev_name": "Khoo Soo Seang",
+  "cur_coalition": "PH",
+  "cur_party": "PKR",
+  "cur_name": "Steven Choong Shiau Yoon"
+ },
+ {
+  "seat": "P.159 Pasir Gudang",
+  "state": "Johor",
+  "prev_coalition": "BN",
+  "prev_party": "UMNO",
+  "prev_name": "Normala binti Abdul Samad",
+  "cur_coalition": "PH",
+  "cur_party": "PKR",
+  "cur_name": "Hassan bin Abdul Karim"
+ },
+ {
+  "seat": "P.160 Johor Bahru",
+  "state": "Johor",
+  "prev_coalition": "BN",
+  "prev_party": "UMNO",
+  "prev_name": "Shahrir bin Abdul Samad",
+  "cur_coalition": "PH",
+  "cur_party": "PKR",
+  "cur_name": "Akmal Nasrullah bin Mohd Nasir"
+ },
+ {
+  "seat": "P.161 Pulai",
+  "state": "Johor",
+  "prev_coalition": "BN",
+  "prev_party": "UMNO",
+  "prev_name": "Nur Jazlan bin Mohamad",
+  "cur_coalition": "PH",
+  "cur_party": "AMANAH",
+  "cur_name": "Salahuddin bin Ayub"
+ },
+ {
+  "seat": "P.169 Kota Belud",
+  "state": "Sabah",
+  "prev_coalition": "BN",
+  "prev_party": "UMNO",
+  "prev_name": "Abdul Rahman bin Dahlan",
+  "cur_coalition": "ALONE",
+  "cur_party": "WARISAN",
+  "cur_name": "Munirah Majilis"
+ },
+ {
+  "seat": "P.171 Sepanggar",
+  "state": "Sabah",
+  "prev_coalition": "BN",
+  "prev_party": "UMNO",
+  "prev_name": "Jumat bin Idris",
+  "cur_coalition": "ALONE",
+  "cur_party": "WARISAN",
+  "cur_name": "Mohd Azis bin Jamman"
+ },
+ {
+  "seat": "P.173 Putatan",
+  "state": "Sabah",
+  "prev_coalition": "BN",
+  "prev_party": "UPKO",
+  "prev_name": "Marcus Mojigoh (Makin)",
+  "cur_coalition": "PH",
+  "cur_party": "PKR",
+  "cur_name": "Awang Husaini bin Sahari"
+ },
+ {
+  "seat": "P.174 Penampang",
+  "state": "Sabah",
+  "prev_coalition": "PR",
+  "prev_party": "PKR",
+  "prev_name": "Ignatius Dorell Leiking (Darell Leiking)",
+  "cur_coalition": "ALONE",
+  "cur_party": "WARISAN",
+  "cur_name": "Ignatius Dorell Leiking (Darell Leiking)"
+ },
+ {
+  "seat": "P.175 Papar",
+  "state": "Sabah",
+  "prev_coalition": "BN",
+  "prev_party": "UMNO",
+  "prev_name": "Rosnah binti Abdul Rashid Shirlin",
+  "cur_coalition": "ALONE",
+  "cur_party": "WARISAN",
+  "cur_name": "Ahmad bin Hassan"
+ },
+ {
+  "seat": "P.179 Ranau",
+  "state": "Sabah",
+  "prev_coalition": "BN",
+  "prev_party": "UPKO",
+  "prev_name": "Ewon Ebin",
+  "cur_coalition": "PH",
+  "cur_party": "PKR",
+  "cur_name": "Jonathan bin Yasin"
+ },
+ {
+  "seat": "P.180 Keningau",
+  "state": "Sabah",
+  "prev_coalition": "BN",
+  "prev_party": "PBS",
+  "prev_name": "Joseph Pairin Kitingan",
+  "cur_coalition": "USA",
+  "cur_party": "STAR",
+  "cur_name": "Jeffrey Gapari Kitingan"
+ },
+ {
+  "seat": "P.181 Tenom",
+  "state": "Sabah",
+  "prev_coalition": "BN",
+  "prev_party": "UMNO",
+  "prev_name": "Raime bin Unggi",
+  "cur_coalition": "PH",
+  "cur_party": "DAP",
+  "cur_name": "Noorita binti Sual"
+ },
+ {
+  "seat": "P.185 Batu Sapi",
+  "state": "Sabah",
+  "prev_coalition": "BN",
+  "prev_party": "PBS",
+  "prev_name": "Linda Tsen Thau Lin",
+  "cur_coalition": "ALONE",
+  "cur_party": "WARISAN",
+  "cur_name": "Liew Vui Keong"
+ },
+ {
+  "seat": "P.188 Silam",
+  "state": "Sabah",
+  "prev_coalition": "BN",
+  "prev_party": "UMNO",
+  "prev_name": "Nasrun bin Mansur",
+  "cur_coalition": "ALONE",
+  "cur_party": "WARISAN",
+  "cur_name": "Mohamaddin bin Ketapi"
+ },
+ {
+  "seat": "P.189 Semporna",
+  "state": "Sabah",
+  "prev_coalition": "BN",
+  "prev_party": "UMNO",
+  "prev_name": "Mohd Shafie bin Apdal",
+  "cur_coalition": "ALONE",
+  "cur_party": "WARISAN",
+  "cur_name": "Mohd Shafie bin Apdal"
+ },
+ {
+  "seat": "P.190 Tawau",
+  "state": "Sabah",
+  "prev_coalition": "BN",
+  "prev_party": "PBS",
+  "prev_name": "Mary Yap Kain Ching",
+  "cur_coalition": "PH",
+  "cur_party": "PKR",
+  "cur_name": "Christina Liew Chin Jin"
+ },
+ {
+  "seat": "P.191 Kalabakan",
+  "state": "Sabah",
+  "prev_coalition": "BN",
+  "prev_party": "UMNO",
+  "prev_name": "Abdul Ghapur bin Salleh",
+  "cur_coalition": "ALONE",
+  "cur_party": "WARISAN",
+  "cur_name": "Ma'Mun bin Sulaiman"
+ },
+ {
+  "seat": "P.192 Mas Gading",
+  "state": "Sarawak",
+  "prev_coalition": "BN",
+  "prev_party": "SPDP",
+  "prev_name": "Nogeh anak Gumbek",
+  "cur_coalition": "PH",
+  "cur_party": "DAP",
+  "cur_name": "Mordi anak Bimol"
+ },
+ {
+  "seat": "P.203 Lubok Antu",
+  "state": "Sarawak",
+  "prev_coalition": "BN",
+  "prev_party": "PRS",
+  "prev_name": "William Nyallau anak Badak",
+  "cur_coalition": "ALONE",
+  "cur_party": "BEBAS",
+  "cur_name": "Tambat @ Jugah anak Muyang"
+ },
+ {
+  "seat": "P.205 Saratok",
+  "state": "Sarawak",
+  "prev_coalition": "BN",
+  "prev_party": "SPDP",
+  "prev_name": "William Mawan Ikom",
+  "cur_coalition": "PH",
+  "cur_party": "PKR",
+  "cur_name": "Ali anak Biju"
+ },
+ {
+  "seat": "P.209 Julau",
+  "state": "Sarawak",
+  "prev_coalition": "BN",
+  "prev_party": "PRS",
+  "prev_name": "Joseph Salang anak Gandum",
+  "cur_coalition": "ALONE",
+  "cur_party": "BEBAS",
+  "cur_name": "Larry Soon @ Larry Sng Wei Shien"
+ },
+ {
+  "seat": "P.214 Selangau",
+  "state": "Sarawak",
+  "prev_coalition": "BN",
+  "prev_party": "PRS",
+  "prev_name": "Joseph Entulu Belaun",
+  "cur_coalition": "PH",
+  "cur_party": "PKR",
+  "cur_name": "Baru Bian"
+ }
+]

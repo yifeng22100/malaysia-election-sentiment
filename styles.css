@@ -883,8 +883,41 @@ footer .cadence { display: flex; align-items: center; gap: 8px; margin-top: 18px
 .emap-tip-seat { font-weight: 700; font-size: 13px; }
 .emap-tip-state, .emap-tip-cand { opacity: 0.7; font-size: 11.5px; }
 .emap-tip-win { display: inline-flex; align-items: center; gap: 6px; margin-top: 2px; }
+.emap-tip-maj { opacity: 0.85; font-size: 11.5px; margin-top: 1px; }
 .emap-caption { font-size: 12.5px; color: var(--muted); margin: 12px 0 0; line-height: 1.5; }
 .emap-loading { font-size: 13px; color: var(--muted); text-align: center; padding: 40px 0; margin: 0; }
+
+.emap-viewtoggle { display: inline-flex; gap: 2px; background: var(--surface-2); border-radius: 999px; padding: 2px; margin-bottom: 12px; }
+.emap-viewbtn { border: none; background: none; font-family: var(--font-sans); font-size: 12.5px; font-weight: 600; color: var(--muted); padding: 6px 14px; border-radius: 999px; cursor: pointer; }
+.emap-viewbtn.is-active { background: var(--surface); color: var(--ink); box-shadow: var(--shadow); }
+.emap-view[hidden] { display: none; }
+
+.emap-tblwrap { overflow-x: auto; border-radius: var(--radius-md); border: 0.5px solid var(--line); max-height: 480px; overflow-y: auto; }
+.emap-tbl { border-collapse: collapse; width: 100%; min-width: 640px; font-size: 12.5px; }
+.emap-tbl th, .emap-tbl td { text-align: left; padding: 8px 10px; border-bottom: 0.5px solid var(--line); white-space: nowrap; }
+.emap-tbl thead th { position: sticky; top: 0; background: var(--surface); font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.03em; color: var(--muted); font-weight: 700; z-index: 1; }
+.emap-tbl tbody tr:hover { background: var(--surface-2); }
+.emap-tbl-seat { font-weight: 600; }
+.emap-tbl-code { color: var(--muted); font-weight: 400; font-variant-numeric: tabular-nums; }
+.emap-tbl-num { font-variant-numeric: tabular-nums; text-align: right; }
+.emap-tbl-unc { color: var(--muted); font-style: italic; }
+.emap-tbl .emap-swatch { margin-right: 5px; }
+.rt-total { font-weight: 700; background: var(--surface-2); }
+.rt-total td { border-top: 1px solid var(--line-strong); }
+.rt-muted { color: var(--muted); font-weight: 400; }
+.rt-reason-ok { color: var(--status-done); }
+.rt-reason-unconfirmed { color: var(--muted); font-style: italic; }
+.rt-statetable th, .rt-statetable td { white-space: nowrap; }
+
+/* =====================================================================
+   Sentiment source badges — distinguishes professional polling from
+   social-media/forum-reported reaction, used in signal-log entries
+   ===================================================================== */
+.src-badge { display: inline-flex; align-items: center; gap: 5px; font-size: 10.5px; font-weight: 700; letter-spacing: 0.02em; text-transform: uppercase; padding: 3px 9px; border-radius: 999px; margin-right: 6px; margin-bottom: 8px; }
+.src-professional { background: color-mix(in srgb, var(--status-done) 16%, transparent); color: var(--status-done); }
+.src-social { background: color-mix(in srgb, var(--accent) 14%, transparent); color: var(--accent); }
+.src-legend { display: flex; flex-wrap: wrap; gap: 14px; font-size: 12.5px; color: var(--muted); margin: 10px 0 18px; align-items: center; }
+.src-legend .src-badge { margin: 0; }
 
 @media (max-width: 640px) {
   .emap-svg { max-height: 300px; }

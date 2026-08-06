@@ -129,6 +129,58 @@
     </div>
   </section>
 
+  <section id="party-breakdown" aria-label="Full GE15 party breakdown">
+    <div class="section-label">Every party, GE15 — not lumped into "Others"</div>
+    <p class="lede">40 parties fielded candidates at GE15. Here is every one of them, not just the coalitions that formed government.</p>
+    <div class="about-card">
+      <div data-partytable='{"election":"GE-15"}'></div>
+    </div>
+  </section>
+
+  <section id="by-state" aria-label="GE15 results by state">
+    <div class="section-label">GE15 by state</div>
+    <p class="lede">The national 82/74/30 split hides very different state-level pictures — PN's strength is concentrated in the Malay-belt north and east coast, PH's in the urban west coast and Sabah/Sarawak lean on their own regional coalitions.</p>
+    <div class="about-card">
+      <div data-statetable='{"election":"GE-15"}'></div>
+    </div>
+  </section>
+
+  <section id="changed-seats" aria-label="Seats that changed allegiance">
+    <div class="section-label">Seats that changed allegiance, GE14 → GE15</div>
+    <p class="lede">98 of 222 seats flipped to a genuinely different political bloc between the 2018 and 2022 general elections — coalition rebrands (Pakatan Rakyat becoming Pakatan Harapan, for instance) don't count as a flip here, only real swings between rival blocs.</p>
+    <div class="about-card">
+      <div data-changedtable='{"pair":"ge14_ge15"}'></div>
+    </div>
+  </section>
+
+  <section id="mp-retirements" aria-label="MPs not standing for re-election">
+    <div class="section-label">GE14 MPs who did not contest GE15</div>
+    <p class="lede">58 of the 222 MPs elected in 2018 did not stand again in 2022 — some by choice, one because he was in prison, most for reasons this page cannot independently confirm.</p>
+    <div class="about-card">
+      <div data-mptable="retiring"></div>
+    </div>
+  </section>
+
+  <section id="polling" aria-label="Professional polling and public sentiment">
+    <div class="section-label">Reading sentiment: two very different sources</div>
+    <p class="lede">This site draws on two kinds of sentiment signal, and keeps them visually distinct rather than blending them into one number.</p>
+    <div class="src-legend">
+      <span class="src-badge src-professional">Professional research</span>
+      <span>— a named pollster's methodology (sample size, dates, sampling frame) is disclosed.</span>
+    </div>
+    <div class="src-legend" style="margin-top:-10px;">
+      <span class="src-badge src-social">Public / social reaction</span>
+      <span>— what's being said on Facebook, X, TikTok, Instagram or forums, as reported by news outlets covering that reaction. This site does not scrape social platforms directly; it relies on press coverage of what's trending, exactly as it does for every other signal-log entry.</span>
+    </div>
+    <div class="about-card">
+      <h3>The professional pollsters this site cites</h3>
+      <p><strong>Merdeka Center for Opinion Research</strong> — Malaysia's longest-running independent pollster, based in Bangi, a founding member of the Malaysian Market Research Association and a member of WAPOR (the World Association for Public Opinion Research). Uses stratified random sampling with in-person and phone interviews, weighted to demographic and ethnic composition. Its most recent national survey (12 March – 9 April 2026, 1,209 registered voters across all 14 states and all 222 parliamentary constituencies) put PM Anwar Ibrahim's approval at 52%, UMNO's Khairy Jamaluddin at 50%, and found the country split on direction: 42% right track, 50% wrong track — essentially unchanged since December 2025.</p>
+      <p><strong>Ilham Centre</strong> — conducts face-to-face interviews rather than phone or online polling, on the stated view that phone surveys understate accuracy; its Johor and Negeri Sembilan pre-election projections are cited on those state pages.</p>
+      <p><strong>Vodus Research</strong> — a newer entrant using an online "one-question" ad-embedded survey technology (OMTOS) rather than a traditional panel; also cited on the Johor and Negeri Sembilan pages for its pre-election forecasts.</p>
+      <p style="margin:0;">All three disclose sample size and fieldwork dates for the specific polls this site cites — a bar social-media sentiment cannot meet, which is exactly why the two are labelled separately rather than presented as equivalent.</p>
+    </div>
+  </section>
+
   <section id="scorecard" aria-label="State election scorecard">
     <div class="section-label">The scorecard so far</div>
     <div class="tablewrap">
@@ -188,6 +240,10 @@
     <ul class="sources">
       <li><a href="https://en.wikipedia.org/wiki/Next_Malaysian_general_election" target="_blank" rel="noopener">Wikipedia — next Malaysian general election</a></li>
       <li><a href="https://says.com/my/news/when-is-next-election-here-are-deadlines-every-state-federal-poll-malaysia" target="_blank" rel="noopener">SAYS — election deadlines for every state and federal poll</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Merdeka_Center" target="_blank" rel="noopener">Wikipedia — Merdeka Center for Opinion Research</a></li>
+      <li><a href="https://merdeka.org/anwar-tops-approval-ratings-in-merdeka-center-poll/" target="_blank" rel="noopener">Merdeka Center — Anwar tops approval ratings (Mar–Apr 2026 survey)</a></li>
+      <li><a href="https://vodus.com/method" target="_blank" rel="noopener">Vodus Research — methodology</a></li>
+      <li>Constituency-level results, party breakdowns and MP data compiled from ElectionData.MY's candidate-level ballots dataset (CC0); see <a href="history.html">History &amp; EC</a> for sourcing of the boundary geometry.</li>
       <li>See <a href="johor.html">Johor</a>, <a href="negeri-sembilan.html">Negeri Sembilan</a> and <a href="sabah.html">Sabah</a> for full per-state source lists.</li>
     </ul>
     <p>Compiled from public news coverage and official deadlines. Not affiliated with the Election Commission of Malaysia, any political coalition, or the Government of Malaysia. Figures are as officially reported at time of writing and may be revised.</p>
@@ -201,6 +257,11 @@
   <a href="#status">Where things stand</a>
   <a href="#composition">Dewan Rakyat composition</a>
   <a href="#map">Every seat, GE15</a>
+  <a href="#party-breakdown">Full party breakdown</a>
+  <a href="#by-state">Results by state</a>
+  <a href="#changed-seats">Seats that changed hands</a>
+  <a href="#mp-retirements">MPs not recontesting</a>
+  <a href="#polling">Polling &amp; sentiment sources</a>
   <a href="#scorecard">Scorecard so far</a>
   <a href="#implications">What it adds up to</a>
   <a href="#whats-next">What's next</a>
@@ -248,5 +309,6 @@
 <script src="toc.js"></script>
 <script src="electionmap.js"></script>
 <script src="hemicycle.js"></script>
+<script src="results-tables.js"></script>
 </body>
 </html>

@@ -95,6 +95,35 @@
     });
   }
 
+  function fmtNum(n) { return n == null ? "" : n.toLocaleString("en-US"); }
+
+  function buildTable(feats) {
+    var rows = feats.slice().sort(function (a, b) {
+      return (a.properties.n || "").localeCompare(b.properties.n || "");
+    });
+    var body = rows.map(function (f) {
+      var p = f.properties;
+      var w = p.w || NODATA;
+      var cells =
+        '<td class="emap-tbl-seat">' + (p.c ? '<span class="emap-tbl-code">' + p.c + '</span> ' : "") + (p.n || "") + "</td>"
+        + '<td>' + (p.cand || "—") + "</td>"
+        + '<td><span class="emap-swatch" style="background:' + colorFor(w) + '"></span>' + (p.p || labelFor(w)) + "</td>"
+        + '<td class="emap-tbl-num">' + (p.pct != null ? p.pct + "%" : "—") + "</td>"
+        + (p.unc
+            ? '<td class="emap-tbl-unc" colspan="3">Uncontested</td>'
+            : '<td>' + (p.rcand || "—") + (p.rp ? " (" + p.rp + ")" : "") + "</td>"
+              + '<td class="emap-tbl-num">' + (p.rpct != null ? p.rpct + "%" : "—") + "</td>"
+              + '<td class="emap-tbl-num">' + (p.maj != null ? fmtNum(p.maj) : "—") + "</td>")
+        + '<td class="emap-tbl-num">' + (p.tv != null ? fmtNum(p.tv) : "—") + "</td>";
+      return "<tr>" + cells + "</tr>";
+    }).join("");
+    return '<div class="emap-tblwrap"><table class="emap-tbl">'
+      + "<thead><tr>"
+      + "<th>Seat</th><th>Representative</th><th>Party</th><th>Vote %</th>"
+      + "<th>Runner-up</th><th>Runner-up %</th><th>Majority</th><th>Total votes</th>"
+      + "</tr></thead><tbody>" + body + "</tbody></table></div>";
+  }
+
   function render(el, cfg, geo) {
     var feats = geo.features;
     var groups;
@@ -125,7 +154,11 @@
           + ' data-p="' + (pr.p || "") + '"'
           + ' data-cand="' + (pr.cand || "").replace(/"/g, "&quot;") + '"'
           + ' data-pct="' + (pr.pct != null ? pr.pct : "") + '"'
-          + ' data-s="' + (pr.s || "").replace(/"/g, "&quot;") + '"></path>';
+          + ' data-s="' + (pr.s || "").replace(/"/g, "&quot;") + '"'
+          + ' data-maj="' + (pr.maj != null ? pr.maj : "") + '"'
+          + ' data-rcand="' + (pr.rcand || "").replace(/"/g, "&quot;") + '"'
+          + ' data-rp="' + (pr.rp || "") + '"'
+          + ' data-unc="' + (pr.unc ? "1" : "") + '"></path>';
       }).join("");
       return '<svg class="emap-svg" viewBox="0 0 ' + W.toFixed(0) + ' ' + H + '" '
         + 'style="flex:' + aspect.toFixed(3) + ' 1 0" preserveAspectRatio="xMidYMid meet" '
@@ -145,13 +178,35 @@
         + labelFor(w) + ' <strong>' + tally[w] + "</strong></button>";
     }).join("");
 
+    var hasTable = feats.some(function (f) { return f.properties.cand; });
+    var tableHtml = hasTable ? buildTable(feats) : "";
+
     el.innerHTML =
       '<div class="emap">'
+      + (hasTable
+          ? '<div class="emap-viewtoggle" role="tablist">'
+            + '<button type="button" class="emap-viewbtn is-active" data-view="map">Map</button>'
+            + '<button type="button" class="emap-viewbtn" data-view="table">Table</button>'
+            + "</div>"
+          : "")
+      + '<div class="emap-view" data-view="map">'
       + '<div class="emap-panels">' + svgs + "</div>"
       + '<div class="emap-tip" hidden></div>'
       + '<div class="emap-legend">' + legend + "</div>"
+      + "</div>"
+      + (hasTable ? '<div class="emap-view" data-view="table" hidden>' + tableHtml + "</div>" : "")
       + (cfg.caption ? '<p class="emap-caption">' + cfg.caption + "</p>" : "")
       + "</div>";
+
+    if (hasTable) {
+      var views = el.querySelectorAll(".emap-view");
+      el.querySelectorAll(".emap-viewbtn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          el.querySelectorAll(".emap-viewbtn").forEach(function (b) { b.classList.toggle("is-active", b === btn); });
+          views.forEach(function (v) { v.hidden = v.dataset.view !== btn.dataset.view; });
+        });
+      });
+    }
 
     var tip = el.querySelector(".emap-tip");
     var wrap = el.querySelector(".emap");
@@ -165,6 +220,12 @@
         + (d.p && d.p !== d.w && d.w !== NODATA ? " · " + d.p : "") + "</span>";
       if (d.cand) html += '<span class="emap-tip-cand">' + d.cand
         + (d.pct ? " · " + d.pct + "%" : "") + "</span>";
+      if (d.unc === "1") {
+        html += '<span class="emap-tip-maj">Uncontested</span>';
+      } else if (d.rcand) {
+        html += '<span class="emap-tip-maj">beat ' + d.rcand + (d.rp ? " (" + d.rp + ")" : "")
+          + (d.maj ? " · majority " + Number(d.maj).toLocaleString("en-US") : "") + "</span>";
+      }
       tip.innerHTML = html;
       tip.hidden = false;
       var r = wrap.getBoundingClientRect();
@@ -230,7 +291,11 @@
         fc.features.forEach(function (f) {
           var r = results[f.properties.k];
           var p = { c: "", n: f.properties.n, s: f.properties.s };
-          if (r) { p.w = r.w; p.p = r.p; p.cand = r.cand; p.pct = r.pct; }
+          if (r) {
+            p.w = r.w; p.p = r.p; p.cand = r.cand; p.pct = r.pct;
+            p.rw = r.rw; p.rp = r.rp; p.rcand = r.rcand; p.rpct = r.rpct;
+            p.maj = r.maj; p.nc = r.nc; p.tv = r.tv; p.unc = r.unc;
+          }
           feats.push({ type: "Feature", properties: p, geometry: f.geometry });
         });
       });
