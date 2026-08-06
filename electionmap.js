@@ -26,7 +26,9 @@
     SF: "#AF52DE",                                             // Socialist Front
     GPS: "#5856D6",                                            // Sarawak
     GRS: "#FF9500", USA: "#FF9500",                            // Sabah
-    ALONE: "#8E8E93", IND: "#8E8E93",
+    WARISAN: "#FF3B30", UPKO: "#AF52DE", STAR: "#5856D6",      // Sabah parties
+    KDM: "#64D2FF", PSB: "#8E8E93",
+    ALONE: "#8E8E93", IND: "#8E8E93", BEBAS: "#8E8E93",
     __nodata: "#D8D8DE"
   };
   var LABELS = {
@@ -37,7 +39,9 @@
     PN: "Perikatan Nasional", HAK: "HAK (PAS)",
     SF: "Socialist Front", GPS: "Gabungan Parti Sarawak",
     GRS: "Gabungan Rakyat Sabah", USA: "United Sabah Alliance",
-    ALONE: "Unaligned / others", IND: "Independent",
+    WARISAN: "Warisan", UPKO: "UPKO", STAR: "STAR",
+    KDM: "KDM", PSB: "PSB",
+    ALONE: "Unaligned / others", IND: "Independent", BEBAS: "Independent",
     __nodata: "Not mapped"
   };
   function colorFor(w) { return COLORS[w] || "#8E8E93"; }
