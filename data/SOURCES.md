@@ -51,3 +51,24 @@ the map caption says so.
 Simplification for these overview maps is coarser than for the current-election
 maps (Douglas-Peucker tolerance 0.006 deg, min-area 0.0004) to keep the whole
 16-election set to ~2 MB.
+
+## Remaining states — current assemblies
+
+`dun_<state>.geojson` for the ten states that have not voted in the 2025–2028 cycle show the
+composition **as elected** at that state's most recent state general election:
+
+| State | Election | Seats |
+|---|---|---|
+| Melaka | 20 Nov 2021 | 28 |
+| Sarawak | 18 Dec 2021 | 82 |
+| Perak, Perlis | 19 Nov 2022 | 59, 15 |
+| Pahang | 19 Nov 2022 (1 seat deferred to 7 Dec) | 42 |
+| Selangor, Penang, Kedah, Kelantan, Terengganu | 12 Aug 2023 | 56, 40, 36, 45, 32 |
+
+Winners were keyed on the election CODE (`SE-nn`) rather than a single polling date, because
+states with a deferred seat record two dates — filtering Pahang by date alone matched only
+1 of 42 seats. Where the `coalition` field is empty or `ALONE` the party is shown instead, so
+Sarawak's PSB appears by name rather than as "unaligned".
+
+By-elections, defections and coalition changes since those polls are NOT reflected; each map
+caption says so.

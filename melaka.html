@@ -112,6 +112,18 @@
     </div>
   </section>
 
+  <section id="assembly" aria-label="Current state assembly">
+    <div class="section-label">The current assembly</div>
+    <p class="lede">Melaka has not voted in this cycle. Its assembly still sits as the 2021 Melaka state election left it.</p>
+    <div class="about-card">
+      <div data-hemicycle='{"total":28,"majority":15,"parties":[{"label":"BN","n":21,"color":"#2AA9BF"},{"label":"PH","n":5,"color":"#FF3B30"},{"label":"PN","n":2,"color":"#34C759"}]}'></div>
+      <p style="font-size:13.5px;line-height:1.6;margin:16px 0 0;max-width:66ch;">BN returned to power with a two-thirds majority after the state government collapsed in October 2021, triggering the snap poll.</p>
+    </div>
+    <div class="about-card" style="margin-top:14px;">
+      <div data-electionmap='{"src":"data/dun_melaka.geojson","caption":"2021 Melaka state election (28 seats), as elected on 20 November 2021. Boundary geometry: ElectionData.MY delimitation datasets (CC0), simplified for display. Results: ElectionData.MY candidate-level ballots (CC0). Composition shown is as elected — by-elections, defections and coalition changes since are not reflected."}'></div>
+    </div>
+  </section>
+
   <section id="mood" aria-label="Sentiment summary">
     <div class="section-label">Reading the mood</div>
     <p class="lede">Melaka was supposed to be the simplest remaining question — now it isn't quite.</p>
@@ -196,6 +208,7 @@
 <aside class="toc" aria-label="On this page">
   <div class="toc-label">On this page</div>
   <a href="#status">Where things stand</a>
+  <a href="#assembly">Current assembly</a>
   <a href="#mood">Reading the mood</a>
   <a href="#signal-log">Signal log</a>
   <a href="#whats-next">What's next</a>
@@ -241,5 +254,7 @@
 
 <script src="i18n.js"></script>
 <script src="toc.js"></script>
+<script src="hemicycle.js"></script>
+<script src="electionmap.js"></script>
 </body>
 </html>
