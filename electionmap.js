@@ -115,7 +115,7 @@
               + '<td class="emap-tbl-num">' + (p.rpct != null ? p.rpct + "%" : "—") + "</td>"
               + '<td class="emap-tbl-num">' + (p.maj != null ? fmtNum(p.maj) : "—") + "</td>")
         + '<td class="emap-tbl-num">' + (p.tv != null ? fmtNum(p.tv) : "—") + "</td>";
-      return "<tr>" + cells + "</tr>";
+      return '<tr data-color="' + colorFor(w) + '">' + cells + "</tr>";
     }).join("");
     return '<div class="emap-tblwrap"><table class="emap-tbl">'
       + "<thead><tr>"
@@ -326,5 +326,16 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll("[data-electionmap]").forEach(init);
+  });
+
+  // A hemicycle legend chip on the same page (hemicycle.js) dispatches this
+  // when clicked. Rows carry the same lineage colour as the seat dots and
+  // the hemicycle's own legend, so filtering by exact colour match works
+  // across every page without needing to reconcile label text.
+  document.addEventListener("hemicycle:filter", function (ev) {
+    var color = ev.detail && ev.detail.color;
+    document.querySelectorAll(".emap-tbl tbody tr[data-color]").forEach(function (tr) {
+      tr.style.display = (!color || tr.getAttribute("data-color") === color) ? "" : "none";
+    });
   });
 })();

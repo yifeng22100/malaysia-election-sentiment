@@ -70,7 +70,7 @@
       + cfg.parties.map(function (p) { return p.label + " " + p.n; }).join(", ") + '">';
     pts.forEach(function (p, i) {
       svg += '<circle cx="' + p.x.toFixed(2) + '" cy="' + p.y.toFixed(2) + '" r="' + seatR.toFixed(2)
-        + '" fill="' + colors[i] + '"/>';
+        + '" fill="' + colors[i] + '" data-color="' + colors[i] + '" class="hemicycle-seat"/>';
     });
     svg += "</svg>";
 
@@ -81,13 +81,45 @@
     }
     html += '<div class="hemicycle-legend">';
     cfg.parties.forEach(function (p) {
-      html += '<span class="hemicycle-chip" style="background:' + p.color + '">'
+      html += '<button type="button" class="hemicycle-chip" data-color="' + p.color + '" style="background:' + p.color + '" '
+        + 'aria-pressed="false" title="Click to highlight ' + p.label + '’s seats">'
         + '<span class="hemicycle-chip-n">' + p.n + "</span>"
-        + '<span class="hemicycle-chip-label">' + p.label + "</span></span>";
+        + '<span class="hemicycle-chip-label">' + p.label + "</span></button>";
     });
     html += "</div></div>";
 
     el.innerHTML = html;
+    wireFilter(el);
+  }
+
+  // Click a legend chip to dim every seat that isn't that party, and — if a
+  // results table lives on the same page (electionmap.js's Map/Table view,
+  // or the results-tables.js party breakdown) — filter it to match too.
+  // Click the same chip again, or press Escape, to clear the filter.
+  function wireFilter(el) {
+    var seats = el.querySelectorAll(".hemicycle-seat");
+    var chips = el.querySelectorAll(".hemicycle-chip");
+    var active = null;
+
+    function apply(color) {
+      active = color;
+      seats.forEach(function (c) {
+        c.classList.toggle("is-dim", !!color && c.getAttribute("data-color") !== color);
+      });
+      chips.forEach(function (chip) {
+        var on = !!color && chip.getAttribute("data-color") === color;
+        chip.classList.toggle("is-active", on);
+        chip.setAttribute("aria-pressed", on ? "true" : "false");
+      });
+      el.dispatchEvent(new CustomEvent("hemicycle:filter", { detail: { color: color }, bubbles: true }));
+    }
+
+    chips.forEach(function (chip) {
+      chip.addEventListener("click", function () {
+        var color = chip.getAttribute("data-color");
+        apply(active === color ? null : color);
+      });
+    });
   }
 
   function renderAll(root) {

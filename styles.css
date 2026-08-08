@@ -846,9 +846,18 @@ footer .cadence { display: flex; align-items: center; gap: 8px; margin-top: 18px
 .hemicycle-total { font-weight: 700; font-size: 30px; line-height: 1.1; font-variant-numeric: tabular-nums; letter-spacing: -0.02em; }
 .hemicycle-majority { font-size: 11.5px; color: var(--muted); margin-top: 1px; }
 .hemicycle-legend { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 14px; }
-.hemicycle-chip { display: inline-flex; flex-direction: column; align-items: center; gap: 1px; padding: 6px 13px; border-radius: 10px; min-width: 56px; }
+.hemicycle-chip {
+  display: inline-flex; flex-direction: column; align-items: center; gap: 1px; padding: 6px 13px;
+  border-radius: 10px; min-width: 56px; border: 2px solid transparent; font: inherit; cursor: pointer;
+  transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+}
+.hemicycle-chip:hover { transform: translateY(-1px); box-shadow: 0 4px 10px rgba(0,0,0,.15); }
+.hemicycle-chip:active { transform: translateY(0) scale(0.97); }
+.hemicycle-chip.is-active { border-color: var(--fg); box-shadow: 0 4px 10px rgba(0,0,0,.18); }
 .hemicycle-chip-n { font-weight: 700; font-size: 16px; font-variant-numeric: tabular-nums; color: #fff; line-height: 1.15; }
 .hemicycle-chip-label { font-size: 10px; font-weight: 600; letter-spacing: 0.03em; text-transform: uppercase; color: #fff; opacity: 0.92; }
+.hemicycle-seat { transition: opacity .18s ease, r .18s ease; }
+.hemicycle-seat.is-dim { opacity: 0.15; }
 
 /* =====================================================================
    Election map (constituency choropleth)
@@ -970,3 +979,25 @@ footer .cadence { display: flex; align-items: center; gap: 8px; margin-top: 18px
 .chamber-stat:last-of-type { border-bottom: none; }
 .chamber-stat dt { color: var(--muted); }
 .chamber-stat dd { margin: 0; font-weight: 600; text-align: right; }
+
+/* =====================================================================
+   Interactive layer (interactive.js) — scroll-reveal, count-up, log filter
+   ===================================================================== */
+.reveal { opacity: 0; transform: translateY(16px); transition: opacity .5s cubic-bezier(.2,.7,.3,1), transform .5s cubic-bezier(.2,.7,.3,1); }
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+}
+
+.about-card, .stat-tile { transition: transform .18s ease, box-shadow .18s ease; }
+.about-card:hover, .stat-tile:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg, 0 10px 24px rgba(0,0,0,.12)); }
+
+.log-filterbar { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 14px; }
+.log-filter-chip {
+  font: inherit; font-size: 12.5px; font-weight: 600; padding: 6px 12px; border-radius: 999px;
+  border: 1px solid var(--line); background: var(--surface); color: var(--muted); cursor: pointer;
+  transition: background-color .15s ease, color .15s ease, border-color .15s ease, transform .1s ease;
+}
+.log-filter-chip:hover { border-color: var(--accent, #0a7cff); color: var(--fg); }
+.log-filter-chip:active { transform: scale(0.96); }
+.log-filter-chip.is-active { background: var(--accent, #0a7cff); border-color: var(--accent, #0a7cff); color: #fff; }
