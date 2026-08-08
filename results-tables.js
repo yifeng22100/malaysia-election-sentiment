@@ -31,6 +31,10 @@
       The narrowest-majority seats for one election/state, i.e. the ones
       most likely to flip on a modest swing. Reads the given JSON file
       (see data/tables/watch_*.json, generated alongside the other tables).
+
+    data-diversity='{"election":"GE-15"}'
+      Who each coalition actually fielded as candidates: % women, ethnic
+      composition, median age. Reads data/tables/candidate_diversity.json.
 */
 (function () {
   var CACHE = {};
@@ -240,6 +244,52 @@
     }).catch(function (e) { el.innerHTML = '<p class="emap-loading">Could not load (' + e.message + ")</p>"; });
   }
 
+  var ETH_COLOR = {
+    Malay: "#2AA9BF", Chinese: "#FF9500", Indian: "#5856D6",
+    "Bumi Sabah": "#FF3B30", "Bumi Sarawak": "#34C759",
+    "Orang Asli": "#AF52DE", Other: "#8E8E93", Unknown: "#C7C7CC"
+  };
+
+  function renderDiversity(el, cfg) {
+    getJSON("data/tables/candidate_diversity.json").then(function (all) {
+      var buckets = all.buckets, data = all.elections[cfg.election];
+      if (!data) { el.innerHTML = '<p class="emap-loading">No data for ' + esc(cfg.election) + "</p>"; return; }
+
+      var order = Object.keys(data).sort(function (a, b) { return data[b].total_candidates - data[a].total_candidates; });
+      var cards = order.map(function (b) {
+        var v = data[b], meta = buckets[b] || { label: b, color: "#8E8E93" };
+        var ethBar = Object.keys(v.ethnicity_pct).map(function (eth) {
+          return '<span style="width:' + v.ethnicity_pct[eth] + '%;background:' + (ETH_COLOR[eth] || "#8E8E93")
+            + '" title="' + esc(eth) + " " + v.ethnicity_pct[eth] + '%"></span>';
+        }).join("");
+        var ethLegend = Object.keys(v.ethnicity_pct).slice(0, 4).map(function (eth) {
+          return '<span class="dv-eth-chip"><span class="dv-eth-dot" style="background:' + (ETH_COLOR[eth] || "#8E8E93")
+            + '"></span>' + esc(eth) + " " + v.ethnicity_pct[eth] + "%</span>";
+        }).join("");
+
+        return '<div class="dv-card" style="border-top:3px solid ' + meta.color + '">'
+          + '<div class="dv-card-head"><strong>' + esc(meta.label) + "</strong><span class=\"dv-muted\">"
+          + v.total_candidates + " candidates</span></div>"
+          + '<div class="dv-row"><span class="dv-row-label">Women</span><span class="dv-bar-track">'
+          + '<span class="dv-bar-fill" style="width:' + v.women_pct + '%;background:' + meta.color + '"></span></span>'
+          + '<span class="dv-row-val">' + v.women_pct + "% (" + v.women + ")</span></div>"
+          + '<div class="dv-eth-bar">' + ethBar + "</div>"
+          + '<div class="dv-eth-legend">' + ethLegend + "</div>"
+          + (v.median_age ? '<div class="dv-muted" style="margin-top:8px;">Median age ' + v.median_age
+              + " (" + v.ages_known + " of " + v.total_candidates + " with age on record)</div>" : "")
+          + "</div>";
+      }).join("");
+
+      el.innerHTML = '<div class="dv-grid">' + cards + "</div>"
+        + '<p class="emap-caption">Who each coalition actually fielded as candidates in ' + esc(cfg.election)
+        + ", not who won — candidate sex, ethnicity and age as recorded on the ballot. Source: ElectionData.MY"
+        + " candidate-level ballots (CC0).</p>";
+
+      var grid = el.querySelector(".dv-grid");
+      requestAnimationFrame(function () { grid.classList.add("is-in"); });
+    }).catch(function (e) { el.innerHTML = '<p class="emap-loading">Could not load (' + e.message + ")</p>"; });
+  }
+
   function init(root) {
     (root || document).querySelectorAll("[data-partytable]").forEach(function (el) {
       try { renderPartyTable(el, JSON.parse(el.getAttribute("data-partytable"))); } catch (e) {}
@@ -254,6 +304,9 @@
     (root || document).querySelectorAll("[data-votetrend]").forEach(function (el) { renderVoteTrend(el); });
     (root || document).querySelectorAll("[data-watchtable]").forEach(function (el) {
       try { renderWatchTable(el, JSON.parse(el.getAttribute("data-watchtable"))); } catch (e) {}
+    });
+    (root || document).querySelectorAll("[data-diversity]").forEach(function (el) {
+      try { renderDiversity(el, JSON.parse(el.getAttribute("data-diversity"))); } catch (e) {}
     });
   }
 

@@ -939,6 +939,57 @@ footer .cadence { display: flex; align-items: center; gap: 8px; margin-top: 18px
 }
 
 /* =====================================================================
+   Candidate diversity cards (results-tables.js renderDiversity)
+   ===================================================================== */
+.dv-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px;
+  opacity: 0; transform: translateY(8px); transition: opacity .5s ease, transform .5s ease;
+}
+.dv-grid.is-in { opacity: 1; transform: translateY(0); }
+@media (prefers-reduced-motion: reduce) { .dv-grid { opacity: 1; transform: none; transition: none; } }
+.dv-card { background: var(--surface); border-radius: var(--radius-md); box-shadow: var(--shadow); padding: 14px 16px; }
+.dv-card-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; margin-bottom: 10px; font-size: 14px; }
+.dv-muted { color: var(--muted); font-size: 11.5px; font-weight: 400; }
+.dv-row { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; font-size: 12.5px; }
+.dv-row-label { width: 46px; color: var(--muted); flex-shrink: 0; }
+.dv-bar-track { flex: 1; height: 7px; border-radius: 4px; background: var(--surface-2); overflow: hidden; }
+.dv-bar-fill { display: block; height: 100%; border-radius: 4px; transition: width .6s ease; }
+.dv-row-val { width: 66px; text-align: right; font-variant-numeric: tabular-nums; flex-shrink: 0; }
+.dv-eth-bar { display: flex; height: 8px; border-radius: 4px; overflow: hidden; margin-bottom: 8px; }
+.dv-eth-bar span { display: block; height: 100%; }
+.dv-eth-legend { display: flex; flex-wrap: wrap; gap: 6px 10px; font-size: 11px; color: var(--muted); }
+.dv-eth-chip { display: inline-flex; align-items: center; gap: 4px; }
+.dv-eth-dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; }
+
+/* =====================================================================
+   Swing calculator (swing.js)
+   ===================================================================== */
+.swing-controls { margin-bottom: 16px; }
+.swing-label { display: block; font-size: 12.5px; font-weight: 600; color: var(--muted); margin-bottom: 8px; }
+.swing-range-row { display: flex; align-items: center; gap: 10px; }
+.swing-range-end { font-size: 11px; color: var(--muted); font-variant-numeric: tabular-nums; flex-shrink: 0; }
+.swing-range { flex: 1; accent-color: var(--accent); height: 4px; cursor: pointer; }
+.swing-value { text-align: center; font-size: 14px; font-weight: 700; margin-top: 10px; font-variant-numeric: tabular-nums; }
+.swing-tally { margin: 14px 0 4px; display: flex; flex-direction: column; gap: 8px; }
+.swing-tally-row { display: flex; align-items: center; gap: 10px; font-size: 13px; }
+.swing-tally-label { width: 140px; flex-shrink: 0; }
+.swing-tally-n { width: 30px; text-align: right; font-weight: 700; font-variant-numeric: tabular-nums; flex-shrink: 0; }
+@media (max-width: 480px) { .swing-tally-label { width: 90px; font-size: 12px; } }
+
+/* =====================================================================
+   Coalition family tree (static SVG, history.html)
+   ===================================================================== */
+.lineage-timeline-wrap { overflow-x: auto; }
+.lineage-timeline { display: block; width: 100%; min-width: 700px; height: auto; }
+.lt-year { font-size: 10px; fill: var(--muted); font-variant-numeric: tabular-nums; }
+.lt-rowlabel { font-size: 10.5px; fill: var(--muted); font-weight: 600; }
+.lt-seg { fill-opacity: 0.85; }
+.lt-seg-muted { fill-opacity: 0.35; stroke: currentColor; stroke-width: 1; stroke-dasharray: 3 2; }
+.lt-label { font-size: 11.5px; fill: #fff; font-weight: 700; pointer-events: none; }
+.lt-label-sm { font-size: 9.5px; }
+.lt-label-muted { fill: var(--ink); font-weight: 600; }
+
+/* =====================================================================
    Sentiment source badges — distinguishes professional polling from
    social-media/forum-reported reaction, used in signal-log entries
    ===================================================================== */

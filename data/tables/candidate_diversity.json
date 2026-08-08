@@ -1,0 +1,184 @@
+{
+ "buckets": {
+  "GOV": {
+   "label": "Alliance / BN",
+   "color": "#2AA9BF"
+  },
+  "OPP1": {
+   "label": "DAP/PKR-led (PH)",
+   "color": "#FF3B30"
+  },
+  "OPP2": {
+   "label": "PAS-led (PN)",
+   "color": "#34C759"
+  },
+  "GPS": {
+   "label": "Gabungan Parti Sarawak",
+   "color": "#5856D6"
+  },
+  "GRS": {
+   "label": "Sabah alliances",
+   "color": "#FF9500"
+  },
+  "ALONE": {
+   "label": "Others / independents",
+   "color": "#8E8E93"
+  }
+ },
+ "elections": {
+  "GE-14": {
+   "OPP1": {
+    "total_candidates": 204,
+    "women_pct": 12.7,
+    "women": 26,
+    "ethnicity_pct": {
+     "Malay": 55.9,
+     "Chinese": 22.5,
+     "Bumi Sarawak": 11.3,
+     "Indian": 5.9,
+     "Bumi Sabah": 3.4,
+     "Other": 1.0
+    },
+    "median_age": 53,
+    "ages_known": 189
+   },
+   "GOV": {
+    "total_candidates": 222,
+    "women_pct": 11.3,
+    "women": 25,
+    "ethnicity_pct": {
+     "Malay": 47.3,
+     "Chinese": 26.6,
+     "Bumi Sarawak": 10.8,
+     "Bumi Sabah": 9.9,
+     "Indian": 5.0,
+     "Other": 0.5
+    },
+    "median_age": 56,
+    "ages_known": 215
+   },
+   "OPP2": {
+    "total_candidates": 159,
+    "women_pct": 6.3,
+    "women": 10,
+    "ethnicity_pct": {
+     "Malay": 88.1,
+     "Bumi Sabah": 5.7,
+     "Bumi Sarawak": 3.1,
+     "Indian": 2.5,
+     "Chinese": 0.6
+    },
+    "median_age": 52,
+    "ages_known": 153
+   },
+   "ALONE": {
+    "total_candidates": 77,
+    "women_pct": 7.8,
+    "women": 6,
+    "ethnicity_pct": {
+     "Bumi Sabah": 39.0,
+     "Chinese": 29.9,
+     "Indian": 13.0,
+     "Malay": 10.4,
+     "Bumi Sarawak": 7.8
+    },
+    "median_age": 53,
+    "ages_known": 77
+   },
+   "GRS": {
+    "total_candidates": 25,
+    "women_pct": 20.0,
+    "women": 5,
+    "ethnicity_pct": {
+     "Bumi Sabah": 96.0,
+     "Chinese": 4.0
+    },
+    "median_age": 57,
+    "ages_known": 25
+   }
+  },
+  "GE-15": {
+   "OPP2": {
+    "total_candidates": 171,
+    "women_pct": 9.4,
+    "women": 16,
+    "ethnicity_pct": {
+     "Malay": 77.2,
+     "Chinese": 14.6,
+     "Indian": 3.5,
+     "Bumi Sarawak": 2.9,
+     "Bumi Sabah": 1.2,
+     "Other": 0.6
+    },
+    "median_age": 52,
+    "ages_known": 168
+   },
+   "ALONE": {
+    "total_candidates": 331,
+    "women_pct": 12.7,
+    "women": 42,
+    "ethnicity_pct": {
+     "Malay": 53.8,
+     "Bumi Sabah": 18.4,
+     "Chinese": 14.5,
+     "Indian": 7.6,
+     "Bumi Sarawak": 5.4,
+     "Other": 0.3
+    },
+    "median_age": 55,
+    "ages_known": 313
+   },
+   "GOV": {
+    "total_candidates": 179,
+    "women_pct": 12.3,
+    "women": 22,
+    "ethnicity_pct": {
+     "Malay": 59.8,
+     "Chinese": 25.1,
+     "Bumi Sabah": 7.8,
+     "Indian": 6.7,
+     "Orang Asli": 0.6
+    },
+    "median_age": 53,
+    "ages_known": 172
+   },
+   "OPP1": {
+    "total_candidates": 220,
+    "women_pct": 17.7,
+    "women": 39,
+    "ethnicity_pct": {
+     "Malay": 53.2,
+     "Chinese": 22.3,
+     "Bumi Sarawak": 10.0,
+     "Bumi Sabah": 8.6,
+     "Indian": 5.0,
+     "Other": 0.9
+    },
+    "median_age": 50,
+    "ages_known": 209
+   },
+   "GRS": {
+    "total_candidates": 13,
+    "women_pct": 7.7,
+    "women": 1,
+    "ethnicity_pct": {
+     "Bumi Sabah": 69.2,
+     "Chinese": 30.8
+    },
+    "median_age": 53,
+    "ages_known": 13
+   },
+   "GPS": {
+    "total_candidates": 31,
+    "women_pct": 16.1,
+    "women": 5,
+    "ethnicity_pct": {
+     "Bumi Sarawak": 77.4,
+     "Chinese": 22.6
+    },
+    "median_age": 59,
+    "ages_known": 31
+   }
+  }
+ }
+}
