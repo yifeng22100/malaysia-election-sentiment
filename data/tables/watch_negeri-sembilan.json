@@ -1,0 +1,115 @@
+{
+ "label": "the Negeri Sembilan state assembly, 2026",
+ "seats": [
+  {
+   "seat": "N.36 Repah",
+   "state": "",
+   "holder": "Koh Kim Swee",
+   "party": "MCA",
+   "color": "#2AA9BF",
+   "majority": 444,
+   "majority_pct": 2.32,
+   "runner_up": "Veerapan a/l Superamaniam",
+   "runner_up_party": "DAP"
+  },
+  {
+   "seat": "N.18 Pilah",
+   "state": "",
+   "holder": "S Leza binti Md Yasin",
+   "party": "UMNO",
+   "color": "#2AA9BF",
+   "majority": 730,
+   "majority_pct": 5.65,
+   "runner_up": "Noorzunita Begum binti Mohd Ibrahim",
+   "runner_up_party": "PKR"
+  },
+  {
+   "seat": "N.01 Chennah",
+   "state": "",
+   "holder": "Siow Kong Choon",
+   "party": "MCA",
+   "color": "#2AA9BF",
+   "majority": 688,
+   "majority_pct": 6.39,
+   "runner_up": "Anthony Loke Siew Fook",
+   "runner_up_party": "DAP"
+  },
+  {
+   "seat": "N.33 Sri Tanjung",
+   "state": "",
+   "holder": "Rajasekaran a/l Gunnasekaran (Dr. Raja)",
+   "party": "PKR",
+   "color": "#FF3B30",
+   "majority": 1335,
+   "majority_pct": 10.05,
+   "runner_up": "Achuthan a/l Alagan (Acu)",
+   "runner_up_party": "MIC"
+  },
+  {
+   "seat": "N.04 Klawang",
+   "state": "",
+   "holder": "Danni Rais",
+   "party": "WAWASAN",
+   "color": "#34C759",
+   "majority": 1317,
+   "majority_pct": 13.37,
+   "runner_up": "Bakri bin Sawir",
+   "runner_up_party": "AMANAH"
+  },
+  {
+   "seat": "N.13 Sikamat",
+   "state": "",
+   "holder": "Razali bin Abu Samah",
+   "party": "WAWASAN",
+   "color": "#34C759",
+   "majority": 4413,
+   "majority_pct": 16.82,
+   "runner_up": "Nor Azman bin Mohamad",
+   "runner_up_party": "PKR"
+  },
+  {
+   "seat": "N.10 Nilai",
+   "state": "",
+   "holder": "Arul Kumar a/l Jambunathan",
+   "party": "DAP",
+   "color": "#FF3B30",
+   "majority": 5937,
+   "majority_pct": 18.33,
+   "runner_up": "Alan Lai Chien Kong",
+   "runner_up_party": "MCA"
+  },
+  {
+   "seat": "N.32 Linggi",
+   "state": "",
+   "holder": "Mohd Faizal bin Ramli",
+   "party": "UMNO",
+   "color": "#2AA9BF",
+   "majority": 2976,
+   "majority_pct": 18.96,
+   "runner_up": "Aminuddin bin Harun",
+   "runner_up_party": "PKR"
+  },
+  {
+   "seat": "N.08 Bahau",
+   "state": "",
+   "holder": "Teo Kok Seong",
+   "party": "DAP",
+   "color": "#FF3B30",
+   "majority": 3307,
+   "majority_pct": 19.82,
+   "runner_up": "Chong Fui Ming",
+   "runner_up_party": "MCA"
+  },
+  {
+   "seat": "N.12 Temiang",
+   "state": "",
+   "holder": "Ho Weng Wah",
+   "party": "DAP",
+   "color": "#FF3B30",
+   "majority": 1883,
+   "majority_pct": 20.63,
+   "runner_up": "Leaw Kok Chan",
+   "runner_up_party": "MCA"
+  }
+ ]
+}

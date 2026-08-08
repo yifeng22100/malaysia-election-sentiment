@@ -1,0 +1,115 @@
+{
+ "label": "the Johor state assembly, 2026",
+ "seats": [
+  {
+   "seat": "N.51 Bukit Batu",
+   "state": "",
+   "holder": "Kumaran a/l Rama Krishnan",
+   "party": "MIC",
+   "color": "#2AA9BF",
+   "majority": 174,
+   "majority_pct": 0.49,
+   "runner_up": "Arthur Chiong Sen Sern",
+   "runner_up_party": "PKR"
+  },
+  {
+   "seat": "N.13 Simpang Jeram",
+   "state": "",
+   "holder": "Nazri bin Abdul Rahman",
+   "party": "AMANAH",
+   "color": "#FF3B30",
+   "majority": 170,
+   "majority_pct": 0.58,
+   "runner_up": "Azman bin Ismail",
+   "runner_up_party": "UMNO"
+  },
+  {
+   "seat": "N.45 Stulang",
+   "state": "",
+   "holder": "Andrew Chen Kah Eng",
+   "party": "DAP",
+   "color": "#FF3B30",
+   "majority": 623,
+   "majority_pct": 1.68,
+   "runner_up": "Bong Seng Heng",
+   "runner_up_party": "MCA"
+  },
+  {
+   "seat": "N.46 Perling",
+   "state": "",
+   "holder": "Pannir Selvam",
+   "party": "MIC",
+   "color": "#2AA9BF",
+   "majority": 1611,
+   "majority_pct": 2.36,
+   "runner_up": "Alan Tee Boon Tsong",
+   "runner_up_party": "DAP"
+  },
+  {
+   "seat": "N.02 Jementah",
+   "state": "",
+   "holder": "See Ann Giap",
+   "party": "MCA",
+   "color": "#2AA9BF",
+   "majority": 913,
+   "majority_pct": 3.38,
+   "runner_up": "Ng Kor Sim",
+   "runner_up_party": "DAP"
+  },
+  {
+   "seat": "N.41 Puteri Wangsa",
+   "state": "",
+   "holder": "Maszlee bin Malik",
+   "party": "PKR",
+   "color": "#FF3B30",
+   "majority": 5744,
+   "majority_pct": 6.65,
+   "runner_up": "Teow Chia Ling",
+   "runner_up_party": "MCA"
+  },
+  {
+   "seat": "N.52 Senai",
+   "state": "",
+   "holder": "Wong Bor Yang",
+   "party": "DAP",
+   "color": "#FF3B30",
+   "majority": 3595,
+   "majority_pct": 7.8,
+   "runner_up": "Kiki Tai Chee Chee",
+   "runner_up_party": "MCA"
+  },
+  {
+   "seat": "N.15 Maharani",
+   "state": "",
+   "holder": "Ashari bin Md. Sarip",
+   "party": "UMNO",
+   "color": "#2AA9BF",
+   "majority": 2143,
+   "majority_pct": 7.89,
+   "runner_up": "Muhammad Taqiuddin bin Cheman",
+   "runner_up_party": "AMANAH"
+  },
+  {
+   "seat": "N.23 Penggaram",
+   "state": "",
+   "holder": "Felicia Poh Rui Ling",
+   "party": "DAP",
+   "color": "#FF3B30",
+   "majority": 4137,
+   "majority_pct": 9.21,
+   "runner_up": "Boo Chin Liong (CL Boo)",
+   "runner_up_party": "MCA"
+  },
+  {
+   "seat": "N.28 Mengkibol",
+   "state": "",
+   "holder": "Chu Poh Yee",
+   "party": "DAP",
+   "color": "#FF3B30",
+   "majority": 4213,
+   "majority_pct": 9.72,
+   "runner_up": "Yap Zhi Peng",
+   "runner_up_party": "MCA"
+  }
+ ]
+}

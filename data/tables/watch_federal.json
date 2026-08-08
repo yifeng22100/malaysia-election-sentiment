@@ -1,0 +1,170 @@
+{
+ "label": "the federal Dewan Rakyat, GE15 (2022)",
+ "seats": [
+  {
+   "seat": "P.173 Putatan",
+   "state": "Sabah",
+   "holder": "Shahelmey bin Yahya",
+   "party": "UMNO",
+   "color": "#2AA9BF",
+   "majority": 124,
+   "majority_pct": 0.3,
+   "runner_up": "Awang Husaini bin Sahari",
+   "runner_up_party": "PKR"
+  },
+  {
+   "seat": "P.032 Gua Musang",
+   "state": "Kelantan",
+   "holder": "Mohd Azizi bin Abu Naim",
+   "party": "BERSATU",
+   "color": "#34C759",
+   "majority": 163,
+   "majority_pct": 0.34,
+   "runner_up": "Tengku Razaleigh bin Mohd. Hamzah (Ku Li)",
+   "runner_up_party": "UMNO"
+  },
+  {
+   "seat": "P.170 Tuaran",
+   "state": "Sabah",
+   "holder": "Wilfred Madius Tangau",
+   "party": "UPKO",
+   "color": "#FF3B30",
+   "majority": 233,
+   "majority_pct": 0.4,
+   "runner_up": "Joniston Bangkuai",
+   "runner_up_party": "PBS"
+  },
+  {
+   "seat": "P.139 Jasin",
+   "state": "Melaka",
+   "holder": "Zulkifli bin Ismail",
+   "party": "PAS",
+   "color": "#34C759",
+   "majority": 322,
+   "majority_pct": 0.41,
+   "runner_up": "Roslan bin Ahmad",
+   "runner_up_party": "UMNO"
+  },
+  {
+   "seat": "P.074 Lumut",
+   "state": "Perak",
+   "holder": "Nordin bin Ahmad Ismail",
+   "party": "BERSATU",
+   "color": "#34C759",
+   "majority": 363,
+   "majority_pct": 0.51,
+   "runner_up": "Zambry bin Abdul Kadir",
+   "runner_up_party": "UMNO"
+  },
+  {
+   "seat": "P.203 Lubok Antu",
+   "state": "Sarawak",
+   "holder": "Roy Angau anak Gingkoi",
+   "party": "PRS",
+   "color": "#5856D6",
+   "majority": 100,
+   "majority_pct": 0.52,
+   "runner_up": "Johnichal Rayong anak Ngipa",
+   "runner_up_party": "PSB"
+  },
+  {
+   "seat": "P.075 Bagan Datuk",
+   "state": "Perak",
+   "holder": "Ahmad Zahid bin Hamidi",
+   "party": "UMNO",
+   "color": "#2AA9BF",
+   "majority": 348,
+   "majority_pct": 0.83,
+   "runner_up": "Shamsul Iskandar bin Mohd Akin",
+   "runner_up_party": "PKR"
+  },
+  {
+   "seat": "P.015 Sungai Petani",
+   "state": "Kedah",
+   "holder": "Taufiq bin Johari",
+   "party": "PKR",
+   "color": "#FF3B30",
+   "majority": 1115,
+   "majority_pct": 0.86,
+   "runner_up": "Robert Ling Kui Ee",
+   "runner_up_party": "BERSATU"
+  },
+  {
+   "seat": "P.089 Bentong",
+   "state": "Pahang",
+   "holder": "Young Syefura binti Othman",
+   "party": "DAP",
+   "color": "#FF3B30",
+   "majority": 692,
+   "majority_pct": 1.04,
+   "runner_up": "Liow Tiong Lai",
+   "runner_up_party": "MCA"
+  },
+  {
+   "seat": "P.096 Kuala Selangor",
+   "state": "Selangor",
+   "holder": "Dzulkefly bin Ahmad",
+   "party": "AMANAH",
+   "color": "#FF3B30",
+   "majority": 1002,
+   "majority_pct": 1.16,
+   "runner_up": "Tengku Zafrul bin Tengku Abdul Aziz",
+   "runner_up_party": "UMNO"
+  },
+  {
+   "seat": "P.135 Alor Gajah",
+   "state": "Melaka",
+   "holder": "Adly bin Zahari",
+   "party": "AMANAH",
+   "color": "#FF3B30",
+   "majority": 890,
+   "majority_pct": 1.22,
+   "runner_up": "Shahril Sufian bin Hamdan",
+   "runner_up_party": "UMNO"
+  },
+  {
+   "seat": "P.094 Hulu Selangor",
+   "state": "Selangor",
+   "holder": "Mohd Hasnizan bin Harun",
+   "party": "PAS",
+   "color": "#34C759",
+   "majority": 1562,
+   "majority_pct": 1.28,
+   "runner_up": "Sathia Prakash a/l Nadarajan",
+   "runner_up_party": "PKR"
+  },
+  {
+   "seat": "P.210 Kanowit",
+   "state": "Sarawak",
+   "holder": "Aaron Ago Dagang",
+   "party": "PRS",
+   "color": "#5856D6",
+   "majority": 236,
+   "majority_pct": 1.31,
+   "runner_up": "Mohd Fauzi Abdullah @ Joseph @ Usit A/k Nyambong",
+   "runner_up_party": "PKR"
+  },
+  {
+   "seat": "P.112 Kuala Langat",
+   "state": "Selangor",
+   "holder": "Ahmad Yunus bin Hairi",
+   "party": "PAS",
+   "color": "#34C759",
+   "majority": 1833,
+   "majority_pct": 1.48,
+   "runner_up": "G. Manivannan a/l Gowindasamy",
+   "runner_up_party": "PKR"
+  },
+  {
+   "seat": "P.107 Sungai Buloh",
+   "state": "Selangor",
+   "holder": "Ramanan a/l Ramakrishnan",
+   "party": "PKR",
+   "color": "#FF3B30",
+   "majority": 2693,
+   "majority_pct": 2.08,
+   "runner_up": "Khairy Jamaluddin bin Abu Bakar",
+   "runner_up_party": "UMNO"
+  }
+ ]
+}

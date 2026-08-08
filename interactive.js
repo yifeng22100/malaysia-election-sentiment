@@ -12,9 +12,17 @@
        static text.
     3. Signal-log filter — a tag filter bar injected above any `.log`
        container, letting a reader narrow a long log to one category.
+    4. CSV export — a "Download CSV" button after every data table
+       (electionmap.js and results-tables.js both render into the same
+       `.emap-tblwrap` markup), reading the table's own rendered cells so
+       there's nothing to keep in sync with the data layer.
 
   Respects prefers-reduced-motion: reveal and count-up both short-circuit to
   their end state immediately for users who've asked for reduced motion.
+
+  Tables are inserted asynchronously (fetched and rendered after
+  DOMContentLoaded), so a MutationObserver — not a single init pass — drives
+  the CSV button and catches tables added at any point after load.
 */
 (function () {
   var REDUCED_MOTION = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -183,12 +191,75 @@
     });
   }
 
+  // ---------------------------------------------------------------------
+  // 4. CSV export
+  // ---------------------------------------------------------------------
+  function csvCell(text) {
+    text = String(text == null ? '' : text).replace(/\s+/g, ' ').trim();
+    return /[",\n]/.test(text) ? '"' + text.replace(/"/g, '""') + '"' : text;
+  }
+
+  function tableToCSV(table) {
+    var rows = Array.prototype.slice.call(table.querySelectorAll('tr'));
+    return rows.map(function (tr) {
+      var cells = Array.prototype.slice.call(tr.querySelectorAll('th,td'));
+      return cells.map(function (cell) { return csvCell(cell.textContent); }).join(',');
+    }).join('\r\n');
+  }
+
+  function slugify(text) {
+    return String(text || 'table').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'table';
+  }
+
+  function downloadCSV(csv, filename) {
+    var blob = new Blob(['﻿' + csv], { type: 'text/csv;charset=utf-8;' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url; a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+  }
+
+  function csvLabelFor(wrap) {
+    var heading = wrap.closest('section');
+    heading = heading && (heading.querySelector('.section-label') || heading.getAttribute('aria-label'));
+    var label = (heading && heading.textContent) || document.title.split('—')[0];
+    return slugify(label);
+  }
+
+  function initCsvButtons(root) {
+    (root || document).querySelectorAll('.emap-tblwrap').forEach(function (wrap) {
+      if (wrap.dataset.csvInit) return;
+      var table = wrap.querySelector('table');
+      if (!table || !table.querySelector('tbody tr')) return; // not rendered yet
+      wrap.dataset.csvInit = '1';
+
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'csv-btn';
+      btn.textContent = 'Download CSV';
+      btn.addEventListener('click', function () {
+        downloadCSV(tableToCSV(table), csvLabelFor(wrap) + '.csv');
+      });
+      wrap.insertAdjacentElement('afterend', btn);
+    });
+  }
+
   function init(root) {
     initReveal();
     initCounters();
     initLogFilters(root);
+    initCsvButtons(root);
   }
 
   window.renderInteractive = init;
-  document.addEventListener('DOMContentLoaded', function () { init(document); });
+  document.addEventListener('DOMContentLoaded', function () {
+    init(document);
+    if ('MutationObserver' in window) {
+      var mo = new MutationObserver(function () { initCsvButtons(document); });
+      mo.observe(document.body, { childList: true, subtree: true });
+    }
+  });
 })();

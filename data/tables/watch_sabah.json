@@ -1,0 +1,115 @@
+{
+ "label": "the Sabah state assembly, 2025",
+ "seats": [
+  {
+   "seat": "N.17 Darau",
+   "state": "",
+   "holder": "Azhar bin Matussin",
+   "party": "WARISAN",
+   "color": "#FF3B30",
+   "majority": 63,
+   "majority_pct": 0.3,
+   "runner_up": "Mohamed Razali bin Mohamed Razi",
+   "runner_up_party": "PGRS"
+  },
+  {
+   "seat": "N.52 Sungai Sibuga",
+   "state": "",
+   "holder": "Nurulalsah binti Hassan Alban",
+   "party": "WARISAN",
+   "color": "#FF3B30",
+   "majority": 88,
+   "majority_pct": 0.4,
+   "runner_up": "Suhaimi bin Nasir",
+   "runner_up_party": "UMNO"
+  },
+  {
+   "seat": "N.02 Bengkoka",
+   "state": "",
+   "holder": "Harun bin Durabi",
+   "party": "UMNO",
+   "color": "#2AA9BF",
+   "majority": 77,
+   "majority_pct": 0.65,
+   "runner_up": "Samuil bin Mopun",
+   "runner_up_party": "PBS"
+  },
+  {
+   "seat": "N.06 Bandau",
+   "state": "",
+   "holder": "Maijol Mahap",
+   "party": "BEBAS",
+   "color": "#8E8E93",
+   "majority": 244,
+   "majority_pct": 1.39,
+   "runner_up": "Redonah binti Bahanda",
+   "runner_up_party": "PGRS"
+  },
+  {
+   "seat": "N.16 Karambunai",
+   "state": "",
+   "holder": "Aliakbar bin Gulasan",
+   "party": "PAS",
+   "color": "#34C759",
+   "majority": 365,
+   "majority_pct": 1.42,
+   "runner_up": "Ahmad Jais bin Otong",
+   "runner_up_party": "WARISAN"
+  },
+  {
+   "seat": "N.73 Sebatik",
+   "state": "",
+   "holder": "Manahing Tinggilani @ Tanggilani",
+   "party": "WARISAN",
+   "color": "#FF3B30",
+   "majority": 150,
+   "majority_pct": 1.45,
+   "runner_up": "Hassan A Gani Pg Amir",
+   "runner_up_party": "PGRS"
+  },
+  {
+   "seat": "N.58 Lamag",
+   "state": "",
+   "holder": "Bung Moktar bin Radin",
+   "party": "UMNO",
+   "color": "#2AA9BF",
+   "majority": 153,
+   "majority_pct": 1.53,
+   "runner_up": "Mohd Ismail bin Ayob",
+   "runner_up_party": "BEBAS"
+  },
+  {
+   "seat": "N.05 Matunggong",
+   "state": "",
+   "holder": "Julita Mojungki",
+   "party": "PBS",
+   "color": "#FF9500",
+   "majority": 334,
+   "majority_pct": 1.74,
+   "runner_up": "Wetrom Bahanda",
+   "runner_up_party": "KDM"
+  },
+  {
+   "seat": "N.04 Tanjong Kapor",
+   "state": "",
+   "holder": "Ben Chong Chen Bin",
+   "party": "PGRS",
+   "color": "#FF9500",
+   "majority": 359,
+   "majority_pct": 1.76,
+   "runner_up": "Verdon bin Bahanda",
+   "runner_up_party": "BEBAS"
+  },
+  {
+   "seat": "N.35 Sindumin",
+   "state": "",
+   "holder": "Yusri bin Pungut",
+   "party": "WARISAN",
+   "color": "#FF3B30",
+   "majority": 362,
+   "majority_pct": 2.28,
+   "runner_up": "Yamani Hafez bin Musa",
+   "runner_up_party": "PKR"
+  }
+ ]
+}

@@ -1,0 +1,428 @@
+{
+ "buckets": {
+  "GOV": {
+   "label": "Alliance / BN",
+   "color": "#2AA9BF"
+  },
+  "OPP1": {
+   "label": "DAP/PKR-led (GR\u2192BA\u2192PR\u2192PH)",
+   "color": "#FF3B30"
+  },
+  "OPP2": {
+   "label": "PAS-led (APU\u2192GS\u2192PN)",
+   "color": "#34C759"
+  },
+  "SF": {
+   "label": "Socialist Front",
+   "color": "#AF52DE"
+  },
+  "GPS": {
+   "label": "Gabungan Parti Sarawak",
+   "color": "#5856D6"
+  },
+  "GRS": {
+   "label": "Sabah alliances (USA/GRS)",
+   "color": "#FF9500"
+  },
+  "ALONE": {
+   "label": "Others / independents",
+   "color": "#8E8E93"
+  }
+ },
+ "elections": [
+  {
+   "ge": "GE-00",
+   "date": "1955-07-25",
+   "year": 1955,
+   "total_votes": 1001527,
+   "total_seats": 52,
+   "buckets": {
+    "GOV": {
+     "pct": 81.68,
+     "seats": 51,
+     "votes": 818013
+    },
+    "ALONE": {
+     "pct": 18.32,
+     "seats": 1,
+     "votes": 183514
+    }
+   }
+  },
+  {
+   "ge": "GE-01",
+   "date": "1959-05-20",
+   "year": 1959,
+   "total_votes": 1547269,
+   "total_seats": 104,
+   "buckets": {
+    "GOV": {
+     "pct": 51.77,
+     "seats": 74,
+     "votes": 800944
+    },
+    "SF": {
+     "pct": 12.91,
+     "seats": 8,
+     "votes": 199688
+    },
+    "ALONE": {
+     "pct": 35.33,
+     "seats": 22,
+     "votes": 546637
+    }
+   }
+  },
+  {
+   "ge": "GE-02",
+   "date": "1964-04-25",
+   "year": 1964,
+   "total_votes": 2057504,
+   "total_seats": 104,
+   "buckets": {
+    "GOV": {
+     "pct": 58.53,
+     "seats": 89,
+     "votes": 1204340
+    },
+    "SF": {
+     "pct": 16.08,
+     "seats": 2,
+     "votes": 330898
+    },
+    "ALONE": {
+     "pct": 25.38,
+     "seats": 13,
+     "votes": 522266
+    }
+   }
+  },
+  {
+   "ge": "GE-03",
+   "date": "1969-05-10",
+   "year": 1969,
+   "total_votes": 2396836,
+   "total_seats": 144,
+   "buckets": {
+    "GOV": {
+     "pct": 46.29,
+     "seats": 90,
+     "votes": 1109446
+    },
+    "ALONE": {
+     "pct": 53.71,
+     "seats": 54,
+     "votes": 1287390
+    }
+   }
+  },
+  {
+   "ge": "GE-04",
+   "date": "1974-08-24",
+   "year": 1974,
+   "total_votes": 2119903,
+   "total_seats": 154,
+   "buckets": {
+    "GOV": {
+     "pct": 60.73,
+     "seats": 135,
+     "votes": 1287463
+    },
+    "ALONE": {
+     "pct": 39.27,
+     "seats": 19,
+     "votes": 832440
+    }
+   }
+  },
+  {
+   "ge": "GE-05",
+   "date": "1978-07-08",
+   "year": 1978,
+   "total_votes": 3473430,
+   "total_seats": 154,
+   "buckets": {
+    "GOV": {
+     "pct": 57.23,
+     "seats": 130,
+     "votes": 1987907
+    },
+    "ALONE": {
+     "pct": 42.77,
+     "seats": 24,
+     "votes": 1485523
+    }
+   }
+  },
+  {
+   "ge": "GE-06",
+   "date": "1982-04-22",
+   "year": 1982,
+   "total_votes": 4165697,
+   "total_seats": 154,
+   "buckets": {
+    "GOV": {
+     "pct": 60.54,
+     "seats": 132,
+     "votes": 2522079
+    },
+    "ALONE": {
+     "pct": 39.46,
+     "seats": 22,
+     "votes": 1643618
+    }
+   }
+  },
+  {
+   "ge": "GE-07",
+   "date": "1986-08-02",
+   "year": 1986,
+   "total_votes": 4625272,
+   "total_seats": 177,
+   "buckets": {
+    "GOV": {
+     "pct": 57.28,
+     "seats": 148,
+     "votes": 2649238
+    },
+    "OPP2": {
+     "pct": 17.98,
+     "seats": 1,
+     "votes": 831676
+    },
+    "ALONE": {
+     "pct": 24.74,
+     "seats": 28,
+     "votes": 1144358
+    }
+   }
+  },
+  {
+   "ge": "GE-08",
+   "date": "1990-10-20",
+   "year": 1990,
+   "total_votes": 5593217,
+   "total_seats": 180,
+   "buckets": {
+    "GOV": {
+     "pct": 53.38,
+     "seats": 127,
+     "votes": 2985382
+    },
+    "OPP1": {
+     "pct": 21.07,
+     "seats": 34,
+     "votes": 1178458
+    },
+    "OPP2": {
+     "pct": 21.63,
+     "seats": 15,
+     "votes": 1209703
+    },
+    "ALONE": {
+     "pct": 3.93,
+     "seats": 4,
+     "votes": 219674
+    }
+   }
+  },
+  {
+   "ge": "GE-09",
+   "date": "1995-04-24",
+   "year": 1995,
+   "total_votes": 5999109,
+   "total_seats": 192,
+   "buckets": {
+    "GOV": {
+     "pct": 65.16,
+     "seats": 162,
+     "votes": 3908968
+    },
+    "OPP1": {
+     "pct": 16.02,
+     "seats": 17,
+     "votes": 961002
+    },
+    "OPP2": {
+     "pct": 17.49,
+     "seats": 13,
+     "votes": 1049369
+    },
+    "ALONE": {
+     "pct": 1.33,
+     "seats": 0,
+     "votes": 79770
+    }
+   }
+  },
+  {
+   "ge": "GE-10",
+   "date": "1999-11-29",
+   "year": 1999,
+   "total_votes": 6656825,
+   "total_seats": 193,
+   "buckets": {
+    "GOV": {
+     "pct": 56.5,
+     "seats": 148,
+     "votes": 3761093
+    },
+    "OPP1": {
+     "pct": 40.28,
+     "seats": 42,
+     "votes": 2681086
+    },
+    "ALONE": {
+     "pct": 3.22,
+     "seats": 3,
+     "votes": 214646
+    }
+   }
+  },
+  {
+   "ge": "GE-11",
+   "date": "2004-03-21",
+   "year": 2004,
+   "total_votes": 7009540,
+   "total_seats": 219,
+   "buckets": {
+    "GOV": {
+     "pct": 63.81,
+     "seats": 198,
+     "votes": 4472598
+    },
+    "OPP1": {
+     "pct": 24.17,
+     "seats": 8,
+     "votes": 1693947
+    },
+    "ALONE": {
+     "pct": 12.03,
+     "seats": 13,
+     "votes": 842995
+    }
+   }
+  },
+  {
+   "ge": "GE-12",
+   "date": "2008-03-08",
+   "year": 2008,
+   "total_votes": 7944681,
+   "total_seats": 222,
+   "buckets": {
+    "GOV": {
+     "pct": 51.38,
+     "seats": 140,
+     "votes": 4082371
+    },
+    "OPP1": {
+     "pct": 47.43,
+     "seats": 82,
+     "votes": 3768222
+    },
+    "ALONE": {
+     "pct": 1.18,
+     "seats": 0,
+     "votes": 94088
+    }
+   }
+  },
+  {
+   "ge": "GE-13",
+   "date": "2013-05-05",
+   "year": 2013,
+   "total_votes": 11054887,
+   "total_seats": 222,
+   "buckets": {
+    "GOV": {
+     "pct": 47.38,
+     "seats": 133,
+     "votes": 5237678
+    },
+    "OPP1": {
+     "pct": 50.88,
+     "seats": 89,
+     "votes": 5624319
+    },
+    "ALONE": {
+     "pct": 1.74,
+     "seats": 0,
+     "votes": 192890
+    }
+   }
+  },
+  {
+   "ge": "GE-14",
+   "date": "2018-05-09",
+   "year": 2018,
+   "total_votes": 12082979,
+   "total_seats": 222,
+   "buckets": {
+    "GOV": {
+     "pct": 33.78,
+     "seats": 79,
+     "votes": 4081063
+    },
+    "OPP1": {
+     "pct": 45.68,
+     "seats": 113,
+     "votes": 5518906
+    },
+    "OPP2": {
+     "pct": 16.89,
+     "seats": 18,
+     "votes": 2041200
+    },
+    "GRS": {
+     "pct": 0.38,
+     "seats": 0,
+     "votes": 45814
+    },
+    "ALONE": {
+     "pct": 3.28,
+     "seats": 12,
+     "votes": 395996
+    }
+   }
+  },
+  {
+   "ge": "GE-15",
+   "date": "2022-11-19",
+   "year": 2022,
+   "total_votes": 15613980,
+   "total_seats": 222,
+   "buckets": {
+    "GOV": {
+     "pct": 22.16,
+     "seats": 30,
+     "votes": 3459988
+    },
+    "OPP1": {
+     "pct": 37.99,
+     "seats": 82,
+     "votes": 5931856
+    },
+    "OPP2": {
+     "pct": 30.23,
+     "seats": 74,
+     "votes": 4719665
+    },
+    "GPS": {
+     "pct": 4.24,
+     "seats": 23,
+     "votes": 662601
+    },
+    "GRS": {
+     "pct": 0.64,
+     "seats": 2,
+     "votes": 100239
+    },
+    "ALONE": {
+     "pct": 4.74,
+     "seats": 11,
+     "votes": 739631
+    }
+   }
+  }
+ ]
+}
