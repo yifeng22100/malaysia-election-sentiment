@@ -1,0 +1,137 @@
+You maintain a daily-updated multi-page site tracking public/political and market sentiment across Malaysia's rolling 2025–2028 state election cycle (Sabah Nov 2025 through the next general election, GE16, due by early 2028). Three states are decided so far: Sabah (30 Nov 2025, GRS-led coalition government), Johor (11 Jul 2026, BN landslide), and Negeri Sembilan (1 Aug 2026, BN–PN pact win). Melaka and Sarawak are anticipated but undated. Eight states (Selangor, Penang, Perak, Pahang, Kedah, Kelantan, Terengganu, Perlis) aren't due until 2027–2028.
+
+## Where the site lives
+- Working copy: the current directory (a git repo with remote `origin` already pointing at `https://github.com/yifeng22100/malaysia-election-sentiment.git`, branch `main`). This prompt runs in two environments — a local launchd job and a scheduled GitHub Actions workflow — and both have push credentials already configured before this prompt starts (keychain locally, the workflow's own token in Actions), so a plain `git push` just works, no token needed.
+- Public URL (GitHub Pages, serving `main` branch root): `https://yifeng22100.github.io/malaysia-election-sentiment/`
+
+## ALL 21 PAGES ARE IN SCOPE. None is exempt — but they run on different cadences.
+Every page below must be considered on every run. For most of them "considered" means a
+few seconds deciding that nothing has triggered a change. What differs is the trigger.
+
+### Tier 1 — Active (read and check for news EVERY run)
+`index.html` (overview hub), `johor.html`, `negeri-sembilan.html`.
+Full signal logs; this is where genuinely new news usually lands.
+
+### Tier 2 — Occasional (check briefly every run; most days nothing)
+- `sabah.html` — post-election: governance, coalition stability, oil-royalty news.
+- `melaka.html`, `sarawak.html` — pre-election watch pages: dissolution dates, nomination/polling
+  dates, coalition friction, Sarawak redelineation (82→99 seats).
+- `federal.html` — update `#scorecard` / `#implications` only after a state result or a real
+  shift in the national picture. Also carries the GE15 Dewan Rakyat hemicycle (see Components).
+  Its `#party-breakdown`, `#by-state`, `#changed-seats` and `#mp-retirements` sections are
+  static GE15 historical tables (rendered by `results-tables.js` from `data/tables/*.json`) —
+  they do NOT need daily attention; only touch them if a GE15 result is ever corrected. Its
+  `#polling` section DOES need a daily check: web search for new Merdeka Center, Ilham Centre or
+  Vodus Research national/federal polling and add it as prose in that section's `.about-card`
+  (cite the pollster, fieldwork dates and sample size) when found — see the sentiment-source
+  convention below.
+
+### Tier 3 — Not-yet-due state profiles (8 pages; update on a specific trigger)
+`selangor.html`, `penang.html`, `perak.html`, `pahang.html`, `kedah.html`, `kelantan.html`,
+`terengganu.html`, `perlis.html`.
+Triggers: an MB/CM change, a dissolution-timeline development, a by-election that changes the
+assembly's balance, or a defection/realignment. Each of these pages now carries an
+`#assembly` section (hemicycle + constituency map) showing the composition **as elected** at
+that state's last state general election — see Components below before touching it.
+
+### Tier 4 — Reference pages (event-driven; do NOT churn, but DO keep accurate)
+These are not "static, never touch". They are long-lived reference pages that must be
+corrected when the underlying facts change. Check the trigger, not the page, each run:
+- `history.html` — Election Commission profile + interactive timeline of all 16 general
+  elections. Triggers: a new general election is held (add it to the `ELECTIONS` array in the
+  inline script AND generate its map — see Maps); the EC chairman changes; a major electoral
+  reform passes (redelineation, voting-age or registration change).
+- `parties.html` — 21-party encyclopedia. Triggers: a party is formed, dissolved, deregistered
+  or renamed; a party president/secretary-general changes; a coalition realignment.
+- `process.html` — how elections are triggered and run. Triggers: any change to electoral law
+  or constitutional provisions it cites (Articles 43, 49A, 54, 55; Election Offences Act;
+  anti-hopping rules; by-election timing).
+- `parliament.html` — Dewan Rakyat/Dewan Negara. Triggers: a materially changed Dewan Rakyat
+  composition (update the hemicycle), Dewan Negara composition or rules changing, or a landmark
+  law passing that belongs in its "Landmark decisions" list.
+- `prime-ministers.html` — all 10 PMs, achievements and criticisms. Triggers: a new PM takes
+  office (add an entry); a significant documented development about a serving or former PM
+  (court judgment, pardon, conviction, death). Keep the existing editorial standard: documented
+  public record only — legislation, court outcomes, election results — never forum opinion, and
+  state contested claims as what critics argue.
+- `about.html` — methodology/credits, translated into all four languages. Triggers: the site's
+  structure, page count, update mechanism or data sources change. If you add a page or a data
+  source, the methodology section here must be updated to match, in ALL FOUR language blocks.
+
+## Shared chrome — preserve exactly, never edit as content
+- Every page opens with an identical `<header class="site-header">` (utility bar with language
+  switcher + theme toggle, then logo + primary nav) OUTSIDE `<div class="wrap">`, and closes
+  with an identical `<footer class="site-footer">` also outside `.wrap`.
+- The nav has TWO dropdowns: a **States** dropdown (13 states + Federal, grouped
+  Decided / Anticipated / Not yet due / Federal, each with `<span class="nav-dot dot-{done|soon|later}">`)
+  and a **Learn** dropdown (`history.html`, `process.html`, `parliament.html`,
+  `prime-ministers.html`). The current page's own entry carries `class="current"`.
+- Script tags at the end of each page. Pages differ in which they load — `i18n.js` and `toc.js`
+  everywhere, plus `hemicycle.js` and/or `electionmap.js` where those components are used.
+  Never remove a script a page needs.
+- NEVER edit: `styles.css`, `i18n.js`, `toc.js`, `hemicycle.js`, `electionmap.js`,
+  `results-tables.js`, `assets/parties/*`, `data/**`, `favicon*`, `apple-touch-icon.png`,
+  `.gitignore`.
+
+## Components you may need to update (data lives inline in the HTML)
+- **Hemicycle** — `<div data-hemicycle='{"total":N,"majority":M,"parties":[{"label":..,"n":..,"color":".."}]}'>`.
+  On `parliament.html`, `federal.html`, the three decided state pages, and all ten remaining
+  state pages. The `n` values MUST sum exactly to `total`, and `majority` must equal
+  `floor(total/2)+1`. Update when an assembly's composition genuinely changes.
+- **Constituency map** — `<div data-electionmap='{"src":"data/dun_<state>.geojson", ...}'>`
+  on state pages, and layered configs on `history.html`. The GeoJSON in `data/` was built from
+  ElectionData.MY (CC0) boundary + ballots datasets; see `data/SOURCES.md`.
+  **Do NOT attempt to regenerate map data during a daily run** — it needs external downloads and
+  a build pipeline that isn't in the repo. If a state votes and its map becomes stale, update
+  the hemicycle inline (that you can do), leave the map file alone, and say clearly in the commit
+  message that `data/dun_<state>.geojson` still shows the previous election and needs
+  regenerating. Do not delete or hand-edit the GeoJSON.
+
+## Steps each run
+1. `git pull` first in case of manual edits.
+2. Read the Tier 1 pages (latest dates in each `.log`, status badges in `index.html`'s state
+   grid). Skim Tier 2's last few entries.
+3. Web search for genuinely new developments across Tier 1 and Tier 2. For Tier 3 and Tier 4,
+   don't search speculatively — act only if something surfaced in the Tier 1/2 search implies a
+   trigger listed above (e.g. an MB change, a new party, a court ruling on a former PM).
+4. Update signal logs consistently: add one new `.log-entry` at the TOP of the `.log` container
+   (newest first), only for real sourced news; reuse existing `.log-tag` classes (`tag-result`,
+   `tag-reax`, `tag-market`, `tag-social`, `tag-campaign`). Update `#refreshed-date`. Append
+   newly-cited sources to that page's footer `<ul class="sources">`, keeping existing entries.
+   **Sentiment-source badges:** when a new entry reports a named pollster's disclosed survey
+   (Merdeka Center, Ilham Centre, Vodus Research, or similar — sample size/fieldwork dates
+   stated), add `<span class="src-badge src-professional">Professional research</span>` right
+   after its `.log-tag`. When an entry reports what's being said on Facebook, X, TikTok,
+   Instagram or forums (as covered by a news outlet — never scraped directly), add
+   `<span class="src-badge src-social">Public / social reaction</span>` in the same spot. Most
+   entries are neither (results, governance, market reaction) and get no badge — only add one
+   when the entry is genuinely reporting a sentiment/opinion reading. See `about.html#methodology`
+   for the full explanation already published to readers; don't duplicate or contradict it.
+5. **Pre-election → results-day transition** (for `melaka.html` / `sarawak.html`): mirror the
+   structure already used by `johor.html` and the transition already performed for
+   `negeri-sembilan.html` — watch page → full campaign tracker on dissolution → results tracker
+   once polls close. Then update that state's `index.html` card, its dropdown status dot,
+   `index.html`'s "States decided" count, `federal.html`'s `#scorecard`, and that state page's
+   `#assembly` hemicycle. Flag the stale map per the Components note.
+6. When a general election happens, `history.html`'s timeline and `parliament.html`'s hemicycle
+   both need updating, and `prime-ministers.html` may need a new entry.
+7. Verify before committing: every page still parses; every `data-hemicycle` sums to its total;
+   every `data-electionmap` `src` points at a file that exists; both nav dropdowns intact.
+8. Commit and push: `git add -A && git commit -m "<short summary>" && git push`. If nothing
+   genuinely new was found, still update `#refreshed-date` on the Tier 1 pages, commit and push —
+   but never fabricate signal-log entries just to have something to say.
+
+## Hard facts — never alter these
+- Johor 2026: BN 48 / PH 8 of 56.
+- Negeri Sembilan 2026: BN 18 / PN 7 / PH 11 of 36.
+- Sabah 2025: GRS 29 / Warisan 25 / BN 6 / UPKO 3 / Ind 5 / STAR 2 / PH 1 / PN 1 / KDM 1 of 73.
+- GE15 final Dewan Rakyat: PH 82 / PN 74 / BN 30 / GPS 23 / GRS 6 / others 7 = 222 (includes the
+  Padang Serai poll deferred to 7 Dec 2022).
+These are official and final.
+
+## Constraints
+- Keep entries factual and sourced; don't speculate beyond what search results support.
+- This runs completely unattended (a local launchd job or a scheduled GitHub Actions workflow) —
+  there is nobody to approve permission prompts, so operate within the tools already allowed for
+  this invocation. If something fails (git push rejected, a file missing, no network), log the
+  failure clearly and exit; do not attempt destructive recovery.

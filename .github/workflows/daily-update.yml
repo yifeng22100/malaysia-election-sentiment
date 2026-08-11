@@ -1,0 +1,64 @@
+name: Daily election update
+
+# Cloud counterpart to the local launchd job (~/.malaysia-election-tracker/
+# run-daily-update.sh). That job only runs while this Mac is on and awake at
+# 08:10; this one runs regardless, on GitHub's own infrastructure. Both can
+# coexist safely — Claude only commits when it finds something genuinely new,
+# so an overlapping run just does nothing rather than double-posting.
+#
+# Requires one manual, one-time setup step that no workflow file can do on
+# its own: add an ANTHROPIC_API_KEY secret in this repo's Settings > Secrets
+# and variables > Actions. Runs will fail with an auth error until that's set.
+
+on:
+  schedule:
+    - cron: '10 0 * * *'  # 00:10 UTC = 08:10 Malaysia time (UTC+8, no DST)
+  workflow_dispatch: {}    # lets you trigger a run manually from the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure git identity
+        run: |
+          git config user.name "malaysia-election-tracker-bot"
+          git config user.email "actions@users.noreply.github.com"
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Claude Code CLI
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Run daily update
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          echo "HEAD_BEFORE=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+          claude -p "$(cat .github/daily-update-prompt.txt)" \
+            --allowedTools "Bash,Edit,Write,Read,Glob,Grep,WebSearch,WebFetch"
+
+      # ---------------------------------------------------------------------
+      # Post-push verification — same reasoning as the local script: a run
+      # can exit 0 and look successful while GitHub Pages fails to actually
+      # deploy the change (this happened once, during a real GitHub outage,
+      # and nothing in a plain success/fail check would have caught it).
+      # ---------------------------------------------------------------------
+      - name: Verify commit landed and Pages deployed
+        if: always()
+        run: bash .github/scripts/verify-deploy.sh "${HEAD_BEFORE:-}"

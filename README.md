@@ -56,7 +56,14 @@ data/                    GeoJSON boundaries, per-election results, lookup tables
 
 ## Daily update automation
 
-A `launchd` job runs a scheduled Claude Code invocation once a day, driven by a prompt file that tiers every page by how often it plausibly changes (active signal logs checked every run; historical reference pages only on a specific documented trigger, e.g. a new PM taking office or a general election being held). It searches for genuinely new developments, edits only what changed, verifies the page still parses and every map/hemicycle reference resolves, commits, and pushes. A post-push step polls the GitHub Actions API to confirm the Pages deployment actually succeeded, not just that the commit landed.
+A scheduled Claude Code invocation runs once a day, driven by [`.github/daily-update-prompt.txt`](.github/daily-update-prompt.txt) — the single canonical prompt, shared by both places this runs — which tiers every page by how often it plausibly changes (active signal logs checked every run; historical reference pages only on a specific documented trigger, e.g. a new PM taking office or a general election being held). It searches for genuinely new developments, edits only what changed, verifies the page still parses and every map/hemicycle reference resolves, commits, and pushes. A post-push step then polls the GitHub Actions API to confirm the Pages deployment actually succeeded, not just that the commit landed.
+
+It runs in two places, either of which is sufficient on its own:
+
+- **Locally**, via a `launchd` job (`~/.malaysia-election-tracker/run-daily-update.sh`) at 08:10 Malaysia time — only runs while that Mac is on and awake.
+- **In the cloud**, via [`.github/workflows/daily-update.yml`](.github/workflows/daily-update.yml), a GitHub Actions workflow on the same schedule — runs regardless of any local machine's state. Requires an `ANTHROPIC_API_KEY` repository secret (Settings → Secrets and variables → Actions); billed per the Anthropic API's standard pricing, separate from a claude.ai subscription. Can also be triggered manually from the Actions tab (`workflow_dispatch`).
+
+Both write to the same repo and only commit when they find something genuinely new, so an overlapping run is a harmless no-op rather than a duplicate post.
 
 ## Running locally
 
