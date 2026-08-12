@@ -7,8 +7,6 @@
 const I18N_DICT = {
   en: {
     nav_overview: "Overview",
-    nav_johor: "Johor",
-    nav_n9: "Negeri Sembilan",
     nav_parties: "Parties",
     nav_history: "History & EC",
     nav_learn: "Learn",
@@ -64,8 +62,6 @@ const I18N_DICT = {
   },
   ms: {
     nav_overview: "Ikhtisar",
-    nav_johor: "Johor",
-    nav_n9: "Negeri Sembilan",
     nav_parties: "Parti-Parti",
     nav_history: "Sejarah & SPR",
     nav_learn: "Ketahui",
@@ -121,8 +117,6 @@ const I18N_DICT = {
   },
   zh: {
     nav_overview: "总览",
-    nav_johor: "柔佛",
-    nav_n9: "森美兰",
     nav_parties: "政党",
     nav_history: "历史与选委会",
     nav_learn: "认识选举",
@@ -178,8 +172,6 @@ const I18N_DICT = {
   },
   ta: {
     nav_overview: "மேலோட்டம்",
-    nav_johor: "ஜொகூர்",
-    nav_n9: "நெகிரி செம்பிலான்",
     nav_parties: "கட்சிகள்",
     nav_history: "வரலாறு & SPR",
     nav_learn: "அறிக",
