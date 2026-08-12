@@ -77,7 +77,7 @@ Then open `http://localhost:8000/`.
 
 ## Contributing / corrections
 
-The source is fully public. If you spot a factual error or a translation issue (particularly in the Tamil interface, produced with AI assistance rather than native-speaking review), open an issue or PR on GitHub.
+The source is fully public. If you spot a factual error or a translation issue (particularly in the Tamil interface, produced with AI assistance rather than native-speaking review), open an issue or PR on GitHub. See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the conventions this project holds itself to — most importantly, never presenting an unconfirmed claim as settled fact.
 
 ## Disclaimer
 
