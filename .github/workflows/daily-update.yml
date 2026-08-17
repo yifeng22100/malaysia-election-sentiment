@@ -9,10 +9,19 @@ name: Daily election update
 # Requires one manual, one-time setup step that no workflow file can do on
 # its own: add an ANTHROPIC_API_KEY secret in this repo's Settings > Secrets
 # and variables > Actions. Runs will fail with an auth error until that's set.
+#
+# PAUSED (as of 17 Aug 2026): the scheduled trigger below is disabled because
+# the ANTHROPIC_API_KEY's account ran out of credit balance, failing every
+# scheduled run for three days straight (14-16 Aug 2026) -- a billing issue,
+# not a bug in the workflow itself. The local launchd job is unaffected: it
+# authenticates via a claude.ai subscription, a separate billing pool from
+# this key. To resume cloud runs: top up the API key's credit balance, then
+# uncomment the `schedule:` block below. `workflow_dispatch` is left enabled
+# so this can still be triggered by hand from the Actions tab in the meantime.
 
 on:
-  schedule:
-    - cron: '10 0 * * *'  # 00:10 UTC = 08:10 Malaysia time (UTC+8, no DST)
+  # schedule:
+  #   - cron: '10 0 * * *'  # 00:10 UTC = 08:10 Malaysia time (UTC+8, no DST)
   workflow_dispatch: {}    # lets you trigger a run manually from the Actions tab
 
 permissions:
