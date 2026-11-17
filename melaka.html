@@ -39,10 +39,10 @@
         <div class="nav-dropdown-menu">
           <div class="nav-dropdown-group-label" data-i18n="grp_decided">Decided</div>
           <a href="johor.html"><span class="nav-dot dot-done"></span>Johor</a>
+          <a href="melaka.html" class="current"><span class="nav-dot dot-done"></span>Melaka</a>
           <a href="negeri-sembilan.html"><span class="nav-dot dot-done"></span>Negeri Sembilan</a>
           <a href="sabah.html"><span class="nav-dot dot-done"></span>Sabah</a>
           <div class="nav-dropdown-group-label" data-i18n="grp_anticipated">Anticipated</div>
-          <a href="melaka.html" class="current"><span class="nav-dot dot-soon"></span>Melaka</a>
           <a href="sarawak.html"><span class="nav-dot dot-soon"></span>Sarawak</a>
           <div class="nav-dropdown-group-label" data-i18n="grp_notdue">Not yet due</div>
           <a href="selangor.html"><span class="nav-dot dot-later"></span>Selangor</a>
@@ -77,57 +77,80 @@
 
   <header class="masthead">
     <div style="display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap;">
-      <span class="eyebrow">Campaign Tracker</span>
+      <span class="eyebrow">Post-Election Intelligence</span>
       <span class="live-chip"><span class="live-dot"></span><span data-i18n="live_developing">Developing — refreshed daily</span></span>
     </div>
-    <h1 class="title">Melaka: dissolved, dated, and still sorting out its alliances</h1>
-    <p class="dek">The assembly was dissolved on 23 September and the Election Commission has set nomination for 31 October and polling for 14 November. On 20 October the Registrar of Societies deregistered Perikatan Nasional, and two days later the High Court stayed that decision, so PN can contest. BN and PAS settled a 21–7 seat split on 21 October. On 24 October BN and PH each named 21 candidates, and the two coalitions meet head-to-head in 15 seats. On 29 October PN named five of its candidates and cut its slate to six seats after giving Bandar Hilir to MCA, while Bersatu named eight candidates under its own logo, two of them against PN.</p>
+    <h1 class="title">Melaka: BN holds 21, the pact takes 24, PH's CM pick loses his seat</h1>
+    <p class="dek">The Election Commission's official tally from the 14 November poll gives BN 21 of the 28 seats, the same number it won in 2021 and a two-thirds majority on its own. PN, which ran under a non-compete arrangement with BN, won 3, taking the BN–PN bloc to 24. Pakatan Harapan won 4, down from 5, and Amanah's Adly Zahari, PH's named chief-minister candidate, lost Bukit Katil to PN. Bersatu and Bersama, running on their own, won nothing. Ab Rauf Yusoh was sworn in for a second term on 15 November.</p>
     <div class="masthead-meta">
-      <span>Caretaker government: <strong>BN, CM Ab Rauf Yusoh</strong></span>
-      <span>Polling day: <strong>14 Nov 2026</strong></span>
-      <span>Last refreshed: <strong id="refreshed-date">9 Nov 2026</strong></span>
+      <span>Election day: <strong>14 Nov 2026</strong></span>
+      <span>Last refreshed: <strong id="refreshed-date">17 Nov 2026</strong></span>
+      <span>28 seats, 16th Melaka State Assembly</span>
     </div>
   </header>
 
   <div class="lang-note-banner" data-lang-note><span class="lang-note-label"></span></div>
 
-  <section id="status" aria-label="Current status">
-    <div class="section-label">Where things stand</div>
+  <section id="result" aria-label="Topline result">
+    <div class="section-label">The result</div>
+
     <div class="topline">
       <div class="topline-cell">
-        <div class="topline-party">Dissolved</div>
-        <div class="topline-seats">23 Sep<span> 2026</span></div>
-        <div class="topline-sub">Governor Tun Mohd Ali Rustam consented; BN caretaker under Ab Rauf Yusoh</div>
+        <div class="topline-party"><span class="swatch" style="background:var(--bn)"></span>Barisan Nasional</div>
+        <div class="topline-seats">21<span> / 28 seats</span></div>
+        <div class="topline-sub">Umno 18 · MCA 2 · MIC 1 · two-thirds alone; 24 with PN</div>
       </div>
       <div class="topline-cell">
-        <div class="topline-party">Nomination day</div>
-        <div class="topline-seats">31 Oct<span> 2026</span></div>
-        <div class="topline-sub">14-day campaign, 31 Oct – 13 Nov · early voting 10 Nov</div>
+        <div class="topline-party"><span class="swatch" style="background:var(--ph)"></span>Pakatan Harapan</div>
+        <div class="topline-seats">4<span> / 28 seats</span></div>
+        <div class="topline-sub">DAP-led, per Bernama · down from 5 in 2021</div>
       </div>
       <div class="topline-cell">
-        <div class="topline-party">Polling day</div>
-        <div class="topline-seats">14 Nov<span> 2026</span></div>
-        <div class="topline-sub">28 seats · 687,697 voters · 15 needed for a majority</div>
+        <div class="topline-party"><span class="swatch" style="background:var(--oth)"></span>Turnout</div>
+        <div class="topline-seats">71.77<span>% statewide</span></div>
+        <div class="topline-sub">493,573 votes cast · official EC figure</div>
       </div>
+    </div>
+
+    <div class="seatbar">
+      <div style="width:75%; background:var(--bn)"></div>
+      <div style="width:10.7%; background:var(--pn)"></div>
+      <div style="width:14.3%; background:var(--ph)"></div>
+    </div>
+    <div class="seatbar-legend">
+      <span><span class="swatch" style="background:var(--bn)"></span>BN <strong>21</strong></span>
+      <span><span class="swatch" style="background:var(--pn)"></span>PN <strong>3</strong></span>
+      <span><span class="swatch" style="background:var(--ph)"></span>PH <strong>4</strong></span>
+      <span>Bersatu and Bersama won 0</span>
+    </div>
+    <div class="about-card" style="margin-top:16px;">
+      <div data-hemicycle='{"total":28,"majority":15,"parties":[{"label":"BN","n":21,"color":"#2AA9BF"},{"label":"PN","n":3,"color":"#34C759"},{"label":"PH","n":4,"color":"#FF3B30"}]}'></div>
+      <p style="font-size:13px;line-height:1.6;color:var(--muted);margin:16px 0 0;max-width:64ch;">The 16th Melaka State Assembly as elected on 14 November 2026. BN's 21 seats clear the 15-seat majority on their own. PN's three seats (PAS 2, Wawasan 1, per Bernama) came under the BN–PN non-compete arrangement.</p>
     </div>
   </section>
 
-  <section id="assembly" aria-label="Current state assembly">
-    <div class="section-label">The current assembly</div>
-    <p class="lede">The assembly was dissolved on 23 September 2026. Until results come in on 14 November, this is the composition as the 2021 Melaka state election left it.</p>
+  <section id="assembly" aria-label="Seat map">
+    <div class="section-label">Every seat (2021 map)</div>
+    <p class="lede">The constituency map below still shows the 2021 result. It will be regenerated from ElectionData.MY once the 2026 ballots data is available. The hemicycle above reflects the 2026 result.</p>
     <div class="about-card">
-      <div data-hemicycle='{"total":28,"majority":15,"parties":[{"label":"BN","n":21,"color":"#2AA9BF"},{"label":"PH","n":5,"color":"#FF3B30"},{"label":"PN","n":2,"color":"#34C759"}]}'></div>
-      <p style="font-size:13.5px;line-height:1.6;margin:16px 0 0;max-width:66ch;">BN returned to power with a two-thirds majority after the state government collapsed in October 2021, triggering the snap poll.</p>
-    </div>
-    <div class="about-card" style="margin-top:14px;">
-      <div data-electionmap='{"src":"data/dun_melaka.geojson","caption":"2021 Melaka state election (28 seats), as elected on 20 November 2021. Boundary geometry: ElectionData.MY delimitation datasets (CC0), simplified for display. Results: ElectionData.MY candidate-level ballots (CC0). Composition shown is as elected — by-elections, defections and coalition changes since are not reflected."}'></div>
+      <div data-electionmap='{"src":"data/dun_melaka.geojson","caption":"2021 Melaka state election (28 seats), as elected on 20 November 2021 — not yet updated for the 14 November 2026 result. Boundary geometry: ElectionData.MY delimitation datasets (CC0), simplified for display. Results: ElectionData.MY candidate-level ballots (CC0)."}'></div>
     </div>
   </section>
 
   <section id="mood" aria-label="Sentiment summary">
     <div class="section-label">Reading the mood</div>
-    <p class="lede">The timing question is settled. What's still open is who runs with whom.</p>
+    <p class="lede">After Johor and Negeri Sembilan, another state result that breaks against Pakatan Harapan, and again the BN–PN arrangement is what turns BN's win into a supermajority.</p>
+    <div class="mood-meter">
+      <div class="mood-meter-value">Decisive</div>
+      <div class="mood-meter-note">Sentiment read: BN held every seat it won in 2021 and PN's three seats push the pact to 24 of 28. PH's loss of its own chief-minister candidate makes the result read as a clear rejection rather than a narrow one.</div>
+      <div class="mood-meter-scale">
+        <div class="mood-meter-fill" style="width:85%; background:var(--status-done);"></div>
+      </div>
+      <div class="mood-meter-labels"><span>Uncertain</span><span>Decisive</span></div>
+    </div>
     <div class="prose">
+      <p>Result, 14 November: the Election Commission's official tally gives BN 21 seats (Umno 18, MCA 2, MIC 1), PH 4 and PN 3. Turnout was 71.77%, or 493,573 voters. BN's seat count is unchanged from 2021. PH fell from five seats to four, and Bernama reports that all four were won by DAP, so neither PKR nor Amanah won a seat. Adly Zahari, PH's state chairman and named chief-minister candidate, lost Bukit Katil to PN. Bersama, which contested 16 seats, and Bersatu, which ran under its own logo after breaking with PN, were both shut out. Ab Rauf Yusoh held Tanjung Bidara and was sworn in for a second term as chief minister at 12.10pm on 15 November before Yang di-Pertua Negeri Tun Mohd Ali Rustam. BN–PN coverage puts the combined bloc at 24 of 28 seats. Analysts quoted by SCMP said the result does not touch Anwar Ibrahim's majority in Parliament, but it is likely to strengthen Umno voices pushing for an early general election.</p>
+      <p>Background to the campaign, as tracked below:</p>
       <p>Ab Rauf Yusoh announced the dissolution on 22 September, after Governor Tun Mohd Ali Rustam consented, and it took effect the next day. That was three months before the assembly's term would have run out on 27 December. On 7 October the Election Commission set nomination for 31 October, early voting for 10 November and polling for 14 November. There are 687,697 registered voters, 271 polling centres and an estimated cost of RM28.45 million. BN goes in defending the 21 seats it won in 2021, and the BN–PN non-compete model from Johor and Negeri Sembilan is the obvious template. But BN delayed formal talks after dissolution, and PH kept saying it was open to a deal. Analysts read both moves as leverage over PAS's seat demands. On 10 October PAS president Abdul Hadi Awang said the two sides had agreed to cooperate in principle, with seat numbers and candidates still under discussion. PN deputy chairman Tuan Ibrahim Tuan Man said PN wants "more than four" of the 28 seats. On 21 October Zahid Hamidi said the talks were finalised: BN contests 21 seats under its own logo and PAS and its allies take the other seven. On 23 October PAS's Tuan Ibrahim said the seven were not yet final, that PN wants one or two more, and that PAS will name its candidates on 28 or 29 October rather than on a shared stage with BN. In the final week before nomination the opposition side split: PN began disciplinary action against Bersatu on 25 October, and on 27 October Muhyiddin Yassin said Bersatu will contest Melaka on its own. Umno has told its supporters to help PN where PN stands, and BN and PN launched a joint manifesto on 6 November. Nomination on 31 October produced 79 candidates for the 28 seats, with 11 straight fights, 11 three-cornered and six four-cornered contests.</p>
       <p>Hanging over the talks is Perikatan Nasional's own legal status. On 22 September, after a complaint from Bersatu, the Registrar of Societies issued PN a show-cause notice asking why it should not be deregistered, and suspended its activities from 23 September, the day Melaka dissolved. PN called the action malicious and on 5 October filed for judicial review, asking among other things whether it can field candidates in Melaka. BN chairman Ahmad Zahid Hamidi has said PN's components will likely contest under their own logos. On 20 October the Registrar deregistered PN, saying its reply to the show-cause notice had not refuted the grounds. On 22 October the High Court stayed both the deregistration and the suspension until PN's judicial review is decided, which leaves PN free to contest Melaka under its own banner. The court has not yet ruled on whether RoS acted lawfully.</p>
       <p>Background: for most of 2026, Melaka's election was framed as a pure timing question: the assembly's term runs out on 27 December 2026, requiring a poll by February 2027 at the latest, and speculation had ranged from an April dissolution and June poll to a later window. Chief Minister Ab Rauf Yusoh repeatedly signalled he'd rather watch how Johor and Negeri Sembilan played out before committing to a date — both have now happened, both broke against Pakatan Harapan, which removes his stated reason for waiting and raises the likelihood of a dissolution announcement soon.</p>
@@ -138,6 +161,16 @@
   <section id="signal-log" aria-label="Signal log">
     <div class="section-label">Signal log — newest first</div>
     <div class="log">
+
+      <div class="log-entry">
+        <div class="log-date">14–15 Nov</div>
+        <div>
+          <span class="log-tag tag-result">Result</span>
+          <p class="log-headline">Official: BN 21, PH 4, PN 3. BN–PN bloc takes 24 of 28, Adly loses Bukit Katil, Ab Rauf sworn in for second term</p>
+          <p class="log-body">The Election Commission announced official results for all 28 seats. BN won 21 (Umno 18, MCA 2, MIC 1), PH 4 and PN 3. Bernama reports that DAP won all four of PH's seats and that PN's three went to PAS (2) and Wawasan (1). Turnout was 71.77%, with 493,573 votes cast. BN's total matches its 2021 result, and with PN's seats the non-compete bloc holds 24. PH chairman and chief-minister candidate Adly Zahari lost Bukit Katil to PN. Bersama and Bersatu, both contesting separately, won no seats. BN chairman Ahmad Zahid Hamidi thanked voters for what he called the BN–PN bloc's decisive win. Ab Rauf Yusoh, who kept Tanjung Bidara, was sworn in as chief minister for a second term at 12.10pm on 15 November at Seri Negeri, Ayer Keroh, before Yang di-Pertua Negeri Tun Mohd Ali Rustam. The state declared 16 November a special public holiday.</p>
+          <p class="log-source">Bernama · The Edge · Free Malaysia Today · Malay Mail · The Star · SCMP · Goody Feed</p>
+        </div>
+      </div>
 
       <div class="log-entry">
         <div class="log-date">6–8 Nov</div>
@@ -645,14 +678,26 @@
   <section id="whats-next" aria-label="What's next">
     <div class="section-label">What we're watching next</div>
     <div class="next">
-      <div class="next-date">10 Nov: early voting · 14 Nov: polling day</div>
-      <p class="prose" style="margin:0;">Nomination closed on 31 October with 79 candidates and every seat contested. Over the 14-day campaign, watch the four-cornered seats where Bersatu, PN and PH overlap (Ayer Keroh, Bemban, Bukit Katil), how voters respond to the competing manifestos (PH's on 3 November, BN–PN's joint document on 6 November), early voting on 10 November, and whether the government appeals the 22 October High Court stay of PN's deregistration. This page switches to a results tracker once polls close on 14 November.</p>
+      <div class="next-date">Post-election: Exco line-up (date not yet set) · PN's role · PH post-mortem</div>
+      <p class="prose" style="margin:0;">Ab Rauf's second-term government is in place; he said on 15 November the new Exco will be named soon, with no date given. Next to watch: whether PN's three assemblymen are offered Exco posts (PN has left that to the chief minister), or the BN–PN arrangement stays an electoral pact only; how PH explains its fall to four seats and the loss of its own chief-minister candidate, Adly, who said BN and PN voters pooling behind PN cost him Bukit Katil; any election petitions; the pending judicial review of PN's deregistration; and how far the result feeds Umno calls for an early GE16. Sarawak votes next, on 12 December.</p>
     </div>
   </section>
 
   <footer id="sources">
     <div class="section-label" style="margin-bottom:10px;">Sources referenced in this edition</div>
     <ul class="sources">
+      <li><a href="https://prn.bernama.com/johor/news-en.php?id=2634493" target="_blank" rel="noopener">Bernama — Melaka Polls: BN wins 21 seats, PN 3, PH 4 - EC</a></li>
+      <li><a href="https://election.bernama.com/prn/melaka/2026/keputusan/?lang=en" target="_blank" rel="noopener">Bernama — Election Results, Melaka Polls 2026</a></li>
+      <li><a href="https://theedgemalaysia.com/node/825518" target="_blank" rel="noopener">The Edge — Melaka state election live report: BN retains two-thirds majority</a></li>
+      <li><a href="https://www.freemalaysiatoday.com/category/nation/2026/11/14/live-vote-counting-for-melaka-polls-begins" target="_blank" rel="noopener">Free Malaysia Today — OFFICIAL: BN-PN wins 24 seats in Melaka, PH 4</a></li>
+      <li><a href="https://www.malaymail.com/news/malaysia/2026/11/14/live-2026-melaka-state-election-voting-ends-first-results-due-by-930pm/243278" target="_blank" rel="noopener">Malay Mail — 2026 Melaka State Election: Zahid thanks voters for BN-PN's decisive 24-seat win</a></li>
+      <li><a href="https://www.thestar.com.my/news/nation/2026/11/16/victory-paves-way-to-working-together" target="_blank" rel="noopener">The Star — Victory paves way to working together</a></li>
+      <li><a href="https://www.scmp.com/week-asia/politics/article/3374416/malaysias-melaka-election-begins-anwars-ph-seeks-counter-resurgent-umno" target="_blank" rel="noopener">SCMP — Malaysia's Melaka election: Umno wins 24 out of 28 seats, hands Anwar's PH third loss</a></li>
+      <li><a href="https://goodyfeed.com/melaka-declares-16-november-a-special-public-holiday-after-state-election/" target="_blank" rel="noopener">Goody Feed — Melaka declares 16 November a special public holiday after state election</a></li>
+      <li><a href="https://www.malaymail.com/news/malaysia/2026/11/15/ab-rauf-is-back-umno-man-sworn-in-for-a-second-term-as-melaka-chief-minister/243350" target="_blank" rel="noopener">Malay Mail — Ab Rauf is back: Umno man sworn in for a second term as Melaka chief minister</a></li>
+      <li><a href="https://www.bernama.com/en/general/news.php?id=2634604" target="_blank" rel="noopener">Bernama — Ab Rauf sworn in as Melaka Chief Minister</a></li>
+      <li><a href="https://lifenewsagency.com/ab-rauf-says-melaka-exco-appointments-will-be-made-soon/" target="_blank" rel="noopener">Life News Agency — Ab Rauf says Melaka EXCO appointments will be made soon</a></li>
+      <li><a href="https://www.utusan.com.my/nasional/politik/2026/11/saya-tak-terkejut-dari-awal-sudah-jauh-ketinggalan-adly-zahari/" target="_blank" rel="noopener">Utusan Malaysia — Saya tak terkejut, dari awal sudah jauh ketinggalan: Adly Zahari</a></li>
       <li><a href="https://theedgemalaysia.com/node/824760" target="_blank" rel="noopener">The Edge — Melaka polls: Choose candidates who have 'direct line' to PM's office — Anwar</a></li>
       <li><a href="https://www.bernama.com/en/politics/news.php?id=2630681" target="_blank" rel="noopener">Bernama — Melaka polls: Anwar urges voters to choose reps with 'direct line' to PMO</a></li>
       <li><a href="https://www.malaymail.com/news/malaysia/2026/11/06/melaka-polls-anwar-urges-voters-to-pick-reps-with-direct-line-to-pms-office/242145" target="_blank" rel="noopener">Malay Mail — Melaka polls: Anwar urges voters to pick reps with direct line to PM's office</a></li>
@@ -796,8 +841,8 @@
 
 <aside class="toc" aria-label="On this page">
   <div class="toc-label">On this page</div>
-  <a href="#status">Where things stand</a>
-  <a href="#assembly">Current assembly</a>
+  <a href="#result">The result</a>
+  <a href="#assembly">Every seat</a>
   <a href="#mood">Reading the mood</a>
   <a href="#signal-log">Signal log</a>
   <a href="#whats-next">What's next</a>
